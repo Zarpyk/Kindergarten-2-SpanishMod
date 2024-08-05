@@ -1,4 +1,4 @@
-Traducción de Kindergarten 2 a español con GPT4o-mini y mod de BepInEx (5.4.23.2) (incluido en el rar de descarga)
+Traducción de Kindergarten 2 a español con GPT4o-mini y mod de BepInEx (5.4.23.2, incluido en el rar de descarga)
 
 # Instalación
 - [Descargar el rar](https://github.com/Zarpyk/Kindergarten-2-SpanishMod/releases/latest)
