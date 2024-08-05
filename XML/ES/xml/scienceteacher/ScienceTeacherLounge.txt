@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¿Qué demonios--?! ¡Los niños no están permitidos en la sala de profesores! ¡Salgan!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mi culpa.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KickOutofLounge</FunctionCall>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>De hecho, ya que están aquí, quizás puedan hacer un mandado por mí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Como qué?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Dejé mi taza de café en mi salón de clases arriba. Ve a traerla por mí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué gano yo con esto?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>No te daré una hora de estudio por entrar a la sala de profesores.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Suena justo.</OptionText>
+          <DestinationID>4</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetScienceKey</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Excelente. Aquí está la llave. Regresa enseguida y nada de tonterías. Si no traes de vuelta mi taza y mi llave antes de que termine el almuerzo, será hora de estudio para ti.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>5</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¿Y bien? ¿Conseguiste mi taza?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <ItemToUse>Mug</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveMug</FunctionCall>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Aún no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Excelente. Quizás ustedes, los nuevos, no son tan lentos después de todo. Ahora, vayan a recreo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Feliz de ayudar.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Bueno, bueno, bueno.~ Mira quién es.~ Parece que Stevie se está descuidando en sus deberes.~ ¿Cómo va mi colección de flores? ¿Has encontrado alguna ya?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He encontrado uno.</OptionText>
+          <ItemToUse>BlueFlower</ItemToUse>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ninguno todavía.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¿Oh, de verdad?~ Eso es más de lo que esperaba.~ Supongo que estás aquí para recoger la flor en ese jarrón de allá, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Así sea.~ Hazlo rápido y sal. Tengo que revisar algo afuera, y no dejaré que un niño se quede en la sala de profesores sin supervisión.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>120</ResolutionID>
+          <FunctionCall>AddKickOutOfLounge</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>120</NodeID>
+      <DialogueText>Date prisa y agarra esa flor. Tengo cosas importantes que atender.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Eso no es una buena señal.~ *hl*Deberías haber recogido al menos una para ahora.*hle* Te sugeriría que te apresures o tendré que reprobarte.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Genial.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Ve a agarrar la flor en ese jarrón de allá y sal. Tengo que revisar algo afuera, y no dejaré que un niño se quede en la sala de profesores sin supervisión.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>120</ResolutionID>
+          <FunctionCall>AddKickOutOfLounge</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Está bien. He entretenido tu presencia el tiempo suficiente.~ Sal.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. Vaya.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KickOutofLounge</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>150</NodeID>
+      <DialogueText>Ve a agarrar la flor en ese jarrón de allá y sal. Olvidé mi taza de café arriba y no dejaré que un niño se quede en la sala de profesores solo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>No creas que no noté que tú también estás aquí. Regresa a través del agujero por el que te arrastraste.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. Me voy.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KickOutofLoungeHole</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Eso fue una doble negación.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Soy un profesor de ciencias, no un profesor de gramática.~ Ahora sal.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. Me voy.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KickOutofLoungeHole</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Me ocuparé de ti en un momento. Primero tengo que sacar a este raro de aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Caminar lejos.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>900</NodeID>
+      <DialogueText>Ah, ahí estás.</DialogueText>
+      <JumpNode>901</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>901</NodeID>
+      <DialogueText>Estaba preocupado de haber perdido un espécimen perfectamente encontrado. ¿Qué haces vagando por ahí?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uhhh...nada.</OptionText>
+          <DestinationID>902</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>902</NodeID>
+      <DialogueText>Nada....~Me encanta esa respuesta...~Estás a punto de ser nada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerOutOfStudyHall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

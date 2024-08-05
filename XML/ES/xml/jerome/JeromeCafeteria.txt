@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Nueva escuela. Los mismos chicos con los que sentarse.~ ¿Cuál es el sentido de todo esto, de todos modos?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No lo sé, Jerome.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Oye, amigo. Gracias por el pañuelo de antes. Ayudó un poco.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Puedes ayudarme a salir de aquí?</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sin problema.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Necesito subir a ese baño. Traje unas hamburguesas extra, como pediste. ¿Para qué son?</DialogueText>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Stevie se irritó un poco más de la cuenta conmigo hoy y ahora tengo sala de estudio. No voy a ir a la oficina del director por todo esto.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Entonces, qué podemos hacer?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Vamos a empezar una pelea de comida. Atraerá a todos los monitores y te dará una oportunidad para salir. *hl* Solo necesitamos a alguien grande y lo suficientemente tonto para iniciarla.*hle*</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Suena bien.</OptionText>
+          <DestinationID>15</DestinationID>
+          <SetFlag>CarlaFoodFight</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>El otro monitor piensa que está permitido mostrarle a un nuevo estudiante dónde está el baño. Si logras que esa nueva chica te acompañe, probablemente te dejaría subir.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso podría funcionar.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¿Entonces, qué va a ser? ¿Iniciar una pelea de comida o llevar a esa chica contigo arriba?</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vamos a empezar una pelea de comida.</OptionText>
+          <DestinationID>15</DestinationID>
+          <SetFlag>CarlaFoodFight</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Está bien. *hl* Solo necesitas encontrar a alguien dispuesto a iniciarla.*hle* Una vez que comience, debería haber suficiente caos para que puedas salir de aquí.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Entendido!</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Una cosa más...~ mientras estés arriba, *hl*entra a la clase de ciencias y cambia el plan de lecciones a robótica.*hle* Voy a necesitar algunas de esas cosas para terminar nuestro pequeño proyecto.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Listo!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReturnCarlaToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¿A dónde vas?~ ¡Tenemos que subir para confrontar a Lily por lo que le hizo a mi papá! ¡Vamos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>298</NodeID>
+      <DialogueText>Necesitamos encontrar a alguien *hl*grande y tonto para iniciar una pelea de comida.*hle* Hablemos con algunas personas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Así es.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>299</NodeID>
+      <DialogueText>Vamos a conseguirle unas hamburguesas a Buggs. Las necesitará para causar un poco de caos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>¡Vamos, chico!~ ¡Deja de perder el tiempo! Tenemos que subir para confrontar a Lily por lo que le hizo a mi papá. ¡Vamos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Así es.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>501</NodeID>
+      <DialogueText>Supongo que me siento un poco mejor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

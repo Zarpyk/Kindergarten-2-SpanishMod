@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡Ewwwwwww! ¡Qué asco!~ ¡Eso no es seguro para mentes jóvenes e impresionables!</DialogueText>
+      <NPC>Player</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>(¡Correr!)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LeaveLoungeKissing</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

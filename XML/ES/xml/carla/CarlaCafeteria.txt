@@ -1,0 +1,470 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Hola, nuevo! ~ ¿Qué tal te está pareciendo la comida?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Mencionaste que necesitabas mi ayuda?</OptionText>
+          <Flag>CarlaTalkedAboutFlower</Flag>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Tienes flores?</OptionText>
+          <BlockFlag>CarlaTalkedAboutFlower</BlockFlag>
+          <Flag>DannerStartedMission</Flag>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Felix dijo que tenías algo para mí.</OptionText>
+          <Flag>FelixTalktoCarlaLunch</Flag>
+          <FunctionCall>GetJanitorKey</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cómo salgo de aquí?</OptionText>
+          <Flag>JanitorLeaveLunchMission</Flag>          
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Deberías comprar una hamburguesa.</OptionText>
+          <DestinationID>60</DestinationID>
+          <Flag>NuggetBurgerMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Oh sí! ~ ¿Todavía estás buscando ganar puntos con el Dr. Danner, verdad? Bueno, hay una de esas flores en la sala de profesores.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo entro allí?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Stevie es bastante fácil de distraer. Todo lo que tendría que hacer es salir sin un pase.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Estás dispuesto a hacer eso por mí?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Por supuesto... ~ por el precio correcto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuánto?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Dado que me darán un período de estudio por esto, te costará $5.00. ¿Tenemos un trato?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>5</DestinationID>
+          <MoneyLock>5</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡Excelente! ~ Le daré vueltas por el resto del almuerzo. ~ Buena suerte, chico.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetRidofStevie</FunctionCall>
+          <SetFlag>CarlaHasStudyHall</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Está bien. Fine. ~ Solo avísame cuando cambies de opinión.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Así lo haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>7</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¿Ya cambiaste de opinión? ~ Aún puedo distraer a Stevie por ti por $5.00.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>5</DestinationID>
+          <MoneyLock>5</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>¡Vaya, vaya, vaya! ~ ¡Mira quién decidió regresar! ¿Qué te tomó tanto tiempo?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me retuvieron.</OptionText>
+          <DestinationID>9</DestinationID>
+          <FunctionCall>TakeKey</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>¡Era una tarea simple! ~ ¡Devuélveme mi llave! ¡Encontraré mi propia manera de hacer un agujero en la sala de profesores!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buena suerte con eso.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>15</ResolutionID>
+          <FunctionCall>ReturnToStartLunchKey</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Hola Stevie!</DialogueText>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¿Qué? ~ Erm... ~ oh. ~ Hola Carla.</DialogueText>
+      <JumpNode>12</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¿Puedo conseguir un pase para el baño?</DialogueText>
+      <JumpNode>13</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡No puedes! ~ ¡Ya usaste el tuyo hoy!</DialogueText>
+      <JumpNode>14</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¡Bueno, entonces parece que tendré que irme afuera!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>RunOutside</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Puedes olvidarte de ayudarme hoy. Iba a haber algo increíble para ti, pero lo arruinaste. Ahora, vete.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Vete.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Awww... ~ pobre nuevo. Ya engañado para ayudar al Dr. Danner con sus plantas ridículas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Entonces es un no?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Eres tan observador. ~ Sin embargo, hay uno en la sala de profesores.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo entro allí?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¿Buscando causar algo de problemas, eh? Puedo distraer la atención de la señora del almuerzo de la puerta, por una tarifa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hazlo.</OptionText>
+          <DestinationID>26</DestinationID>
+          <MoneyLock>5</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>¡Lo tienes, chico! ~ ¡Esto no durará mucho, así que sal mientras puedas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>DistractLunchLady</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¡Hola, Sra. Margaret! ~ ¡Mírame!</DialogueText>
+      <JumpNode>31</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>¡Por favor, niño! ~ ¡Cálmate! ~ ¡Vuelve a tu asiento de inmediato!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>LunchLady</NPC>
+      <FunctionCall>ClearCameraTarget</FunctionCall>
+      <ResolutionID>32</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>¡No sé qué estás haciendo, chico! ~ ¡Vete o solo habrás desperdiciado tu dinero!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Vaya. Eso fue un desperdicio sólido de $5. Eres realmente tonto, nuevo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es cruel.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Jeje. Relájate, nuevo. ~ Te tengo. Aquí está la llave del armario. ¡Haz una fiesta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>43</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>¿De verdad? Está bien. Estaré aquí si cambias de opinión.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Genial. Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>42</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>¿Cambiar de opinión? Aún puedo distraer a la señora del almuerzo por ti.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hazlo.</OptionText>
+          <MoneyLock>2</MoneyLock>
+          <DestinationID>26</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>Él pagó un buen precio por esa llave. Espero que valga la pena.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo también.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>El chico de la silla de ruedas dijo que alguien vendría a verme, pero no me di cuenta de que eras tú. ¿Lograste colar ese petardo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <ItemToUse>FirecrackerPopped</ItemToUse>
+          <FunctionCall>GiveFirecrackerPopped</FunctionCall>
+          <DestinationID>51</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Interesante. ~ Nunca he visto a alguien colar contrabando en su primer día. Bueno... ~ un trato es un trato. Te conseguiré una clase de química.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>Sin problema. Disfruta de tu clase de química.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Así lo haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>ChangeToChemistry</SetFlag>
+          <ResolutionID>56</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>¿En serio? ~ El chico de la silla de ruedas ya pagó la mitad y no hago reembolsos. Quizás quieras reconsiderar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. De acuerdo.</OptionText>
+          <UsesAction>true</UsesAction>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>54</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>54</NodeID>
+      <DialogueText>Como quieras. Estaré aquí si cambias de opinión.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bueno saberlo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>55</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>¿Cambiaron de opinión? Puedo cambiar la lección de hoy por solo $3.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. De acuerdo.</OptionText>
+          <MoneyLock>3</MoneyLock>
+          <UsesAction>true</UsesAction>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No hay trato.</OptionText>
+          <DestinationID>54</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText>Cambiaré el plan de lecciones a química. No te preocupes por eso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>No. No creo que lo haga. ~ Buen intento, chico. ~ Vaya, te atraparon rápido.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿De qué estás hablando?</OptionText>
+          <DestinationID>61</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>No voy a comer nada que prepare la vieja Margaret. No me gusta la... ~ salsa que usa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entonces está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>65</NodeID>
+      <DialogueText>¡No puedo esperar para volar la tapa de la sala de profesores! ~ Esto va a ser increíble.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me alegra por ti.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>66</NodeID>
+      <DialogueText>Esta cosa es una base perfecta para mi plan. Me alegra que ustedes, los nuevos, sean tan ingenuos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eres un idiota.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>Debería estar a salvo aquí. Obtuvieron lo que querían. ~ *hl* Saldría de aquí mientras ocurre el caos. El director estará aquí pronto. *hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buena idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>501</NodeID>
+      <DialogueText>De ninguna manera me meteré en problemas por una pelea de comida tonta. Ustedes aprenderán a no hacer eso pronto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Probablemente.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

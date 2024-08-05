@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Así que este es el parque aquí, ¿eh?~ No está mal.~ Me hubiera gustado tener unos columpios o algo así, pero la pared de escalada parece bastante peligrosa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es genial, Buggs.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Esta nueva escuela no está tan mal después de todo.~ Este niño rico me está pagando para que acose a su hermano.~ Me encanta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Qué suerte tienes.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

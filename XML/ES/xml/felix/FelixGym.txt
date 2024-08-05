@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Oh, vete al diablo!~ Estoy jugando a atrapar con mi hermano.</DialogueText>
+      <JumpNode>1</JumpNode>     
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Vamos, Felix!~ ¡Él puede jugar con nosotros!</DialogueText>
+      <NPC>Ted</NPC>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Ni de broma! ¡Ahora vete!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>3</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Te dije que te fueras! ¡Ahora, desaparece!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(¡Desaparece!)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>No te estamos hablando. Es triste ver cómo el plan de Teddy falla tan... espectacularmente.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ajá.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¿Qué hemos aprendido hoy, Teddy?</DialogueText>
+      <NPC>Felix</NPC>
+      <JumpNode>6</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>*Suspiro.* Mis planes son tontos, y los tuyos son inteligentes.</DialogueText>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¿Y qué harás la próxima vez que un niño de la calle se te acerque?</DialogueText>
+      <JumpNode>8</JumpNode>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Lo ignoraré...~ eso te incluye a ti, niño. Vete.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SetFailNodeGym</FunctionCall>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Ven conmigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FelixWalkWithPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Estamos casi listos para hacer nuestro movimiento. Teddy, sabes cuál es tu trabajo.</DialogueText>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Claro que sí, Felix!~ ¡No te fallaré! Vamos a hacer esto y luego tú y papá finalmente...</DialogueText>
+      <JumpNode>12</JumpNode>
+      <NPC>Ted</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Sí, sí, sí.~ Ahora, ¡manos a la obra! *hl*Nos encontraremos contigo en el parque.*hle*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>TedLeaveGym</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Ahí está. Estamos listos para avanzar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué le dijiste?</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué sigue?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Le dije que custodiara la ubicación del agujero. Poco sabe él que está protegiendo su tumba.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué sigue?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Ve y dale ese brazo al rarito. Lo necesitaremos para empezar de inmediato.</DialogueText>
+      <Options>    
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <Flag>FelixCompletedRecess</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No conseguí el brazo.</OptionText>
+          <DestinationID>40</DestinationID>
+          <BlockFlag>FelixCompletedRecess</BlockFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Probablemente no. De hecho, ninguno de nosotros lo está desde que Teddy se fue.~ *hl*Supongo que tendrás que deshacerte de la Sra. Jiggly-Pechos de allí.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Vaya, haces muchas preguntas. Ella se ve bastante cansada. *hl*Un buen golpe en la cabeza podría empujarla al límite. Encuentra alguna manera de hacerlo.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Has vuelto. Supongo que el rarito recibió su brazo, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>21</DestinationID>
+          <Flag>NuggetGaveArm</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Aún no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Entonces, ¿por qué no se ha ido aún?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>El profesor no lo dejará.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Oh, claro. *hl*Supongo que tendrás que deshacerte de la Sra. Jiggly-Pechos de allí.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Es casi hora de hacer nuestro movimiento. Con el rarito Nugget cavando el agujero y Teddy 'supervisando' su desarrollo, solo necesitamos una cosa más.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuál es?</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Vamos a necesitar algo para...~ darle un buen golpe. Solo algo que podamos usar para un buen golpeo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Veré qué puedo encontrar.</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Excelente.~ *hl*Llévalo al foso de arena donde se está cavando la tumba.*hle* Te veré allí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FelixLeaveGym</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>¿A dónde crees que vas?~ Aún no le has dado el brazo al rarito.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Vaya, vaya, vaya... tan ansioso por hacer el trabajo. Solo hay una cosa más que hacer antes de irnos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué es eso?</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>¿Qué?!~ ¿Por qué no?!~ ¡Sin brazo no hay tumba!...~ Olvídalo... no me importa.~ Estás despedido. Sal de mi vista.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mi culpa.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>41</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>¡Estás despedido!~ ¡Desaparece!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(¡Desaparece!)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>¡AY!~ ¡Oh, atrápalo, Teddy! ¡Atrápalo, idiota!</DialogueText>
+      <JumpNode>51</JumpNode>
+      <FunctionCall>TurnAroundGym</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Ups. Lo siento, Felix.</DialogueText>
+      <JumpNode>52</JumpNode>
+      <NPC>Ted</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>*hl*¡Estabas justo detrás de mí!~ ¡Deberías haber podido atraparlo!*hle*~ Ahora estamos los dos fuera.</DialogueText>
+      <JumpNode>53</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>¡Lo haré mejor la próxima vez! ¡Lo prometo!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Ted</NPC>
+      <FunctionCall>TwinsWalkOff</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>Buena idea deshacerse de nuestra triste excusa de profesor de educación física. *hl*Ahora solo tienes que darle el brazo al rarito y estaremos listos para salir de aquí.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>Estamos casi listos para hacer nuestro movimiento. Teddy, sabes cuál es tu trabajo.</DialogueText>
+      <JumpNode>111</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>¡Claro que sí, Felix!~ ¡Solo espero no arruinar esto como siempre! ¡Me conoces! ¡Siempre metiendo la pata!</DialogueText>
+      <JumpNode>112</JumpNode>
+      <NPC>Ted</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>Sí, sí, sí.~ Ahora, ¡manos a la obra! *hl*Nos encontraremos contigo en el parque.*hle*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>TedLeaveGym</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

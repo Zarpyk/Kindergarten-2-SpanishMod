@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Isn't recess so much fun? Do you have any fun things you want to do?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nope.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I can sense the contraband. Where is it?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Leave Penny alone.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Oh my!~ There certainly is some contraband around here. I just need to find it.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>1</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Hmmm...~I don't think there's anything over here. Felix must have been mistaken.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkBackToFelix</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>OW!! OH!~ IT HURTS!! HELP ME!! HELP ME!!</DialogueText>
+      <JumpNode>21</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>MOMMY!! PLEASE!!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>RunThroughGate</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Aha!~ I found it! Felix was right.</DialogueText>
+      <JumpNode>26</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Now to analyze the fingerprints...aaaaand it's a match! Felix and one of the new kids both had their fingers on this. I'll just go with the most recent person to touch this.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToPlayerFoundContraband</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Excuse me.~ I seem to have found evidence that you brought contraband with you to school today.~ Please come inside with me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoInsideToGetShot</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>I'm afraid you don't really have a choice in the matter.~ As I'm sure your current guardian will tell you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No way.</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Sorry Felix. There wasn't anything over there. You must have been mistaken. </DialogueText>
+      <JumpNode>31</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Oh?~ Really?~ Hmmmm...~very well then.~ Sorry to trouble you.</DialogueText>
+      <JumpNode>32</JumpNode>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>That's okay Felix.~ I appreciate you trying to help--</DialogueText>
+      <JumpNode>33</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Yes yes.~ Well I have business to attend to. Ta ta.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>FelixWalkBackToCindy</FunctionCall>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>We are on lockdown!~ No one is allowed in the school.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Use the remote.)</OptionText>
+          <DestinationID>41</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <SetFlag>BillyPennySnapped</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>....................................................................................</DialogueText>
+      <JumpNode>42</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>*b*I CAN'T TAKE THIS ANYMORE!!!*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PennyJumpInNuggetHole</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

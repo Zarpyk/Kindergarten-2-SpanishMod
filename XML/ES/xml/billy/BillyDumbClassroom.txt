@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>*Psssst!*~ ¡Hey!~ ¡Oye, chico!~ ¡Aquí atrás!</DialogueText>
+      <JumpNode>-1</JumpNode>     
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Aquí arriba, chico!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué estás haciendo allá arriba?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>No te preocupes por eso. Lily está arriba haciendo algunos amigos. Vamos a necesitar que tú hagas lo mismo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Con quién debería hablar?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>*hl*Cualquiera que tenga rencor contra Applegate. Ella ha hecho enojar a muchos niños en nuestra antigua escuela.*hle* Estoy seguro de que encontrarás a alguien.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué necesitan hacer?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Applegate no se ve muy bien. Apostaría a que está a punto de vomitar. *hl*Deberíamos encontrar a una chica que ocupe uno de los cubículos en el baño de chicas.*hle* Así será más fácil atraparla.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué más?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Necesitamos a alguien que, eh...~ haga el trabajo. *hl*Probablemente alguien con algo de...~experiencia en apuñalar.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Voy a preguntar por ahí.</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>DropRemote</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Bien. Toma esto. Quizás puedas usar a la chica robot para ganarte la confianza de estos chicos. Nos vemos en el almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué hacen los botones?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Hasta luego.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BillyRise</FunctionCall>
+          <SetFlag>BillyStartedMorningTime</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¡Oh sí!~ El verde la invoca. El azul le quita su contrabando. El amarillo desactiva su láser y el rojo lo dispara.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Entendido!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BillyRise</FunctionCall>
+          <SetFlag>BillyStartedMorningTime</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

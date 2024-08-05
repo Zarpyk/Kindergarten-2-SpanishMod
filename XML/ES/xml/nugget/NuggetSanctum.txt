@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Contempla!~ ¡El sagrado santuario de Monstermon!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué está esto detrás de mi estantería?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Dónde más podría estar?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿En la Cueva de Nugget?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>... ¿Silencio místico?</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Como Nugget estaba diciendo, ¡con los 50 talismanes, Nugget puede hacer cosas indescriptibles!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Como qué?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Nugget te lo mostrará!~ ¡Contempla! ¡El poder de Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Contempla.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SummonMonstermon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Y ahora...~ Nugget simplemente chasquea los dedos...</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>NuggetSnap</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Está hecho.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué está hecho?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¡Ven!~ ¡Rápido!~ ¡Nugget no quiere llegar tarde a la escuela!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Solo sigue el juego.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToEndOfWorld</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

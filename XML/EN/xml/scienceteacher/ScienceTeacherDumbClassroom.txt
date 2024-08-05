@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Well well well. Look at all the bad children.~ I expect you all to behave until recess is over.</DialogueText>
+      <JumpNode>1</JumpNode>  
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Please take this time to reflect on how to be less awful in the future.</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>There is to be no talking or moving until the bell rings. Is that clear?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Crystal, sir.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Say nothing.)</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>I SAID NO TALKING!</DialogueText>
+      <FunctionCall>KillPlayerStudyHall</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>...~Clever bunch. We'll see if it lasts.</DialogueText>
+      <FunctionCall>WaitForPlayerMovement</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Ugh...~the coffee I had during lunch is running right through me. I'll be back in a moment. Do not move or talk while I'm gone.</DialogueText>
+      <FunctionCall>LeaveStudyHall</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>I SAID NO MOVING!</DialogueText>
+      <FunctionCall>KillPlayerStudyHall</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>My apologies.~ Good to see you're all behaving.</DialogueText>
+      <FunctionCall>EndStudyHall</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Ahh there's the bell.~ Anyone who pays their lab fee can come with me to science. Otherwise, head over to the gym.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go to science.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <MoneyLock>3</MoneyLock>
+          <SetFlag>PaidLabFee</SetFlag>
+          <FunctionCall>ChangeToSupport</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Go to gym.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToSupport</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Look at all the bad children today. My word there are a lot of you. To make matters worse...~*yawn* I didn't get my coffee.</DialogueText>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>No one move or talk.~ Just...~*yawn*...just be quiet. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>KillPlayerStudyHall</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Say nothing.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WaitForPlayerMovement</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>I'm just gonna...~close my eyes...real quick.</DialogueText>
+      <JumpNode>13</JumpNode>
+      <FunctionCall>StartSleeping</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Zzzzzzzzzzzzzzzz...</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>14</ResolutionID>
+      <FunctionCall>StartCarlaStudyHall</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Zzzzzzzzzzzzzzzz...</DialogueText>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Huh!~ Wha--?!~ Oh...~must have dozed off for a moment there.~ Uh...~right. Anyone who wants to come to science class, come pay your lab fee. Otherwise, go to gym.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go to science.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <MoneyLock>3</MoneyLock>
+          <SetFlag>PaidLabFee</SetFlag>
+          <FunctionCall>ChangeToSupport</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Go to gym.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToSupport</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Huh!~ Wha--?!~ Oh...~must have dozed off for a moment--</DialogueText>
+      <JumpNode>17</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Hey, wait a minute!~ You there!~ You moved from your seat!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>My bad.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Yes it is.~ Very very bad.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerOutOfStudyHall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>My apologies.~ Hey!~ You moved from your seat!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>My bad.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>My apologies.~ Hey!~ You're not supposed to be here.~ What imbicile breaks into study hall?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess I do.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>And it won't happen again.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It won't?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerBrokeIntoStudyHall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>...no talking or movi-~ Hey! You're not supposed to be here.~ What imbicile breaks into study hall?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess I do.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

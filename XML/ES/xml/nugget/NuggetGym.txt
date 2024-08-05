@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Nugget está teniendo problemas para disfrutar del gimnasio hoy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué es eso?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No me importa.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>El brazo de Nugget está desaparecido.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Nugget desearía tener un amigo con quien jugar a la pelota prisionera.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Te alejas de Nugget.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Sin brazo para Nugget. Sin pelo para Nugget. Sin nuggets para Nugget. Nugget está teniendo un mal día.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ahí, ahí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Nugget no tomará prisioneros!~ ¡Las pelotas de esquivar lloverán como nuggets en agujeros de nuggets! ¡Nugget va a--~ Uh oh...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡El equipo de Nugget no ha conseguido ninguna pelota de esquivar!~ *hl*¡Nugget espera que tengas algo con qué bloquear!*hl*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo sí.</OptionText>
+          <ItemToUse>Leg</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>AllThrowBallsBlocked</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo no.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¡Entonces esto va a doler!~ ¡Hiya!</DialogueText>
+      <NPC>Carla</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>CarlaThrowDodgeballAtPlayer</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡El amigo de Nugget lo ha hecho bien! ¡La victoria está asegurada!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí. Genial.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkToLowerBall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¿Qué hará el amigo de Nugget?</DialogueText>
+      <Options>
+        
+        <DialogueOption>
+          <OptionText>Voy a moverme de vuelta.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>MoveBack1</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Voy a moverme hacia adelante.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>MoveUp1</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Voy a moverme hacia abajo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>MoveDown1</FunctionCall>
+          <SetFlag>NuggetInWayDodgeball</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>*hl*¡Es hora de que el Equipo Nugget ataque!*hle* ¡Siente la furia de Nugget!</DialogueText>
+      <FunctionCall>NuggetThrowBall</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>¡Ahora amigo de Nugget!~ ¡Ármate con la pelota de esquivar!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Voy a moverme hacia atrás.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GrabTopBall</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Voy a moverme hacia abajo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>MoveDown2</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>180</NodeID>
+      <DialogueText>¡Ahora ataca!~ ¡Ataca con furia! ¡Ataca por Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Lanza la pelota.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>PlayerThrowAtJerome</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Voy a moverme hacia abajo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>MoveDown2</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>¡Solo queda un enemigo!~ ¡Nugget será victorioso!</DialogueText>
+      <JumpNode>20</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Sí, pero estás contra mí!~ Voy a lanzar esto como solía lanzar comida en nuestra antigua escuela.</DialogueText>
+      <JumpNode>21</JumpNode>
+      <NPC>Buggs</NPC>
+      <FunctionCall>MoveBuggsToFrontMid</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>¡Nugget no tiene miedo del estúpido Buggs! ¡Nugget tiene un plan!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToMidFront</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>¡Ahora amigo de Nugget!~ ¡Haz la cosa!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Muévete hacia abajo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>MoveDownToCatch</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Muévete hacia adelante.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>MoveForwardLast</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Push a Nugget fuera del camino.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>PushNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¡Oooof!~ ¡Atrápalo amigo de Nugget! ¡Haz la cosa!</DialogueText>
+      <JumpNode>26</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>¡La pelota de esquivar ha sido atrapada! ¡El Equipo Nugget es victorioso!~ ¡Nugget gana!~ ¡Nugget gana!</DialogueText>
+      <JumpNode>27</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Lo que sea. La pelota prisionera es estúpida de todos modos.</DialogueText>
+      <NPC>Buggs</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>BuggsWalkOff</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>¡Nugget gana!~ Nugget nunca gana. Nugget realmente ha encontrado un buen amigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me alegra que pienses así.</OptionText>
+          <DestinationID>29</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>Nugget le gustaría presentar a su amigo con--</DialogueText>
+      <FunctionCall>RingBellWonDodgeball</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Finalmente...~ Está bien, niños, ha sido agradable verlos golpearse entre sí, pero es hora de irse.~ Vayan a casa.~ ¡AHORA!</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>31</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Nugget te lo dará afuera.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nos vemos allí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToEndNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Hehehe...~ ¡Te tengo ahora!</DialogueText>
+      <NPC>Buggs</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh no.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BuggsKillPlayerDodgeball</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>¡Oooof!~ ¡Atrápalo amigo de Nugget! ¡Haz la cosa!</DialogueText>
+      <JumpNode>36</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>La pelota de esquivar no fue atrapada. El amigo de Nugget ha abandonado a Nugget.~ Nugget ha perdido.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ups.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>RingBellLostDodgeball</FunctionCall>
+        </DialogueOption>
+      </Options>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>Finalmente...~ Está bien, niños, ha sido agradable verlos golpearse entre sí, pero es hora de irse.~ Vayan a casa.~ ¡AHORA!</DialogueText>
+      <NPC>Teacher</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a casa.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToNextArea</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>¡No amigo de Nugget!!~ ¡Tu cuello es demasiado frágil!~ ¡No seas un héroe!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>BuggsKillPlayerDodgeball</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>¿Tienes el brazo para Nugget? Nugget gustaría tener un brazo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <ItemToUse>CindyArm</ItemToUse>
+          <DestinationID>55</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveCindyArm</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <ItemToUse>MontyArm</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>56</DestinationID>
+          <FunctionCall>GiveMontyArm</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <ItemToUse>StevieArm</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveStevieArm</FunctionCall>
+          <DestinationID>51</DestinationID>
+          <SetFlag>FelixGaveNuggetArm</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Aún no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>A Nugget le gusta este brazo. Nugget ahora está listo para ganar su viaje a la fábrica de nuggets.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien. Empieza a cavar.</OptionText>
+          <DestinationID>52</DestinationID>
+          <Flag>TeacherLeftGym</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien. Empieza a cavar.</OptionText>
+          <DestinationID>53</DestinationID>
+          <BlockFlag>TeacherLeftGym</BlockFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>¡Nugget cavará! ¡Nugget cavará por los nuggets!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Diviértete con eso.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LeaveGymDigHole</FunctionCall>
+          <SetFlag>NuggetLeftGym</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>Nugget cavará, pero *hl*el maestro no dejará salir a Nugget.*hle* El maestro debe ser removido para que Nugget pueda cavar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ella se ha ido.</OptionText>
+          <DestinationID>52</DestinationID>
+          <Flag>TeacherLeftGym</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Veré qué puedo hacer.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>Este brazo es bastante bonito. A Nugget le gusta este brazo. Nugget ahora está listo para ganar su viaje a la fábrica de nuggets.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien. Empieza a cavar.</OptionText>
+          <DestinationID>52</DestinationID>
+          <Flag>TeacherLeftGym</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien. Empieza a cavar.</OptionText>
+          <DestinationID>53</DestinationID>
+          <BlockFlag>TeacherLeftGym</BlockFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText>Este brazo es bastante fuerte por rodar una silla de ruedas. A Nugget le gusta este brazo. Nugget ahora está listo para ganar su viaje a la fábrica de nuggets.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien. Empieza a cavar.</OptionText>
+          <DestinationID>52</DestinationID>
+          <Flag>TeacherLeftGym</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bien. Empieza a cavar.</OptionText>
+          <DestinationID>53</DestinationID>
+          <BlockFlag>TeacherLeftGym</BlockFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

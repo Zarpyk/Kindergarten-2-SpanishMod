@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Esta es una estatua de un nugget gigante. Hay espacio en el frente para algún tipo de ofrenda.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja una flor.)</OptionText>
+          <ItemToUse>GreenFlower</ItemToUse>
+          <FunctionCall>LeaveGreenFlower</FunctionCall>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja una flor.)</OptionText>
+          <ItemToUse>YellowFlower</ItemToUse>
+          <FunctionCall>LeaveYellowFlower</FunctionCall>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Este es un esqueleto de...~algo. No parece humano, pero sí tiene una billetera.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma algo de dinero.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetNuggetCaveMoney</FunctionCall>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Raro.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Esta es una pierna cortada de algún tipo. Nugget no parece quererla en la cueva.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma la pierna.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeLeg</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja la pierna.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Esta es la pila de nuggets que amortiguó mi caída. Algunos teorizan que debería ser más grande, pero aparentemente está bien.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja los nuggets.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Este es un esqueleto de...~algo. No parece humano.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Raro.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>El amigo de Nugget recuerda que a Nugget le gustan las flores. Nugget está agradecido.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>De nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockAltarAchievement</FunctionCall>
+          <ResolutionID>7</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>666</NodeID>
+      <DialogueText>¡Whoa, niño!~ ¿No escuchaste lo que dije?~ Hay un gran monstruo aterrador ahí dentro. *hl*Tenemos que encontrar a alguien que pueda pelear contra él.*hle*</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>667</NodeID>
+      <NPC>Lily</NPC>
+      <DialogueText>Antes de entrar ahí, necesitamos sacar a Penny de lo que sea que esté pasando.~ *hl*¿Hubo algo que mencionara que podría traerla de vuelta?*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pensaré en algo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

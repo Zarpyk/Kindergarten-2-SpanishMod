@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Hey! ¿Qué demonios?!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToPlayerCloset</FunctionCall>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Los niños no se supone que estén aquí! ¡Hay un montón de objetos afilados y productos químicos peligrosos y--!</DialogueText>
+      <JumpNode>2</JumpNode>
+      <FunctionCall>FaceWeapons</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Sangre!~ ¡Hay sangre en el suelo ahí!~ ¿Te cortaste? ¿Estás bien?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No es mi sangre.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Pero-~ pero-~ ¿de quién es la sangre entonces?~ Tendría que ser-- pero no. Eso no tiene sentido. Algo no está bien.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Estás bien, Bob?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Estoy bien. Solo tengo problemas para recordar qué pasó ayer. ¿Por qué está esto aquí? ¿Qué pasó?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No lo sé.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>RingBellCloset</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Esa es la campana.~ ¿Por qué no sales al recreo? Creo que es mejor que averigüe esto por mi cuenta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve al recreo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Uhhhhhh...~ algo huele muuuuy raro...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Sácalo de su trance.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <DestinationID>12</DestinationID>
+          <FunctionCall>SnapBobOutOfIt</FunctionCall>
+          <SetFlag>BillySavedBob</SetFlag>
+          <Flag>BillyCarlaOpenedWall</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Toma el trapeador.)</OptionText>
+          <DestinationID>11</DestinationID>
+          <FunctionCall>TakeBobMop</FunctionCall>
+          <Flag>FelixCompletedRecess</Flag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Déjale a Bob en paz.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Heeeeeeey...~ necesito eso para limpiar un poco de...~ cosas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Solo me voy a ir.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¿QUÉ?!~ ¿Qué- qué está-~ ¿Qué pasó?~ Todo está borroso. ¿Por qué estoy aquí?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Había un gas raro aquí.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Sí.~ Sí, hubo...~ y me hizo olvidar...~ pero está volviendo--</DialogueText>
+      <JumpNode>14</JumpNode>
+      <FunctionCall>SetAngry</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>*b*¡EL MONSTRUO!!*be*</DialogueText>
+      <JumpNode>15</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡¡El hacha todavía está ensangrentada!! Ayer luché contra un monstruo, pero se escapó...~ no, está... ¡todavía está ahí abajo!</DialogueText>
+      <JumpNode>16</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¡Tengo que acabar con eso! ¡Podría lastimar a alguien!~ Quédate aquí, niño.~ ¡Voy a salvar la escuela!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Que Dios te acompañe, Bob.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BobGetAxe</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>*b*¡CARGAAAAAA!!*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>LeaveCloset</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

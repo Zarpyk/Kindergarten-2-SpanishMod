@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Hola Jerome!</DialogueText>
+      <JumpNode>1</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Lily!~ Tú-- tú--</DialogueText>
+      <JumpNode>2</JumpNode>
+      <NPC>Jerome</NPC>
+      <FunctionCall>SetJeromeAngry</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>*b*¡TÚ MATASTE A MI PAPÁ!*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Jerome</NPC>
+      <FunctionCall>JeromePlaceBomb</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Ahora voy a hacer lo que él debería haber hecho.~ Voy a detenerte a ti y tus locas teorías de conspiración.</DialogueText>
+      <JumpNode>4</JumpNode>
+      <NPC>Jerome</NPC>
+      <FunctionCall>UnhoodLily</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Jerome, espera!~ ¡Puedo explicarlo todo!</DialogueText>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡Mentiroso! Sé dónde está Bil--</DialogueText>
+      <NPC>Jerome</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Ella no está mintiendo!</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Sé dónde está Billy.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>DetonateBomb</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¿Qué?~ ¡Por supuesto que está mintiendo!~ Solo está tratando de salvarse.</DialogueText>
+      <NPC>Jerome</NPC>
+      <JumpNode>8</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Jerome...~ ¿alguna vez te detuviste a considerar por qué tu papá tenía explosivos y por qué explotan cuando mencionas a mi hermano?</DialogueText>
+      <JumpNode>9</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>¡Cállate!~ ¡Estoy seguro de que había una razón!~ ¡Es porque estás inestable! ¡Él sabía que ibas tras él!</DialogueText>
+      <NPC>Jerome</NPC>
+      <JumpNode>10</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Sí!~ ¡Porque secuestró a mi hermano y lo convirtió en un monstruo que hace pastillas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso suena loco.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Tú estabas allí!~ ¡Dile tú!~ ¡Todo es cierto!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Es verdad.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Espera...~ ¿tú estabas allí?~ ¿Viste todo?~ ¿Ella está diciendo la verdad?</DialogueText>
+      <NPC>Jerome</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>13</DestinationID>
+          <FunctionCall>SetJeromeCrying</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Entonces mi papá...~ él estaba...~ oh, Dios. Creo que me voy a enfermar.</DialogueText>
+      <NPC>Jerome</NPC>
+      <FunctionCall>LilyWalkToJerome</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Lo siento, Jerome.</DialogueText>
+      <FunctionCall>LilyWalkToPlayer</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Gracias por ayudarme a aclarar las cosas con él.~ Te veré pronto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós, Lily.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LilyLeaveBathroom</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Está bien. Tenemos un problema.~ Penny está subiendo las escaleras. Creo que sabe dónde estoy. Necesitamos salir de aquí ahora.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué hacemos?</OptionText>
+          <DestinationID>17</DestinationID>
+          <SetFlag>LilyEscapeBathroom</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¡Tiene que haber otra salida de aquí!~ ¡Ayúdame a encontrarla o estaremos todos muertos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Eso es perfecto!~ ¡Vamos, chicos! ¡Tenemos que irnos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Sigue a Lily.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FollowLilyToScience</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>No creo que nos haya visto todavía.~ Creo que puedes agarrar el cuchillo y... hacer el trabajo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ay, Dios.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¡Oh no!~ ¡Llegamos demasiado tarde!~ ¡Ella va a conseguir-!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ShootLilyJerome</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

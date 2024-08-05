@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Hay un par de juguetes aquí. Hay una muñeca y un coche de juguete.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma el coche de juguete.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetCar</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Toma la muñeca.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetDollFromChest</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No tomes nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Hay algunos juguetes aquí, pero ninguno de ellos parece útil.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(No tomes nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Hay algunos juguetes aquí, pero solo el girador inquieto parece interesante.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma el girador inquieto.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetFidgeter</FunctionCall>
+          <SetFlag>TookFidgeter</SetFlag>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No tomes nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Eso es raro.~ Hay un juguete extraño aquí que no vi antes. ¡Parece una carta de Monstermon!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo primero.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+          <FunctionCall>UnlockPlushCard</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Este es el cubículo 1.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(No tomes nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>No creo que este sea mi cubículo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Este cubículo tiene una carta de Monstermon en él.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo primero.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetHermitFrog</FunctionCall>
+          <ResolutionID>19</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Este es el cubículo 4.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(No tomes nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Este es el cubículo de Félix. En realidad, no sé qué hay dentro. Sea lo que sea, es verde y está en una bolsa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma las cosas.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetLighterFromCubby</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>19</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No tomes nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Este es el cubículo de Ted.~ Hay $3 aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma el dinero.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeCubbyMoney</FunctionCall>
+          <ResolutionID>19</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No tomes nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Este es el cubículo de Ozzy. Tiene su inhalador dentro.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma el inhalador.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetInhaler</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>19</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No tomes nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Este es el cubículo 8.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(No tomes nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Este cubículo está vacío.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fascinante.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Creo que este es mi cubículo. Puedo dejar algo aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja el cohete de fuego.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>21</ResolutionID>
+          <SetFlag>FirecrackerInCubby</SetFlag>
+          <ItemToUse>Firecracker</ItemToUse>
+          <FunctionCall>LeaveFirecracker</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No dejes nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Solo voy a dejar eso ahí por ahora.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja el cohete de fuego.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>El cohete de fuego todavía está aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Revienta el cohete de fuego.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PopFirecracker</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>TeacherSnapped</SetFlag>
+          <ResolutionID>27</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja el cohete de fuego.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Este es mi cubículo. Está vacío.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Probablemente debería hacer lo que necesito hacer mientras esto sucede.</DialogueText>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Parece que vacían la mayoría de los cubículos antes del estudio.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Qué mal.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <NPC>Teacher</NPC>
+      <DialogueText>¡Hey!~ Sé que me veo como la muerte en este momento, pero mis ojos aún funcionan.~ No se puede hurgar en los cubículos de otras personas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ResetToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Deberíamos estar a salvo aquí. No estará buscando mucho tiempo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y ahora qué?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Voy a volver con Billy.~ Aún tenemos mucho trabajo por hacer.~ Estoy seguro de que *hl*hay algo que puedes hacer aquí*hle* para pasar el tiempo antes del recreo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Buena suerte...~y Jerome...~Lo siento.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>LilyLeaveScience</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

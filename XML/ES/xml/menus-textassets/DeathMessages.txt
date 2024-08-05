@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeathMessages>
+  <TitleText>Te moriste.</TitleText>
+  <LilyText>Lily murió.</LilyText>
+  <BillyText>Billy murió.</BillyText>
+  <RestartCurrentText>Reiniciar área actual.</RestartCurrentText>
+  <RestartOtherText>Reiniciar desde otra área.</RestartOtherText>
+  <RestartFromBedroomText>Reiniciar desde el dormitorio.</RestartFromBedroomText>
+  <QuitText>Salir al menú.</QuitText>
+  <Messages>
+    <DeathMessage>
+      <DeathIndex>0</DeathIndex>
+      <Message>Nueva escuela, mismo conserje.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>1</DeathIndex>
+      <Message>No agites el árbol si las abejas te van a matar.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>3</DeathIndex>
+      <Message>Danner quiere flores o un cadáver. No es exigente.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>4</DeathIndex>
+      <Message>El Dr. Danner es serio cuando dice que salgas de su aula.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>5</DeathIndex>
+      <Message>Los charcos son resbaladizos.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>6</DeathIndex>
+      <Message>Monty está bastante amargado por haber sido dejado arriba. No te acerques demasiado a él y te dejará en paz.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>7</DeathIndex>
+      <Message>Deberías usar tu tiempo un poco mejor.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>8</DeathIndex>
+      <Message>Ozzy puede levantarse con venganza después de usar su inhalador.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>9</DeathIndex>
+      <Message>Las abejas enojadas son malas para tu salud.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>10</DeathIndex>
+      <Message>La criatura planta quiere las flores en un orden diferente.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>11</DeathIndex>
+      <Message>Puede que sea una nueva Cueva Nugget, pero es igual de profunda que la anterior.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>12</DeathIndex>
+      <Message>Deberías traer algo para devolver la pelota.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>13</DeathIndex>
+      <Message>Sal de la línea de visión de Buggs si quieres mantener tu cabeza.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>14</DeathIndex>
+      <Message>No te interpongas en el camino de Nugget.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>15</DeathIndex>
+      <Message>No te muevas ni hables en el aula de estudio. Ahora sería un buen momento para comer una manzana.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>16</DeathIndex>
+      <Message>El Dr. Danner está en el baño. No deberías ir allí.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>17</DeathIndex>
+      <Message>Deberías volver afuera antes de que suene el timbre.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>18</DeathIndex>
+      <Message>Vuelve al aula antes de que se enciendan las luces.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>19</DeathIndex>
+      <Message>Encuentra una manera de distraer a Penny antes de que se dé cuenta de que están rompiendo el casillero.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>20</DeathIndex>
+      <Message>No dejes que nadie expulse a Monty del set de química.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>21</DeathIndex>
+      <Message>Eso era lo incorrecto para mezclar.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>22</DeathIndex>
+      <Message>La criatura te matará si no se distrae con algo.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>23</DeathIndex>
+      <Message>No te acerques demasiado a la criatura.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>24</DeathIndex>
+      <Message>Jerome podría estar un poco enojado porque ayudaste a matar a su padre.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>25</DeathIndex>
+      <Message>No esperes hasta que Penny se acerque para dejar el auto en las escaleras.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>26</DeathIndex>
+      <Message>Deberías presionar un botón que envíe a Penny lejos de ti.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>27</DeathIndex>
+      <Message>No entres a menos que la señora de la comida haya sido removida.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>28</DeathIndex>
+      <Message>Tendrás que salvar a Lily inmediatamente después de matar al primer monstruo.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>29</DeathIndex>
+      <Message>Salva a Billy después de salvar a Lily.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>30</DeathIndex>
+      <Message>Elimina al director antes de que dispare el cañón.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>31</DeathIndex>
+      <Message>No dejes que el monstruo te chupe. Usa las garras robóticas para detenerla.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>32</DeathIndex>
+      <Message>Usa las garras para obligar al monstruo a mirar hacia arriba a Nugget cuando baje.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>33</DeathIndex>
+      <Message>No metas tenedores en el enchufe eléctrico. Esto también aplica a la vida real.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>34</DeathIndex>
+      <Message>Ese era el orden incorrecto.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>35</DeathIndex>
+      <Message>Penny disparará a todos en la cabeza si no se distrae. Quizás algo de antes ayude.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>36</DeathIndex>
+      <Message>No te quedes esperando si decides ayudar al conserje.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>37</DeathIndex>
+      <Message>Realmente quiere esa llave antes de que empiece el almuerzo.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>38</DeathIndex>
+      <Message>Eres un cómplice. Ve arriba y ayuda al anciano.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>39</DeathIndex>
+      <Message>Deberías volver a tu lugar en el aula de estudio antes de que el Dr. Danner te encuentre.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>40</DeathIndex>
+      <Message>No se permite la entrada a los estudiantes en el salón de profesores.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>41</DeathIndex>
+      <Message>Esos cuerpos necesitan ser atendidos o uno de ustedes irá a prisión.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>42</DeathIndex>
+      <Message>Deberías ayudar al conserje a terminar con esos cuerpos.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>43</DeathIndex>
+      <Message>Si Penny encuentra la contrabando junto al árbol, tú serás el culpable.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>44</DeathIndex>
+      <Message>Usa el papel higiénico para distraer al conserje antes de ocuparte de Cindy.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>45</DeathIndex>
+      <Message>Ser atrapado fuera del aula de estudio es una excelente manera de ser enviado a la oficina del director.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>46</DeathIndex>
+      <Message>Consigue el cuchillo antes de acercarte a Applegate.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>47</DeathIndex>
+      <Message>Deberías hacer lo que dice Billy mientras tengas un dispositivo de escucha.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>48</DeathIndex>
+      <Message>No te dejes atrapar con el control remoto. Llévaselo a Lily y Billy antes de que Penny complete su escaneo.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>49</DeathIndex>
+      <Message>No es seguro quedarse en el armario del conserje demasiado tiempo.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>50</DeathIndex>
+      <Message>El director te está esperando abajo. Es mejor salir por donde entraste.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>51</DeathIndex>
+      <Message>Nugget está en una mejor situación que tú en este momento.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>52</DeathIndex>
+      <Message>Deberías haber entregado la declaración.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>53</DeathIndex>
+      <Message>Encuentra una manera de escapar del baño. Tu destornillador podría ayudar.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>54</DeathIndex>
+      <Message>No te envíes a la oficina del director.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>55</DeathIndex>
+      <Message>Si Billy llama la atención de la señora de la comida, todos estarán en problemas.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>56</DeathIndex>
+      <Message>Penny te encontrará si tienes contrabando cuando suene el timbre.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>57</DeathIndex>
+      <Message>Probablemente sea mejor que simplemente no subas.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>58</DeathIndex>
+      <Message>No te quedes afuera. Entra antes de que suene el timbre.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>59</DeathIndex>
+      <Message>No te dejes atrapar en el aula de estudio si no tienes aula de estudio.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>60</DeathIndex>
+      <Message>Entra sigilosamente por la oficina del director para evitar ser atrapado.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>61</DeathIndex>
+      <Message>Sal del baño antes de que el conserje se dé cuenta de que has obstruido el inodoro.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>62</DeathIndex>
+      <Message>Asegúrate de que Monty recupere su llave del ascensor.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>63</DeathIndex>
+      <Message>Mata a la criatura que te está mirando antes de hacer cualquier otra cosa.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>64</DeathIndex>
+      <Message>Asegúrate de que todas las criaturas estén muertas antes de ir por el director.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>65</DeathIndex>
+      <Message>Probablemente sea mejor que no te presentes en absoluto, si no tienes las muestras de cabello.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>66</DeathIndex>
+      <Message>No vuelvas a salir allí.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>67</DeathIndex>
+      <Message>No es una buena idea aplastar un dispositivo explosivo activo.</Message>
+    </DeathMessage>
+    <DeathMessage>
+      <DeathIndex>68</DeathIndex>
+      <Message>Botón incorrecto.</Message>
+    </DeathMessage>
+  </Messages>
+</DeathMessages>

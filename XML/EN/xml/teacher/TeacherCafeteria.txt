@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>*b*THAT'S IT!! I'VE HAD IT!!*be*</DialogueText>
+      <JumpNode>1</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I draw the line on students trying to stab me!~ Everyone go home NOW!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go home.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoHome</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

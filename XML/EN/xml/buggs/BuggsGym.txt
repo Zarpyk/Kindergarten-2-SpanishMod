@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Only water?~ I wish they would let us have cherry soda!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Here.</OptionText>
+          <DestinationID>1</DestinationID>
+          <ItemToUse>SodaRed</ItemToUse>
+          <FunctionCall>GiveSoda</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That's too bad.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Thanks kid!~ This is much better.~ It'll help me keep my figure. You can have this Monstermon card for helping me out.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's great.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Soda is so much better than water.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure it is.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Sounds like we need to get into that locker.~ I'm gonna talk to this Carla girl. Apparently she's good at opening locks.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>51</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>*hl*Meet me upstairs by the lockers.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds good.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>Uhhh...~I couldn't help but overhear what that overgrown nerd just said.~ Today's lesson plan isn't about magnets?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess not.</OptionText>
+          <DestinationID>61</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>You're useless! Now we'll never get our stuff back!~ I'm gonna beat you so hard after school!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aw man.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>BuggsWillKillAfterSchool</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>*Sigh*~ My life is ruined...~ It can't actually get worse.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what are we doing here?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Trying your best not to look like me in 30 years. Go run laps or bounce that orange ball or something.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess we can do that.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>I'm gonna go stand over there and try to keep the room from spinning.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I wouldn't expect anything less.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>20</ResolutionID>
+          <BlockFlag>NuggetCompletedRecess</BlockFlag>
+          <FunctionCall>WalkToBleachers</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I wouldn't expect anything less.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>NuggetCompletedRecess</Flag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>I suppose it could be if Nugget was my child instead of just my student.</DialogueText>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>Nugget is offended by scantily-clad teacher's comments!</DialogueText>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Yeah?~ Teacher doesn't care!</DialogueText>
+      <JumpNode>6</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Hey kids!~ Anyone who hits Nugget with a dodgeball gets a gold star!</DialogueText>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Nugget would like to see the other children try!~ Nugget will not be bested!</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartDodgeball</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Well this ought to be interesting.~ One of you hurry up and smack him! I'm gonna watch from the bleachers.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToBleachers</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Teacher! Teacher! Nugget wants to play dodgeball!</DialogueText>
+      <JumpNode>11</JumpNode>
+      <NPC>Nugget</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Sure. Whatever makes you happy Nugget.~ I just hope someone is able to knock some sense into you.</DialogueText>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Go run laps or toss a ball or something.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Hey you little weasel! You're required by law to play!~ Now go play!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>But I have to go to the bathroom.</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Then pee in the water fountain! You're not leaving this gym!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gross.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>20</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>OOOF!!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToJeromeAndCarla</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>Okay who did it?! Who threw that ball?!</DialogueText>
+      <JumpNode>42</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>It was this Jerome kid!~ He tried to take the ball from me and when I tried to get it back he just threw it in your direction!</DialogueText>
+      <NPC>Carla</NPC>
+      <JumpNode>43</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>What?!~ That's a lie! This kid came over and helped her snatch it out of my hands! It went flying when they made me let go!</DialogueText>
+      <NPC>Jerome</NPC>
+      <JumpNode>44</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>Both of you shut up!~ What really happened?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Carla is telling the truth.</OptionText>
+          <DestinationID>45</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>That's what I thought. Jerome...~do you know how bad my head hurts right now?</DialogueText>
+      <JumpNode>46</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>46</NodeID>
+      <DialogueText>Not more than the waistband on those shorts I'm guessing.</DialogueText>
+      <NPC>Jerome</NPC>
+      <JumpNode>47</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>47</NodeID>
+      <DialogueText>Okay, now I'm mad!</DialogueText>
+      <JumpNode>48</JumpNode>
+      <FunctionCall>GoHitJerome</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>48</NodeID>
+      <DialogueText>Ow! Hey! Stop! </DialogueText>
+      <JumpNode>49</JumpNode>
+      <NPC>Jerome</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>49</NodeID>
+      <DialogueText>Screw this! I'm out of here!</DialogueText>
+      <JumpNode>50</JumpNode>
+      <FunctionCall>JeromeLeave</FunctionCall>
+      <NPC>Jerome</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Come back here!~ This is making me feel better!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>TeacherLeaveGym</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>Oh thank God! The day is finally over. Get out of my sight! All of you! NOW!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go home.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToEndTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>*Huff* Huff* *Huff*</DialogueText>
+      <JumpNode>102</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>*b*EVERYONE GO HOME!!*be*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go home.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToEndTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>150</NodeID>
+      <DialogueText>You--~ you were supposed to be upstairs with Monty making me pills!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I couldn't pay the lab fee.</OptionText>
+          <DestinationID>151</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>151</NodeID>
+      <DialogueText>That's no excuse! I need them!~ I just--~ *sigh.* Forget it. Just go throw a ball around or something.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkToBleachers</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>155</NodeID>
+      <DialogueText>Well would you look who it is?!</DialogueText>
+      <NPC>Monty</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Who is it?</OptionText>
+          <DestinationID>156</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>156</NodeID>
+      <DialogueText>You, you idiot! You were supposed to give me my key back so we could go to science class and make those pills!</DialogueText>
+      <NPC>Monty</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh yeah.</OptionText>
+          <DestinationID>157</DestinationID>
+          <FunctionCall>OpenCannonGym</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>157</NodeID>
+      <DialogueText>'Oh yeah.' You know what, kid? I'm done with you. You've wasted enough of my time and money today.</DialogueText>
+      <NPC>Monty</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>My bad.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FireCannon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

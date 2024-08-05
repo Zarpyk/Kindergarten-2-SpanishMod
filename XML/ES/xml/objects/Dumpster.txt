@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Es un contenedor de basura. Suena como si alguien se estuviera riendo adentro.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Golpea el contenedor de basura.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BangOnDumpster</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No toques el contenedor de basura.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Creo que estas son todas las partes de Bob. Estoy asombrado de que quepa en tan pocas bolsas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja de burlarte de los muertos.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Esta puerta lleva a la oficina del director. Está cerrada con llave.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Vaya faena.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Esta es una flor verde.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma la flor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetFlowerDumpster</FunctionCall>
+          <SetFlag>GotGreenFlower</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja la flor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Hay una puerta aquí que no se mueve. *hl*Tengo que abrirla desde el otro lado.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>What part of 'you're not allowed in here' is so hard for you to understand?</DialogueText>
+      <NPC>ScienceTeacher</NPC>
+      <JumpNode>1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Nugget understands the big head man's orders.~ Nugget just does not care.~ Nugget's nuggets are far too important.</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>You're lucky the principal forbid us from harming you.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>ScienceTeacher</NPC>
+      <ResolutionID>7</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>There.~ Your lunch is done microwaving. Now get out of here.</DialogueText>
+      <JumpNode>4</JumpNode>
+      <NPC>ScienceTeacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Nugget appreciates being able to use the microwave. Cold nuggets are bad nuggets. They do not make for a suitable Nug-</DialogueText>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>*b*GET OUT!*be*</DialogueText>
+      <JumpNode>6</JumpNode>
+      <NPC>ScienceTeacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Very well...~Nugget is leaving.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>NuggetLeaveLounge</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Nugget is excited about having his warm Nuggets.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's nice, Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

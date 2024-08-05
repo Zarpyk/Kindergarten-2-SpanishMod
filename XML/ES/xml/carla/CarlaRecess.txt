@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Ponte en la fila, gringo! ~ Aún es mi turno de brincar en la cama elástica.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quieres pelear?</OptionText>
+          <DestinationID>50</DestinationID>
+          <ItemToUse>Deck</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tenemos un trabajo para ti.</OptionText>
+          <DestinationID>1</DestinationID>
+          <Flag>TedAskCarlaToOpenLocker</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Ah, sí?</DialogueText>
+      <FunctionCall>JumpOffTrampoline</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¿Y por qué debería sentirme inclinado a ayudar al niño que me puso chicle en el cabello esta mañana?</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Lo siento mucho por eso, pero si sirve de algo, mi plan ha sido bastante éxi--</DialogueText>
+      <JumpNode>4</JumpNode>
+      <NPC>Ted</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Cállate, snob. ¿Conseguiste las tijeras que te pedí?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <ItemToUse>Scissors</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GiveScissors</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No lo hice.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Bien.~ Al menos tengo eso a mi favor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Así que nos ayudarás?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Ugh... Supongo... ~si haces un favor más por mí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y eso es?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¿Ves a ese niño en silla de ruedas allá? Ha estado haciendo algunos movimientos en mi territorio hoy.~ Tengo que mostrarle que no debe hacer eso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo?</OptionText>
+          <DestinationID>8</DestinationID>
+          <FunctionCall>GetScrewdriverRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Aquí tienes un destornillador.~ Asegúrate de que sus ruedas estén... menos que operativas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Podemos hacer eso.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>¡De ninguna manera! ~ ¡Él nos verá!</DialogueText>
+      <NPC>Ted</NPC>
+      <JumpNode>10</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Son dos de ustedes! ~ Uno de ustedes finge comprar algo en el pequeño puesto mientras el otro se cuela detrás de él y le quita un tornillo. No es tan complicado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo tenemos.</OptionText>
+          <DestinationID>110</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>Bien. Ven a verme cuando esté hecho.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hecho.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>100</ResolutionID>
+          <FunctionCall>TriggerTedPlan</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>¿Lo hiciste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aún no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Bien hecho.~ Está bien.~ Un trato es un trato. Me aseguraré de que el casillero naranja de Ozzy esté abierto para cuando llegues a él.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Puedes agarrar el inhalador para nosotros?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>13</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Eso no es parte de nuestro trato. Solo dijiste el casillero naranja. Vas a tener que sacar lo que quieras de ahí por tu cuenta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>13</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>El casillero naranja estará abierto después de que suene la campana. Tienes mi palabra.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien, Carla.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Hehe... ~ claro, pero no me voy a bajar de esta cama elástica. ~ Mi tabla verde y roja puede enfrentarse a cualquiera.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartMonstermonBattle</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>Ya imaginaba que ganaría.~ No te sientas mal, chico.~ He estado haciendo esto durante mucho tiempo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tienes cinco.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>¡Solo ganaste porque estaba distraído brincando! Lo que sea.~ Solo toma esto. De todos modos, no le queda a mi tabla.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>451</DestinationID>
+          <FunctionCall>UnlockCoral</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>451</NodeID>
+      <DialogueText>Ahora déjame brincar. Estoy cansado de batallar por hoy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tenemos un trabajo para ti.</OptionText>
+          <DestinationID>1</DestinationID>
+          <Flag>TedAskCarlaToOpenLocker</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Diviértete.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

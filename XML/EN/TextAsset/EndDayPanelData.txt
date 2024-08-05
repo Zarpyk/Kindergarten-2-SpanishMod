@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EndDayPanelData>
+  <DayCompleteText>Day Complete!</DayCompleteText>
+  <NewItemUnlockedText>New Item Unlocked!</NewItemUnlockedText>
+  <NewClothingUnlockedText>New Clothing Unlocked!</NewClothingUnlockedText>
+  <NewMonstermonUnlockedText>New Monstermon Cards Unlocked!</NewMonstermonUnlockedText>
+  <ToolBeltName>Bob's Toolbelt</ToolBeltName>
+  <LaserName>Penny's Laser Beam</LaserName>
+  <ChemicalName>Felix's Strange Chemical</ChemicalName>
+  <APlusName>An A+</APlusName>
+  <PinName>Prestigious Pin</PinName>
+  <PlushieName>A Monstermon Plushie</PlushieName>
+  <BombName>Carla's Laser Bomb</BombName>
+  <RemoteName>Faculty Remote</RemoteName>
+  <DeckName>All Monstermon and Outfit Locations Revealed!</DeckName>
+</EndDayPanelData>

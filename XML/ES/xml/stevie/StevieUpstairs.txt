@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>...¡somos lo único que está entre el caos y el orden! ¿¡Entiendes!?</DialogueText>
+      <JumpNode>1</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Sí, hermano. Lo entiendo. Es solo supervisar los pasillos. No es tan gran cosa.</DialogueText>
+      <NPC>HallMonitor</NPC>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¿¡No es tan gran cosa?! Si no vas a tomarte esto en se--</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>*¡Suspiro!*</DialogueText>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Estudiante! ¡En los pasillos! ¡Antes de la campana! ¡Sala de estudio! ¡Sala de estudio!</DialogueText>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Vaya.~ Estás demasiado metido en esto de ser monitor de pasillos, ¿no?</DialogueText>
+      <NPC>HallMonitor</NPC>
+      <JumpNode>6</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>¡Esta es tu oportunidad para demostrarte, novato! ¡Lleva a este chico a la oficina del director!</DialogueText>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Está bien. Me encargaré de eso. Ve a monitorear abajo o algo así.</DialogueText>
+      <NPC>HallMonitor</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkDownstairs</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Te lo digo, nuevo monitor, estos pasillos pueden ser peligrosos. Supervisar pasillos es el noveno trabajo más peligroso en...</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>FadeMonitor</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Espera!~ ¡Detente! ¿Dónde-~</DialogueText>
+      <JumpNode>12</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¡NO PUEDES SIMPLE Y SENCILLAMENTE RENUNCIAR EN TU PRIMER DÍA!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>CutToUnderground</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡No es tan difícil encontrar el baño, chico!~ ¡Vuelve abajo ahora!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. Voy.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ForceDownstairs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

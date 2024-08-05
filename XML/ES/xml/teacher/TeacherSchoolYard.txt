@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Oh...~eres tú. ¿Cómo va uhhhh...~cómo te va?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Estás bien?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nugget está atrapado detrás de una rejilla de alcantarilla.</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No necesito involucrarme en esto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Estoy...¡estoy genial! Un poco cansado tal vez...~o algo así.~ No tendrás alguno de esos pastillas que tenías ayer, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No. Lo siento.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Entonces deja de molestarme! ¡La campana aún no ha sonado, así que no tengo que soportarte ahora mismo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pero yo-</OptionText>
+          <DestinationID>3</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>TriggerSnap</FunctionCall>
+          <SetFlag>TeacherSnap1</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja que se recomponga.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡NO!!~ ¡No hoy!~ *hl*Estoy tan cerca de estallar ahora mismo y voy a necesitar toda mi energía para cuando Cindy cause un problema!*hle* ¡Sal de mi cara!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja que se recomponga.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>No te estoy hablando más. No puedo soportarlo. Ve lejos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¿Él tiene alguna pastilla consigo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No lo creo.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Entonces puede quedarse ahí abajo. Un niño menos del que preocuparme hoy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eres un durazno.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¿Registros?~ Sí, tengo un registro de que eres un verdadero dolor en mi enorme trasero.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quiero decir registros académicos.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Oh! ¿Se suponía que debíamos mantener esos? Vaya. No lo sabía.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eres un maestro.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¡Sí! ¡Un maestro que enseña jardín de infantes!~ ¿Por qué quieres tus registros con tanto fervor?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>El profesor de ciencias dice que estoy por debajo del promedio.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡Bueno, él tiene razón! ¡Ahora lárgate! No puedo lidiar contigo ahora mismo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a perderte.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>14</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¡Dije que te fueras!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Estás bien?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No necesito involucrarme en esto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Mira, niño...~estoy tan cerca de perder la calma. *hl*No me hables ahora mismo.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pero yo-</OptionText>
+          <DestinationID>21</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GoInsideCoolOff</FunctionCall>
+          <SetFlag>TeacherSnap2</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja que se recomponga.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>¡Nope!~ No voy a lidiar contigo. Voy a entrar y calmarme. *hl*Estoy a punto de volverme loco. Quizás la señora de la comida pueda hacerme un sándwich.*hle*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>TriggerBuggsClue</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Oh...~uh...oh querido.~ Esto es embarazoso.</DialogueText>
+      <JumpNode>31</JumpNode>
+      <FunctionCall>FocusPrincipal</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>¿Qué pasa, Sra. Applegate?</DialogueText>
+      <JumpNode>32</JumpNode>
+      <NPC>Principal</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Parece que he...~eh...perdido eso...~esa cosa realmente importante que me diste en la orientación.</DialogueText>
+      <JumpNode>33</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>*Suspiro*~ Está bien.~ Te conseguiré otro para la hora del almuerzo.~ *hl*Buscaremos a todos los estudiantes a medida que entren para asegurarnos de que ninguno de ellos lo tenga.*hle*</DialogueText>
+      <JumpNode>34</JumpNode>
+      <NPC>Principal</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>¡Bob!~ Asegúrate de revisar a todos los que suben por la rampa en busca de dispositivos especiales.</DialogueText>
+      <JumpNode>35</JumpNode>
+      <NPC>Principal</NPC>
+      <FunctionCall>FocusBob</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Eh...~¿seguro?~ ¿Qué tipo de dispositivos especiales?</DialogueText>
+      <JumpNode>36</JumpNode>
+      <NPC>Bob</NPC>
+      <FunctionCall>FocusPrincipal</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Lo sabrás cuando lo veas. ¡Gracias!</DialogueText>
+      <JumpNode>37</JumpNode>
+      <NPC>Principal</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>Penny, por favor, empieza a buscar el dispositivo especial de la Sra. Applegate.</DialogueText>
+      <JumpNode>38</JumpNode>
+      <NPC>Principal</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>Sí, mami.~ Ajustaré lo que estoy buscando. *hl*Debería poder encontrarlo antes de que suene la campana.*hle*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Penny</NPC>
+      <FunctionCall>AddPennyEvents</FunctionCall>
+      <ResolutionID>-1</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>Voy a ser despedido en mi primer día por perder ese control remoto. Al menos no me hicieron una prueba de drogas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tú tienes suerte.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>200</NodeID>
+      <DialogueText>*b*¡NUGGET!!*be*</DialogueText>
+      <FunctionCall>WalkToNuggetEndWorld</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>201</NodeID>
+      <DialogueText>¡Esto tiene tus extrañas vibras por todas partes!~ ¿Qué hiciste?!~ ¿Por qué eres tan raro?!~ ¿Qué estás usando?!~ Exijo respuestas-</DialogueText>
+      <FunctionCall>GetStruckByLightning</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>700</NodeID>
+      <DialogueText>¿A dónde crees que vas?!</DialogueText>
+      <FunctionCall>PanToTeacher</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>701</NodeID>
+      <DialogueText>¡Aún no me has dado mis pastillas!</DialogueText>
+      <FunctionCall>RunToPlayerEndDay</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>702</NodeID>
+      <DialogueText>¿Y bien?~ ¿Dónde están?!~ ¿Dónde están mis pastillas?! ¿Las conseguiste?~ ¡Dámelas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. Aquí.</OptionText>
+          <DestinationID>703</DestinationID>
+          <ItemToUse>Pill</ItemToUse>
+          <FunctionCall>GivePill</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No pude hacerlo.</OptionText>
+          <DestinationID>715</DestinationID>
+          <FunctionCall>NoPillsEnd</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>703</NodeID>
+      <DialogueText>Oh, dulce dulce droga de los dioses! ~*GLUP*</DialogueText>
+      <JumpNode>704</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>704</NodeID>
+      <DialogueText>AAAAAAAAAAAAHHHHHHHHHH...</DialogueText>
+      <JumpNode>705</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>705</NodeID>
+      <DialogueText>Tú...~realmente eres el mejor estudiante que he tenido.~ Muchas gracias.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me alegra haber podido habilitar tu hábito.</OptionText>
+          <DestinationID>706</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>706</NodeID>
+      <DialogueText>Creo que es hora de que siga adelante.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Seguir adelante?</OptionText>
+          <DestinationID>707</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>707</NodeID>
+      <DialogueText>Realmente odio a Cindy...~y a Nugget...~y a Buggs...~y a todos los niños aquí. Excepto a ti. Eres genial.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ummmm...gracias.</OptionText>
+          <DestinationID>708</DestinationID>
+          <FunctionCall>GetPennyRemote</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>708</NodeID>
+      <DialogueText>Si me voy...~creo que deberías tener esto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué es?</OptionText>
+          <DestinationID>709</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>709</NodeID>
+      <DialogueText>Es un control remoto para eh...~la hija del director.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Woah.</OptionText>
+          <DestinationID>710</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>710</NodeID>
+      <DialogueText>Sí...~esa es otra razón por la que quiero irme. Demasiados robots. Demasiada responsabilidad.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué hace?</OptionText>
+          <DestinationID>711</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>711</NodeID>
+      <DialogueText>Solo hay unos pocos botones en él. Creo que puedes hacer que ella venga a tu ubicación y desactivar sus detectores y cosas. No sé. No leí el manual.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bueno...gracias, supongo.</OptionText>
+          <DestinationID>712</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>712</NodeID>
+      <DialogueText>Sí...~Que tengas una buena vida. Quédate en la escuela. No consumas drogas. Ya sabes cómo va.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿De verdad?</OptionText>
+          <DestinationID>713</DestinationID>
+          <FunctionCall>WalkOffScreenEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>713</NodeID>
+      <DialogueText>¡Adiós!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós, Sra. Applegate.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EndDayTeacher</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>715</NodeID>
+      <DialogueText>*Sniff* ¿No pudiste hacerlo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo siento.</OptionText>
+          <DestinationID>716</DestinationID>
+          <FunctionCall>WalkOffScreenEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>716</NodeID>
+      <DialogueText>Entonces parece que tendré que encontrar un bar. Tiene que haber uno por aquí-~ oh espera, estamos en una zona escolar. Leyes estúpidas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que también debería irme.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EndDayTeacher</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>So this is the playground here, huh?~ Not bad.~ Woulda liked some monkey bars or something, but the rock wall seems pretty dangerous.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's great, Buggs.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>This new school isn't so bad after all.~ This rich kid is paying me to bully his brother.~ I love it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lucky you.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

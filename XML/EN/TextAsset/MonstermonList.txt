@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<MonstermonList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MonstermonCards>
+    <Monstermon>
+      <id>0</id>
+      <name>Celestial Slug</name>
+      <type>Magical</type>
+      <color>Blue</color>
+      <action>
+        <id>1</id>
+        <cost>1</cost>
+        <description>Deal 2 damage.</description>
+        <damage>2</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Red Monstermon's damage by 3.</description>
+        <blockValue>3</blockValue>
+        <blockColor>
+          <string>Red</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>1</id>
+      <name>Hard Boogar</name>
+      <type>Beast</type>
+      <color>Blue</color>
+      <action>
+        <id>13</id>
+        <cost>2</cost>
+        <description>Deal 4 damage.</description>
+        <damage>4</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Monstermon's damage by 1.</description>
+        <blockValue>1</blockValue>
+        <blockColor>
+          <string>All</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>2</id>
+      <name>Bucket O Water</name>
+      <type>Magical</type>
+      <color>Blue</color>
+      <action>
+        <id>3</id>
+        <cost>1</cost>
+        <description>Deal 2 damage, +2 if your top discard is Blue.</description>
+        <damage>2</damage>
+        <bonusDamage>2</bonusDamage>
+        <condition>
+          <string>Discard</string>
+          <string>Blue</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Monstermon's damage by 1.</description>
+        <blockValue>1</blockValue>
+        <blockColor>
+          <string>All</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>3</id>
+      <name>Pale Tuna</name>
+      <type>Fish</type>
+      <color>Blue</color>
+      <action>
+        <id>1</id>
+        <cost>1</cost>
+        <description>Deal 2 damage.</description>
+        <damage>2</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Red Monstermon's damage by 3.</description>
+        <blockValue>3</blockValue>
+        <blockColor>
+          <string>Red</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>4</id>
+      <name>Ultralodon</name>
+      <type>Fish</type>
+      <color>Blue</color>
+      <action>
+        <id>14</id>
+        <cost>3</cost>
+        <description>Deal 6 damage.</description>
+        <damage>6</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>0</cost>
+        <description />
+        <blockValue>0</blockValue>
+        <blockColor>
+          <string />
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>5</id>
+      <name>Carnivorous Nimbus</name>
+      <type>Beast</type>
+      <color>Blue</color>
+      <action>
+        <id>13</id>
+        <cost>2</cost>
+        <description>Deal 4 damage.</description>
+        <damage>4</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Monstermon's damage by 1.</description>
+        <blockValue>1</blockValue>
+        <blockColor>
+          <string>All</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>6</id>
+      <name>Tiny Squid</name>
+      <type>Fish</type>
+      <color>Blue</color>
+      <action>
+        <id>1</id>
+        <cost>1</cost>
+        <description>Deal 2 damage.</description>
+        <damage>2</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Red Monstermon's damage by 3.</description>
+        <blockValue>3</blockValue>
+        <blockColor>
+          <string>Red</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>7</id>
+      <name>Coral That Looks Like Hand</name>
+      <type>Odd Shape</type>
+      <color>Blue</color>
+      <action>
+        <id>9</id>
+        <cost>2</cost>
+        <description>Deal 3 damage, +3 if your hand is all Blue.</description>
+        <damage>3</damage>
+        <bonusDamage>3</bonusDamage>
+        <condition>
+          <string>Hand</string>
+          <string>Blue</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>2</cost>
+        <description>Block a Red Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Red</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>8</id>
+      <name>Hermit Frog</name>
+      <type>Beast</type>
+      <color>Blue</color>
+      <action>
+        <id>7</id>
+        <cost>1</cost>
+        <description>Deal 1 damage. Gain 1 Mana.</description>
+        <damage>1</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Mana</string>
+          <string>1</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>0</cost>
+        <description />
+        <blockValue>0</blockValue>
+        <blockColor>
+          <string />
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>9</id>
+      <name>Castle of Sand</name>
+      <type>Artifact</type>
+      <color>Blue</color>
+      <action>
+        <id>15</id>
+        <cost>2</cost>
+        <description>Deal 3 damage. +2 if you have less HP.</description>
+        <damage>3</damage>
+        <bonusDamage>2</bonusDamage>
+        <condition>
+          <string>LessHP</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>3</cost>
+        <description>Reflect a Red Monstermon.</description>
+        <blockValue>-1</blockValue>
+        <blockColor>
+          <string>Red</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>10</id>
+      <name>Man on Fire</name>
+      <type>Unfortunate</type>
+      <color>Red</color>
+      <action>
+        <id>2</id>
+        <cost>1</cost>
+        <description>Deal 2 damage, +2 if your top discard is Red.</description>
+        <damage>2</damage>
+        <bonusDamage>2</bonusDamage>
+        <condition>
+          <string>Discard</string>
+          <string>Red</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Monstermon's damage by 1.</description>
+        <blockValue>1</blockValue>
+        <blockColor>
+          <string>All</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>11</id>
+      <name>Chair of Spikes</name>
+      <type>Artifact</type>
+      <color>Red</color>
+      <action>
+        <id>13</id>
+        <cost>2</cost>
+        <description>Deal 4 damage.</description>
+        <damage>4</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Monstermon's damage by 1.</description>
+        <blockValue>1</blockValue>
+        <blockColor>
+          <string>All</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>12</id>
+      <name>Cigaretmon</name>
+      <type>Magical</type>
+      <color>Red</color>
+      <action>
+        <id>1</id>
+        <cost>1</cost>
+        <description>Deal 2 damage.</description>
+        <damage>2</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Green Monstermon's damage by 3.</description>
+        <blockValue>3</blockValue>
+        <blockColor>
+          <string>Green</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>13</id>
+      <name>Dune Worm</name>
+      <type>Beast</type>
+      <color>Red</color>
+      <action>
+        <id>14</id>
+        <cost>3</cost>
+        <description>Deal 6 damage.</description>
+        <damage>6</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>0</cost>
+        <description />
+        <blockValue>0</blockValue>
+        <blockColor>
+          <string />
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>14</id>
+      <name>Stressed Llama</name>
+      <type>Beast</type>
+      <color>Red</color>
+      <action>
+        <id>1</id>
+        <cost>1</cost>
+        <description>Deal 2 damage.</description>
+        <damage>2</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Green Monstermon's damage by 3.</description>
+        <blockValue>3</blockValue>
+        <blockColor>
+          <string>Green</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>15</id>
+      <name>Cyclops Duckling</name>
+      <type>Beast</type>
+      <color>Red</color>
+      <action>
+        <id>7</id>
+        <cost>1</cost>
+        <description>Deal 1 damage. Gain 1 Mana.</description>
+        <damage>1</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Mana</string>
+          <string>1</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>0</cost>
+        <description />
+        <blockValue>0</blockValue>
+        <blockColor>
+          <string />
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>16</id>
+      <name>Teenage Mutant Ninja Zombie</name>
+      <type>Humanoid</type>
+      <color>Red</color>
+      <action>
+        <id>1</id>
+        <cost>1</cost>
+        <description>Deal 2 damage.</description>
+        <damage>2</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Green Monstermon's damage by 3.</description>
+        <blockValue>3</blockValue>
+        <blockColor>
+          <string>Green</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>17</id>
+      <name>Lonely Dragon</name>
+      <type>Beast</type>
+      <color>Red</color>
+      <action>
+        <id>13</id>
+        <cost>2</cost>
+        <description>Deal 4 damage.</description>
+        <damage>4</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Monstermon's damage by 1.</description>
+        <blockValue>1</blockValue>
+        <blockColor>
+          <string>All</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>18</id>
+      <name>Million-Head Hydra</name>
+      <type>Beast</type>
+      <color>Red</color>
+      <action>
+        <id>8</id>
+        <cost>2</cost>
+        <description>Deal 3 damage, +3 if your hand is all Red.</description>
+        <damage>3</damage>
+        <bonusDamage>3</bonusDamage>
+        <condition>
+          <string>Hand</string>
+          <string>Red</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>2</cost>
+        <description>Block a Green Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Green</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>19</id>
+      <name>Dab Hero</name>
+      <type>Humanoid</type>
+      <color>Red</color>
+      <action>
+        <id>15</id>
+        <cost>2</cost>
+        <description>Deal 3 damage. +2 if you have less HP.</description>
+        <damage>3</damage>
+        <bonusDamage>2</bonusDamage>
+        <condition>
+          <string>LessHP</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>3</cost>
+        <description>Reflect a Green Monstermon.</description>
+        <blockValue>-1</blockValue>
+        <blockColor>
+          <string>Green</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>20</id>
+      <name>Monstrous Flytrap</name>
+      <type>Plant</type>
+      <color>Green</color>
+      <action>
+        <id>1</id>
+        <cost>1</cost>
+        <description>Deal 2 damage.</description>
+        <damage>2</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Blue Monstermon's damage by 3.</description>
+        <blockValue>3</blockValue>
+        <blockColor>
+          <string>Blue</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>21</id>
+      <name>The Tallest Tree</name>
+      <type>Plant</type>
+      <color>Green</color>
+      <action>
+        <id>10</id>
+        <cost>2</cost>
+        <description>Deal 3 damage, +3 if your hand is all Green.</description>
+        <damage>3</damage>
+        <bonusDamage>3</bonusDamage>
+        <condition>
+          <string>Hand</string>
+          <string>Green</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>2</cost>
+        <description>Block a Blue Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Blue</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>22</id>
+      <name>Chill Stump</name>
+      <type>Plant</type>
+      <color>Green</color>
+      <action>
+        <id>1</id>
+        <cost>1</cost>
+        <description>Deal 2 damage.</description>
+        <damage>2</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Blue Monstermon's damage by 3.</description>
+        <blockValue>3</blockValue>
+        <blockColor>
+          <string>Blue</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>23</id>
+      <name>Gnome of Garden</name>
+      <type>Magical</type>
+      <color>Green</color>
+      <action>
+        <id>13</id>
+        <cost>2</cost>
+        <description>Deal 4 damage.</description>
+        <damage>4</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Monstermon's damage by 1.</description>
+        <blockValue>1</blockValue>
+        <blockColor>
+          <string>All</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>24</id>
+      <name>Ofaka Tornado</name>
+      <type>Magical</type>
+      <color>Green</color>
+      <action>
+        <id>4</id>
+        <cost>1</cost>
+        <description>Deal 2 damage, +2 if your top discard is Green.</description>
+        <damage>2</damage>
+        <bonusDamage>2</bonusDamage>
+        <condition>
+          <string>Discard</string>
+          <string>Red</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Monstermon's damage by 1.</description>
+        <blockValue>1</blockValue>
+        <blockColor>
+          <string>All</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>25</id>
+      <name>Literally Grass</name>
+      <type>Nothing Special</type>
+      <color>Green</color>
+      <action>
+        <id>1</id>
+        <cost>1</cost>
+        <description>Deal 2 damage.</description>
+        <damage>2</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Blue Monstermon's damage by 3.</description>
+        <blockValue>3</blockValue>
+        <blockColor>
+          <string>Blue</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>26</id>
+      <name>Doodoo Bug</name>
+      <type>Insect</type>
+      <color>Green</color>
+      <action>
+        <id>15</id>
+        <cost>2</cost>
+        <description>Deal 3 damage. +2 if you have less HP.</description>
+        <damage>3</damage>
+        <bonusDamage>2</bonusDamage>
+        <condition>
+          <string>LessHP</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>3</cost>
+        <description>Reflect a Blue Monstermon.</description>
+        <blockValue>-1</blockValue>
+        <blockColor>
+          <string>Blue</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>27</id>
+      <name>Mystical Tomato</name>
+      <type>Vegetable</type>
+      <color>Green</color>
+      <action>
+        <id>7</id>
+        <cost>1</cost>
+        <description>Deal 1 damage. Gain 1 Mana.</description>
+        <damage>1</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Mana</string>
+          <string>1</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>0</cost>
+        <description />
+        <blockValue>0</blockValue>
+        <blockColor>
+          <string />
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>28</id>
+      <name>Hissing Fauna</name>
+      <type>Beast</type>
+      <color>Green</color>
+      <action>
+        <id>13</id>
+        <cost>2</cost>
+        <description>Deal 4 damage.</description>
+        <damage>4</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Reduce a Monstermon's damage by 1.</description>
+        <blockValue>1</blockValue>
+        <blockColor>
+          <string>All</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>29</id>
+      <name>Legendary Sword</name>
+      <type>Artifact</type>
+      <color>Green</color>
+      <action>
+        <id>14</id>
+        <cost>3</cost>
+        <description>Deal 6 damage.</description>
+        <damage>6</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>0</cost>
+        <description />
+        <blockValue>0</blockValue>
+        <blockColor>
+          <string />
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>30</id>
+      <name>Golden Dewdrop</name>
+      <type>Magical</type>
+      <color>Yellow</color>
+      <action>
+        <id>19</id>
+        <cost>2</cost>
+        <description>Heal 4 HP if your discard is Blue</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Heal</string>
+          <string>Blue</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Purple Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Purple</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>31</id>
+      <name>Zen Octopus</name>
+      <type>Humanoid</type>
+      <color>Yellow</color>
+      <action>
+        <id>1</id>
+        <cost>1</cost>
+        <description>Deal 2 damage.</description>
+        <damage>2</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Purple Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Purple</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>32</id>
+      <name>Forbidden Book</name>
+      <type>Artifact</type>
+      <color>Yellow</color>
+      <action>
+        <id>17</id>
+        <cost>1</cost>
+        <description>Swap Mana with your opponent.</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>SwapMana</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Purple Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Purple</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>33</id>
+      <name>Marshmallow</name>
+      <type>Magical</type>
+      <color>Yellow</color>
+      <action>
+        <id>16</id>
+        <cost>3</cost>
+        <description>Swap HP with your opponent.</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>SwapHP</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Purple Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Purple</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>34</id>
+      <name>Pot of Grease</name>
+      <type>Artifact</type>
+      <color>Yellow</color>
+      <action>
+        <id>20</id>
+        <cost>2</cost>
+        <description>Heal 4 HP if your discard is Green</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Heal</string>
+          <string>Green</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Purple Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Purple</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>35</id>
+      <name>Lamb With Cleaver</name>
+      <type>Beast</type>
+      <color>Yellow</color>
+      <action>
+        <id>24</id>
+        <cost>1</cost>
+        <description>Gain 3 Mana if your discard is Red</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Mana_Discard</string>
+          <string>Red</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Purple Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Purple</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>36</id>
+      <name>Treasure Chest</name>
+      <type>Artifact</type>
+      <color>Yellow</color>
+      <action>
+        <id>25</id>
+        <cost>1</cost>
+        <description>Gain 3 Mana if your discard is Blue</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Mana_Discard</string>
+          <string>Blue</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Purple Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Purple</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>37</id>
+      <name>Mr. Nice Guy</name>
+      <type>Humanoid</type>
+      <color>Yellow</color>
+      <action>
+        <id>18</id>
+        <cost>2</cost>
+        <description>Heal 4 HP if your discard is Red</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Heal</string>
+          <string>Red</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Purple Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Purple</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>38</id>
+      <name>The Slurper</name>
+      <type>Disgusting</type>
+      <color>Yellow</color>
+      <action>
+        <id>27</id>
+        <cost>5</cost>
+        <description>Deal 8 damage.</description>
+        <damage>8</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Purple Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Purple</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>39</id>
+      <name>Rare Jewel</name>
+      <type>Artifact</type>
+      <color>Yellow</color>
+      <action>
+        <id>26</id>
+        <cost>1</cost>
+        <description>Gain 3 Mana if your discard is Green</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Mana_Discard</string>
+          <string>Green</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Purple Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Purple</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>40</id>
+      <name>Onion</name>
+      <type>Vegetable</type>
+      <color>Purple</color>
+      <action>
+        <id>1</id>
+        <cost>1</cost>
+        <description>Deal 2 damage.</description>
+        <damage>2</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Yellow Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Yellow</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>41</id>
+      <name>Killer Eye</name>
+      <type>Organ</type>
+      <color>Purple</color>
+      <action>
+        <id>8</id>
+        <cost>2</cost>
+        <description>Deal 3 damage, +3 if your hand is all Red.</description>
+        <damage>3</damage>
+        <bonusDamage>3</bonusDamage>
+        <condition>
+          <string>Hand</string>
+          <string>Red</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Yellow Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Yellow</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>42</id>
+      <name>Purple Plush</name>
+      <type>Magical</type>
+      <color>Purple</color>
+      <action>
+        <id>16</id>
+        <cost>3</cost>
+        <description>Swap HP with your opponent.</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>SwapHP</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Yellow Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Yellow</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>43</id>
+      <name>Spiky Flim Flam</name>
+      <type>Beast</type>
+      <color>Purple</color>
+      <action>
+        <id>24</id>
+        <cost>1</cost>
+        <description>Gain 3 Mana if your discard is Red</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Mana_Discard</string>
+          <string>Red</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Yellow Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Yellow</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>44</id>
+      <name>Monster Ghost</name>
+      <type>Beast</type>
+      <color>Purple</color>
+      <action>
+        <id>10</id>
+        <cost>2</cost>
+        <description>Deal 3 damage, +3 if your hand is all Green.</description>
+        <damage>3</damage>
+        <bonusDamage>3</bonusDamage>
+        <condition>
+          <string>Hand</string>
+          <string>Green</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Yellow Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Yellow</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>45</id>
+      <name>Knight Who Turned Evil</name>
+      <type>Humanoid</type>
+      <color>Purple</color>
+      <action>
+        <id>25</id>
+        <cost>1</cost>
+        <description>Gain 3 Mana if your discard is Blue</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Mana_Discard</string>
+          <string>Blue</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Yellow Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Yellow</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>46</id>
+      <name>Evil Thwarter</name>
+      <type>Beast</type>
+      <color>Purple</color>
+      <action>
+        <id>26</id>
+        <cost>1</cost>
+        <description>Gain 3 Mana if your discard is Green</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>Mana_Discard</string>
+          <string>Green</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Yellow Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Yellow</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>47</id>
+      <name>Mysterious Package</name>
+      <type>Artifact</type>
+      <color>Purple</color>
+      <action>
+        <id>17</id>
+        <cost>1</cost>
+        <description>Swap Mana with your opponent.</description>
+        <damage>0</damage>
+        <bonusDamage>1</bonusDamage>
+        <condition>
+          <string>SwapMana</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Yellow Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Yellow</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>48</id>
+      <name>Oglebop Ogre</name>
+      <type>Beast</type>
+      <color>Purple</color>
+      <action>
+        <id>9</id>
+        <cost>2</cost>
+        <description>Deal 3 damage, +3 if your hand is all Blue.</description>
+        <damage>3</damage>
+        <bonusDamage>3</bonusDamage>
+        <condition>
+          <string>Hand</string>
+          <string>Blue</string>
+        </condition>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Yellow Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Yellow</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+    <Monstermon>
+      <id>49</id>
+      <name>Dank Magician</name>
+      <type>Magical</type>
+      <color>Purple</color>
+      <action>
+        <id>27</id>
+        <cost>5</cost>
+        <description>Deal 8 damage.</description>
+        <damage>8</damage>
+        <bonusDamage>0</bonusDamage>
+      </action>
+      <reaction>
+        <cost>1</cost>
+        <description>Block a Yellow Monstermon.</description>
+        <blockValue>99</blockValue>
+        <blockColor>
+          <string>Yellow</string>
+        </blockColor>
+      </reaction>
+    </Monstermon>
+  </MonstermonCards>
+</MonstermonList>

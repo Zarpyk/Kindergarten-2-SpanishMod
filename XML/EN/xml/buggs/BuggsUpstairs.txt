@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>No dear.~ This isn't the study hall room.</DialogueText>
+      <NPC>Principal</NPC>
+      <JumpNode>1</JumpNode>     
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Oh! My mistake.~ Could you show me the right room?</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Of course! Right this way!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Principal</NPC>
+      <FunctionCall>WalkToDownstairs</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>I was listening on the walkie talkie. This girl is messed up. We gotta fry her with this magnet.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do we do?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>I know that Carla girl can get into lockers. I'll run downstairs and get her.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>AddCarlaEvent</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>It's this one right here. This blue one.</DialogueText>
+      <JumpNode>7001</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7001</NodeID>
+      <DialogueText>Hold up guys!~ Lemme see some passes!~ I gotta job to do ya know!</DialogueText>
+      <JumpNode>7002</JumpNode>
+      <NPC>HallMonitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7002</NodeID>
+      <DialogueText>She's got a bathroom pass. He's got a hall pass.~ I got a lighter for you. We good?</DialogueText>
+      <JumpNode>7003</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7003</NodeID>
+      <DialogueText>Oh. Yeah. I guess so.</DialogueText>
+      <JumpNode>8</JumpNode>
+      <NPC>HallMonitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7004</NodeID>
+      <DialogueText>Hey kid!~ We're approaching the locker. If you're not here already, stay put.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Oh jeez. Why did it have to be this one? This is Penny's locker! We're all dead if we get caught trying to get in there.</DialogueText>
+      <JumpNode>9</JumpNode>
+      <NPC>Carla</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Don't worry about that.~ Just pick the stupid lock so we can get out of here.</DialogueText>
+      <JumpNode>101</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>No deal man. We're upping the ante if you want in on this locker.</DialogueText>
+      <JumpNode>102</JumpNode>
+      <NPC>Carla</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>What do you want?</DialogueText>
+      <JumpNode>103</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>103</NodeID>
+      <DialogueText>There's a special laser module that she uses to fry kids with. I want it. Comprende?</DialogueText>
+      <JumpNode>104</JumpNode>
+      <NPC>Carla</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>104</NodeID>
+      <DialogueText>Fine whatever. Now open the stupid thing.</DialogueText>
+      <JumpNode>10</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Easy for you to say!~ *hl*Get back in that classroom right now and keep her from coming out here.*hle* If she has a blackout right now we'll have a serious problem.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>You know about her blackouts?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How long will this take?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How do I distract her?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'll go keep her busy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>We all do.~ We just choose not to talk about it because we all want to live. Now get in there and keep her from coming out here!</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>How long will this take?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How do I distract her?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'll go keep her busy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>*hl*It should only take a little while*hle* assuming she doesn't come out here and ruin our lives.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>You know about her blackouts?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How do I distract her?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'll go keep her busy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>*hl*She had a doll that used to keep her calm. If you had that it might help.*hle* It's worth a shot.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>You know about her blackouts?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How long will this take?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'll go keep her busy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Hey what gives?~ The lights went out!</DialogueText>
+      <JumpNode>21</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>It's Penny!~ Run for your-</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PennyFireLasers</FunctionCall>
+      <NPC>Carla</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Got it!~ Here's your stupid gear fatso.</DialogueText>
+      <NPC>Carla</NPC>
+      <JumpNode>31</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>You're lucky you're a girl or I would push you down the stairs for a comment like that.</DialogueText>
+      <JumpNode>32</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Just remember your end of the bargain. *hl*Bring me that laser module. I'll get it from you tomorrow before school.*hle*</DialogueText>
+      <JumpNode>33</JumpNode>
+      <NPC>Carla</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Yeah yeah. You'll get what's coming to you. Here's the gear kid. Get back in there and lets fry this chick.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I hope this works.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetGear</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>34</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>*hl*Give that gear to the science teacher so the magnet turns on.*hle* Let's fry this robo-girl.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I hope this works.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Get back in there and stop her from coming out here!~ We're dead meat if she sees us doing this!</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Oh dear!~ Another lost student...~what a coincidence.</DialogueText>
+      <NPC>Principal</NPC>
+      <JumpNode>51</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>C'mon kid!~ You were supposed to go in through her office!</DialogueText>
+      <JumpNode>52</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>It seems you two have been scheming together...~that won't do.~ That won't do at all.</DialogueText>
+      <NPC>Principal</NPC>
+      <JumpNode>53</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>I'm sending you both the the principal's office!</DialogueText>
+      <NPC>Principal</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>TurnOffLights</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>He was so obsessed with his knife, he didn't account for deadly lasers.</DialogueText>
+      <NPC>Player</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockBuggsOutfit</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

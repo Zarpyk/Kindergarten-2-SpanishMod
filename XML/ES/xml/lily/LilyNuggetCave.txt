@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Todo esto terminará pronto.~ Estamos en la recta final.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo también lo espero.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

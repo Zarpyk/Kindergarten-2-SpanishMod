@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Este es un texto de marcador de posición.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Esta es una opción de marcador de posición.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Me estás matando, chico.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo así?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Estás tardando demasiado! ~ ¡Matando demasiado tiempo! ~ ¡Me dejaste en la estacada allá arriba!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo siento.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¿Sabes lo que eso significa, verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>*Suspira* Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillInCloset</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>444</NodeID>
+      <DialogueText>¡Bueno, mira quién es!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkToKillPlayerLunchPhase1</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>No pude evitar notar que no estás arriba ayudándome con el viejo Bobbo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo también lo noté.</OptionText>
+          <DestinationID>446</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>446</NodeID>
+      <DialogueText>También noté que estás sangrando.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Yo soy?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerPhase1Lunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>447</NodeID>
+      <DialogueText>Me estás matando, chico.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToKillPlayerLunchPhase1</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>448</NodeID>
+      <DialogueText>Te pido unos favores simples.~ Entregar una amenaza de muerte, robarle a un lisiado, ¡y CONSÍGUEME UNA COSA AFILADA PARA CORTAR A BOB!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué no usas tu fregona?</OptionText>
+          <DestinationID>449</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>449</NodeID>
+      <DialogueText>¡Oh! ¡Un hombre gracioso! ~ Deberías ser comediante en tu próxima vida.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Próxima vida?</OptionText>
+          <DestinationID>450</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>¡Porque esta ya se acabó!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pero me gusta esta vida.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerPhase1Lunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

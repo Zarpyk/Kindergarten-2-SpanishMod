@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Oh cielos!</DialogueText>
+      <FunctionCall>WalkToPlayerSideYard</FunctionCall>
+      <JumpNode>-1</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Escuchaste la campana. No se supone que estés aquí. Solo se permite el uso de la rampa para discapacitados a los que tienen habilidades diferentes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tienes habilidades diferentes?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yo tengo habilidades diferentes.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Te refieres a Monty?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Te refieres a Nugget?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Ummmmm... no.~ Quiero decir sí...~ más o menos. Solo que no como--~ Olvida eso.~ El punto es que no deberías estar aquí. No querrás llegar tarde a tu primer día.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a clase.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToMorningTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>No según tus registros médicos. Ahora, vamos a llevarte a clase.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Has visto mis registros médicos?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ve a clase.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToMorningTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¿Qué?! ¡No!~ Solo...~ Puede que haya-~ Olvida eso. ¡El punto es que no deberías estar aquí! No querrás llegar tarde a tu primer día.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a clase.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToMorningTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡Exactamente! Ahora lo entiendes. Ahora, por favor, dirígete a clase. No querrás llegar tarde a tu primer día.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a clase.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToMorningTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Ummmm...~ no exactamente. Él... ummmm...~ es un caso especial. ¿Por qué no vas a clase? No querrás llegar tarde a tu primer día.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a clase.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToMorningTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Escuchaste la campana. No se supone que estés--</DialogueText>
+      <JumpNode>41</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>Lo siento. No pude evitar notar que tienes algo de contrabando. Me temo que tendré que confiscártelo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Contrabando?</OptionText>
+          <DestinationID>42</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cómo supiste eso?</OptionText>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Tienes permiso para confiscarlo?</OptionText>
+          <DestinationID>44</DestinationID>
+          <FunctionCall>TakeContraband</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Sí. Ese artículo en tu bolsillo no está permitido en esta escuela. Lo siento. Tendrás que ir a sala de estudio después del almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo supiste eso?</OptionText>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Tienes permiso para confiscarlo?</OptionText>
+          <DestinationID>44</DestinationID>
+          <FunctionCall>TakeContraband</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>¿Qué?~ Solo... no sé cómo. Solo hazlo fácil para mí, por favor, y entrégamelo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tienes permiso para confiscarlo?</OptionText>
+          <DestinationID>44</DestinationID>
+          <FunctionCall>TakeContraband</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>Por supuesto.~ Mi mami es la directora. Ella quiere mantener la escuela segura. Tendrás que ir a sala de estudio. Ahora, vamos a llevarte a clase.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>ForceToStudyHall</SetFlag>
+          <FunctionCall>GoToMorningTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

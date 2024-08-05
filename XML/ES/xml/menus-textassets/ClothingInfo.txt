@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ClothingInfoList>
+  <Infos>
+    <ClothingInfo>
+      <Index>0</Index>
+      <HairDescription>Mi cabello</HairDescription>
+      <OutfitDescription>Mi camisa</OutfitDescription>
+      <MonstermonName>Babosa celestial</MonstermonName>
+      <HintLocation>Conjunto predeterminado.</HintLocation>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>1</Index>
+      <HairDescription>Cabello nuggetoso</HairDescription>
+      <OutfitDescription>Camisa de la amistad</OutfitDescription>
+      <MonstermonName>Moco duro</MonstermonName>
+      <HintLocation>Después de que Nugget se golpee la cabeza durante demasiado tiempo, entierren a Nugget en nuggets en la cafetería durante el recreo.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>2</Index>
+      <HairDescription>Coletas traviesas</HairDescription>
+      <OutfitDescription>Vestido rosa consentido</OutfitDescription>
+      <MonstermonName>Cubeta de agua</MonstermonName>
+      <HintLocation>Interactúa con Cindy después de que la hayan electrocutado.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>3</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Atún pálido</MonstermonName>
+      <HintLocation>Derrama las arañas sobre Ted en "Cain's Not Able".</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>4</Index>
+      <HairDescription>Coleta sigilosa</HairDescription>
+      <OutfitDescription>Falda verde astuta</OutfitDescription>
+      <MonstermonName>Ultralodón</MonstermonName>
+      <HintLocation>Deja que Penny defienda su casillero en "Opposites Attract".</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>5</Index>
+      <HairDescription>Espectáculos del vendedor</HairDescription>
+      <OutfitDescription>Camisa del mercado negro</OutfitDescription>
+      <MonstermonName>Nimbo carnívoro</MonstermonName>
+      <HintLocation>Mezcla los químicos equivocados en "Breaking Sad".</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>6</Index>
+      <HairDescription>Corte de cabello caro</HairDescription>
+      <OutfitDescription>Camisa azul planchada</OutfitDescription>
+      <MonstermonName>Calamar diminuto</MonstermonName>
+      <HintLocation>Derrama las arañas sobre Félix después de mostrarle a Ted el contrato en "Cain's Not Able".</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>7</Index>
+      <HairDescription>Pelirrojo asmático</HairDescription>
+      <OutfitDescription>Rayas del germofóbico</OutfitDescription>
+      <MonstermonName>Coral que parece una mano</MonstermonName>
+      <HintLocation>Provoca un ataque de asma a Ozzy en "Hitman's Potty Guard".</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>8</Index>
+      <HairDescription>Cabello de antena</HairDescription>
+      <OutfitDescription>Vestido de robot</OutfitDescription>
+      <MonstermonName>Rana ermitaña</MonstermonName>
+      <HintLocation>Recupera el cuchillo de Buggs en "Opposites Attract".</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>9</Index>
+      <HairDescription>Flor de conspiración</HairDescription>
+      <OutfitDescription>Vestido de detective</OutfitDescription>
+      <MonstermonName>Castillo de arena</MonstermonName>
+      <HintLocation>Ser asesinado por la criatura que se está comiendo a Lily en "Breaking Sad" durante el recreo.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>10</Index>
+      <HairDescription>Cabello de niño desaparecido</HairDescription>
+      <OutfitDescription>Camisa de niño desaparecido</OutfitDescription>
+      <MonstermonName>Hombre en llamas</MonstermonName>
+      <HintLocation>Inspecciona el cuerpo de Billy en "Breaking Sad" durante el recreo.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>11</Index>
+      <HairDescription>Peinado genial</HairDescription>
+      <OutfitDescription>Camiseta sin mangas atlética</OutfitDescription>
+      <MonstermonName>Silla de picos</MonstermonName>
+      <HintLocation>Sigue a la Sra. Applegate a su salón después de que eche a Jerome del gimnasio.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>12</Index>
+      <HairDescription>Zumbido del matón</HairDescription>
+      <OutfitDescription>Ropa de segunda mano XL</OutfitDescription>
+      <MonstermonName>Cigaretmon</MonstermonName>
+      <HintLocation>Deja que Penny defienda su casillero en "Opposites Attract".</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>13</Index>
+      <HairDescription>Sudadera azul encubierta</HairDescription>
+      <OutfitDescription>Camisa azul encubierta</OutfitDescription>
+      <MonstermonName>Gusano de dunas</MonstermonName>
+      <HintLocation>Squeak, el peluche secreto.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>14</Index>
+      <HairDescription>Sudadera marrón encubierta</HairDescription>
+      <OutfitDescription>Camisa marrón encubierta</OutfitDescription>
+      <MonstermonName>Llama estresada</MonstermonName>
+      <HintLocation>Squeak, el peluche secreto.</HintLocation>
+      
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>15</Index>
+      <HairDescription>Gafas del educador</HairDescription>
+      <OutfitDescription>Vestido de escote bajo</OutfitDescription>
+      <MonstermonName>Patito cíclope</MonstermonName>
+      <HintLocation>Regresa al baño de las chicas durante el encierro en "Creature Feature".</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>16</Index>
+      <HairDescription>Espectáculos del científico</HairDescription>
+      <OutfitDescription>Bata de laboratorio</OutfitDescription>
+      <MonstermonName>Zombi ninja mutante adolescente</MonstermonName>
+      <HintLocation>Inspecciona el cuerpo del Dr. Danner después de que haya explotado en "Creature Feature".</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>17</Index>
+      <HairDescription>Barba de lunático</HairDescription>
+      <OutfitDescription>Vestimenta del conserje</OutfitDescription>
+      <MonstermonName>Dragón solitario</MonstermonName>
+      <HintLocation>Dale a Monty el módulo láser y luego ve a almorzar.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>18</Index>
+      <HairDescription>Limpiador amable</HairDescription>
+      <OutfitDescription>Brincolín alegre</OutfitDescription>
+      <MonstermonName>Hidra de un millón de cabezas</MonstermonName>
+      <HintLocation>Inspecciona el cuerpo de Bob durante el almuerzo en "A Tale of Two Janitors".</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>19</Index>
+      <HairDescription>Cabello del director</HairDescription>
+      <OutfitDescription>Traje de pantalón rosa</OutfitDescription>
+      <MonstermonName>Héroe del dab</MonstermonName>
+      <HintLocation>Inspecciona la caja detrás del escritorio del director.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>20</Index>
+      <HairDescription>Cabello de bruja</HairDescription>
+      <OutfitDescription>Harapos de bruja</OutfitDescription>
+      <MonstermonName>Trampa para moscas monstruosa</MonstermonName>
+      <HintLocation>Dale un gato a un nuevo dueño.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>21</Index>
+      <HairDescription>Red de cocina</HairDescription>
+      <OutfitDescription>Delantal de cocinero</OutfitDescription>
+      <MonstermonName>El árbol más alto</MonstermonName>
+      <HintLocation>Entra a la escuela mientras la señora de la comida está en el pasillo.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>22</Index>
+      <HairDescription>Taza del monitor</HairDescription>
+      <OutfitDescription>Faja del monitor</OutfitDescription>
+      <MonstermonName>Tocón relajado</MonstermonName>
+      <HintLocation>Sube las escaleras antes de que comience la mañana y consigue un pase de pasillo.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>23</Index>
+      <HairDescription>Corte tenso</HairDescription>
+      <OutfitDescription>Faja estricta</OutfitDescription>
+      <MonstermonName>Gnomo del jardín</MonstermonName>
+      <HintLocation>Inspecciona el cuerpo de Stevie después de que el conserje lo haya golpeado en "A Tale of Two Janitors".</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>24</Index>
+      <HairDescription>Cabeza de monstruo</HairDescription>
+      <OutfitDescription>Cuerpo de monstruo</OutfitDescription>
+      <MonstermonName>Tornado Ofaka</MonstermonName>
+      <HintLocation>Inspecciona la cámara de mutación en el laboratorio secreto.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>25</Index>
+      <HairDescription>Corte del niño capturado</HairDescription>
+      <OutfitDescription>Suéter del niño capturado</OutfitDescription>
+      <MonstermonName>Literalmente hierba</MonstermonName>
+      <HintLocation>Derrota a los monstruos en la guarida secreta.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>26</Index>
+      <HairDescription>Gafas de la niña capturada</HairDescription>
+      <OutfitDescription>Falda de la niña capturada</OutfitDescription>
+      <MonstermonName>Bicho de caca</MonstermonName>
+      <HintLocation>Derrota a los monstruos en la guarida secreta.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>27</Index>
+      <HairDescription>Cabello de fuera de la ciudad</HairDescription>
+      <OutfitDescription>Falda de nuevo estudiante</OutfitDescription>
+      <MonstermonName>Tomate místico</MonstermonName>
+      <HintLocation>Derrota a los monstruos en la guarida secreta.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>28</Index>
+      <HairDescription>Sombrero de Santa</HairDescription>
+      <OutfitDescription>Camisa de Santa</OutfitDescription>
+      <MonstermonName>Fauna susurrante</MonstermonName>
+      <HintLocation>Inspecciona el calendario en la oficina del director.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>29</Index>
+      <HairDescription>Capucha de cultista</HairDescription>
+      <OutfitDescription>Túnica de cultista</OutfitDescription>
+      <MonstermonName>Espada legendaria</MonstermonName>
+      <HintLocation>Colecciona las 50 cartas Monstermon y presiona el botón en la pared.</HintLocation>
+
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>30</Index>
+      <HairDescription>Sombrero espeluznante</HairDescription>
+      <OutfitDescription>Camisa espeluznante</OutfitDescription>
+      <MonstermonName>Gota de rocío dorada</MonstermonName>
+      <HintLocation>Inspecciona el calendario en la oficina del director.</HintLocation>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>31</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Pulpo zen</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>32</Index>
+      <HairDescription>Sombrero de Paddy</HairDescription>
+      <OutfitDescription>Camisa de Paddy</OutfitDescription>
+      <MonstermonName>Libro prohibido</MonstermonName>
+      <HintLocation>Inspecciona el calendario en la oficina del director.</HintLocation>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>33</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Malvavisco</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>34</Index>
+      <HairDescription>Sombrero del Tío Sam</HairDescription>
+      <OutfitDescription>Camisa del Tío Sam</OutfitDescription>
+      <MonstermonName>Olla de grasa</MonstermonName>
+      <HintLocation>Inspecciona el calendario en la oficina del director.</HintLocation>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>35</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Cordero con hacha</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>36</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Cofre del tesoro</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>37</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>El Sr. Buen Tipo</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>38</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>El Sorbedor</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>39</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Joya rara</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>40</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Cebolla</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>41</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Ojo asesino</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>42</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Peluches morados</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>43</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Spiky Flim Flam</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>44</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Fantasma monstruoso</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>45</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Caballero que se volvió malvado</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>46</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Malévolo obstaculizador</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>47</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Paquete misterioso</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>48</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Ogros Oglebop</MonstermonName>
+    </ClothingInfo>
+    <ClothingInfo>
+      <Index>49</Index>
+      <HairDescription>Cabello de subordinado</HairDescription>
+      <OutfitDescription>Camisa roja insegura</OutfitDescription>
+      <MonstermonName>Mago húmedo</MonstermonName>
+    </ClothingInfo>
+  </Infos>
+</ClothingInfoList>

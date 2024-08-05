@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Hey kid. Looking to get on these swings?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Do you want to battle?</OptionText>
+          <ItemToUse>Deck</ItemToUse>
+          <DestinationID>50</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I guess.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nope.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Well I'd be careful. There's an old riddle about these swings. It's pretty ominous.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What is it?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Where do you keep hearing these riddles?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Thanks for the tip.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Yellow swing, blue swing, left swing, red.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Then what?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Return to the second, then return to the fourth-</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Get it wrong and I'm dead?</OptionText>
+          <DestinationID>4</DestinationID>
+          <SetFlag>SwingsActive</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Yup!~ I think if you talk to me it sorta resets. Good luck kid.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Great.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>7</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>My sources are my own!~ Do you want to hear the riddle or not?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine. What is it?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Ready to hear that riddle now?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine. What is it?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Did you figure it out yet?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can I hear it again?</OptionText>
+          <DestinationID>2</DestinationID>
+          <FunctionCall>ResetSwings</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ResetSwings</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Good stuff kid.~ You're really good at this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Yeah!~ I do!~ My yellow deck filled with the coolest cards is better than anything you've got!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartMonstermonBattle</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>I knew you couldn't do it. Your cards are so lame.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess they are.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>Darn it!~ Stupid deck. I blame the Golden Dewdrop. He's not cool enough to be in my deck. You can have him.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>451</DestinationID>
+          <FunctionCall>UnlockDewdrop</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>451</NodeID>
+      <DialogueText>Now I'm gonna get back to these swings. Are you looking to get on them?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nope.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

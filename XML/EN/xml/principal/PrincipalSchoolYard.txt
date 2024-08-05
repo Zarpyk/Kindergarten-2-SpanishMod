@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Hello!~ I'm the principal of this fine school! I'm so happy to have so many new students today!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure you are.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nugget is stuck in the sewer grate over there.</OptionText>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+          <SetFlag>LunchLadyAtGrate</SetFlag>
+          <DestinationID>1</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That's nice. Bye.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Oh, the little odd child...~ Yes I'm aware of the situation.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Are you going to do anything about it?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Most certainly!~ I wouldn't just leave a student trapped in a sewer! The fire department is on their way to get him out.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks. I'll let him know.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Oh, that won't be necessary! I'll have my sister watch over him.~ Oh Margaret!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>4</ResolutionID>
+      <FunctionCall>CallLunchLady</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Huh?~ Wuh?</DialogueText>
+      <JumpNode>5</JumpNode>
+      <NPC>LunchLady</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Behind you sweetheart.</DialogueText>
+      <FunctionCall>FlipLunchLady</FunctionCall>
+      <JumpNode>6</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Oh...~How can I be of service?</DialogueText>
+      <NPC>LunchLady</NPC>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>There's a boy trapped in the sewer grate. Go keep him company.</DialogueText>
+      <JumpNode>8</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Yes Principal-Sister-Dear.</DialogueText>
+      <NPC>LunchLady</NPC>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>9</ResolutionID>
+      <FunctionCall>WalkToGrate</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>There! All taken care of! Is there anything else?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's wrong with her?</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I guess not.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Oh I know what you're thinking, but I promise, this school is far safer than your last one.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't believe you.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>I'll tell you what. Why don't we have lunch together? My treat. We can address any concerns you may have.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll give you one chance.</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetPrincipalLunchPass</FunctionCall>
+          <DestinationID>12</DestinationID>
+          <SetFlag>PrincipalGaveLunchPass</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No way.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Oh goodie! Here's a pass that will get you out of lunch. Just meet me in my office and we'll talk this whole thing out.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll see you then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>50</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>I'm so sorry about my daughter's little...~outburst.~ I assure you that you're quite safe here.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh huh.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That's nice. Bye.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>I'm so sorry about my daughter's little...~outburst.~ We can discuss that during out lunch later today.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes we will.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>What a shame...~I hope you reconsider.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I've reconsidered.</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetPrincipalLunchPass</FunctionCall>
+          <DestinationID>12</DestinationID>
+          <SetFlag>PrincipalGaveLunchPass</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nugget is stuck in the sewer grate over there.</OptionText>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+          <SetFlag>LunchLadyAtGrate</SetFlag>
+          <DestinationID>1</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Probably not.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Oh!~ I'm not really sure. It must be all the new students have her a little on edge.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Did she call you sister?</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Yes she did. She was having trouble finding a job and I couldn't let the poor thing starve.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>I can't wait to see you for lunch! I promise you, my school is very safe!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nugget is stuck in the sewer grate over there.</OptionText>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <SetFlag>LunchLadyAtGrate</SetFlag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+          <UsesAction>true</UsesAction>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>75</NodeID>
+      <DialogueText>Oh dear...~ Dr. Danner, why has the sky turned red?</DialogueText>
+      <JumpNode>76</JumpNode>
+      <FunctionCall>FocusScienceTeacher</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>76</NodeID>
+      <DialogueText>Hmmm...~it's not my doing. I have a thing that would turn the sky green, but it's safely contained in the-</DialogueText>
+      <JumpNode>77</JumpNode>
+      <NPC>ScienceTeacher</NPC>
+      <FunctionCall>FocusCindy</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>77</NodeID>
+      <DialogueText>Ms. Applegate...~I don't feel so good.</DialogueText>
+      <JumpNode>78</JumpNode>
+      <NPC>Cindy</NPC>
+      <FunctionCall>FocusTeacher</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>78</NodeID>
+      <DialogueText>Me neither, but I think that's the withdrawal talking.</DialogueText>
+      <JumpNode>79</JumpNode>
+      <NPC>Teacher</NPC>
+      <FunctionCall>FocusCindy</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>79</NodeID>
+      <DialogueText>No...~I mean I-</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Cindy</NPC>
+      <FunctionCall>CindyDissolve</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>80</NodeID>
+      <DialogueText>Did- did anyone else see that or am I actually going crazy?</DialogueText>
+      <JumpNode>81</JumpNode>
+      <NPC>Teacher</NPC>
+      <FunctionCall>SetCameraTarget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>81</NodeID>
+      <DialogueText>Everyone remain calm!~ I'm sure everything is fine. ~Oh Margaret!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>CallLunchLadyEnd</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>82</NodeID>
+      <DialogueText>Yes, sister dear? How can Margaret assist you?</DialogueText>
+      <JumpNode>83</JumpNode>
+      <NPC>LunchLady</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>83</NodeID>
+      <DialogueText>One of the new students has...~err...~vanished. I need you to find her immediately.</DialogueText>
+      <JumpNode>84</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>84</NodeID>
+      <DialogueText>Right away sist-</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>LunchLady</NPC>
+      <FunctionCall>DissolveLunchLady</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>86</NodeID>
+      <DialogueText>We might be in trouble here...</DialogueText>
+      <JumpNode>87</JumpNode>
+      <FunctionCall>FocusTed</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>87</NodeID>
+      <DialogueText>Oh jeez Felix...~I think it's happening to me too.</DialogueText>
+      <NPC>Ted</NPC>
+      <JumpNode>88</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>88</NodeID>
+      <DialogueText>Oh lucky me!~ It saves me the trouble of having to do it myself! Ta ta Teddy!</DialogueText>
+      <NPC>Felix</NPC>
+      <JumpNode>89</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>89</NodeID>
+      <DialogueText>What?!~ Felix, I thought you-</DialogueText>
+      <NPC>Ted</NPC>
+      <FunctionCall>DissolveTed</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>90</NodeID>
+      <DialogueText>Nobody gets my stuff!~ I mean it!~ It all goes to-</DialogueText>
+      <NPC>Monty</NPC>
+      <FunctionCall>DissolveMonty</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>91</NodeID>
+      <DialogueText>I'm sorry everybody.~ I don't think I'll be able to help clean this up...</DialogueText>
+      <NPC>Bob</NPC>
+      <FunctionCall>DissolveBob</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>92</NodeID>
+      <DialogueText>At least I'll get to see my dad again...</DialogueText>
+      <NPC>Jerome</NPC>
+      <FunctionCall>DissolveJerome</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>94</NodeID>
+      <DialogueText>How unfortunate that I won't be able to observe this phenomenon. It could have had excellent weaponization proper--</DialogueText>
+      <NPC>ScienceTeacher</NPC>
+      <FunctionCall>DissolveScienceTeacher</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>95</NodeID>
+      <DialogueText>Mommy...~Mommy I'm scared...I don't want to--</DialogueText>
+      <NPC>Penny</NPC>
+      <FunctionCall>DissolvePenny</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>96</NodeID>
+      <DialogueText>This can't be happening...~what do we even do?</DialogueText>
+      <FunctionCall>ShowMonitors</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>That's the bell!~ Everyone head inside to your assigned classrooms!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go to smart class.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>APlus</ItemToUse>
+          <SetFlag>StartInSmartClass</SetFlag>
+          <FunctionCall>ChangeToMorningTime</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Go to class.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToMorningTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>That's the bell!~ Everyone head inside to your--</DialogueText>
+      <JumpNode>102</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>Wait Mommy!</DialogueText>
+      <NPC>Penny</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PennyWalkToPlayer</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>103</NodeID>
+      <DialogueText>This new kid has contraband! I'm going to take it!</DialogueText>
+      <NPC>Penny</NPC>
+      <JumpNode>104</JumpNode>
+      <FunctionCall>TakeContraband</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>104</NodeID>
+      <DialogueText>Well spotted! Thank you Penny!~ We do not allow contraband in my school. You'll have to go to study hall today.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Awww man.</OptionText>
+          <DestinationID>105</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>105</NodeID>
+      <DialogueText>Now please head inside to your assigned class.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go to smart class.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>APlus</ItemToUse>
+          <SetFlag>StartInSmartClass</SetFlag>
+          <FunctionCall>ChangeToMorningTime</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Go to class.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToMorningTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>120</NodeID>
+      <DialogueText>Honestly, I'm glad to go out more violently. Turning into dust is for nerds and sissies!</DialogueText>
+      <FunctionCall>StrikeBuggs</FunctionCall>
+      <JumpNode>-1</JumpNode>
+      <NPC>Buggs</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>121</NodeID>
+      <DialogueText>Oh come on!~ I didn't get dusted, but now I have to get blasted with li--</DialogueText>
+      <FunctionCall>StrikeCarla</FunctionCall>
+      <JumpNode>-1</JumpNode>
+      <NPC>Carla</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>122</NodeID>
+      <DialogueText>Oh no...~ Teddy come back!~ I'd rather be dust than a bloody mess!~ This isn't how I'm supposed to die!~ Teddy please!</DialogueText>
+      <FunctionCall>StrikeFelix</FunctionCall>
+      <JumpNode>-1</JumpNode>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>123</NodeID>
+      <DialogueText>I knew it!~ I knew these new kids would be nothing but trouble!</DialogueText>
+      <FunctionCall>StrikeOzzy</FunctionCall>
+      <JumpNode>-1</JumpNode>
+      <NPC>Ozzy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>124</NodeID>
+      <DialogueText>Ms. Principal!~ Something's wrong! The new hall monitor just disapp--</DialogueText>
+      <JumpNode>125</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>125</NodeID>
+      <DialogueText>Wha-?!~ What happened out here?!~ Everyone is-~ Everyone is dea-</DialogueText>
+      <JumpNode>126</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>126</NodeID>
+      <DialogueText>Go home, Stevie.</DialogueText>
+      <JumpNode>127</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>127</NodeID>
+      <DialogueText>But who will monitor the halls?</DialogueText>
+      <JumpNode>128</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>128</NodeID>
+      <DialogueText>Just go home.</DialogueText>
+      <JumpNode>129</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>129</NodeID>
+      <DialogueText>Okay. I'll see you tomorrow.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Stevie</NPC>
+      <FunctionCall>StevieWalkToStrike</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>130</NodeID>
+      <DialogueText>It's over...~ Goodbye.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StrikePrincipal</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

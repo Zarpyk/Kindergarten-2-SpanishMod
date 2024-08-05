@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Cuida al chico...~ Cuida al niño.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Solo le estás haciendo compañía, ¿verdad?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Suficiente para mí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>El niño está bien.~ Será preservado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Estás bien ahí dentro, Nugget?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Funciona para mí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>        
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Nugget no está feliz! ¡A Nugget no le gusta el creepy lunch lad--!</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡El chico está bien! Si sigues haciéndolo enojar, tendrás que ser eliminado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Eliminado?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien. Me iré.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Sí...~eliminado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No me voy a ir.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien. Me iré.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Sí...~tú lo eres.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>KillPlayer</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Pobre niño perdido...~encontró su camino fuera de la escuela. No puedes escapar tan fácil.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo supiste que estaba aquí afuera?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Los ojos de la directora son bastante agudos, pero no verá lo que estoy a punto de hacer.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y eso es?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerOutside</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

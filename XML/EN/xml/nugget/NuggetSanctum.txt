@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Behold!~ The sacred sanctum of Monstermon!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why is this behind my bookcase?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Where else would it be?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>In the Nugget Cave?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>...</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>As Nugget was saying, with the 50 talismans, Nugget can do unspeakable things!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Like what?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Nugget will show you!~ Behold! The power of Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Behold.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SummonMonstermon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>And now...~Nugget simply snaps his fingers...</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>NuggetSnap</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>It is done.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's done?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Come!~ Quickly!~ Nugget does not want to be late for school!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Just go with it.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToEndOfWorld</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

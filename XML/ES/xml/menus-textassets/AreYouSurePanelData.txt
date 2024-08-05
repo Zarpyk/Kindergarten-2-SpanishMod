@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AreYouSureData>
+  <WarningText>¿Estás seguro de que deseas borrar los datos del archivo #? Perderás todos los elementos desbloqueados y las tarjetas de Monstermon.</WarningText>
+  <NoText>No. Regresar.</NoText>
+  <YesText>Sí. Borrar los datos.</YesText>
+</AreYouSureData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnlockableItemsData>
+  <WhatShouldIBringText>¿Qué debería llevar a la escuela hoy?</WhatShouldIBringText>
+  <ItemsRemainingText>Artículos Restantes</ItemsRemainingText>
+  <BackText>Volver</BackText>
+  <ToolBeltName>Cinturón de Herramientas de Bob</ToolBeltName>
+  <LaserName>Rayo Láser de Penny</LaserName>
+  <ChemicalName>Químico Extraño de Félix</ChemicalName>
+  <APlusName>Un A+</APlusName>
+  <PinName>Pin Prestigioso</PinName>
+  <PlushieName>Peluche de Monstermon</PlushieName>
+  <BombName>Bomba Láser de Carla</BombName>
+  <RemoteName>Control Remoto de la Facultad</RemoteName>
+</UnlockableItemsData>

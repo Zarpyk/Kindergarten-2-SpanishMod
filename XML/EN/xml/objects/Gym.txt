@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is a dodgeball.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the dodgeball.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>TakeDodgeball</FunctionCall>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave the dodgeball.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

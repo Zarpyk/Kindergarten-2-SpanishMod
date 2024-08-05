@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Hey!~ ¡Alto!~ ¡Suéltame inmediatamente!</DialogueText>
+      <JumpNode>1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Madison!~ ¡Ataca al niño en los controles!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>Creature1KillPlayer</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Hey!~ ¡Alto!~ ¡Suéltame inmediatamente!</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Alice!~ ¡Ataca al niño en los controles!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>Creature2KillPlayer</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Hey!~ ¡Alto!~ ¡Suéltame inmediatamente!</DialogueText>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡Ronald!~ ¡Ataca al niño en los controles!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>Creature3KillPlayer</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>¡Hey!~ ¡Alto!~ ¡Suéltame inmediatamente!</DialogueText>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¡Oh, querido!~ ¡Dispara la can-!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>DropInAcid</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>*b*¡Dispara el cañón de goo!*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>FireCannon</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

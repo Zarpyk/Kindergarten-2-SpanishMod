@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Voy a ir al ordenador. Eso me mantendrá del lado bueno de Danner.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien por ti.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Bien, ya estás aquí. Necesitamos bajar a ese espacio de arrastre para confirmar si esa chica está aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo llegamos allí?</OptionText>
+          <DestinationID>11</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Regreso enseguida.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¿Por qué crees que te hice abrir esa rejilla?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh sí.</OptionText>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>GetSideyardKey</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Hmm...~no te tenía por alguien con dedos pegajosos. Bueno, veamos entonces.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vamos a robar la llave.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Vamos a pasar por la rejilla.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Será bastante fácil. Aquí está la llave de la puerta que te llevará a la rampa para discapacitados. Vamos a hacer nuestras evaluaciones para que Danner nos deje salir.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Vas a venir conmigo?</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Solo te sigo abajo. Me aseguraré de que Stevie no te impida usar esa llave.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Está bien. Vamos. Danner probablemente no nos detendrá ahora.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>25</ResolutionID>
+          <FunctionCall>StartFollowingPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¿Y?~ ¿Estaba ella ahí abajo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>26</DestinationID>
+          <Flag>BillyRevealed</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No pude encontrarlos.</OptionText>
+          <DestinationID>27</DestinationID>
+          <BlockFlag>BillyRevealed</BlockFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Bien. Todo se está juntando.~ Ve a contarle a Jerome las buenas noticias. Nos vemos en el almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>28</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Eso es...~no bueno. No creo que haya forma de arreglar esto. Tendremos que pensar en algo mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vaya.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>29</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>Ve a contarle a Jerome las buenas noticias. Nos vemos en el almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>Tendré que encontrar otra forma de conseguir una base para mi bomba láser mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Bien. Has vuelto.~ Te voy a quitar esa llave..~ Entonces, ¿cuál es el trato?~ ¿Están esos chicos ahí abajo? ¿Podemos llevar a Jerome hasta ellos?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estarán en el baño de chicas.</OptionText>
+          <DestinationID>31</DestinationID>
+          <Flag>LilyInBathroom</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No pude encontrarlos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <BlockFlag>LilyInBathroom</BlockFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Bien. Vamos a contarle al llorón las buenas noticias.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vamos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StartFollowingPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>Es hora de desactivar esta cosa. Necesitamos desactivar el mecanismo de activación para que no nos volar la cabeza.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo hacemos eso?</OptionText>
+          <DestinationID>101</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>Eso es...~una buena pregunta.~ *hl*Quizás alguien de tu antigua escuela tenga experiencia lidiando con este tipo de cosas.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Preguntaré por ahí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>102</ResolutionID>
+          <SetFlag>CarlaDeactivateBomb</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>¿Y?~ ¿Encontraste a alguien para hacerlo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Monty lo hará.</OptionText>
+          <DestinationID>103</DestinationID>
+          <Flag>CarlaSetUpDate</Flag>
+          <BlockFlag>CarlaDeactivatedBomb</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Cindy lo hará.</OptionText>
+          <DestinationID>106</DestinationID>
+          <Flag>CindyGaveGum</Flag>
+          <BlockFlag>CarlaDeactivatedBomb</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí. Está hecho.</OptionText>
+          <DestinationID>150</DestinationID>
+          <Flag>CarlaDeactivatedBomb</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Aún no.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>103</NodeID>
+      <DialogueText>Está bien...~¿entonces por qué no lo está haciendo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Él quiere ser tu novio.</OptionText>
+          <DestinationID>104</DestinationID>
+          <Flag>CarlaSetUpDate</Flag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>104</NodeID>
+      <DialogueText>Ugh...~ese pequeño sucio...~¿sabes qué?~ Está bien, pero no estoy contento con eso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>105</ResolutionID>
+          <SetFlag>CarlaWillGoOnDate</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>105</NodeID>
+      <DialogueText>Solo apúrate y dile al pequeño nerd que seré su novia. Necesitamos ponernos en marcha.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está hecho.</OptionText>
+          <DestinationID>150</DestinationID>
+          <Flag>CarlaDeactivatedBomb</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>106</NodeID>
+      <DialogueText>¿Cindy?~ No pensé que ella supiera hacer algo tan complicado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ella quiere que le ponga este chicle en tu cabello.</OptionText>
+          <DestinationID>107</DestinationID>
+          <ItemToUse>Gum</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí... ¿quién lo habría pensado?</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>107</NodeID>
+      <DialogueText>¿En serio?!~ ¡Esa pequeña costra de chica! *Suspira*~ Lo que sea. Necesitamos desactivar esa cosa. Haz lo que tengas que hacer, pero no estoy contento.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Pon chicle en el cabello de Carla.)</OptionText>
+          <DestinationID>108</DestinationID>
+          <ItemToUse>Gum</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>CindyWalkToCarlaGum</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quizás haya otra forma.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>108</NodeID>
+      <DialogueText>Ugh.~ Esto es tan asqueroso.</DialogueText>
+      <JumpNode>109</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>109</NodeID>
+      <DialogueText>¡JAJAJA! Y yo pensaba que Lily llevaba bien el chicle, ¡pero tú lo llevas a un nivel completamente nuevo!</DialogueText>
+      <JumpNode>110</JumpNode>
+      <NPC>Cindy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>Está bien, chico.~ Un trato es un trato.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Cindy</NPC>
+      <FunctionCall>CindyWalkToOutletBomb</FunctionCall>
+      <ResolutionID>111</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>Así que así fue como esa idiota pensó que podía desactivar esa cosa. Que le den.~ *hl*Ve a quitarle esa bomba de su cadáver. Las luces deberían volver pronto.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>112</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>Vamos, chico. Apúrate. Tenemos que aplastar esta cosa. *hl*¡Sube a ese pedestal y ponlo debajo de la trituradora!*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>115</NodeID>
+      <DialogueText>¡Lo lograste!~ ¡Esto es exactamente lo que necesito para terminar la bomba!~ ¡Ahora puedo volar esa pared!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Hurra!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>CarlaCompletedScience</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>150</NodeID>
+      <DialogueText>Genial.~ No puedo esperar por esta cita...~ Vamos a aplastar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Suena bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>112</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>No creo que haya nada que hacer aquí dentro.~ Se nos acabará el tiempo si cambiamos el plan de lecciones ahora.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>305</NodeID>
+      <DialogueText>Vamos a bajar. Tienes que pasar por esa rejilla que abrimos antes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>306</NodeID>
+      <DialogueText>Vamos a contarle al llorón las buenas noticias. Necesitaremos su ayuda si vamos a llevarlos a ustedes arriba durante el almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

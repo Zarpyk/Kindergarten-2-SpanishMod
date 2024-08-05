@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>*b*¡CESE Y DESISTA INMEDIATAMENTE! *be*</DialogueText>
+      <JumpNode>1</JumpNode>   
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Penny...~Quiero los nombres de todos los que estuvieron involucrados en esta pelea de comida.~ El resto...por favor, salgan afuera para el recreo.</DialogueText>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

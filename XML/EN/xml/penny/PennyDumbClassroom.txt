@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Attention bad kids!</DialogueText>
+      <FunctionCall>WalkToPlayerDumbClass</FunctionCall>
+      <JumpNode>-1</JumpNode>  
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>It has come to my attention that one of you is carrying some contr-</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Oh it's definitely you.~ You're going to have to come with me to the principal's office.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What gives you the right?</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Oh no!~ The power went out!~ I sure hope nothing bad happens.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PlayerShotByPenny</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

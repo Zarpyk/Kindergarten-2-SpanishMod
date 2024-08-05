@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Prefiero quedarme aquí abajo. No querría quemarme con el sol.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quieres batallar?</OptionText>
+          <ItemToUse>Deck</ItemToUse>
+          <DestinationID>50</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Eso es agradable, Ozzy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡No se te permite cavar aquí! ¡Esta es mi caja de arena! ¡Ve a jugar a otro lado!</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Nugget cavará la Cueva Nugget! ¡Nugget tendrá éxito!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Nugget</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡No voy a dejar que este raro arruine una caja de arena perfectamente buena con su excavación!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deberías dejarlo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Mira esta flor.</OptionText>
+          <DestinationID>6</DestinationID>
+          <ItemToUse>GreenFlower</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>¡Ah! ¡Aleja esa cosa de mí! ¡Soy alérgico!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>LeaveSandbox</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¿Has visto mi inhalador? ~ Pensé que lo dejé en mi casillero, pero no está allí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No lo he visto.</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Maldita sea.~ *hl*Menos mal que tengo un de repuesto en mi casillero de arriba.*hle* Solo lo usaré si pasa algo.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToRecessPoint</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Dudo que algún tonto nuevo tenga lo que se necesita para vencerme. ¡Mi mazo rojo y azul es imbatible! ¡Vamos!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartMonstermonBattle</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>¡Jajaja! ~ Sabía que algún tonto nuevo no podría vencerme. ~ ¡Lárgate, perdedor!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Vete.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>¡De ninguna manera! ~ No puedo creer que perdí. ~ Quizás ustedes, los nuevos, son buenos en algo después de todo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vaya. Gracias.</OptionText>
+          <DestinationID>451</DestinationID>
+          <FunctionCall>UnlockHydra</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>451</NodeID>
+      <DialogueText>Supongo que has ganado esta tarjeta Monstermon por vencerme. Ahora, lárgate de aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

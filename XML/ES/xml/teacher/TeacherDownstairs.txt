@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Sra. Applegate, por favor...~</DialogueText>
+      <NPC>Stevie</NPC>
+      <JumpNode>1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Abre esta puerta inmediatamente! ¡Hay pastillas allá afuera! ¿¡No lo entiendes!?</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>No realmente...~ pero eres una maestra, así que supongo que tengo que hacer lo que dices.</DialogueText>
+      <NPC>Stevie</NPC>
+      <JumpNode>3</JumpNode>
+      <FunctionCall>StevieOpenDoor</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Bien.~ ¡Ahora sal aquí y ayúdame!</DialogueText>
+      <FunctionCall>WalkOutside</FunctionCall>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Pero tengo que monitorear los pasillos!</DialogueText>
+      <NPC>Stevie</NPC>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡AHORA!</DialogueText>
+      <JumpNode>6</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Está bien. Está bien. Ya voy. Solo cerraré la puerta detrás de mí para que nadie más salga.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StevieGoHelpFindPills</FunctionCall>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>No es *sniff*...~justo. Los necesito tanto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa?</OptionText>
+          <DestinationID>11</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja que llore.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Las pastillas!~ No he tenido ninguna desde ayer. ~ ¡No hay ninguna en ningún lado! ~ ¡Estoy perdiendo la cabeza sin ellas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Nadie tiene ninguna?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¡No!~ La cadena de suministro se rompió por completo después de que murió el director. Incluso Monty dijo que él...</DialogueText>
+      <JumpNode>13</JumpNode>
+      <FunctionCall>ClearFace</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡*b*ESO ES!!*be*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué?</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¡Haremos que Monty haga más pastillas!~ Ese pequeño nerd es tan inteligente, ¡estoy seguro de que podría hacerlo! Y sería bueno para su pequeño 'negocio secundario'.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡Está bien!~ ¡Ve! ¡Sube a esa elegante aula y pregunta qué necesita para hacerle a mamá sus pastillas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¡Stevie!</DialogueText>
+      <FunctionCall>FaceStevie</FunctionCall>
+      <JumpNode>17</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Sí, sí. Te escuché.</DialogueText>
+      <JumpNode>18</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Bien. Hazle saber a ese otro vago monitor también. ¡Cualquiera que se interponga en el camino de este chico hoy va a ser asesinado sin compasión! ¿¡Me oyes!?</DialogueText>
+      <JumpNode>19</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>¡Está bien, está bien!~ Ni siquiera sé por qué necesitamos monitores en los pasillos en este punto. Todo lo que haces es decirle a tus chicos que me ignoren.</DialogueText>
+      <JumpNode>20</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>*hl*Déjame saber qué necesita Monty. Regresaré al aula y te esperaré allí.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me encargaré de eso.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReturnToDumbClass</FunctionCall>
+          <SetFlag>TeacherGoTalkToMonty</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

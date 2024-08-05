@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Oh...~it's you. How's uhhhh...~how's it going?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Are you okay?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nugget is stuck behind a sewer grate.</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't need to get involved with this.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I'm...I'm just great! A little tired maybe...~or something.~ You wouldn't happen to have any of those pills you had yesterday?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nope. Sorry.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Then stop bothering me! The bell hasn't rung yet so I don't have to put up with you right now!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>But I-</OptionText>
+          <DestinationID>3</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>TriggerSnap</FunctionCall>
+          <SetFlag>TeacherSnap1</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Let her get herself together.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>NO!!~ Not today!~ *hl*I'm so close to snapping right now and I'm gonna need all my energy for when Cindy causes an issue!*hle* Get out of my face!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Let her get herself together.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>I'm not talking to you anymore. I can't take it. Go away.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Does he have any pills on him?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't think so.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Then he can stay down there. One less kid for me to worry about today.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're a peach.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Records?~ Yeah, I have a record of you being a real pain in my giant behind!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I mean academic records.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Oh! We were supposed to be keeping those? Jeez. I didn't know that.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're a teacher.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Yeah! A teacher who teaches kindergarten!~ Why do you want your records so bad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>The science teacher says I'm below average.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Well he's right! Now get lost! I can't deal with you right now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Get lost.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>14</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>I said to get lost!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Are you okay?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't need to get involved with this.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Look kid...~I'm this close to losing my cool. *hl*Don't freaking talk to me right now.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>But I-</OptionText>
+          <DestinationID>21</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GoInsideCoolOff</FunctionCall>
+          <SetFlag>TeacherSnap2</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Let her get herself together.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Nope!~ Not dealing with you. Gonna go inside and cool off. *hl*I'm about to freakin' lose it. Maybe the lunch lady can make me a sandwich.*hle*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>TriggerBuggsClue</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Oh...~uh...oh dear.~ This is embarassing.</DialogueText>
+      <JumpNode>31</JumpNode>
+      <FunctionCall>FocusPrincipal</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>What's wrong Ms. Applegate?</DialogueText>
+      <JumpNode>32</JumpNode>
+      <NPC>Principal</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>I seem to have...~er...misplaced that...~that really important thing you gave me at orientation.</DialogueText>
+      <JumpNode>33</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>*Sigh*~ That's okay.~ I'll get you another one by lunch time.~ *hl*We'll search all the students as they come in to make sure none of them have it.*hle*</DialogueText>
+      <JumpNode>34</JumpNode>
+      <NPC>Principal</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>Bob!~ Make sure you check everyone who's going up the ramp for any special devices!</DialogueText>
+      <JumpNode>35</JumpNode>
+      <NPC>Principal</NPC>
+      <FunctionCall>FocusBob</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Uh...~sure?~ What kind of special devices?</DialogueText>
+      <JumpNode>36</JumpNode>
+      <NPC>Bob</NPC>
+      <FunctionCall>FocusPrincipal</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>You'll know it when you see it. Thank you!</DialogueText>
+      <JumpNode>37</JumpNode>
+      <NPC>Principal</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>Penny, please start ummmm...looking for Ms. Applegate's special device!</DialogueText>
+      <JumpNode>38</JumpNode>
+      <NPC>Principal</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>Yes Mommy.~ I'll adjust what I'm looking for. *hl*I should be able to find it before the bell rings.*hle*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Penny</NPC>
+      <FunctionCall>AddPennyEvents</FunctionCall>
+      <ResolutionID>-1</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>I'm gonna get fired on my first day for losing that remote. At least they didn't drug test me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lucky you.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>200</NodeID>
+      <DialogueText>*b*NUGGET!!*be*</DialogueText>
+      <FunctionCall>WalkToNuggetEndWorld</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>201</NodeID>
+      <DialogueText>This has your strange vibes all over it!~ What did you do?!~ Why are you so weird?!~ What are you wearing?!~ I demand ans-</DialogueText>
+      <FunctionCall>GetStruckByLightning</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>700</NodeID>
+      <DialogueText>Where do you think you're going?!</DialogueText>
+      <FunctionCall>PanToTeacher</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>701</NodeID>
+      <DialogueText>You haven't given me my pills yet!</DialogueText>
+      <FunctionCall>RunToPlayerEndDay</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>702</NodeID>
+      <DialogueText>Well?~ Where are they?!~ Where are my pills?! Did you get them?~ Give them to me!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Here.</OptionText>
+          <DestinationID>703</DestinationID>
+          <ItemToUse>Pill</ItemToUse>
+          <FunctionCall>GivePill</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I couldn't make it.</OptionText>
+          <DestinationID>715</DestinationID>
+          <FunctionCall>NoPillsEnd</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>703</NodeID>
+      <DialogueText>Oh you sweet sweet drug of the gods! ~*GULP*</DialogueText>
+      <JumpNode>704</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>704</NodeID>
+      <DialogueText>AAAAAAAAAAAAHHHHHHHHHH...</DialogueText>
+      <JumpNode>705</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>705</NodeID>
+      <DialogueText>You...~you really are the best student I've ever had.~ Thank you so much.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Glad I could enable your habit.</OptionText>
+          <DestinationID>706</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>706</NodeID>
+      <DialogueText>I think it's time for me to move on.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Move on?</OptionText>
+          <DestinationID>707</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>707</NodeID>
+      <DialogueText>I really hate Cindy...~and Nugget...~and Buggs...~and all of the children here. Except you. You're cool.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ummmm...thanks.</OptionText>
+          <DestinationID>708</DestinationID>
+          <FunctionCall>GetPennyRemote</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>708</NodeID>
+      <DialogueText>If I'm leaving...~I think you should have this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What is it?</OptionText>
+          <DestinationID>709</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>709</NodeID>
+      <DialogueText>It's a remote control for uh...~the principal's daughter.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Woah.</OptionText>
+          <DestinationID>710</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>710</NodeID>
+      <DialogueText>Yeah...~that's another reason I want to leave. Too many robots. Too much responsibility.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What does it do?</OptionText>
+          <DestinationID>711</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>711</NodeID>
+      <DialogueText>There's only a few buttons on it. I think you can make her come to your location, and disable her detectors and stuff. I don't know. I didn't read the manual.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Well...thanks I guess.</OptionText>
+          <DestinationID>712</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>712</NodeID>
+      <DialogueText>Yup...~Have a nice life. Stay in school. Don't do drugs. You know the drill.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Do I though?</OptionText>
+          <DestinationID>713</DestinationID>
+          <FunctionCall>WalkOffScreenEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>713</NodeID>
+      <DialogueText>Toodles!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye, Ms. Applegate.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EndDayTeacher</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>715</NodeID>
+      <DialogueText>*Sniff* You- you couldn't do it?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm sorry.</OptionText>
+          <DestinationID>716</DestinationID>
+          <FunctionCall>WalkOffScreenEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>716</NodeID>
+      <DialogueText>Then it looks like I'll need to find a bar. There has to be one around here-~ oh wait, we're in a school zone. Stupid laws.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess I should leave too.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EndDayTeacher</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

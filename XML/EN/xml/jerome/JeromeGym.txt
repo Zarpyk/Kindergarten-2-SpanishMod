@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Let go! I want to shoot some free throws!</DialogueText>
+      <JumpNode>1</JumpNode>   
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Get in line new kid! This basketball is mine!</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Help Jerome grab the ball.)</OptionText>
+          <FunctionCall>JeromeGetBall</FunctionCall>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't do anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>HA!~ Now get lost!~ Girls can't play basketball anyway.</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>You'll live to regret this, new kid!</DialogueText>
+      <NPC>Carla</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>CarlaWalkAway</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Thanks for the help. She had a stronger grip than I thought she would.</DialogueText>
+     <Options>
+        <DialogueOption>
+          <OptionText>No problem.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetDabHero</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Here's a Monstermon Card. He's probably the coolest one there is. I'll see you around.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>See ya.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6</ResolutionID>
+          <FunctionCall>StartJeromeBasketball</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>I'm glad I got the basketball. Wouldn't want to play with a dumb girl.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Ouch!</DialogueText>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>This stupid day can't get any worse. Screw this.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>JeromeWalkOff</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

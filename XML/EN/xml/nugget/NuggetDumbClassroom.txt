@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>*Huff*~ Nugget is present!</DialogueText>
+      <JumpNode>1</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>No.~ Nugget is late. So you're getting study hall-- OH DEAR GOD!! WHAT HAPPENED TO YOUR ARM!?!</DialogueText>
+      <JumpNode>8</JumpNode>
+      <NPC>Teacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>But-~ but-~ Nugget was trapped in the-~</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Nugget, I don't have the capacity to even comprehend what your excuse could be. Just shut up and deal with it.</DialogueText>
+      <JumpNode>4</JumpNode>
+      <NPC>Teacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Teacher is an unjust ruler.~ Teacher will pay for this.</DialogueText>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Spare me.~ Just go play.</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>6</ResolutionID>
+      <FunctionCall>WalkToToyChest</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>*Huff*~ NUGGET IS ANGRY!!</DialogueText>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Nugget!~ What are you--</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>20</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Nugget had to chew it off in order to escape from the failed Nugget Cave.</DialogueText>
+      <JumpNode>9</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Why did you--?~ *Sigh*~ Nevermind. ~Do you want to go to the nurse?~ You're bleeding all over my new classroom!</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>10</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Nugget is quite durable. Nugget will survive.</DialogueText>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>If you insist...~ Go ahead and play or...~do whatever it is that you do.</DialogueText>
+      <NPC>Teacher</NPC>
+      <FunctionCall>WalkToToyChest</FunctionCall>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>40</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Nugget demands silence from the awful teacher woman!</DialogueText>
+      <JumpNode>21</JumpNode>
+      <FunctionCall>WalkToPlayerMorningTime</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>You abandoned poor Nugget!~ You left Nugget all alone in the failed Nugget Cave!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry about that.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What happened to your arm?</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>You're losing a lot of blood.</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Nugget appreciates your apology. Now you will prove to Nugget how sorry you are.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>You will retrieve what Nugget has lost.~ Return to the failed Nugget Cave and recover Nugget's arm.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>And if I don't?</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Nugget will take yours.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How can I get it back?</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>There was a cave-in where Nugget was digging on the side of the school. Perhaps the abandoner could dig through it with a shovel. Nugget also noticed an elevator that may be of use.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll do my best.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>The abandoner should be fetching Nugget's arm, not standing around. Nugget needs his arm.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Nugget chewed it off like a trapped coyote to help him escape.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Your arm was stuck?</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>No. Nugget just thought it was necessary.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Wasn't the lunch lady supposed to help?</OptionText>
+          <DestinationID>32</DestinationID>
+          <Flag>LunchLadyAtGrate</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>40</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>The odd lunch lady left after the bell rang. She left poor Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Interesting.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>40</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Nugget likes the fidgety spinny.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What happened to your arm?</OptionText>
+          <DestinationID>30</DestinationID>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That's nice Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>There are no toys left for poor Nugget?!~ This makes Nugget sad...~</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToDesk</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>No toys...no arm...~Nugget is having a bad day at the new school.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I have a toy for you.</OptionText>
+          <DestinationID>43</DestinationID>
+          <ItemToUse>FidgetSpinner</ItemToUse>
+          <FunctionCall>GiveSpinner</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That's nice Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>Nugget appreciates the generosity!~ Nugget will reciprocate with a Monstermon card!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Cool. Thanks!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>40</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Nugget's potential friend has returned.~ The fire is in the school then?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>51</DestinationID>
+          <UsesAction>true</UsesAction>
+          <Flag>SmuggledInLighter</Flag>
+          <SetFlag>NuggetShovelMission</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Excellent. Then Nugget's potential friend is ready to help Nugget find a shovel.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Where can I get a shovel?</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>*hl*The janitor buries many things.*hle* Perhaps he knows where to get one.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I get to him?</OptionText>
+          <DestinationID>53</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>Nugget will remove Teacher, then we shall go see the janitor in the bathroom together.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Go do it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>NuggetDistractTeacher</FunctionCall>
+          <SetFlag>TeacherLeftDumbClassroom</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Give me a minute.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>Hello teacher.</DialogueText>
+      <JumpNode>56</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText>Ugh.~ What do you want Nugget?</DialogueText>
+      <JumpNode>57</JumpNode>
+      <NPC>Teacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>57</NodeID>
+      <DialogueText>It is not what Nugget wants.~ It is what teacher wants.</DialogueText>
+      <JumpNode>58</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>58</NodeID>
+      <DialogueText>Spit it out weirdo.~ What are you getting at.</DialogueText>
+      <JumpNode>59</JumpNode>
+      <NPC>Teacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>59</NodeID>
+      <DialogueText>Nugget knows where the principal's pills of peace are.</DialogueText>
+      <JumpNode>60</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>You-~ You have pills?!</DialogueText>
+      <JumpNode>61</JumpNode>
+      <NPC>Teacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>Yes. Nugget dropped them when the failed Nugget Cave collapsed. The pills are near the handicap r-.</DialogueText>
+      <JumpNode>62</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>62</NodeID>
+      <DialogueText>By the handicap ramp! Got it!</DialogueText>
+      <JumpNode>63</JumpNode>
+      <NPC>Teacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>63</NodeID>
+      <DialogueText>Come to mama you sweet sanity savers!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Teacher</NPC>
+      <FunctionCall>LeadTeacherOut</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>65</NodeID>
+      <DialogueText>Nugget's potential friend will lead the way. Nugget will follow.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Did you actually have pills?</OptionText>
+          <DestinationID>66</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay. Let's go.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StartFollowingPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>66</NodeID>
+      <DialogueText>No.~ Nugget lied. Nugget does not have any more.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Let's go.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StartFollowingPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>*hl*Teacher has not returned.*hle* Teacher really really wants Nugget's pills.</DialogueText>
+      <JumpNode>101</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>So if the teacher isn't back yet...what do we do?</DialogueText>
+      <JumpNode>102</JumpNode>
+      <NPC>Ozzy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>I guess we just go to lunch. That's what we'd normally do right about now.</DialogueText>
+      <JumpNode>103</JumpNode>
+      <NPC>Ted</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>103</NodeID>
+      <DialogueText>Nugget agrees.~ Nugget has business to attend to with the odd lunch lady.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go to lunch.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>Nugget saw teacher in the hallway. Why is teacher sad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>She snapped.</OptionText>
+          <DestinationID>111</DestinationID>
+        </DialogueOption>
+      </Options>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>So Nugget is not the craziest person anymore?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Possibly.</OptionText>
+          <DestinationID>112</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>This pleases Nugget. Nugget will carry his new sanity status with honor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's great Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>40</ResolutionID>
+          <FunctionCall>WalkToToyChest</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>120</NodeID>
+      <DialogueText>Nugget is pleased with the fight of food.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's nice Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>150</NodeID>
+      <DialogueText>Nugget's potential friend thinks he's so smart! Nugget is smart too! Nugget will not be friends with children of the...~other class.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Whatever Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>Please do not waste the time of Nugget. Nugget requires a shovel.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

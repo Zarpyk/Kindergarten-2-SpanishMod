@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡Vamos, puerta estúpida! *bufido* ¡Muévete! ¡Necesito volar una pared!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Te veo molesto.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No me importa esto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Estoy molesto! ~ ¡Me diste el dispositivo perfecto para finalmente volar la pared entre el armario de los conserjes y la sala de profesores, y Penny no me deja entrar a la estúpida escuela para hacerlo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Penny se ha ido.</OptionText>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+          <Flag>BillyPennySnapped</Flag>
+          <FunctionCall>StopPulling</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Eso es una pena.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¿¡De verdad?! ~ ¡Genial! ~ ¡Eso significa que puedo ir a hacer esto! ~ ¡Gracias por avisarme, chiquillo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>CarlaLeaveDumpster</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Woah there little man!~ What are you doing in here?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I could ask you the same question.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I dunno.~ The lights went out and I started wandering.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>I don't think they expect me to catch kids while the lights are off, but I'd recommend you be back in class when they come back on.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Okay buddy.~ Power's back on.~ Let's get you back to class.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReturnToScienceFromMonitor</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Woah there little man!~ You shouldn't be in here!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>I'm not gonna ask any questions.~ Just go to lunch.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go to lunch.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Hey guys!~ We're on lockdown...~aaaaand now I see why. Jeez. You guys are little savages.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Are we in trouble?</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>You would be, but there aren't really any adults left to punish you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Both teachers are dead. Bob, the principal, and the lunch lady are all missing. The other janitor doesn't really punish within the guidelines of the school anyway.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No he doesn't.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>So I'm just supposed to take you guys outside until the lockdown is over.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToNextArea</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

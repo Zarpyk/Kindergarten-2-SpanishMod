@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Excuse me!~ Students are not allowed in the teacher's lounge! I'm taking you to the principal's office!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What gives you the right?</OptionText>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Oh no!~ The power went out!~ I sure hope nothing bad happens.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PlayerShotByPenny</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Hey there kiddo! I'm your friendly school janitor!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's your name?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Friendly?</OptionText>
+          <DestinationID>1</DestinationID>
+          <SetFlag>TalkToBob</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Can I get by here?</OptionText>
+          <DestinationID>40</DestinationID>
+          <SetFlag>TalkToBob</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nugget is trapped in the grate over there.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+        </DialogueOption>
+        <!--<DialogueOption>
+          <OptionText>DEBUG LAIR</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PlayerGetInElevatorLair</FunctionCall>
+        </DialogueOption>-->
+        <DialogueOption>
+          <OptionText>(Stop talking to the nice janitor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Yeah, I'd like to think so! You just let me know if you need any help getting adjusted here. I'm always happy to help.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can I get by here?</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's your name?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Stop talking to the nice janitor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Hello again little buddy.~ What's going on?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nugget is trapped in the grate over there.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Can I get by here?</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's your name?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>The other janitor wanted me to give you this.</OptionText>
+          <ItemToUse>Contract</ItemToUse>
+          <FunctionCall>UseContract</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>JanitorGaveContractToBob</SetFlag>
+          <DestinationID>60</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Stop talking to the nice janitor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Oh!~ How rude of me. *hl*I'm Bob!*hle* Most of the kids around here just refer to me as the janitor anyway. You can call me that too if you like.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can I get by here?</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Stop talking to Bob.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Oh no! That's terrible. *hl*If only I had my trusty tool belt I could get him out of there!*hle* Go tell the principal! She'll know what to do!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I have your tool belt.</OptionText>
+          <DestinationID>11</DestinationID>
+          <ItemToUse>ToolBelt</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UseToolBelt</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's your name?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>The other janitor wanted me to give you this.</OptionText>
+          <ItemToUse>Contract</ItemToUse>
+          <FunctionCall>UseContract</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>JanitorGaveContractToBob</SetFlag>
+          <DestinationID>60</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>You found it?!~ That's wonderful!</DialogueText>
+      <JumpNode>12</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Hold on strange child!~ Bob is coming to save you!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToNugget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>It's a new policy for your little friend in the wheel chair over there. @I can only allow him and that little odd Nugget child through here.^</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay Bob.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Sorry little buddy.~ *hl*Only kids with disabilities are allowed to use the handicap ramp on the side of the school.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's your name?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <SetFlag>TalkAboutHandicap</SetFlag>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Your differently-abled pal let me know that you're helping him. Go ahead and help him up the ramp.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nugget is trapped in the grate over there.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's your name?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I will Bob.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>Oh thanks! I'll read it when I get inside. *hl*Go ahead and tell him you delivered it.*hle* I'm really looking forward to working with him.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I doubt that.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>I like talking to Carla. She's very savvy. Reminds me of myself when I was her age.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's nice Bob.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>I'm gonna get you out of there! Just hang in there! Remember to breathe!</DialogueText>
+      <JumpNode>101</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>Nugget knows how to breathe!~ Nugget does not know how much longer he can stay down here!~ Get Nugget out!</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>102</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>This will just take a second.</DialogueText>
+      <JumpNode>103</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>103</NodeID>
+      <DialogueText>Got it!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>FreeNugget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>There you are little friend!~ Don't go crawling underground anymore, okay?</DialogueText>
+      <JumpNode>111</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>Nugget fully intends to crawl underground again. Nugget needs a new Nugget Cave.</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>112</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>Well...uh...just be careful with that.</DialogueText>
+      <JumpNode>113</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>113</NodeID>
+      <DialogueText>Here. Take this, large janitor man. It is a nugget of friendship.</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>114</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>114</NodeID>
+      <DialogueText>Aww thank you.~ I'll see you around little friend.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ReturnToGaurd</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>120</NodeID>
+      <DialogueText>That was a very nice thing we did just now. *hl*I'm sure your little friend would like to thank you for your help.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Maybe he does.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>121</NodeID>
+      <DialogueText>Oh there you are!~ I got your little friend out! *hl*I'm sure he'd like to thank you.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Maybe he does.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>150</NodeID>
+      <DialogueText>Hello again, large friendly friend of Nugget.</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>151</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>151</NodeID>
+      <DialogueText>Oh, hey buddy!~ Glad you're not stuck behind that grate anymore, huh?</DialogueText>
+      <JumpNode>152</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>152</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>Yes. Nugget appreciates freedom. And nuggets. Would the large janitor man please let Nugget by again?~ Nugget requires a flower.</DialogueText>
+      <JumpNode>153</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>153</NodeID>
+      <DialogueText>Oh sure, but ummmm...~what about your friend here?~ He's not handicapped.</DialogueText>
+      <JumpNode>154</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>154</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>Neither is Nugget.</DialogueText>
+      <JumpNode>155</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>155</NodeID>
+      <DialogueText>You know what, I'm just gonna stop digging this hole. Go ahead.~ Just don't get trapped in any more holes okay?</DialogueText>
+      <JumpNode>156</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>156</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>Nugget does not wish to repeat the incident from earlier. Nugget will be fine.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>MoveBob</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>160</NodeID>
+      <DialogueText>You and your little friend be careful not to fall down any more holes, okay?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>We'll be careful.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>170</NodeID>
+      <DialogueText>Sorry buddy.~ No one is allowed by until we find that special device.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bummer.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

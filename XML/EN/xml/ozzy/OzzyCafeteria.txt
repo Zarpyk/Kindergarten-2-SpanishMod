@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Normally my girlfriend would sit next to me and my best friend would sit across from me, but noooooo. We can't have that anymore.~ Stupid new kids.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You should buy a burger.</OptionText>
+          <DestinationID>1</DestinationID>
+          <Flag>NuggetBurgerMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Whatever Ozzy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Yeah?~ You'd like that wouldn't you?!~ Make it easier to forget about all of this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Forget about what?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>I'm not getting study hall over this.~ Just leave me alone.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Whatever.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>I can't believe someone was using my stall. Everyone knows that's my stall!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh well.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>I'm going to win this food fight. I'm going to win to show you new kids that you aren't welcome here!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Whatever Ozzy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>501</NodeID>
+      <DialogueText>Dumb new kids. Starting trouble on their first day here.~ At least you weren't involved.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No I wasn't.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

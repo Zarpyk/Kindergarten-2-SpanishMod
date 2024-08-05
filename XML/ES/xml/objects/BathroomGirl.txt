@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Esta rejilla de aire parece que se puede desenroscar. Parece que lleva al aula de ciencias.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Desenrosca la rejilla.)</OptionText>
+          <ItemToUse>ToolBelt</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <SetFlag>UnscrewedGirlVent</SetFlag>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Desenrosca la rejilla.)</OptionText>
+          <ItemToUse>Screwdriver</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <Flag>LilyEscapeBathroom</Flag>
+          <SetFlag>UnscrewedGirlVent</SetFlag>
+          <FunctionCall>LilyEscapeVent</FunctionCall>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(ignora la rejilla.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Hay un cupón de la máquina expendedora en la basura. Me pregunto quién dejaría algo así aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma el cupón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetVendingCoupon</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>15</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja el cupón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>No me siento cómodo usando los cubículos en el baño de chicas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pero me siento cómodo tapándolos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ClogStallGirl</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>ClogStallGirl</SetFlag>
+          <ItemToUse>ToiletPaper</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ve a otro lado.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Este cubículo está cerrado. Suena como si alguien estuviera vomitando allí dentro.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a otro lado.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Las leyendas son ciertas!~ ¡Hay un sofá en el baño de chicas! ¡Hay una carta de Monstermon entre los cojines!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Genial.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6</ResolutionID>
+          <FunctionCall>UnlockChair</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>No me siento cómodo usando los cubículos en el baño de chicas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pero me siento cómodo tapándolos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ClogStallGirl</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>ClogStallGirl</SetFlag>
+          <ItemToUse>ToiletPaper</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ve a otro lado.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>¡Las leyendas son ciertas!~ ¡Hay un sofá en el baño de chicas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Increíble.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Pobre Bob. Se merecía algo mucho mejor que esto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(¡Soy un monstruo!)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockBobOutfit</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Es solo un montón de basura.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Es más o menos lo que esperaba.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Esta rejilla de aire parece que se puede desenroscar. Parece que lleva a un área más alta en el aula de ciencias.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Desenrosca la rejilla.)</OptionText>
+          <ItemToUse>ToolBelt</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <SetFlag>UnscrewedGirlVentHigh</SetFlag>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EnterGirlVentHigh</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(ignora la rejilla.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Este es el cubículo en el que Lily dijo que estaría.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toca el cubículo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KnockOnLilyStall</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja el cubículo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Parece que Buggs ha dejado caer su cuchillo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Apuñala al profesor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PlayerWalkToStabPoint</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>BillyKilledApplegate</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja el cuchillo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Siento que no es la primera vez que la he apuñalado...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Raro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockApplegateOutfit</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Oh!~ La flor es bastante bonita.~ ¿Cómo pudo Nugget haberse la perdido?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No lo sé.</OptionText>
+          <DestinationID>30</DestinationID>
+          <FunctionCall>GiveNuggetFlower</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Nugget acepta esta ofrenda. Nugget te dará una oportunidad de amistad.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Entonces qué tengo que hacer?</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Normalmente, Nugget te haría encontrar los cinco nuggets de la amistad, pero no han sido escondidos en esta escuela todavía.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuál es la alternativa?</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Bueno...~ Nugget podría usar un poco de ayuda para construir su nueva Cueva Nugget.~ La última vez que Nugget lo intentó...~ no salió tan bien.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué necesitas?</OptionText>
+          <DestinationID>33</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Nugget te lo dirá. Sigue a Nugget de vuelta hacia la salida de la fallida Cueva Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>NuggetReturnToSY</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>Por favor, no desperdicies el tiempo de Nugget. Nugget quiere una flor para su amistad.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

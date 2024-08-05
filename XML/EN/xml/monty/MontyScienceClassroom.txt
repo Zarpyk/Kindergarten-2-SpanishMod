@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Darn it.~ None of these parts are the ones I'm looking for.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are you looking for?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Good luck with that.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>What do you want?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I need some pills.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Yeah me too buddy.~ After what happened yesterday the whole supply chain broke down. There aren't any left.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can you make more?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>I'm trying to get the ingredients. Those rich twins' family owns the company that makes the chemical used in them, but without it I can't make them.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I have the chemical.</OptionText>
+          <DestinationID>4</DestinationID>
+          <UsesAction>true</UsesAction>
+          <ItemToUse>Chemical</ItemToUse>
+          <FunctionCall>GiveChemical</FunctionCall>
+          <SetFlag>TeacherGaveMontyChemical</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Darn it.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>What?! No way!~ Then it looks like we're back in business!~ You're gonna have to help me get some stuff!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do you need?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>*hl*I'm gonna need a chemistry set and a couple of hair samples from people who still have the stuff in their system.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I get the chemistry set?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>It's right there behind the rope, but today's science lesson is about plants, not chemistry. *hl*We'll have to find some way to change it.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Who has it in their system?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Ms. Applegate certainly does. By the looks of her this morning, she's going through some heavy withdrawal.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Who else?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Well Nugget was obviously a pill popper. I wouldn't be surprised if he still had it running through him.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Is that everyone?</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>I heard a rumor that the principal of our last school was using kids to make them. I wouldn't be surprised if Billy had the key to the whole thing in his genes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Where is Billy?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Ya got me. I didn't see him or Lily this morning. Probably skipping after everything that happened yesterday.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll figure something out.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>*hl*Oh and if you're getting hair samples, I'd recommend using scissors.*hle* Plucking hairs would take forever.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Yeah, I know.~ It sucks for me too.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>See you later, Monty.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>13</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Without that chemical, I can't do anything. Sorry kid.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I have the chemical.</OptionText>
+          <DestinationID>4</DestinationID>
+          <UsesAction>true</UsesAction>
+          <ItemToUse>Chemical</ItemToUse>
+          <FunctionCall>GiveChemical</FunctionCall>
+          <SetFlag>TeacherGaveMontyChemical</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>See you later, Monty.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>I'm trying to find something to upgrade the precision of the laser cannon on my chair.~ I'm gonna use it to make that janitor suffer.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Will this work?</OptionText>
+          <DestinationID>16</DestinationID>
+          <ItemToUse>LaserCutter</ItemToUse>
+          <FunctionCall>GiveLaser</FunctionCall>
+          <SetFlag>GaveMontyLaser</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Good luck with that.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>That's perfect!~ Oh man!~ I can't wait to see the look on that old coot's face! Here's a Monstermon card for helping me out.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>This should be good.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>17</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>I can't wait for lunch.~ With the added precision this thing gives me, I can really make him squirm before I pop him!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Easy there.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>What the--?~ You're not supposed to be in here! You're a stupid kid.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Do you have a key to the elevator?</OptionText>
+          <DestinationID>21</DestinationID>
+          <Flag>JanitorKilledStevie</Flag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I need some pills.</OptionText>
+          <DestinationID>2</DestinationID>
+          <Flag>TeacherGoTalkToMonty</Flag>
+          <SetFlag>TeacherTalkedToMonty</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ouch.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Of course I do!~ How do you think I got up here?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>The janitor wants it.</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>The...um...the nice janitor?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>The other one.</OptionText>
+          <DestinationID>23</DestinationID>
+          <FunctionCall>GetElevatorKey</FunctionCall>
+          <SetFlag>MontyStuckUpstairs</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>*Sigh*~ ~Just...~just bring it back when you're done with it. I can't get down without it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll try.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>You got all the stuff I need?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup!</OptionText>
+          <DestinationID>55</DestinationID>
+          <Flag>TeacherHasAllIngredients</Flag>
+          <FunctionCall>GiveIngredients</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nope.</OptionText>
+          <DestinationID>51</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Well great!~ Just great!~ This has been a fantastic waste of time and money.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>My bad.</OptionText>
+          <DestinationID>52</DestinationID>
+          <FunctionCall>OpenCannon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>Your bad?~ You're the worst! And now you're gonna pay for it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>But I--</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FireCannon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>Good!~ We're in business then. I'm gonna get started, but we do have a small problem.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Which is?</OptionText>
+          <DestinationID>56</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText>Everyone gets a turn on this thing!~ It's a very delicate process, so *hl*we need to get everyone to pass their turn.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds complicated.</OptionText>
+          <DestinationID>57</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>57</NodeID>
+      <DialogueText>It won't be easy, but with a little persuasion, I'm sure we can get this done right.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what do I do?</OptionText>
+          <DestinationID>58</DestinationID>
+          <FunctionCall>GetJunk</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>58</NodeID>
+      <DialogueText>Here's some junk I didn't sell today.~ See if you can get everyone to give up their turn on this thing.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>59</DestinationID>
+          <ItemToUse>GreenFlower</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>60</DestinationID>
+          <ItemToUse>FakeDiamond</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>61</DestinationID>
+          <ItemToUse>Doll2</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>65</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>59</NodeID>
+      <DialogueText>It's just a green flower that grows around the back of the school.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>60</DestinationID>
+          <ItemToUse>FakeDiamond</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>61</DestinationID>
+          <ItemToUse>Doll2</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>65</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>Don't get your hopes up, it's not a real gem, but you might be able to fool someone into thinking it is.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>59</DestinationID>
+          <ItemToUse>GreenFlower</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>61</DestinationID>
+          <ItemToUse>Doll2</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>65</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>It's just an old doll. It's kinda similar to the one in the toy chest downstairs.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>59</DestinationID>
+          <ItemToUse>GreenFlower</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>60</DestinationID>
+          <ItemToUse>FakeDiamond</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>65</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>65</NodeID>
+      <DialogueText>Try and use that stuff I gave you to dissuade the other kids from bothering me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>59</DestinationID>
+          <ItemToUse>GreenFlower</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>60</DestinationID>
+          <ItemToUse>FakeDiamond</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's this?</OptionText>
+          <DestinationID>61</DestinationID>
+          <ItemToUse>Doll2</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>Way to go kid.~ Ozzy just kicked me off the chemistry set.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I tried to stop him.</OptionText>
+          <DestinationID>71</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>71</NodeID>
+      <DialogueText>And I tried not to kill you for failing me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Did you succeed?</OptionText>
+          <DestinationID>72</DestinationID>
+          <FunctionCall>OpenCannon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>72</NodeID>
+      <DialogueText>Hahaha...~no.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>FireCannonChemistry</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>73</NodeID>
+      <DialogueText>Way to go kid.~ Cindy just kicked me off the chemistry set.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I tried to stop her.</OptionText>
+          <DestinationID>71</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>74</NodeID>
+      <DialogueText>Way to go kid.~ Penny just kicked me off the chemistry set.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I tried to stop her.</OptionText>
+          <DestinationID>71</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>75</NodeID>
+      <DialogueText>It's almost done. I just need to add a little bit of that chemical, but there's one problem...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Which is?</OptionText>
+          <DestinationID>76</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>76</NodeID>
+      <DialogueText>Ummm...~I don't actually know which vial to mix it with.~ We could could go with purple, red, or green.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Which one do you think?</OptionText>
+          <DestinationID>77</DestinationID>
+          <FunctionCall>GetChemicalBack</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>77</NodeID>
+      <DialogueText>I don't know!~ Maybe the teacher knows. See if you can get him to spill on what this chemical mixes with.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Let's mix with green.</OptionText>
+          <DestinationID>81</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Let's mix with red.</OptionText>
+          <DestinationID>82</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Let's mix with purple.</OptionText>
+          <DestinationID>81</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>MontyAskedChemistryHelp</SetFlag>
+          <ResolutionID>80</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>80</NodeID>
+      <DialogueText>Well?~ What did you find out?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Let's mix with green.</OptionText>
+          <DestinationID>81</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Let's mix with red.</OptionText>
+          <DestinationID>82</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Let's mix with purple.</OptionText>
+          <DestinationID>81</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nothing yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>81</NodeID>
+      <DialogueText>Okay...~here goes.</DialogueText>
+      <FunctionCall>GiveChemical</FunctionCall>
+      <JumpNode>90</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>82</NodeID>
+      <DialogueText>Okay...~here goes.</DialogueText>
+      <FunctionCall>GiveChemical</FunctionCall>
+      <JumpNode>85</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>85</NodeID>
+      <DialogueText>Yes!~ I think it worked! This looks exactly like the old pills! Nice going!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Glad it worked.</OptionText>
+          <DestinationID>86</DestinationID>
+          <FunctionCall>GetPill</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>86</NodeID>
+      <DialogueText>There ya go man! And there's more to come. With this going, we can restore the supply chain. We're gonna be rich.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good.</OptionText>
+          <DestinationID>87</DestinationID>
+          <FunctionCall>UnlockFireMan</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>87</NodeID>
+      <DialogueText>You can have this Monstermon card for helping me out. Pleasure doing business with ya.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Always is, Monty.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>TeacherCompleted</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>90</NodeID>
+      <DialogueText>Oh no...~something's not right.~ It shouldn't be reacting this way. It's...~it's...</DialogueText>
+      <JumpNode>91</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>91</NodeID>
+      <DialogueText>*b*IT'S GONNA BLOW!! GET--*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ExplodeChemistry</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>Yeah...~robots are cool and all, but none of the stuff in here comes close to what I've made.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can you deactivate this?</OptionText>
+          <DestinationID>101</DestinationID>
+          <Flag>CarlaDeactivateBomb</Flag>
+          <ItemToUse>JeromeBomb</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That's nice Monty.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>You know I can, but you also know I won't be doing it for free.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How much?</OptionText>
+          <DestinationID>102</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>Twenty bucks.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's so expensive!</OptionText>
+          <DestinationID>110</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Is there anything else I could do?</OptionText>
+          <DestinationID>111</DestinationID>
+          <SetFlag>CarlaSetUpDate</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>Yeah?~ So are my medical bills!~ Now put up or shut up.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Is there anything else I could do?</OptionText>
+          <DestinationID>111</DestinationID>
+          <SetFlag>CarlaSetUpDate</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>Hmmmm...~maybe there is something.~ I've seen you hanging out with Carla all day.~ Are you on good terms with her?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess so.</OptionText>
+          <DestinationID>112</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>Good. Good...~so what do you say you drop a good word about me to her?~ Maybe set us up on a little...date?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I can try.</OptionText>
+          <DestinationID>114</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>114</NodeID>
+      <DialogueText>Well you better try hard.~ Either you can give me $20.00 or you can set me up on a date with her. Got it?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>115</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>115</NodeID>
+      <DialogueText>Did you ask her?~ What did she say?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>She said yes.</OptionText>
+          <DestinationID>118</DestinationID>
+          <UsesAction>true</UsesAction>
+          <Flag>CarlaWillGoOnDate</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I haven't asked her yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>116</NodeID>
+      <DialogueText>Oh...~I see. *Sigh*~ Okay. Let's just open this stupid thing up.</DialogueText>
+      <JumpNode>117</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>117</NodeID>
+      <DialogueText>There.~ I disabled the listener on it. It won't pop unless you give it a different method of exploding.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks, Monty.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>120</ResolutionID>
+          <SetFlag>CarlaDeactivatedBomb</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>118</NodeID>
+      <DialogueText>Hot diggity dog! I can't wait! We'll be a force to be reckoned with!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So about the device...</OptionText>
+          <DestinationID>119</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>119</NodeID>
+      <DialogueText>Oh yeah!~ This'll just take a minute.</DialogueText>
+      <JumpNode>117</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>120</NodeID>
+      <DialogueText>That thing is completely harmless now. Don't worry about it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>130</NodeID>
+      <DialogueText>Don't get your hopes up kid. My chair isn't magnetic.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>131</NodeID>
+      <DialogueText>It'd be so great to use this chemistry set to get my pill operation running again...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Interesting.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>199</NodeID>
+      <DialogueText>Hey kid! What the heck is wrong with you?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are you talking about?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>200</NodeID>
+      <DialogueText>You took my elevator key!~ I've been stuck up here all day!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry about that.</OptionText>
+          <DestinationID>201</DestinationID>
+          <FunctionCall>OpenCannon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>201</NodeID>
+      <DialogueText>No you're not!~ Not yet anyway!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Please don't shoot m-</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FireCannon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>250</NodeID>
+      <DialogueText>This is such a lame subject. None of these plants are any good for selling.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh well.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

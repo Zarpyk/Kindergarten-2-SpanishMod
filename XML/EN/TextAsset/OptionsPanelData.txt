@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OptionsPanelData>
+  <OptionsTitle>Options</OptionsTitle>
+  <VideoText>Video</VideoText>
+  <AudioText>Audio</AudioText>
+  <ControlsText>Controls</ControlsText>
+  <BackText>Back</BackText>
+</OptionsPanelData>

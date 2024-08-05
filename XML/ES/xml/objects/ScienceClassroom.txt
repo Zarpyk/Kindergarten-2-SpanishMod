@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Esta es la taza del Dr. Danner.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma la taza.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>TakeMug</FunctionCall>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja la taza.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Este archivador tiene varios planes de lecciones. Puedo cambiarlo moviendo las carpetas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Cambia la lección a química.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>ChangeToChemistry</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Cambia la lección a imanes.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>ChangeToMagnets</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Cambia la lección a robótica.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>ChangeToRobotics</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No cambies nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Ya cambié el plan de lecciones. Debería salir de aquí mientras pueda.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Este ventilador parece que se puede desatornillar. Parece que lleva al baño de las chicas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Desatornilla el ventilador.)</OptionText>
+          <ItemToUse>ToolBelt</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <SetFlag>UnscrewedGirlVent</SetFlag>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>( ignora el ventilador.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Esta planta no es venenosa ni carnívora. Lo cual tiene sentido considerando que esto es una escuela.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma una muestra.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>Slide</ItemToUse>
+          <FunctionCall>GetPlantSlide</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(ignora la planta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Puedo hacer una evaluación en esta computadora.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma la evaluación.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <SetFlag>TookAssessment</SetFlag>
+          <FunctionCall>TakeAssessment</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No tomes la evaluación.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Ya hice mi evaluación. No necesito hacerla de nuevo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Esta puerta está cerrada con llave. Parece que necesito una llave para abrirla.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Este es un enchufe eléctrico. Probablemente se puede usar para crear una distracción en las circunstancias adecuadas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Clava el tenedor en el enchufe.)</OptionText>
+          <ItemToUse>Fork</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetElectrocuted</FunctionCall>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Debería decírselo a Cindy.</OptionText>
+          <SetFlag>SawOutlet</SetFlag>
+          <Flag>CindyOutletDistraction</Flag>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Anotado.</OptionText>
+          <SetFlag>SawOutlet</SetFlag>
+          <BlockFlag>CindyOutletDistraction</BlockFlag>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Este es el cadáver frito de Cindy. Aún tiene el tenedor y la flor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma la flor.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetGreenFlower</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>21</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Toma el tenedor.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetFork</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Descansa en paz, Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockOutfitCindy</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Este es el cadáver frito de Cindy. Aún tiene el tenedor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma el tenedor.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetFork</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>23</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Descansa en paz, Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Este es el cadáver frito de Cindy. Aún tiene la flor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma la flor.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetGreenFlower</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>23</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Descansa en paz, Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Este es el cadáver frito de Cindy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Descansa en paz, Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Este es el cadáver frito de Cindy. Ella tiene la bomba ahora desactivada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma la bomba.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetJeromeBombCindy</FunctionCall>
+          <SetFlag>CarlaDeactivatedBomb</SetFlag>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>23</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Descansa en paz, Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Podría haber cambiado el plan de lecciones si hubiera llegado a este libro antes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Esta es la criatura vegetal del Dr. Danner. Se supone que debe ser alimentada con las flores que he recolectado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Aliméntalo con la flor amarilla.)</OptionText>
+          <ItemToUse>YellowFlower</ItemToUse>
+          <FunctionCall>FeedYellowFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Aliméntalo con la flor roja.)</OptionText>
+          <ItemToUse>RedFlower</ItemToUse>
+          <FunctionCall>FeedRedFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Aliméntalo con la flor morada.)</OptionText>
+          <ItemToUse>PurpleFlower</ItemToUse>
+          <FunctionCall>FeedPurpleFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Aliméntalo con la flor azul.)</OptionText>
+          <ItemToUse>BlueFlower</ItemToUse>
+          <FunctionCall>FeedBlueFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Aliméntalo con la flor verde.)</OptionText>
+          <ItemToUse>GreenFlower</ItemToUse>
+          <FunctionCall>FeedGreenFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No le des nada de comer.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>La muñeca de Penny todavía está escondida debajo de esta mesa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma la muñeca.)</OptionText>
+          <FunctionCall>GetDoll</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja la muñeca.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>¿Qué debería alimentarle ahora?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Aliméntalo con la flor amarilla.)</OptionText>
+          <ItemToUse>YellowFlower</ItemToUse>
+          <FunctionCall>FeedYellowFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Aliméntalo con la flor roja.)</OptionText>
+          <ItemToUse>RedFlower</ItemToUse>
+          <FunctionCall>FeedRedFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Aliméntalo con la flor morada.)</OptionText>
+          <ItemToUse>PurpleFlower</ItemToUse>
+          <FunctionCall>FeedPurpleFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Aliméntalo con la flor azul.)</OptionText>
+          <ItemToUse>BlueFlower</ItemToUse>
+          <FunctionCall>FeedBlueFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Aliméntalo con la flor verde.)</OptionText>
+          <ItemToUse>GreenFlower</ItemToUse>
+          <FunctionCall>FeedGreenFlower</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No le des nada de comer.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Este es un microscopio. Puedo mirar cualquier portaobjetos en los que haya tomado muestras con esto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Examina el portaobjetos.)</OptionText>
+          <DestinationID>42</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UseSquidSlide</FunctionCall>
+          <ItemToUse>SlideSquid</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Examina el portaobjetos.)</OptionText>
+          <DestinationID>46</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UsePlantSlide</FunctionCall>
+          <ItemToUse>SlidePlant</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>Parece que las manchas amarillas en el tanque son en realidad pequeñas criaturas parecidas a calamares.</DialogueText>
+      <JumpNode>42</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>¡OH!~ Parece que has descubierto mis pequeños calamares. Son tan pequeños. Apenas puedes verlos en el tanque de allá.</DialogueText>
+      <NPC>ScienceTeacher</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Para qué sirven?</OptionText>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <NPC>ScienceTeacher</NPC>
+      <DialogueText>Solo pienso que son geniales...~y su tinta es un neurotóxico extremadamente potente.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y los estás guardando en un aula?</OptionText>
+          <DestinationID>44</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <NPC>ScienceTeacher</NPC>
+      <DialogueText>Te daré una de esas tontas cartas de Monstermon si no le dices nada a Ozzy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato hecho.</OptionText>
+          <DestinationID>45</DestinationID>
+          <FunctionCall>GetTinySquid</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NPC>ScienceTeacher</NPC>
+      <NodeID>45</NodeID>
+      <DialogueText>Excelente. Ahora, por favor, vuelve a estudiar el tema en cuestión.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>40</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NPC>ScienceTeacher</NPC>
+      <NodeID>46</NodeID>
+      <DialogueText>¿De- ¿de verdad acabas de examinar esa aburrida muestra de planta?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo hice.</OptionText>
+          <DestinationID>47</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NPC>ScienceTeacher</NPC>
+      <NodeID>47</NodeID>
+      <DialogueText>Vaya...~debes ser un éxito en las fiestas.~ Bueno, supongo que mereces algo por realmente hacer el trabajo. Aquí tienes una carta de Monstermon.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Genial. Gracias.</OptionText>
+          <FunctionCall>GetChillStump</FunctionCall>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>40</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Hay algunos peces en este tanque. También hay algunas *hl*pequeñas partículas amarillas aquí. Me pregunto cómo se verían ampliadas.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma una muestra.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetSquidSlide</FunctionCall>
+          <ItemToUse>Slide</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja los peces.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Esto parece una pierna. No, espera...~es UNA pierna. *hl*Me pregunto si la otra está por aquí en algún lugar.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja la pierna.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <NPC>ScienceTeacher</NPC>
+      <DialogueText>¡Oh!~ Veo que te gusta la pierna.~ Solía tener dos, pero la otra desapareció. Si la encuentras, por favor, tráemela.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo encontré.</OptionText>
+          <DestinationID>53</DestinationID>
+          <ItemToUse>Leg</ItemToUse>
+          <FunctionCall>UseLeg</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja la pierna.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <NPC>ScienceTeacher</NPC>
+      <DialogueText>¡Excelente!~ Gracias por tu ayuda.~ Aquí tienes una carta de Monstermon con un tiburón. Así es como estas piernas llegaron al estado en que están, después de todo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uhhh... ¿gracias?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>54</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>54</NodeID>
+      <NPC>ScienceTeacher</NPC>
+      <DialogueText>Eso es suficiente con la pierna por ahora.~ Por favor, vuelve a hacer ciencia.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>Esta es una caja de portaobjetos. Puedo poner muestras en ellos y verlas bajo el microscopio.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma un portaobjetos.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetSlide</FunctionCall>
+          <ResolutionID>56</ResolutionID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja los portaobjetos.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText>Esta es una caja de portaobjetos. Ya tomé uno.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja los portaobjetos.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>57</NodeID>
+      <DialogueText>Podría usar este microscopio para mirar los portaobjetos que he tomado, pero realmente no tiene sentido ya que el profesor se fue.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja el microscopio.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>Este es el tarro de arañas que quería Felix. Aún no sé por qué.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma las arañas.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>TakeSpiders</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja las arañas.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>Puedo colocar algo para ser aplastado justo aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Coloca el dispositivo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <ItemToUse>JeromeBomb</ItemToUse>
+          <FunctionCall>PlaceJeromeBomb</FunctionCall>
+          <SetFlag>CarlaBombPlacedInCrusher</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No coloques nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>71</NodeID>
+      <DialogueText>Parece que presionar este botón encenderá el triturador.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Presiona el botón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>StartCrusher</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No presiones el botón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>75</NodeID>
+      <NPC>ScienceTeacher</NPC>
+      <DialogueText>*Ejem!*~ Por favor, no ajustes el plan de lecciones para la clase de ciencias de hoy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo siento.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>76</NodeID>
+      <NPC>ScienceTeacher</NPC>
+      <DialogueText>No estarás entrando y saliendo cuando te plazca.~ Ya has salido una vez hoy.~ Te quedarás aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>77</NodeID>
+      <NPC>ScienceTeacher</NPC>
+      <DialogueText>Por favor, aléjate del ventilador. No hay nada que debas hacer con eso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo siento.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

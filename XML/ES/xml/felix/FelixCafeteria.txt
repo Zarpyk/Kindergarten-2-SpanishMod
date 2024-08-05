@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Lárgate, vagabundo! Estamos hablando de negocios. No entenderías.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deberías comprar una hamburguesa.</OptionText>
+          <DestinationID>1</DestinationID>
+          <Flag>NuggetBurgerMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Vete.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>No estoy interesado en comprar una hamburguesa. Yo me alimento solo. ¿Por qué demonios querrías que comprara una hamburguesa?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Soy un amigo de tu empresa.</OptionText>
+          <ItemToUse>ApplesoftPin</ItemToUse>
+          <DestinationID>3</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No lo sé.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Exactamente. Ahora, por favor, déjanos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a dejarlos.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Oh!~ ¡Mis disculpas!~ No tenía idea de que eras un amigo de la familia.~ ¿Solo necesitas que compre una hamburguesa?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Muy bien entonces.</DialogueText>
+      <JumpNode>5</JumpNode>
+      <FunctionCall>TurnToFaceTed</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Oíste al hombre, Teddy.~ Una hamburguesa, por favor.</DialogueText>
+      <JumpNode>6</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>*Suspiro.* Sí, Félix. Iré a por ello de inmediato.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Ted</NPC>
+      <FunctionCall>SendTedToGetBurger</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Siempre estoy feliz de ayudar a un amigo de la familia.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Vaya, es un verdadero desafío.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Quiere algo vegano, pero no tengo ni idea de qué demonios significa eso!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ella tampoco.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¡Bueno, tendrás que ayudarme a encontrar algo que ella coma! ¡Esto es culpa tuya de todos modos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Encontraré algo.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡Bien!~ *hl* Solo recuerda traérmelo a mí. No a ella.*hle*~ Estamos tratando de hacer que yo luzca bien aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkBackToCindyLunch</FunctionCall>
+          <ResolutionID>14</ResolutionID>
+          <SetFlag>FelixTalkAboutVegan</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Por favor, dime que has encontrado algo que ella coma. Se está volviendo insoportable.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aquí tienes.</OptionText>
+          <ItemToUse>VeganMeal</ItemToUse>
+          <DestinationID>15</DestinationID>
+          <FunctionCall>GiveVeganMeal</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Hay flores aquí?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sigo buscando.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡Brillante!~ Excelente trabajo, chico de los recados.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>16</DestinationID>
+          <FunctionCall>ShowVeganMeal</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Aquí tienes, querida.~ Una deliciosa comida vegana para ti.</DialogueText>
+      <JumpNode>17</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Awww, gracias, cariño.~ Eres el mejor. Ahora solo necesitas hacer una cosa más por mí en el recreo y ¡seremos oficiales!</DialogueText>
+      <JumpNode>18</JumpNode>
+      <NPC>Cindy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>No puedo esperar, dulce de miel.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a dejarlo antes de que empiecen a besarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>FelixGaveVeganMeal</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Ese chico en silla de ruedas se suponía que iba a encontrarse con nosotros aquí. Me pregunto dónde podría estar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí... me pregunto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Correcto. Sí. Las flores.~ *hl* Hay una en la sala de profesores*hle*, pero Stevie está vigilando la puerta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué hago con eso?</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>*hl* Carla sabe cómo hacer que Stevie se moleste.*hle* Intenta hablar con ella.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>14</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¡Ah, justo a tiempo! Teddy ya recogió el almuerzo para ti. Supongo que pudiste conseguir el... artículo que pedí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <ItemToUse>SpiderJar</ItemToUse>
+          <DestinationID>31</DestinationID>
+          <UsesAction>true</UsesAction>
+          <SetFlag>FelixStartedLunch</SetFlag>
+          <FunctionCall>GetBurger</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No. Lo siento.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Excelente, pero no dejemos que Teddy lo vea.</DialogueText>
+      <JumpNode>32</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>¿Ver qué? ¿Qué es? ¡Déjame verlo, Félix!</DialogueText>
+      <NPC>Ted</NPC>
+      <JumpNode>33</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>*Ejem* Er- Teddy, ¿no me estabas contando algo sobre Ozzy?~ ¿Algo importante?</DialogueText>
+      <JumpNode>34</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>¡Oh sí!~ Escuché a Ozzy mencionar que si algo le pasara hoy, su mamá se quedaría sin empresa. Creo que tenías razón, Félix.</DialogueText>
+      <JumpNode>35</JumpNode>
+      <NPC>Ted</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>¿Entonces estás de acuerdo con nuestro pequeño plan, Teddy?</DialogueText>
+      <JumpNode>36</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Creo que sí, pero ¡tienes que dejarme ayudar! Quiero demostrarle a papá lo capaz que soy.</DialogueText>
+      <NPC>Ted</NPC>
+      <JumpNode>37</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>Oh, no te preocupes, Teddy...~ Hehe.~ Tienes la parte más importante.</DialogueText>
+      <JumpNode>38</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>De todos modos, para la siguiente parte del plan, *hl* necesitamos a alguien que nos cave un agujero.*hle* ¿Conoces a alguien que pueda ayudar?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Creo que sí.</OptionText>
+          <DestinationID>39</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>Excelente. ¡Lidera el camino!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Lidera el camino.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StartFollowingPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Bueno...~ Admiro su entusiasmo. Anticipé la pala, pero no el...~ brazo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y ahora qué?</OptionText>
+          <DestinationID>41</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>*hl* Habla con Carla. Ella tiene una llave del armario de limpieza para ti.*hle* Ve a buscar la pala mientras yo averiguo qué hacer con el brazo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>43</DestinationID>
+          <SetFlag>FelixTalktoCarlaLunch</SetFlag>
+          <FunctionCall>GetPassbook</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Ve a conseguir la llave del armario de Carla. Tenemos trabajo que hacer.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>Además, toma mi libreta de pases.~ La necesitarás para salir de aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>42</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>¡Ah, justo a tiempo! Teddy ya recogió el almuerzo para ti. Supongo que pudiste conseguir el... artículo que pedí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <ItemToUse>SpiderJar</ItemToUse>
+          <DestinationID>61</DestinationID>
+          <UsesAction>true</UsesAction>
+          <SetFlag>FelixStartedLunch</SetFlag>
+          <FunctionCall>GetBurger</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No. Lo siento.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>Excelente, pero no dejemos que Teddy lo vea.</DialogueText>
+      <JumpNode>62</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>62</NodeID>
+      <DialogueText>Oh. Soy tan estúpido. Me encantaría ver lo que sea que me estás escondiendo, pero supongo que eso es solo parte de tu plan. ¿No es así, Félix?</DialogueText>
+      <NPC>Ted</NPC>
+      <JumpNode>63</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>63</NodeID>
+      <DialogueText>*Ejem* Er- Teddy, ¿no me estabas contando algo sobre Ozzy?~ ¿Algo importante?</DialogueText>
+      <JumpNode>64</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>64</NodeID>
+      <DialogueText>¡Oh sí!~ Escuché CONVENIENTEMENTE a Ozzy mencionar que si algo le pasa hoy, su mamá se quedaría sin empresa. Tenías razón, Félix. Eres tanooooo inteligente.</DialogueText>
+      <JumpNode>65</JumpNode>
+      <NPC>Ted</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>65</NodeID>
+      <DialogueText>Sí. Sí, supongo que lo soy. Entonces, ¿estás de acuerdo con nuestro pequeño plan, Teddy?</DialogueText>
+      <JumpNode>66</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>66</NodeID>
+      <DialogueText>¿A bordo?~ ¡Estoy listo para zarpar, capitán!~ Estoy muriendo por ayudarte.</DialogueText>
+      <NPC>Ted</NPC>
+      <JumpNode>67</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>67</NodeID>
+      <DialogueText>Oh, no te preocupes, Teddy...~ Hehe.~ Tienes la parte más importante.</DialogueText>
+      <JumpNode>68</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>68</NodeID>
+      <DialogueText>De todos modos, para la siguiente parte del plan, *hl* necesitamos a alguien que nos cave un agujero.*hle* ¿Conoces a alguien que pueda ayudar?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Creo que sí.</OptionText>
+          <DestinationID>69</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>69</NodeID>
+      <DialogueText>Excelente. ¡Lidera el camino!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Lidera el camino.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StartFollowingPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>Teddy está usando su cabeza gorda para defenderme.~ Este atuendo es bastante caro, ¿sabes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿No son ustedes gemelos?</OptionText>
+          <DestinationID>501</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Eso es genial, Félix.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>501</NodeID>
+      <DialogueText>Sí. ¿Cuál es tu punto?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Eso significa que tienes una cabeza gorda?</OptionText>
+          <DestinationID>502</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>502</NodeID>
+      <DialogueText>¡Jajaja...~ te ha dejado en evidencia, Félix!</DialogueText>
+      <JumpNode>503</JumpNode>
+      <NPC>Ted</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>503</NodeID>
+      <DialogueText>¡Silencio!~ ¡Ambos!~ Salgan de mi vista.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Sal de su vista.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>510</NodeID>
+      <DialogueText>Teddy hizo un excelente trabajo protegiéndome de las raciones de esos pilluelos. Quizás, después de todo, sí sirve para algo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien hecho, Teddy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

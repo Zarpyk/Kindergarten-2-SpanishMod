@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AreYouSureData>
+  <WarningText>Are you sure you want to erase the data in file #? You will lose all unlocked items and Monstermon Cards.</WarningText>
+  <NoText>No. Go back.</NoText>
+  <YesText>Yes. Erase the data.</YesText>
+</AreYouSureData>

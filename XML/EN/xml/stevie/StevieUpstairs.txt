@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>...we're all that stands between chaos and order! Do you understand?!</DialogueText>
+      <JumpNode>1</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Yeah bro. I get it. It's hall monitoring. It's not that big a deal.</DialogueText>
+      <NPC>HallMonitor</NPC>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Not that big of a deal?! If you're not going to take this ser--</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>*Gasp!*</DialogueText>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Student! In the halls! Before the bell! Study hall! Study hall!</DialogueText>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Jeez.~ You're way too into this hall monitor thing, aren't you?</DialogueText>
+      <NPC>HallMonitor</NPC>
+      <JumpNode>6</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>This is your chance to prove yourself rookie. Take this kid to the principal's office!</DialogueText>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Fine. I'll take care of it. Go monitor downstairs or something.</DialogueText>
+      <NPC>HallMonitor</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkDownstairs</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>I'm telling you new monitor, these halls can be dangerous. Hall monitoring is the ninth most dangerous job in-</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>FadeMonitor</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Hey wait!~ Stop! Where did-~</DialogueText>
+      <JumpNode>12</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>YOU CAN'T JUST QUIT ON YOUR FIRST DAY!!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>CutToUnderground</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>It's not that hard to find the bathroom kid!~ Get back downstairs now!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. I'm going.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ForceDownstairs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

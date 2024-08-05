@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Hombre...~eso estuvo cerca.~ Gracias por el rescate, chaval. Este lugar se está yendo al infierno.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo he notado.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>CindyLeaveStall</FunctionCall>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Escuché algo gordo caer al suelo...~oh, no era Buggs.</DialogueText>
+      <JumpNode>2</JumpNode>
+      <NPC>Cindy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Muérdeme, Cindy.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>EnterHallMonitorDeadTeacher</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

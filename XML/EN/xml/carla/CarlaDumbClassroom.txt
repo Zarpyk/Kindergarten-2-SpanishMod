@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Okay then...~did you work through your issues, Jerome?</DialogueText>
+      <JumpNode>1</JumpNode>     
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I guess I did. I'm still processing it all, but I feel a little better.</DialogueText>
+      <JumpNode>2</JumpNode>
+      <NPC>Jerome</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Good.~ So you're okay with parting with that little device of yours?</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Oh...~I already did. I think I left it on the bathroom floor upstairs.</DialogueText>
+      <JumpNode>4</JumpNode>
+      <NPC>Jerome</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Great...~okay kid.~ Let's go up and grab that thing.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What about Danner?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Let's go.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkToFollowPointStudyHall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>What about him?~ Guy didn't get his coffee today. *hl*He'll sleep like a baby until the bell rings. We'll be fine as long as we're back when he wakes up.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Let's go.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkToFollowPointStudyHall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Good stuff kid.~ *hl*Now we just need to go back to our seats and wait for the bell to ring.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>*hl*Don't forget to pay your lab fee.*hle* I'll see you in science class.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>CarlaCompletedStudyHall</SetFlag>
+          <FunctionCall>CarlaWalkBackToSeat</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>I've spent a lot of time in here. Dr. Danner really can't hold his bladder.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>Get a move on kid!~ You're free to waste time when I'm not trying to get something done!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

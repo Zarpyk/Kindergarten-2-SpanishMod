@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Este es un texto de marcador de posición.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Esta es una opción de marcador de posición.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

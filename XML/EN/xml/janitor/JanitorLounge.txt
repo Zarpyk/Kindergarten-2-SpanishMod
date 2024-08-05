@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is placeholder text.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>This is a placeholder option.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>444</NodeID>
+      <DialogueText>Well would you look who it is!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkToKillPlayerLunchPhase1</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>I couldn't help but notice that you aren't upstairs helping me with ol' Bobbo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I noticed that too.</OptionText>
+          <DestinationID>446</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>446</NodeID>
+      <DialogueText>I also noticed that you're bleeding.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I am?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerPhase1Lunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>447</NodeID>
+      <DialogueText>You're killing me kid.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToKillPlayerLunchPhase1</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>448</NodeID>
+      <DialogueText>I ask you for a few simple favors.~ Deliver a death threat, steal from a cripple, and GET ME A SHARP THING TO CUT UP BOB WITH!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why don't you use your mop?</OptionText>
+          <DestinationID>449</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>449</NodeID>
+      <DialogueText>Oh! A funny man!~ You should be a comedian in your next life.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Next life?</OptionText>
+          <DestinationID>450</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>Cause this one's over!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>But I like this life.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerPhase1Lunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

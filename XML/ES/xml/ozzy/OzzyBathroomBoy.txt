@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¿Qué demonios--?!</DialogueText>
+      <FunctionCall>WalkOutsideStall</FunctionCall>
+      <JumpNode>1</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Quién está ahí?!~ ¡Este es mi cubículo! ¡Lo uso todos los días! ¡Sal ahora mismo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aún no he terminado.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Inaceptable!~ ¡Todo el mundo sabe que este es mi cubículo!~ ¡Ahora apúrate y termina!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Solo usa el otro.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¿El otro?!~ ¡Preferiría morir!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entonces muérete.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Argh!~ ¡No has oído lo último de esto, chico!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós, Ozzy.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>OzzyLeaveBathroom</FunctionCall>
+          <SetFlag>BlockedOzzyFromBathroom</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Sal de mi cubículo, novato!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KickedOutOfStall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

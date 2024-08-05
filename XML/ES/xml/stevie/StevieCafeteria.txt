@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡No se permiten niños en la sala de profesores! ¡Ve a terminar tu almuerzo, niño!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Necesito entrar ahí.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>   
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡No me importa lo que necesites! ¡No me muevo a menos que haya una emergencia de monitoreo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Una emergencia de monitoreo?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Sí! ¡Una emergencia de monitoreo! ¡Trato con ellas a diario! ¡Nunca se sabe cuándo la delincuencia o la tardanza atacarán!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Mi brazo!~ Me... me duele. Mamá. Me duele.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ahí, ahí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockStevieOutfit</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡Hey!~ ¡Vuelve!~ ¡Aún no es hora del recreo!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StevieFollowCarla</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Hey!~ ¡No se supone que estés aquí!~ ¿Dónde está tu pase?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aquí.</OptionText>
+          <ItemToUse>PassBookBathroom</ItemToUse>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo uno.</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>¡Entonces regresa al recreo! Tienes suerte de que ya es muy tarde para darte sala de estudio.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Qué suerte la mía.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Está bien. Date prisa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>DisableCafeteriaTrigger</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¡Hey!~ No se supone que debas estar-~ Oh...~ eres tú. ¿Sigues haciendo mandados para tu maestro loco?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Genial...~ adelante. No sé por qué siquiera se molestan en tenerme aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós, Stevie.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>27</ResolutionID>
+          <FunctionCall>DisableCafeteriaTriggerApplegate</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Solo ve a hacer lo que sea que vayas a hacer. No es como si pudiera detenerte.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien, Stevie.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¡Hey!~ ¡Woah!~ ¡Se supone que debes estar en sala de estudio! ¡Que estés aquí es inaceptable! Te voy a enviar al--</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Solo estoy entregando un spray limpiador.</OptionText>
+          <ItemToUse>SprayBottle</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>DeliverSpray</FunctionCall>
+          <DestinationID>31</DestinationID>
+          <Flag>CarlaRunJanitorErrand</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien, Stevie.</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Oh... bueno...~ está bien.~ Gracias.~ ¡Ahora regresa a sala de estudio!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>De nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PlayerWalkBackStudyHall</FunctionCall>
+          <SetFlag>CarlaRanJanitorErrand</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>¡A la oficina del director!</DialogueText>
+      <JumpNode>33</JumpNode>
+      <FunctionCall>TurnOffLights</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>¿Un corte de energía?~ ¿Ahora mismo?~ Eso es tan raro. Normalmente solo ocurren en-</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ShootPlayerStudyhall</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>¡Hey!~ ¡Ese es el timbre!~ ¡Ve a educación física!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a educación física.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendToGym</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>*Tos*~ Ugh...~ ve... ve a educación física. Por favor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien, Stevie.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendToGym</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>¡Cesen y desistan!~ ¡Cesen y desistan!~ ¡Ustedes, los nuevos, están haciendo un desastre!~ ¡Deténganse inmediatamente!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Se aleja.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WardrobePanelData>
+  <TitleText>¿Qué llevo puesto hoy?</TitleText>
+  <ApplyText>Aplicar</ApplyText>
+</WardrobePanelData>

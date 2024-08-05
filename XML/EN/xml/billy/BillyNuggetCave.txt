@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>*hl*We need to find someone to fight the monster in there.*hle* I hope you know someone.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll look around.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>*hl*Let's focus on dealing with the monster right now.*hle* We can deal with her later.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Bob is in there fighting the monster now. *hl*We just need a way to break through to Penny.*hle* Got any ideas?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll find something.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Lily managed to hold the back door to the principal's office open when the lock down took effect. See if there's anything in there.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll look around.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

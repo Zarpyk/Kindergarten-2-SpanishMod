@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>I don't actually need your help to get up the ramp. Just go do what you gotta do.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go do what I gotta do.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>   
+  </Nodes>
+</Dialoguer>

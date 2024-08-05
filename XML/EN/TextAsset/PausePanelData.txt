@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PausePanelData>
+  <PausedTitle>Paused</PausedTitle>
+  <ResumeText>Resume</ResumeText>
+  <RestartText>Restart</RestartText>
+  <MissionMapText>Mission Map</MissionMapText>
+  <MonstermonText>Monstermon</MonstermonText>
+  <ControlsText>Controls</ControlsText>
+  <OptionsText>Options</OptionsText>
+  <QuitText>Quit</QuitText>
+</PausePanelData>

@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡JEJEJEJEJEJE!</DialogueText>
+      <JumpNode>1</JumpNode>
+      <FunctionCall>RiseFromDumpster</FunctionCall>     
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Quién está golpeando mi contenedor de basura?!</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Oh!~ ¡Hola, niño!~ ¡Qué bueno tener una visita! Dime...~ ¿no tendrás algo de comida contigo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quién eres?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tengo una hamburguesa.</OptionText>
+          <DestinationID>30</DestinationID>
+          <ItemToUse>BurgerMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveBurger</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tengo una comida vegana.</OptionText>
+          <DestinationID>31</DestinationID>
+          <ItemToUse>VeganMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveVegan</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tengo una caja de nuggets.</OptionText>
+          <DestinationID>34</DestinationID>
+          <ItemToUse>NuggetBox</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveNuggets</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo ninguno.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¡He venido a batallar!</OptionText>
+          <DestinationID>350</DestinationID>
+          <ItemToUse>Deck</ItemToUse>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Me llamo Agnes! ¡Este es mi contenedor de basura! ¡Vivo aquí!~ Así que, de todos modos...~ ¿tienes algo de comida?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué estás bebiendo?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tengo una hamburguesa.</OptionText>
+          <DestinationID>30</DestinationID>
+          <ItemToUse>BurgerMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveBurger</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tengo una comida vegana.</OptionText>
+          <DestinationID>31</DestinationID>
+          <ItemToUse>VeganMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveVegan</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tengo una caja de nuggets.</OptionText>
+          <DestinationID>34</DestinationID>
+          <ItemToUse>NuggetBox</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveNuggets</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo ninguno.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Jejeje!~ ¡Es una bebida encantadora!~ ¡Me mantiene joven!~ ¡La Sra. Margaret tira un montón de eso aquí! ¡Ahora ven! ¡Dame algo de comida!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo una hamburguesa.</OptionText>
+          <DestinationID>30</DestinationID>
+          <ItemToUse>BurgerMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveBurger</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tengo una comida vegana.</OptionText>
+          <DestinationID>31</DestinationID>
+          <ItemToUse>VeganMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveVegan</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tengo una caja de nuggets.</OptionText>
+          <DestinationID>34</DestinationID>
+          <ItemToUse>NuggetBox</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveNuggets</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo ninguno.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Adiós entonces!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>0</ResolutionID>
+      <FunctionCall>ReturnToDumpster</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¡Oooooh, una hamburguesa!~ Tiene un sabor ahumado.~ Me recuerda a mi gato... ¡Smoky!~ ¿Lo quieres?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tienes algo más?</OptionText>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>40</DestinationID>
+          <FunctionCall>GetSmoky</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>¡Oooooh, una comida vegana!~ No he tenido una de estas desde mis días de hippie. ~ Me recuerda a mi gato... ¡Gravy!~ ¿Lo quieres?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué te recuerda eso a la salsa?</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>41</DestinationID>
+          <FunctionCall>GetGravy</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No estoy buscando un gato en este momento.</OptionText>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Porque siempre le ponía salsa a esa comida hippie. Le daba un poco de sabor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Alguien sabe realmente qué significa vegano?</OptionText>
+          <DestinationID>33</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>¿Quieres al gato o no?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>41</DestinationID>
+          <FunctionCall>GetGravy</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No estoy buscando un gato en este momento.</OptionText>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>¡Oooooh, nuggets!~ ¡Parece que es un McGlobs de 100 piezas también!~ Me recuerda a mi gato... ¡Tenders!~ ¿Lo quieres?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>42</DestinationID>
+          <FunctionCall>GetTenders</FunctionCall>
+          <SetFlag>TradedNuggetsForCat</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No estoy buscando un gato en este momento.</OptionText>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Awww, ¿no quieres a mi gato? Qué pena.~ Déjame ver si hay algo más aquí.</DialogueText>
+      <JumpNode>36</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>¡Oh, aquí vamos!~ ¡Uno de esos libretos que usan ustedes los niños! ¡Gracias por la comida!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>20</DestinationID>
+          <FunctionCall>GetPassbook</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>¡Adiós, Smoky!~ Intenta encontrarle a alguien que también sea un poco ahumado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh... está bien.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>¡Adiós, Gravy!~ Él combina bien con galletas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh... está bien.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>¡Adiós, Tenders!~ Dáselo a alguien que necesite un verdadero amigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh... está bien.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>¡Jejejejeje!~ ¡Así que el joven maestro los reunió todos!~ ¡Increíble!~ ¡Simplemente increíble!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>DissolveAgnes</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>¡JEJEJEJEJEJE!</DialogueText>
+      <JumpNode>101</JumpNode>
+      <FunctionCall>RiseFromDumpster</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>¿Quién está golpeando mi contenedor de basura?!</DialogueText>
+      <JumpNode>102</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>Oh genial.~ Una mujer del contenedor. Todo iba tan bien.</DialogueText>
+      <NPC>Janitor</NPC>
+      <JumpNode>103</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>103</NodeID>
+      <DialogueText>¿Qué quieren ustedes, gente amable? ¿Quieren darme algo de comida?</DialogueText>
+      <JumpNode>104</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>104</NodeID>
+      <DialogueText>Solo necesitamos usar el contenedor, vieja bruja.</DialogueText>
+      <JumpNode>105</JumpNode>
+      <NPC>Janitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>105</NodeID>
+      <DialogueText>¡Bueno, habrá un precio que pagar! ¡Necesito algo! ¡Algo más especial que comida!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué necesitas?</OptionText>
+          <DestinationID>106</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>106</NodeID>
+      <DialogueText>¡Me estoy quedando sin esta deliciosa bebida verde! No tendrás un poco de goo verde contigo, ¿verdad? *hl* Esa chica Penny normalmente tiene algo. *hle*</DialogueText>
+      <JumpNode>107</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>107</NodeID>
+      <DialogueText>¿Por qué tendríamos eso? ¡Es asqueroso!</DialogueText>
+      <NPC>Janitor</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>De hecho, tengo algo.</OptionText>
+          <ItemToUse>GreenGoo</ItemToUse>
+          <FunctionCall>TakeGoo</FunctionCall>
+          <DestinationID>108</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí, eso es bastante asqueroso.</OptionText>
+          <DestinationID>120</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>108</NodeID>
+      <DialogueText>¡Oh, encantador!</DialogueText>
+      <FunctionCall>OpenDumpster</FunctionCall>
+      <JumpNode>109</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>109</NodeID>
+      <DialogueText>Adelante, tira lo que necesites, esos artículos sospechosos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias, bruja del contenedor.</OptionText>
+          <DestinationID>110</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>¡Un placer! ¡Ustedes, chicos, que tengan un buen día!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ReturnToDumpsterJanitor</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>120</NodeID>
+      <DialogueText>¡Bueno, hasta que regresen con un poco de goo verde, este contenedor se queda cerrado! ¡Ta ta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Maldita seas, bruja del contenedor!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReturnToDumpsterJanitorNoGoo</FunctionCall>
+          <ResolutionID>121</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>121</NodeID>
+      <DialogueText>¡Oh!~ ¿Estás de regreso con mi goo verde?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <ItemToUse>GreenGoo</ItemToUse>
+          <FunctionCall>TakeGoo</FunctionCall>
+          <DestinationID>108</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Aún no.</OptionText>
+          <DestinationID>120</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>350</NodeID>
+      <DialogueText>¡OOOOOH!~ ¿Juegas con los talismanes?!~ Ten cuidado, querida.~ Pueden pasar cosas malas si consigues los 50.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Como qué?</OptionText>
+          <DestinationID>351</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>351</NodeID>
+      <DialogueText>Quizás sea mejor que no te lo diga.~ ¿Por qué no nos ponemos manos a la obra entonces? ¡Ha pasado una eternidad desde que mi oscuro mazo ha visto acción!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartMonstermonBattle</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>¡Jejeje!~ ¡Todavía lo tengo!~ ¡Quizás ganes la próxima vez!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quizás.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+          <FunctionCall>ReturnToDumpster</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>¡Ganaste!~ ¡Buen trabajo!~ Te daré una carta, pero recuerda, tener las 50 puede que no sea una buena idea.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí, sí.</OptionText>
+          <DestinationID>451</DestinationID>
+          <FunctionCall>UnlockThwarter</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>451</NodeID>
+      <DialogueText>¡Ta ta entonces!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós, señora del contenedor.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+          <FunctionCall>ReturnToDumpster</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

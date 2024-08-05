@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>*Pssst!*~ Hey kid!~ Over here!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToBillyLunch</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I saw Buggs and Cindy leave already.~ Good work.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what happens now?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Lily made friends with that Carla girl.~ They stole the listening device that Jerome was carrying around.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay...</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Which means that when it hears my voice or name...it'll explode.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oooooh.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>So when I signal her, she's gonna come over here and give you the device. *hl*You're gonna plant it under the table in the teacher's lounge.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds good.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>I'm not done yet.~ Once the device goes off, we're going to have a very limited amount of time before the staff is notified. *hl*You need to be upstairs when the lockdown takes place.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>*b**CAW! CAW!**be*</DialogueText>
+      <JumpNode>7</JumpNode>
+      <FunctionCall>CarlaWalkToCondiments</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>*Sigh*~ We're in a cafeteria weirdo.~ There aren't any birds.</DialogueText>
+      <NPC>Carla</NPC>
+      <JumpNode>8</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>You know...~I was looking at this thing and it turns out it would make a really solid base for my own little...project.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>But we need it.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Yeah, but there's nothing you can really do to stop me from keeping it...~*hl*unless you've got something better.*hle*</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>I actually do.</OptionText>
+          <DestinationID>10</DestinationID>
+          <ItemToUse>UltraBomb</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>TradeBombs</FunctionCall>
+          <SetFlag>BillyGaveCarlaBomb</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Woah!~ This is perfect!~ It's exactly how I would have made it!~ Yeah take this stupid little thing. I got bigger fish to fry.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can you help us get into the lounge?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Of course I could, but I'm not going to today.~ I'm gonna need all the good will from the faculty I can get to pull this off.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Then how can I get in there?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>I don't know and I don't really care.~ *hl*Find someone to dig your way in*hle* for all I care.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll figure something out.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>CarlaWalkBack</FunctionCall>
+          <ResolutionID>13</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>If I talk to him again, this device might explode.</DialogueText>
+      <NPC>Player</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll figure something out.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Well then...~I'm off to figure out what makes this thing tick.~ See you guys later.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye jerk.</OptionText>
+          <DestinationID>18</DestinationID>
+          <FunctionCall>CarlaWalkBack</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Why is Cindy still here?!~ She's supposed to be taking up a stall! Applegate is completely safe in there.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>My bad.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Why is Buggs still here?!~ He's supposed to be getting ready to stab Applegate!~ The girls don't have anything to kill her with!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>My bad.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>I knew we couldn't trust her.~ Without that thing, it's back to plan A. We'll regroup and try again tomorrow.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Darn it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BillyLeaveCafeteria</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Now I have to go tell Lily to abort the mission!~ Way to go kid. Give me back that digging stuff! It's back to plan A for us.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>My bad.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BillyLeaveCafeteria</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Did you place the bomb under the table?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes, I did.</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>*GRRRR*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>BillyLeaveNoBomb</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>Good. Cause you've got another job.~ Lily just signalled that she needs help upstairs. You have to go help while I set off this bomb.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Will do.</OptionText>
+          <DestinationID>29</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>You have a way upstairs, right?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>30</DestinationID>
+          <ItemToUse>PrincipalPass</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nope.</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Good.~ *hl*Remember, we have to act quickly here.~ Don't wait around. Get ready to go.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Let's go.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>BillyKilledDanner</SetFlag>
+          <FunctionCall>BillyEnterLoungeHole</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Oh no.~ That's bad. We're gonna have trouble pulling this off now. *hl*You should have talked to the principal earlier!*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what now?</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Abort the mission. We'll regroup and try again tomorrow.~ I'm gonna go make sure Lily is okay.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BillyLeaveRescueLily</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>C'mon kid!~ We need you to do th-</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ExplodePlayer</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>Did you place the bomb--</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ExplodePlayer</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

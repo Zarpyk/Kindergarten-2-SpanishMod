@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Filthy...~absolutely filthy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can you read?</OptionText>
+          <DestinationID>50</DestinationID>
+          <Flag>OzzyReadingMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What is?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nugget is stuck behind a sewer grate.</OptionText>
+          <DestinationID>40</DestinationID>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yup...bye.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Are you blind?! Look at this place. *hl*That other no-name janitor over there has really let this place go to crap.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You don't know his name yet?</OptionText>
+          <DestinationID>1001</DestinationID>
+          <UsesAction>true</UsesAction>
+          <SetFlag>JanitorAskBobsName</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yup. Bye.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1001</NodeID>
+      <DialogueText>What?! No!...~ But I guess I should learn it. If I'm going to draw up a-~ Kid! Go find out his name for me. NOW!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Jeez.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1002</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1002</NodeID>
+      <DialogueText>What's his name? C'mon, I got a declaration to draw up.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's Bob.</OptionText>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+          <Flag>JanitorKnowBobsName</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't know it yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>So my nemesis has a name...~BOB.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are you gonna do to him?</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>He seems nice.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Do you have a name?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>What?!~ No!~ I lost it in the war.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Which war?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How did you lose your name in a war?</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>The best one.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Which war is that?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>The one I was in! Haven't you been paying attention? Do YOU have a name?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ummmm...</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>That's what I thought.~ So let's stick to the guy who's name we DO know.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are you gonna do to him?</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>He seems nice.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Nice?! What're you saying?! You saying that I ain't nice?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You do have a history of violence.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not saying that.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>A long...~and ever growing history. Let's add to it right now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerHistory</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Good! Now we're ready to proceed!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are you gonna do to him?</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>War changes a man!~ You wouldn't understand!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Which war?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>What the janitor's code of honor says I should do.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Which is?</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Janitors have a code of honor?</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>I'm going to kill him and take his mop!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Seriously?</OptionText>
+          <DestinationID>34</DestinationID>
+          <FunctionCall>GetContract</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Uh no. You have the wrong idea. It's my code of honor. I'm the janitor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So you're gonna do what you wanted to do anyway.</OptionText>
+          <DestinationID>33</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Of course.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Which is?</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>You bet!~ *hl*Take this declaration of war and bring it to...~BOB. Return to me when it's done.*hle* This'll be one for the history books.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess it will be.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>35</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Has it been delivered?~ Is war upon us?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <UsesAction>true</UsesAction>
+          <Flag>JanitorGaveContractToBob</Flag>
+          <SetFlag>JanitorToldGaveContract</SetFlag>
+          <DestinationID>36</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Excellent!~ My attack will be swift and sneaky!~ As soon as he's alone, his mop is as good as mine! *hl*I'll be sharpening my mop in the boy's room!*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Have fun with that.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>37</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>This is gonna be good. Maybe this school won't be so bad after all.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Stop talking to the janitor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Hehe.~ I'd join him if I wasn't about to go to war with that other janitor over there.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Stop talking to the janitor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Hehehe...~The only reading I do is obituaries.~ Is that what you want me to read for you?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ummm...~no.</OptionText>
+          <DestinationID>51</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Then I ain't interested in reading it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>75</NodeID>
+      <DialogueText>Oh...~uh...hehe...~perhaps I spoke too soo-</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>GetStruckByLightning</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>700</NodeID>
+      <DialogueText>Hey kid!~ Wait up!!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToPlayerForCompletion</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>701</NodeID>
+      <DialogueText>*Phew*...almost missed ya.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Please don't kill me.</OptionText>
+          <DestinationID>702</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>702</NodeID>
+      <DialogueText>Kill ya?! I ain't gonna kill ya!~ Well...~not today at least.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what do you want?</OptionText>
+          <DestinationID>703</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>703</NodeID>
+      <DialogueText>For your dedicated service today I would like to bestow upon you, the spoils of war.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are you talking about?</OptionText>
+          <DestinationID>704</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>704</NodeID>
+      <DialogueText>I got some good stuff off of Bobbo's body. Some cash, a watch, some kind of medication, and...~this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What is it?</OptionText>
+          <DestinationID>705</DestinationID>
+          <FunctionCall>GetToolbelt</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>705</NodeID>
+      <DialogueText>It's a toolbelt!~ I don't fix nothin' around here anyway. You can also have this thing from that silly card game you kids play. Little guy kinda looks like me. Hehehe.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Thanks I guess.</OptionText>
+          <DestinationID>706</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>706</NodeID>
+      <DialogueText>Now scat!~ If a parent sees me talking to a child I'm going back to prison.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yeah. Now's a good time to leave.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FinishJanitor</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>710</NodeID>
+      <DialogueText>Hey kid!~ Wait up!!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToPlayerForCompletion</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>711</NodeID>
+      <DialogueText>*Phew*...almost missed ya.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Please don't kill me.</OptionText>
+          <DestinationID>712</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>712</NodeID>
+      <DialogueText>You should have thought of that before you didn't help me deal with that dumpster woman.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yeah...I guess so.</OptionText>
+          <DestinationID>713</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>713</NodeID>
+      <DialogueText>No hard feelings then?~ Good.~ Now die.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Die.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Esta es una flor azul.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma la flor.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>TakeBlueFlower</FunctionCall>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja la flor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Parece que este agujero se hundió.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No quiero tocar ninguna tierra.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Hay algo pegado a la pared aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo tomaré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetBooger</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Parece que están cultivando cebolla en este parterre.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tomaré uno.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetOnion</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Hay un letrero con flechas aquí. Apuntan hacia arriba, izquierda, arriba, derecha, arriba, derecha, izquierda, arriba.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Interesante.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Hay un letrero con flechas aquí. Apuntan hacia arriba, izquierda, arriba, derecha, arriba, derecha, izquierda, arriba.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Interesante.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¡Nugget no desea entrar en el bosque aterrador! ¡Nugget quiere su flor!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>    
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>She took my knife! That little snitch!~ She just made a very unstable enemy!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can you read?</OptionText>
+          <DestinationID>30</DestinationID>
+          <Flag>OzzyReadingMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Who are you talking about?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>She took my stuff too.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>PennyTookContraband</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>This is not my problem.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>The stupid principal's daughter! She somehow knew I had it on me and now I have study hall!~ This new school is so stupid!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Maybe I could help.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not interested.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>*hl*Have you ever had something dangerous wrongfully taken from you?*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yeah she took my stuff too.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>PennyTookContraband</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ummm...not exactly.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Then you wouldn't understand!~ I'll get it back by myself!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good luck with that.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>I'm gonna get my stuff back all by myself. Just you watch!</DialogueText>
+      <Options>        
+        <DialogueOption>
+          <OptionText>Yeah she took my stuff too.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>PennyTookContraband</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Good luck with that.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>She did?! So it's not just cause I'm fat and ugly!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>She said that to you?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>So what do we do about this?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Well...~no. I just assumed that's why she randomly searched me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what do we do about this?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>I want my knife back. We gotta find out where she put it. Then we take her out.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do we do it?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>We need a man on the inside. *hl*Are you smart enough to get into that smart class?*hle* I'm pretty sure that's where she goes after this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <ItemToUse>APlus</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <SetFlag>BuggsReconPenny</SetFlag>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Okay. Good. Go make friends with her. Do her a favor or something. See if you can get her to open up on where she's gonna put our stuff.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ummm...sure.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Aw man. You're just as dumb as me? Well crap. Looks like I gotta find someone smarter.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ouch.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>So? Are you guys best friends yet?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>She gave me this bracelet.</OptionText>
+          <DestinationID>17</DestinationID>
+          <ItemToUse>FriendshipBracelet</ItemToUse>
+          <SetFlag>BuggsCompletedSchoolYardTime</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>I'll take that as a 'yes' then. Nice job kid. *hl*Just get her to open up to you during morning time.*hle* We'll get our stuff back. Just you wait.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Should we do anything else?</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Hmmmm....~now that I think about it, she is the principal's daughter. *hl*It might be worth looking around the principal's office.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do we get in there?</OptionText>
+          <DestinationID>19</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>The principal doesn't even deal with the discipline here. Just gives out study hall. I say talk to her. See if she'll let you pop in for a visit.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's worth a shot.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>What?~ No!~ *hl*Reading is for those nerds in the 'smart' class.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks anyway.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Woah dude. That was impressive.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are you talking about?</OptionText>
+          <DestinationID>51</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>You really got under Applegate's skin there. She looks like she's about to snap.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what?</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>I'm just saying. *hl*One really loud noise or one more incident might completely break her. See if anyone around here has something.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks for the suggestion.</OptionText>
+          <DestinationID>53</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>I think that Carla girl has a firecracker or something. Should do the trick.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReturnToStartPosition</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>700</NodeID>
+      <DialogueText>I can't believe we did it. We took out an android and got my knife back. It's been a good day.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess so.</OptionText>
+          <DestinationID>701</DestinationID>
+          <FunctionCall>GetParts</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>701</NodeID>
+      <DialogueText>Here's that laser thing Carla wanted. I'll let you give it to her. She kinda scares me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>702</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>702</NodeID>
+      <DialogueText>And to commemorate the end of being spied on by a robot, here's a Monstermon Card that's just a big eye.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's a bit of a stretch.</OptionText>
+          <DestinationID>703</DestinationID>
+          <FunctionCall>UnlockEye</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>703</NodeID>
+      <DialogueText>Whatever man. I'll see you tomorrow.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>See ya.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>CompleteBuggs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

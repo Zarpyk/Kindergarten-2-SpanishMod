@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Esta es la puerta del armario de limpieza. Está cerrada con llave.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Desbloquea la puerta.)</OptionText>
+          <ItemToUse>JanitorKey</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UnlockCloset</FunctionCall>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>La puerta de este cubículo está cerrada con llave.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¿Debería usar este cubículo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Voy a obstruir el inodoro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ClogStall</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>ClogStall1</SetFlag>
+          <ItemToUse>ToiletPaper</ItemToUse>
+          <ResolutionID>5</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UseStall1</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>UsingStall1</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¿Debería usar este cubículo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Voy a obstruir el inodoro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ClogStall</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>ClogStall2</SetFlag>
+          <ItemToUse>ToiletPaper</ItemToUse>
+          <ResolutionID>5</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UseStall2</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>UsingStall2</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Sí. Esos son urinarios.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Metí un rollo entero de papel higiénico en este inodoro.~ *hl*Probablemente debería irme antes de que el conserje lo note.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Uh...~ ¡hey!~ ¿Hay alguien ahí afuera?!~ ¡Necesito papel higiénico! ¡No hay ninguno aquí!</DialogueText>
+      <NPC>Ozzy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aquí.</OptionText>
+          <ItemToUse>ToiletPaper</ItemToUse>
+          <FunctionCall>GiveToiletPaper</FunctionCall>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <NPC>Ozzy</NPC>
+      <DialogueText>¡Gracias!~ No sé qué haría sin ti.~ Aquí. Puedes quedarte con esta tarjeta de Monstermon.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockDooDooBug</FunctionCall>
+          <ResolutionID>12</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Puedes irte ahora. Estoy bien.</DialogueText>
+      <NPC>Ozzy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Hay un par de arañas en la pared aquí. *hl*No las voy a tocar a menos que pueda rociarlas con algo primero.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Rociar a las arañas.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SpraySpiders</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ItemToUse>SprayBottle</ItemToUse>
+          <Flag>TedInOnIt</Flag>
+          <SetFlag>SprayedSpiders</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Debjar las arañas.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Metí todas las arañas en el frasco.~ Ahora solo hay una telaraña aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Oye, amigo...~ No puedo dejarte entrar ahí.~ Están saliendo unos vapores malvados de ese lugar.</DialogueText>
+      <NPC>HallMonitor</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Creo que el profesor de ciencias está ahí dentro.~ Debería dejarlo hacer lo suyo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Alejarse.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Suéltalo! ¡Quiero lanzar unos tiros libres!</DialogueText>
+      <JumpNode>1</JumpNode>   
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Ponte en fila, chiquillo nuevo! ¡Este balón de baloncesto es mío!</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ayuda a Jerome a agarrar el balón.)</OptionText>
+          <FunctionCall>JeromeGetBall</FunctionCall>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No hagas nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡JA!~ ¡Ahora lárgate!~ Las chicas no pueden jugar al baloncesto de todos modos.</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Vas a vivir para arrepentirte de esto, chiquillo nuevo!</DialogueText>
+      <NPC>Carla</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>CarlaWalkAway</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Gracias por la ayuda. Tenía un agarre más fuerte de lo que pensé que tendría.</DialogueText>
+     <Options>
+        <DialogueOption>
+          <OptionText>Sin problema.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>GetDabHero</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Aquí tienes una tarjeta de Monstermon. Probablemente sea el más genial de todos. Nos vemos por ahí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Hasta luego!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6</ResolutionID>
+          <FunctionCall>StartJeromeBasketball</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Me alegra que tenga el balón de baloncesto. No querría jugar con una chica tonta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Ay!</DialogueText>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Este estúpido día no puede empeorar más. Que se joda esto.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>JeromeWalkOff</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

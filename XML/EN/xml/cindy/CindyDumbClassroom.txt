@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>I just love this doll! She's so pretty, just like me!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can I have it?</OptionText>
+          <DestinationID>100</DestinationID>
+          <Flag>BuggsDollMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Do you have any flowers?</OptionText>
+          <DestinationID>50</DestinationID>
+          <Flag>DannerStartedMission</Flag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>We need you to cause a distraction.</OptionText>
+          <DestinationID>1</DestinationID>
+          <Flag>TedStartedMorningTime</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I need your help to kill teacher.</OptionText>
+          <DestinationID>200</DestinationID>
+          <Flag>BillyStartedMorningTime</Flag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That's great Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Oh really?~ Sorry sweetie, but I'd only do something like that for my boyfriend.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ted will be your boyfriend.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>No dice honey.~ I'm after some fresher meat.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ted will be your boyfriend.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Forget it then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Yeah.~ Remember? We need to put on a show to distract the teacher.</DialogueText>
+      <NPC>Ted</NPC>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Hehehe...oh yeah. ~That's my kind of date. Are you ready to go then?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He is.</OptionText>
+          <UsesAction>true</UsesAction>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>You ready to cause that distraction Ted?~ I'm quite the actress.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He is.</OptionText>
+          <UsesAction>true</UsesAction>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Yeah. Let's go. Be ready to grab that inhaler kid.</DialogueText>
+      <NPC>Ted</NPC>
+      <JumpNode>12</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Excellent. See you at lunch boyfriend!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What about the distraction?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Follow me boyfriend. We're about to have our first spat.</DialogueText>
+      <FunctionCall>HaveSpat</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Are you ready sweetie?</DialogueText>
+      <JumpNode>21</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Ready for what? You haven't told me anything.</DialogueText>
+      <NPC>Ted</NPC>
+      <JumpNode>22</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Just play along. I've done this a million times.</DialogueText>
+      <JumpNode>23</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Play along with what? This doesn--</DialogueText>
+      <JumpNode>24</JumpNode>
+      <NPC>Ted</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>HOW DARE YOU!?!</DialogueText>
+      <JumpNode>25</JumpNode>
+      <FunctionCall>PunchTed</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Ow!~ Hey that hurt!~ You're a jerk!</DialogueText>
+      <NPC>Ted</NPC>
+      <JumpNode>26</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Well there's more where that came from!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartRepeatPunchingTed</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Hey! Cindy! Stop!~ Knock it off right now!</DialogueText>
+      <NPC>Teacher</NPC>
+      <FunctionCall>TeacherWalkToSpat</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Okay okay!~ I'll stop!~ But I'll kill him if he ever does that again!</DialogueText>
+      <JumpNode>31</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Not good enough you little brat!~ You're getting study hall for this little incident!</DialogueText>
+      <JumpNode>32</JumpNode>
+      <NPC>Teacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>It was worth it!</DialogueText>
+      <FunctionCall>TeacherWalkBackToFront</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Wow...~that went better than expected.</DialogueText>
+      <JumpNode>34</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>Yeah...~this has been great.</DialogueText>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Oh good!~ I was hoping I would see you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Decided on a boy yet?</OptionText>
+          <DestinationID>41</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away from Cindy.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>Yup! The cute boy in the blue shirt and red tie, but he's too smart for this class. He's in the upstairs class. I want you to take this to him.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What is it?</OptionText>
+          <DestinationID>42</DestinationID>
+          <FunctionCall>GetLoveLetter</FunctionCall>
+          <SetFlag>CindyGaveLoveLetter</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>It's a love letter! Now go give it to him!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I get upstairs?</OptionText>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay. Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>44</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>I used to hang out with our hall monitor *hl*before school started*hle*. He would give me passes. I suppose you could try that, but school already started.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Interesting.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>44</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>Did you deliver my love letter yet?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>45</DestinationID>
+          <Flag>DeliveredLoveLetter</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>Good! Love is in the air. *hl*I'm probably not the only one with love on their mind.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's probably true.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Of course I do! *hl*I have a pretty pink one, but you already know I have that reserved for my new boyfriend.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Who's your new boyfriend?</OptionText>
+          <DestinationID>51</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Well, we aren't official yet, but it's going to be that cute boy in *hl*the blue shirt and red tie. He's in the upstairs class.*hle* I want you to take this to him.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What is it?</OptionText>
+          <DestinationID>42</DestinationID>
+          <FunctionCall>GetLoveLetter</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>Ugh. There's still food in my hair. You boys are the worst.~ I can't believe you got me put in here.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>I suppose you could...if you can win custody!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do you mean?</OptionText>
+          <DestinationID>101</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>We're going to play house! It'll be fun!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess we can.</OptionText>
+          <DestinationID>102</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No way.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>Perfect! I'll see you over at the dollhouse...~ex-husband!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh no.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>110</ResolutionID>
+          <FunctionCall>WalkToDollHouse</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>What are you doing here?!~ It's not the weekend or Thanksgiving!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm here for my daughter.</OptionText>
+          <DestinationID>112</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>You told me to come over here.</OptionText>
+          <DestinationID>111</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Spray Cindy in the face.)</OptionText>
+          <DestinationID>140</DestinationID>
+          <FunctionCall>SprayCindy</FunctionCall>
+          <ItemToUse>SprayBottle</ItemToUse>
+          <SetFlag>CindySprayed1</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>No I didn't and neither did the judge! If you don't leave right now I'm calling the police!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm taking her.</OptionText>
+          <DestinationID>121</DestinationID>
+          <FunctionCall>GetDoll</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Spray Cindy in the face.)</OptionText>
+          <DestinationID>140</DestinationID>
+          <FunctionCall>SprayCindy</FunctionCall>
+          <ItemToUse>SprayBottle</ItemToUse>
+          <SetFlag>CindySprayed1</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>I know you are!~ But I would be neglecting my duties as a mother if I let her go with a filthy boozer such as yourself.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm clean now.</OptionText>
+          <DestinationID>113</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>113</NodeID>
+      <DialogueText>Oh really?~ You've been attending your meetings then?~ *hl*Let's see your 30 day pin.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Here.</OptionText>
+          <DestinationID>114</DestinationID>
+          <ItemToUse>ApplesoftPin</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't have it with me.</OptionText>
+          <DestinationID>115</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>114</NodeID>
+      <DialogueText>Wow.~ I can't believe it. All the counseling and jail time really paid off.~ I suppose one afternoon wouldn't hurt.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Great.</OptionText>
+          <DestinationID>119</DestinationID>
+          <FunctionCall>GetDoll</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>115</NodeID>
+      <DialogueText>Typical. You haven't been going.~ Just know that what I'm doing, I'm doing out of love.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are you doing?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>CallCops</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>116</NodeID>
+      <DialogueText>I never said I was!~ I know this has been hard on you, but don't forget that she might not even be-</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Be what?</OptionText>
+          <DestinationID>117</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>117</NodeID>
+      <DialogueText>Ummm...~nevermind. Just...~if I let her go with you, you have to promise to bring her back. Understand?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Be what?</OptionText>
+          <DestinationID>117</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Be mine?</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>118</NodeID>
+      <DialogueText>Oh wow!~ Color me impressed!~ On time and everything this month!~ Well I suppose the judge doesn't have to know about one afternoon.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No he doesn't.</OptionText>
+          <DestinationID>119</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>119</NodeID>
+      <DialogueText>Just don't take her to any bars this time.~ I know how you get when you drink.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes dear.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>120</NodeID>
+      <DialogueText>Oh yeah?~ Well I want to call the police. We can have both or neither.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Both it is.</OptionText>
+          <DestinationID>121</DestinationID>
+          <FunctionCall>GetDoll</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>121</NodeID>
+      <DialogueText>Fine you asked for it!</DialogueText>
+      <FunctionCall>CallCops</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>122</NodeID>
+      <DialogueText>Hello?! 911?!</DialogueText>
+      <JumpNode>123</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>123</NodeID>
+      <DialogueText>What?! No!~ This is the janitor!</DialogueText>
+      <JumpNode>124</JumpNode>
+      <NPC>Janitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>124</NodeID>
+      <DialogueText>I know that!~ You gave me this number!~ Now if you want any more stuff from my dad's liquor cabinet, you'll come in here and be a cop!</DialogueText>
+      <JumpNode>125</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>125</NodeID>
+      <NPC>Janitor</NPC>
+      <DialogueText>Ugh.~ Fine. Be there in a minute.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>JanitorComeToClass</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>126</NodeID>
+      <DialogueText>*Sigh* Is this the perp, little girl?</DialogueText>
+      <JumpNode>127</JumpNode>
+      <NPC>Janitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>127</NodeID>
+      <DialogueText>We've been over this!~ I'm a grown woman! But yes, that's him, please take him away.</DialogueText>
+      <JumpNode>128</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>128</NodeID>
+      <DialogueText>Not my style. I'm more of a cop who doesn't play by the rules.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>JanitorKillPlayer</FunctionCall>
+      <NPC>Janitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>130</NodeID>
+      <DialogueText>Hello?! 911?!</DialogueText>
+      <JumpNode>131</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>131</NodeID>
+      <DialogueText>What?! No!~ This is the janitor!</DialogueText>
+      <JumpNode>132</JumpNode>
+      <NPC>Janitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>132</NodeID>
+      <DialogueText>I know that!~ You gave me this number!~ Now if you want any more stuff from my dad's liquor cabinet, you'll come in here and be a cop!</DialogueText>
+      <JumpNode>133</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>133</NodeID>
+      <DialogueText>I'm kinda busy unclogging a toilet at the moment.</DialogueText>
+      <JumpNode>1340</JumpNode>
+      <NPC>Janitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1340</NodeID>
+      <DialogueText>Oh hey!~ One of them funny Monsterman cards you kiddos like.</DialogueText>
+      <JumpNode>1341</JumpNode>
+      <NPC>Janitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1341</NodeID>
+      <DialogueText>Are you coming or not?!</DialogueText>
+      <JumpNode>1342</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1342</NodeID>
+      <DialogueText>You're a vicious little spitfire. You figure it out.</DialogueText>
+      <JumpNode>134</JumpNode>
+      <NPC>Janitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>134</NodeID>
+      <DialogueText>What?!~ No!~ Get your crazy old butt in here and do what I say!</DialogueText>
+      <JumpNode>135</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>135</NodeID>
+      <DialogueText>My...~my...~my daughter. Give her back!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nope. Bye!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>JanitorHasCard</SetFlag>
+          <FunctionCall>GetDoll</FunctionCall>
+          <ResolutionID>136</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>136</NodeID>
+      <DialogueText>You're the worst dad ever!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Whatever.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>140</NodeID>
+      <DialogueText>AAAH!!~ What the heck are you doing?!~ That's not how this works!~ My eyes!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Spray her again.)</OptionText>
+          <ItemToUse>SprayBottle</ItemToUse>
+          <DestinationID>141</DestinationID>
+          <FunctionCall>SprayCindy2</FunctionCall>
+          <SetFlag>CindySprayed2</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>141</NodeID>
+      <DialogueText>UGH! Stop that!~ What's even in that?! It stings so bad my head is spinning! Just take the stupid doll! Leave me alone!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the doll.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetDoll</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>142</NodeID>
+      <DialogueText>I...~don't feel so good.~ The stuff is making me feeeeeeeeel baaad...</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>CindyFallOver</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>200</NodeID>
+      <DialogueText>Woah woah woah there kid!~ Where's all this coming from?~ I mean...~yeah I want the old cow dead, but I am not getting blood all over my skirt.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You just need to be in the bathroom.</OptionText>
+          <DestinationID>201</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>201</NodeID>
+      <DialogueText>Oh!~ Well in that case, I think I can make that work...for a price.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How much?</OptionText>
+          <DestinationID>202</DestinationID>
+          <FunctionCall>GetGum</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>202</NodeID>
+      <DialogueText>It'll just be the cost of you putting this in a girl's hair!~ You know how I love it when other girls wear my gum.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>There aren't any girls here.</OptionText>
+          <DestinationID>203</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>203</NodeID>
+      <DialogueText>Well jeez...you better find one then if you want my help.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Press the green button.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SummonPennyDumbClass</FunctionCall>
+          <ItemToUse>PennyController</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the blue button.)</OptionText>
+          <DestinationID>325</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the red button.)</OptionText>
+          <DestinationID>325</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the yellow button.)</OptionText>
+          <DestinationID>325</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nevermind.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>303</NodeID>
+      <DialogueText>Ugh...~what do you want laser girl?~ I didn't call you.</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>304</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>304</NodeID>
+      <DialogueText>I-~ I don't know. I'm just supposed to be here.</DialogueText>
+      <NPC>Penny</NPC>
+      <JumpNode>305</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>305</NodeID>
+      <DialogueText>Whatever...make yourself at home. Not like I can stop you.</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PennyWalkToCindyDumbClass</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>306</NodeID>
+      <DialogueText>I think I'm supposed to talk to you. Why am I supposed to talk to you?</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Put gum in her hair.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>Gum</ItemToUse>
+          <FunctionCall>GumPenny</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>307</NodeID>
+      <DialogueText>Hey!~ That was mean!~ I'm sending you to the-</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Press the green button.)</OptionText>
+          <DestinationID>308</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <FunctionCall>PlayFail</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the blue button.)</OptionText>
+          <DestinationID>309</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <FunctionCall>PlayFail</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the red button.)</OptionText>
+          <DestinationID>310</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <FunctionCall>PlayFail</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the yellow button.)</OptionText>
+          <DestinationID>313</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>          
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Do nothing.)</OptionText>
+          <DestinationID>311</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>308</NodeID>
+      <DialogueText>I'm already here!~ I'm sending you to the principal's office!</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh no.</OptionText>
+          <DestinationID>312</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>309</NodeID>
+      <DialogueText>I will not be releasing my collected contraband to someone who is going to the principal's office!</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Darn it.</OptionText>
+          <DestinationID>312</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>310</NodeID>
+      <DialogueText>...~Yes...~I was already going to send you to the principal's office.</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Darn it.</OptionText>
+          <DestinationID>312</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>311</NodeID>
+      <DialogueText>I'm sending you to the principal's office!</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Darn it.</OptionText>
+          <DestinationID>312</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>312</NodeID>
+      <DialogueText>There go the lights. I sure hope nothing bad happens in the dark.</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Darn it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetKilledByPenny</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>313</NodeID>
+      <DialogueText>Oh...~nevermind.~ I'll just be going now.</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye Penny.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PennyLeaveDumbClass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>315</NodeID>
+      <DialogueText>You're back again?~ What is with you? I thought this school had better technology than this.</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>316</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>316</NodeID>
+      <DialogueText>I don't know what's wrong with me!</DialogueText>
+      <NPC>Penny</NPC>
+      <JumpNode>317</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>317</NodeID>
+      <DialogueText>There's lots wrong with you.~ Just stay whatever course you're on, *hl*but I'm telling your mother about this.*hle*</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PennyWalkToCindyDumbClass</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>320</NodeID>
+      <DialogueText>I don't even know what to say...~that was the least satisfying hair-gumming I've ever seen.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>But you'll still help, right?</OptionText>
+          <DestinationID>321</DestinationID>
+          <SetFlag>BillyRecruitedCindy</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>321</NodeID>
+      <DialogueText>I guess so.~ God I feel empty.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You need help.</OptionText>
+          <DestinationID>322</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>322</NodeID>
+      <DialogueText>Whatever.~ I'll do what you need.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Just use the bathroom during lunch.</OptionText>
+          <DestinationID>323</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>323</NodeID>
+      <DialogueText>Sure thing...~what a waste of gum.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Stop talking to Cindy.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>325</NodeID>
+      <DialogueText>If that was supposed to do something, it didn't work. Consider me unimpressed.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me too.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>
