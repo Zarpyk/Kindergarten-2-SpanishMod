@@ -204,7 +204,7 @@ namespace TranslationMod_BepInEx5 {
             if (GetXML("MissionMapPanelData.txt", out string path)) return true;
 
             XmlSerializer xmlSerializer = new(typeof(MissionMapPanel.MissionMapData));
-            StringReader stringReader1 = new(path);
+            StringReader stringReader1 = new(File.ReadAllText(path));
             MissionMapPanel.MissionMapData missionMapData =
                 (MissionMapPanel.MissionMapData) xmlSerializer.Deserialize(stringReader1);
             stringReader1.Close();
