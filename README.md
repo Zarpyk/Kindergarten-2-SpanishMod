@@ -10,7 +10,7 @@ Traducción de Kindergarten 2 a español con GPT4o-mini y mod de BepInEx (5.4.23
 
 # Cosas no traducidas
 - Algunas partes de UI
-- Cartas Monstermon (Están incrustadas en imágenes)
+- Cartas Monstermon (El texto esta incrustado en las imágenes)
 - Batalla Monstermon
 
 # Ejemplos
