@@ -2,7 +2,7 @@
 Traducción de Kindergarten 2 a español con GPT4o-mini y mod de BepInEx (5.4.23.2, incluido en el rar de descarga)
 
 # Requisitos
-- Windows 64 bits (En caso de otro sistema operativo, se necesita cambiar la versión de BepInEx)
+- Windows 64 bits (En caso de otro sistema operativo, se necesita cambiar la versión de [BepInEx](https://github.com/BepInEx/BepInEx/releases/tag/v5.4.23.2))
 - Versión 2.01 del juego
 
 # Instalación
