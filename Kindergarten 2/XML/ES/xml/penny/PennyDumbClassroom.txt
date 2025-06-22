@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Atención, niños traviesos!</DialogueText>
+      <FunctionCall>WalkToPlayerDumbClass</FunctionCall>
+      <JumpNode>-1</JumpNode>  
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Me ha llegado la información de que uno de ustedes está llevando algo de contr-...</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Oh, definitivamente eres tú.~ Vas a tener que venir conmigo a la oficina del director.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quién te crees que eres?</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Oh no!~ ¡Se fue la luz!~ Espero que no pase nada malo.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PlayerShotByPenny</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

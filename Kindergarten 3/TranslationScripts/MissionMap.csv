@@ -1,0 +1,23 @@
+﻿Field,Default
+TeacherDescription,Start the mission by reading the pamphlet on the wall and then talking to the teacher.
+JanitorDescription,Start the mission by helping the Janitor get some bandaids.
+CarlaDescription,Start the mission by getting Cindy to help with Emmy's garden and then talking to Carla.
+DaveyDescription,Start the mission by proving yourself to Davey by getting beat up by the Janitor.
+EmmyDescription,Start the mission by getting Cindy to help with Emmy's garden and then finding a way inside.
+FelixDescription,Start the mission by getting a goo core.
+AliceDescription,Start the mission by returning Alice's diary to her.
+NuggetDescription,Start the assignment by giving Nugget the white flower.
+LilyDescription,Start the assignment by opening the cage in the lab.
+TeacherTitle,The Show Must Go On
+CarlaTitle,The Grate Escape
+JanitorTitle,Cold Blooded Killer
+DaveyTitle,Gator Aid
+EmmyTitle,Garden of Emmy
+FelixTitle,Helicopter Parenting
+AliceTitle,What Happened on Monday?
+NuggetTitle,Nugget-o and Lily-et
+LilyTitle,Paging Dr. Goolittle
+Requirement1,Complete {0} to unlock this assignment.
+Requirement2,Complete {0} and {1} to unlock this assignment.
+Requirement3,"Complete {0}, {1}, and {2} to unlock this assignment."
+Requirement4,"Complete {0}, {1}, {2}, and {3} to unlock this assignment."

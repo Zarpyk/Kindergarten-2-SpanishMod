@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Nugget cree que este sería un buen lugar para la Cueva de Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quieres pelear?</OptionText>
+          <DestinationID>60</DestinationID>
+          <ItemToUse>Deck</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Eso es lindo, Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Nugget está bastante frustrado!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa, Nugget?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lo manejaré más tarde.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Gracias por salvar a Nugget de la gran maestra!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡De nada!</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Es hora de que Nugget cave una nueva Cueva de Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Diviértete.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Nugget lo hará!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>DigNuggetCave</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡La nueva Cueva de Nugget está casi lista! ¡Solo hay una cosa más que Nugget debe hacer! ¡Dale a Nugget los nuggets calientes!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aquí.</OptionText>
+          <ItemToUse>NuggetBox</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>DropNuggets</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Los regalé.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>TradedNuggetsForCat</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lo haré en un segundo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>¡Ahora Nugget y el amigo de Nugget están listos para entrar en la Cueva de Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. Vamos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>NuggetCompletedRecess</SetFlag>
+          <FunctionCall>PlayerJumpInHole</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Iré en un minuto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Perdón, Nugget.~ Nugget no escuchó eso. ¿Dijo el amigo potencialmente muerto de Nugget que regaló los nuggets calientes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Jaja. Solo bromeando.</OptionText>
+          <DestinationID>11</DestinationID>
+          <UsesAction>true</UsesAction>
+          <ItemToUse>NuggetBox</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Sí...~ El amigo de Nugget es un bromista. De todos modos...</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>DropNuggets</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Antes de que Nugget te empuje a la Cueva de Nugget sin nuggets, ¿te gustaría decirle a Nugget por qué regalaste los nuggets?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Los cambié por este gato.</OptionText>
+          <DestinationID>13</DestinationID>
+          <ItemToUse>Tenders</ItemToUse>
+          <FunctionCall>GiveTenders</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No lo sé.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡Oh!~ ¡A Nugget le gusta el gatito! ¡Nugget lo llamará...~Tenders!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Entonces estamos bien?</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>No realmente. Nugget ahora tiene un amigo en Tenders, pero el amigo potencial de Nugget no ayudó a Nugget con la Cueva de Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Nugget le dará a su amigo fallido esta tarjeta de Monstermon. Eso le parece justo a Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que sí.</OptionText>
+          <DestinationID>16</DestinationID>
+          <FunctionCall>GetTunaCard</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Bien. Ahora deja a Nugget con sus Tenders.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Nugget cavó!~ ¡Nugget cavó una Cueva de Nugget completa!~ ¡Nugget se ha ganado su viaje a la fábrica de nuggets!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me alegra por ti.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¡No mires a Nugget!~ ¡El hermoso cabello de Nugget ha sido robado!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ahí, ahí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>¡Oh!~ ¡El amigo de Nugget tiene un excelente sentido del tiempo! ¡Contempla!~ ¡La nueva Cueva de Nugget de Nugget!~ ¡Nugget pudo terminarla en un tiempo récord!~ ¿Le gustaría a Nugget's amigo verla?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>42</ResolutionID>
+          <FunctionCall>PlayerJumpInHole</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No ahora mismo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>41</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>¿Ahora verás la Cueva de Nugget?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>42</ResolutionID>
+          <FunctionCall>PlayerJumpInHole</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No ahora mismo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>¿Te gustaría regresar a la Cueva de Nugget?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>42</ResolutionID>
+          <FunctionCall>PlayerJumpInHole</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No ahora mismo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Nugget aprecia la ayuda de su amigo potencial desacreditado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡De nada!</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>Oh sí.~ Nugget es bastante hábil en el uso de talismanes. A Nugget le gustan los rojos porque le recuerdan a los nuggets.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartMonstermonBattle</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>¡Nugget es el mejor portador de talismanes de Monstermon! ¡Nugget no puede ser superado!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo que sea, Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>Nugget está impresionado por la habilidad de su oponente con los talismanes. Quizás él sea el que los reúna todos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿De qué estás hablando?</OptionText>
+          <DestinationID>451</DestinationID>
+          <FunctionCall>UnlockZombie</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>451</NodeID>
+      <DialogueText>¡Toma este talismán!~ ¡Tómalo y reúne los 50!~ Nugget sabrá cuándo ha sucedido.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eres tan raro.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

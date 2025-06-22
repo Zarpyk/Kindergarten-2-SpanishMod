@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¿Qué estás haciendo? ~ Lily no se está escondiendo en un conducto de aire.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Mi papá era un loco científico... ~ No me lo creo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estará bien, Jerome.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>¡Vamos, chico! ~ ¡Deja de perder el tiempo! Vamos a golpear ese cubículo y confrontar a Lily por lo que le hizo a mi papá. ¡Vamos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

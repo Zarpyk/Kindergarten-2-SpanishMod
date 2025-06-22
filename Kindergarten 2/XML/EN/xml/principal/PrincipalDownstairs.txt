@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Oh! It's you...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's me.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>You know, Penny mentioned to me that she made a new friend.~ That YOU...~are her new friend.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yeah. She's nice.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>And now you're sneaking around with that large boy and there's a computer disc in my office that I didn't put there.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>It's all just a little too...~suspicious. I think we should have a little chat. In my office!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aw man.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Right on cue. I'll see you tomorrow.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's happening?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PlayerShotByPennyPrincipal</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Gracias a Dios!~ ¡Todavía estás aquí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Dónde más podría estar?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Algo salió mal!~ ¡Applegate tiene a Buggs!~ ¡Por favor, ve a ayudarlo! ¡Ella ha perdido la cabeza!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Está bien! ¡Está bien!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+          <FunctionCall>SetTeacherBathroomScene</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Vamos!~ ¡Tenemos que salvar a Buggs!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Esa es la dirección equivocada!~ ¡Tenemos que ir al baño de niñas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

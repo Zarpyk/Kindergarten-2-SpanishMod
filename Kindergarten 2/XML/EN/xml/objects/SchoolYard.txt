@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>I should get going. I'll get in trouble if I stay here.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Get going.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToNextArea</FunctionCall>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>You got to node 1.</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>The jump node worked.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>This is a object option.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>This is a test object option for close.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>I shouldn't go down there again. Lily and Billy might have their cover blown.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

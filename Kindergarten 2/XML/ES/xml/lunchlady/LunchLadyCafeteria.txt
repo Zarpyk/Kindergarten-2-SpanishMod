@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡Hola, niño! ~ ¿Qué te gustaría para el almuerzo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tienes algo vegano?</OptionText>
+          <DestinationID>11</DestinationID>
+          <UsesAction>true</UsesAction>
+          <Flag>FelixTalkAboutVegan</Flag>
+          <BlockFlag>CafeteriaPuddleRemoved</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Tienes algo vegano?</OptionText>
+          <DestinationID>20</DestinationID>
+          <UsesAction>true</UsesAction>
+          <Flag>FelixTalkAboutVegan</Flag>
+          <BlockFlag>CafeteriaPuddleNotRemoved</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tomaré una hamburguesa.</OptionText>
+          <MoneyLock>1</MoneyLock>
+          <DestinationID>1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetBurger</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Ahí tienes, niño. ~ Una hamburguesa. Por favor, ¡disfruta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <Flag>Burger3Taken</Flag>
+          <FunctionCall>AddGoGetMoreBurgersEvent</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <BlockFlag>Burger3Taken</BlockFlag>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Ya has comprado el almuerzo. Por favor, guarda un poco para los demás. No querrás parecerte a ese niño Buggs.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buen punto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Oh... ~ sí, debí haberlo visto venir. ~ Ustedes, los nuevos estudiantes, son tan exigentes.</DialogueText>
+      <JumpNode>12</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Puedo preparar algo en la parte de atrás, pero parece que el conserje aún está trapeando en la zona.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Entonces no me lo traerás?</OptionText>
+          <DestinationID>13</DestinationID>
+          <FunctionCall>AddVeganEvent</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Paciencia, niño. ~ No querrás que me caiga feo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No lo haría.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿No lo harías?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Entonces *hl*esperaremos a que el conserje termine su trabajo.*hle* Yo haré la comida entonces.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡No, no lo harías! ~ Niño malcriado. Tan impaciente. *hl*Esperaremos a que el conserje termine su trabajo.*hle* Yo haré la comida entonces.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>El conserje no ha terminado. Regresa a mí cuando lo esté.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Veo que el conserje ha terminado su trabajo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Oh... ~ sí, debí haberlo visto venir. ~ Ustedes, los nuevos estudiantes, son tan exigentes.</DialogueText>
+      <JumpNode>21</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Regresaré en un momento.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>GoGetVeganMeal</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¿Has regresado por tu comida exigente?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo he.</OptionText>
+          <DestinationID>26</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetVeganMeal</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Ahí tienes, niño. ~ Por favor, disfruta de tu comida de conejito.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Vaya, vaya, vaya... ~ los niños están bastante hambrientos hoy. ~ Debo ir a conseguir más hamburguesas.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>GoGetMoreBurgers</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>¡Niño travieso!</DialogueText>
+      <JumpNode>51</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>¡No deberías estar detrás de mi mostrador! ~ ¡Es prohibido!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo siento.</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>Has violado mi espacio sagrado. Por eso debes pagar. ¡Te estoy enviando a la oficina del director!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No quiero.</OptionText>
+          <DestinationID>53</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>Ah, sí. ~ Dulce oscuridad. ~ Me pregunto qué te espera.</DialogueText>
+      <FunctionCall>PlayerShotByPenny</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>100</NodeID>
+      <DialogueText>¡La campana ha sonado! ¡Fuera de mi cafetería!</DialogueText>
+      <JumpNode>101</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>¡Cualquiera que haya desobedecido a nuestra encantadora directora hoy deberá ir a la sala de estudios! ¡Los demás pueden ir a jugar en el recreo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve al recreo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <BlockFlag>ForceToStudyHall</BlockFlag>
+          <FunctionCall>GoToNextArea</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ve a la sala de estudios.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <Flag>ForceToStudyHall</Flag>
+          <FunctionCall>GoToNextArea</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>200</NodeID>
+      <DialogueText>¡TUUUUUUUUU!!!</DialogueText>
+      <JumpNode>201</JumpNode>
+      <FunctionCall>WalkToPlayer</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>201</NodeID>
+      <DialogueText>¡Eres un niño muy maaaaal! ¡Muy malo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué hice?</OptionText>
+          <DestinationID>202</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>202</NodeID>
+      <DialogueText>¡Me dijiste que ibas a ver a la hermana querida! ¡Pero no fuiste a verla, verdad?! ¿Verdad?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No. Yo estaba--</OptionText>
+          <DestinationID>203</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>203</NodeID>
+      <DialogueText>¡Sala de estudios! ¡Sala de estudios para el niño mentiroso!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ya tengo sala de estudios.</OptionText>
+          <Flag>ForceToStudyHall</Flag>
+          <DestinationID>204</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Vaya, hombre.</OptionText>
+          <BlockFlag>ForceToStudyHall</BlockFlag>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToNextArea</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>204</NodeID>
+      <DialogueText>Entonces, en realidad tendrás que ir a ver a la hermana de...</DialogueText>
+      <FunctionCall>TurnOffLights</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>210</NodeID>
+      <DialogueText>¡Niño travieso! ~ ¡Has sido muy malo! ¡Y ya tienes sala de estudios! Te estoy enviando a la...</DialogueText>
+      <JumpNode>211</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>211</NodeID>
+      <DialogueText>Whoa, whoa, whoa... tú ~... dulce joven. ~ ¡Él me estaba ayudando! ¡No debería ser castigado por eso!</DialogueText>
+      <JumpNode>212</JumpNode>
+      <NPC>Janitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>212</NodeID>
+      <DialogueText>*Suspiro*... ~ muy bien. A la sala de estudios contigo.</DialogueText>      
+      <Options>
+        <DialogueOption>
+          <OptionText>Genial.</OptionText>
+          <DestinationID>213</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>213</NodeID>
+      <DialogueText>Voy a terminar de limpiar ese... ~ desorden que encontraste. ~ ¡Diviértete en la sala de estudios!</DialogueText>
+      <NPC>Janitor</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí. Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToNextArea</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>¡Por favor, cálmate, niño! ¡Este no es un comportamiento apropiado!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Debí irme.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>400</NodeID>
+      <DialogueText>¡Para, niño! ~ ¡Aún no has comido!</DialogueText>
+      <JumpNode>401</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>401</NodeID>
+      <DialogueText>¡Espera, niño! ~ ¡No perteneces aquí! ~ ¡Y mira! ~ ¡Hay un agujero en mi hermosa cafetería!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Acabas de notar esto?</OptionText>
+          <DestinationID>402</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>402</NodeID>
+      <DialogueText>No noto mucho, pero sí noto... ~ que todos ustedes deberían ser enviados a la oficina del director.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Nooooo!</OptionText>
+          <DestinationID>403</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>403</NodeID>
+      <DialogueText>Jejeje... ~ hazlo bien, mi sobrina.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>KillBillyNugget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1000</NodeID>
+      <DialogueText>¡Esa es la campana y el final de la demostración! ~ ¡No completaste tu misión asignada! ¿Qué te gustaría hacer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Reiniciar en la cafetería.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>RestartCafeteria</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Reiniciar en la mañana.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>RestartMorningTime</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Reiniciar en el patio de la escuela.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>RestartSchoolYard</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Regresar al menú.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReturnToMenu</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

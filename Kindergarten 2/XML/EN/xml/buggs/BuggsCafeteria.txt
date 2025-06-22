@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Burgers are okay, but I actually kinda miss the slop.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Wanna start a food fight?</OptionText>
+          <Flag>CarlaFoodFight</Flag>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Me too, Buggs.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Well?~ How'd recon go?~ Did she tell you where she put our stuff?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>She gave me this disk.</OptionText>
+          <ItemToUse>PennyDisk</ItemToUse>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I didn't get anything.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Interesting. Well we gotta see what's on it. *hl*We need access to a computer, and there's probably one in the principal's office.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I get there?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What do I do once I'm in there?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Did you smooth talk the principal like I told you to?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh yeah.</OptionText>
+          <DestinationID>4</DestinationID>
+          <ItemToUse>PrincipalPass</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I didn't.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>I'm gonna cause an...incident in here. One that requires the principal's attention. When she leaves her office, that's when you get on her computer.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good plan.</OptionText>
+          <DestinationID>50</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Now get going to the principal's office. We've got work to do.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6</ResolutionID>
+          <FunctionCall>AddBailFoodFight</FunctionCall>
+          <SetFlag>BuggsFoodFight</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Get going to the principal's office! We need to know what's on that disk!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>On it.</OptionText>
+          <DestinationID>-1</DestinationID>          
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Please tell me you got something.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I got it.</OptionText>
+          <ItemToUse>PennyDocument</ItemToUse>
+          <DestinationID>8</DestinationID>
+          <FunctionCall>GiveDocument</FunctionCall>
+          <SetFlag>BuggsCompletedLunchTime</SetFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I couldn't get it.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Hell yeah!~ All right Monty.~ A deal's a deal. I protected you from getting messed up when the food started flying. Now you--</DialogueText>
+      <JumpNode>10</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Yes Buggs, I'll read the stupid document for you, but this thing looks pretty big. *hl*I can have it done when recess starts.*hle*</DialogueText>
+      <NPC>Monty</NPC>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Recess?!~ But I have study hall!~ I want to know what it says right now!</DialogueText>
+      <JumpNode>12</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>C'mon Buggs. You know it doesn't work like that. Looks like your little friend here is going to have to get the info for you.</DialogueText>
+      <JumpNode>13</JumpNode>
+      <FunctionCall>GetWalkieTalkie</FunctionCall>
+      <NPC>Monty</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Fine. Take this walkie talkie. I want to know everything you know. I have a feeling we've just scratched the surface.</DialogueText>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Darn it!~ We needed some info.~ Maybe we can try again tomorrow.~ Stupid snitch. I'll get my knife back if it kills me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yeah!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>We need to get better info on her.~ We'll do better next time.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Great!~ Just great!~ We can't find out more about this girl if we can't look around that office! Get bent.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Get bent.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>18</ResolutionID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Get bent, kid.~ You don't listen to me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Get bent.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Haha...~yeah I do.~ This place could use a little redecorating...~so could Nugget's face.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Let's do it.</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Easy there kid.~ I'm not starting a fight without proper ammunition.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You want more food?</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Yup. *hl*Bring me more burgers.*hle* We'll kick this food fight off right!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>You can have mine. How many do you need now?</DialogueText>
+      <NPC>Jerome</NPC>
+      <JumpNode>24</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>One more should do it. Go get one. Hurry up.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Here you go.</OptionText>
+          <DestinationID>26</DestinationID>
+          <ItemToUse>BurgerMeal</ItemToUse>
+          <FunctionCall>GiveBurger</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>CarlaStartedFoodFight</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>25</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Got that burger for me?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Here you go.</OptionText>
+          <DestinationID>26</DestinationID>
+          <ItemToUse>BurgerMeal</ItemToUse>
+          <FunctionCall>GiveBurger</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>CarlaStartedFoodFight</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Then let's get this show on the road!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartFoodFight</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>*b*HEY NUGGET!!*be*</DialogueText>
+      <JumpNode>31</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Nugget does not wish to speak to--</DialogueText>
+      <JumpNode>32</JumpNode>
+      <NPC>Nugget</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>*b*CATCH!!*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ThrowBurger1</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Nugget does not like burgers!!</DialogueText>
+      <JumpNode>34</JumpNode>
+      <NPC>Nugget</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>Hey fatso!~ Watch it!~ You almost hit me with that grease ball!</DialogueText>
+      <JumpNode>35</JumpNode>
+      <NPC>Ozzy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Oh!~ My mistake!~ I'll make sure to hit you this time!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ThrowBurger2</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Oof!~ Hey!~ That was rude!</DialogueText>
+      <NPC>Ozzy</NPC>      
+      <JumpNode>37</JumpNode>
+      <FunctionCall>OzzyFaceNugget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>C'mon weird kid!~ We don't have to put up with this! Let's give him a taste of his own medicine!</DialogueText>
+      <JumpNode>38</JumpNode>
+      <NPC>Ozzy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>Nugget had never considered throwing food back at the nasty bully.~ Nugget normally just poisons his enemies...~</DialogueText>
+      <JumpNode>39</JumpNode>
+      <NPC>Nugget</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>~...but Nugget can make an exception this time.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Nugget</NPC>
+      <FunctionCall>NuggetAndOzzyThrowBack</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Ugh!~ What the heck?!~ I don't want to get involved in your stupid--</DialogueText>
+      <JumpNode>41</JumpNode>
+      <NPC>Cindy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>*b*FOOD FIGHT!!*be*</DialogueText>
+      <JumpNode>42</JumpNode>
+      <FunctionCall>RunFoodFight</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Unacceptable! This will not stand in my cafet--</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>LunchLadyGetHit</FunctionCall>
+      <NPC>LunchLady</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>*Sigh*~ Perhaps I should get my sister...~</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>LunchLadyLeave</FunctionCall>
+      <NPC>LunchLady</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>One more thing...~after you get the file printed, *hl*see about unlocking the back door.~*hle* I have a feeling we'll need to get back up there.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can do.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>Well jeez, kid.~ I didn't know walking out the door was so hard.~ Looks like I'll just have to get my knife back by myself.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>18</ResolutionID>
+          <FunctionCall>WalkBackToStart</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>I'm going to throw burgers until my arm falls off! Wooooooo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Have fun with that.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

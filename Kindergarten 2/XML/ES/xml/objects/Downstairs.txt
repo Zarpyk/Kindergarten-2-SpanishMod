@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¿Debería poner el coche de juguete aquí?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <FunctionCall>LeaveCar</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>PutCarOnStairs</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Hay un charco de goo verde aquí. Lleva hacia el ascensor. Hay un globo sólido de eso en el suelo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma el globo.)</OptionText>
+          <FunctionCall>GetGlob</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No voy a tocar eso.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Hay un charco de goo verde aquí. Lleva hacia el ascensor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Asqueroso!</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Esta es la puerta del baño de los chicos. Supongo que la cierran con llave antes de que empiece la escuela.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Camina lejos.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Esta es la puerta del gimnasio.~ Está cerrada con llave.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Camina lejos.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Esta es la puerta de la cafetería.~ Está cerrada con llave.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Camina lejos.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Esta puerta lleva afuera a la rampa para discapacitados.~ Está cerrada con llave.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Desbloquea la puerta.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>SideyardKey</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>ChangeToSideyard</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Camina lejos.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Esta es la puerta del aula~ Se mantiene cerrada con llave durante la hora del almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Camina lejos.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Este ascensor requiere una llave para funcionar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Usa la llave del ascensor.)</OptionText>
+          <UsesAction>true</UsesAction>          
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>ElevatorKey</ItemToUse>
+          <FunctionCall>GetInElevatorUnderground</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ignora el ascensor.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¿A qué piso debería ir?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Segundo piso.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>Elevator2ndFloor</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sótano.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetInElevatorUnderground</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Hola! ¡Carla!~ ¡No se supone que debas estar abajo!~ ¡El baño de chicas está arriba! Ese otro monitor debería haberte detenido.</DialogueText>
+      <JumpNode>1</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Oh!~ ¡Es cierto!~ ¡Qué tonta soy! Quizás deberías acompañarme para asegurarte de que no cometa más errores.</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>No te hagas la tonta conmigo.~ Vamos. Te llevaré de vuelta arriba.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>TakeCarlaBackUpstairs</FunctionCall>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Vaya, ese tipo es tonto, pero Stevie no lo es.~ Una vez que nos vea, me llevará de vuelta arriba.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y luego qué?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Mientras él hace eso, usa esa llave para salir antes de que regrese.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Entendido!</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Necesitamos estar de vuelta en clase antes de que suene el timbre.~ Haré otra distracción para ti para que Stevie no te vea entrar desde afuera. Solo no te tardes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo no lo haré.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Bien. Entonces, ¡vamos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡Hey, Stevie!~ ¿Mi amiga todavía está en el--?</DialogueText>
+      <JumpNode>16</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¡Inaceptable, Carla!~ ¡Te estoy dando un tiempo de estudio!~ ¡No se supone que debas estar aquí abajo!</DialogueText>
+      <JumpNode>17</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¡Vamos, hombre!~ ¡Solo estoy revisando a mi amiga!</DialogueText>
+      <JumpNode>18</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>¡Él está bien! ¡Mira! Ahora regresa arriba antes de que te envíe a la oficina del director.</DialogueText>
+      <JumpNode>19</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>¡Está bien! ¡Perfecto!~ ¡Vaya!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>CarlaGoBackUpstairs</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Baño equivocado, niño.~ Vamos a subir al baño de chicas. ¿Recuerdas?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh, sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>¡Oh! Ahí estás.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToPlayerDownstairsErrand</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>¿Así que dejaste esa botella de spray, verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>¿Así que dejaste ese papel higiénico, verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>¡Genial!~ Vamos a conseguir ese dispositivo de ese viejo chiflado. Vamos a hacer volar este lugar por los aires.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vamos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StartFollowingPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>¡Apúrate, niño!~ ¡Eres libre de perder el tiempo cuando no estoy tratando de hacer algo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>305</NodeID>
+      <DialogueText>Vamos a bajar. Tienes que pasar por esa rejilla que abrimos antes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

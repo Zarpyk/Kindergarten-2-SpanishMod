@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Eso sonó como si viniera de la sala de profesores.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>1</ResolutionID>
+      <NPC>Player</NPC>
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>1</NodeID>
+      <DialogueText>¡Lo logré!~ ¡Esto hará que robar cosas sea mucho más fácil!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Genial.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>My dad drives a car like this.~ He said that when he dies, my twin brother Felix gets to have it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's sad, Ted.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Oh good. You're here. Felix has this scheme that's gonna help our family's company, but I have a better one, and no one wants to listen to it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What is it?</OptionText>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not interested.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>I'll tell you, but you gotta promise not tell anyone though. Felix will be so mad if his plan gets ruined and it's my fault.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I won't tell anyone.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>I want to use you to...~kill Ozzy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why me?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Why Ozzy?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>We heard about what happened at your old school. We know what you're...~erm...~capable of.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't know what you're talking about.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>No it's cool. I'm cool with you being a...~murderer. That's why we wanted to recruit you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So you want me to kill Ozzy?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>I don't! I...~well Felix does! And I...I want what Felix wants. Yeah...~Yeah! I want you to kill Ozzy!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. What's in it for me?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>How do I kill him?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Felix doesn't let me know about the family money. I'd just assume that he's going to give you something really expensive if we pull this off.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do we kill him?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Well...I want to *hl*give him an asthma attack.*hle* He uses his inhaler a lot. He keeps it in his cubby.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why do we need Cindy?</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>We're gonna need a long distraction. I figured we could pretend to fight or something to draw the teacher's attention and you could grab it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Let's do it then.</OptionText>
+          <DestinationID>11</DestinationID>
+          <Flag>OzzyGaveBattery</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Let's get that inhaler.</OptionText>
+          <DestinationID>110</DestinationID>
+          <BlockFlag>OzzyGaveBattery</BlockFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Yes I'm sure!~ It's time Felix respected me as an equal.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Let's get that inhaler.</OptionText>
+          <DestinationID>11</DestinationID>
+          <Flag>OzzyGaveBattery</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Let's get that inhaler.</OptionText>
+          <DestinationID>110</DestinationID>
+          <BlockFlag>OzzyGaveBattery</BlockFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>Right...*hl*but first we should handle Ozzy.*hle* You got something to distract him with, right?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>111</DestinationID>
+          <ItemToUse>Battery</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I forgot.</OptionText>
+          <DestinationID>112</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>Good thinking!~ He'll move to the other side of the class to play with Destructotron. Go give him that battery and then we can talk to Cindy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>113</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>But...~but without something to distract him with...~ Aw man. Felix was right. This was a stupid plan.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry.</OptionText>
+          <DestinationID>56</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>113</NodeID>
+      <DialogueText>Go give Ozzy that battery. Then we can make our move with Cindy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>114</NodeID>
+      <DialogueText>With Ozzy out of the way, we're ready to make our move. When we start the distraction, be ready to grab that inhaler.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Let's do this.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Also...~Felix didn't get a chance to empty his cubby before going to the smart class. *hl*There's some stuff in there that might be worth grabbing.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Like money?</OptionText>
+          <DestinationID>120</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>120</NodeID>
+      <DialogueText>No no no. The money is in MY cubby. *hl*Felix's is to the right of Ozzy's.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Anyway, *hl*let's go start a distraction.*hle* Lead the way!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Lead the way.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StartFollowingPlayer</FunctionCall>
+          <SetFlag>TedStartedMorningTime</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Well you see...~ummm...~Felix said it's because...</DialogueText>
+      <JumpNode>16</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>I actually don't know, but I think it has something to do with our inheritance.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I kill him?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Your inheritance?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Yeah. Felix and I are going to be getting a large sum of money when we turn 18. Felix says a dumb kid like me won't know what to do with it. Maybe he's right.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You seem pretty dumb.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Don't say that.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>No I'm not!~ I'll show Felix! We're going to kill Ozzy all by ourselves. We don't need him to do it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So how do we kill him?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Thanks. I appreciate that.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So how do we kill him?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Well that didn't work very well.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No. No it did not.</OptionText>
+          <DestinationID>41</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>She seems a little on edge. *hl*Maybe a loud noise or something will set her off.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's worth a shot.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Did you get it? Please tell me you got it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I got it.</OptionText>
+          <ItemToUse>Inhaler</ItemToUse>
+          <DestinationID>51</DestinationID>
+          <SetFlag>TedCompletedMorningTime</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I didn't get it.</OptionText>
+          <DestinationID>55</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Awesome!~ You're really good at this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks. Now what?</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>Now that we took away his lifeline, we just need to stress him out enough to trigger an asthma attack.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What stresses him out?</OptionText>
+          <DestinationID>53</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>Ozzy is a bit...~particular. He likes to do things a certain way. If we can break his routines, he should start freaking out.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Where do we start?</OptionText>
+          <DestinationID>54</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>54</NodeID>
+      <DialogueText>Lunch. He does a lot of really specific things there. It shouldn't be hard to throw him off his game.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>Seriously?!~ My brother thought you were a professional! Talk about a major let down. Felix is gonna be so disappointed in me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh well.</OptionText>
+          <DestinationID>56</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText>Just leave me alone kid. You're not who I needed you to be.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Leave Ted alone.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>Hey kid!~ I'm coming around to Felix's plan!~ Ozzy has been mentioning how vulnerable his mom's company is. I think Felix is on to something!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He's trying to kill you.</OptionText>
+          <ItemToUse>FelixContract</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>71</DestinationID>
+          <FunctionCall>GiveTedContract</FunctionCall>
+          <SetFlag>TedInOnIt</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That's great, Ted.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>71</NodeID>
+      <DialogueText>What?!~ No!~ Felix would never.~ He loves me. He just has a weird way of showing--</DialogueText>
+      <JumpNode>72</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>72</NodeID>
+      <DialogueText>But this is his handwriting...and he's going to...~bury me alive...~covered in spiders.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That seems to be the plan.</OptionText>
+          <DestinationID>73</DestinationID>
+          <FunctionCall>SetMadExpression</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>73</NodeID>
+      <DialogueText>No.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No?</OptionText>
+          <DestinationID>74</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>74</NodeID>
+      <DialogueText>It's time I stood up for myself! Felix thinks he's so smart! Well this time, I'm going to beat him.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what now?</OptionText>
+          <DestinationID>75</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>75</NodeID>
+      <DialogueText>We go along with his plan, only we're going to turn the tide on him at the last minute.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So about that jar of spiders...</OptionText>
+          <DestinationID>76</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>76</NodeID>
+      <DialogueText>Oh right!~ Wouldn't want him getting suspicious. Hmmmm...~I think I remember seeing some spiders somewhere. I think the bathroom.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's helpful.</OptionText>
+          <DestinationID>77</DestinationID>
+          <FunctionCall>GetEmptyJar</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>77</NodeID>
+      <DialogueText>I do have a jar for you to put them in though! Felix gives me a nickel every time I do something good and I put it in there.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's empty.</OptionText>
+          <DestinationID>78</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>78</NodeID>
+      <DialogueText>Which is why you're going to fill it with spiders.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fair enough.</OptionText>
+          <DestinationID>79</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>79</NodeID>
+      <DialogueText>Once you have it, *hle*head back to the smart class and wait for the bell to ring.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>80</NodeID>
+      <DialogueText>What are you doing? We have a job to do. *hl*Let's go talk to Cindy.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

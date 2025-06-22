@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Normalmente, mi novia se sentaría a mi lado y mi mejor amigo se sentaría enfrente de mí, pero nooooo. Ya no podemos tener eso.~ Malditos niños nuevos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deberías comprar una hamburguesa.</OptionText>
+          <DestinationID>1</DestinationID>
+          <Flag>NuggetBurgerMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lo que sea, Ozzy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Sí?~ Te gustaría eso, ¿verdad?!~ Hacerlo más fácil para olvidar todo esto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Olvidar qué?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>No voy a tener hora de estudio por esto.~ Solo déjame en paz.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. Lo que sea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>No puedo creer que alguien estuviera usando mi cubículo. ¡Todos saben que ese es mi cubículo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh bueno.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>Voy a ganar esta pelea de comida. ¡Voy a ganar para mostrarles a ustedes, los nuevos, que no son bienvenidos aquí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo que sea, Ozzy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>501</NodeID>
+      <DialogueText>Malditos niños nuevos. Empezando problemas en su primer día aquí.~ Al menos tú no estuviste involucrado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No, no lo estaba.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

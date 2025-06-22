@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Hola!~ No se supone que debas estar aquí. Deberían arreglar esa puerta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo siento.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Vas a la clase de ciencias o al gimnasio?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a ciencias.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <MoneyLock>3</MoneyLock>
+          <SetFlag>PaidLabFee</SetFlag>
+          <FunctionCall>SendToGym</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ve al gimnasio.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendToGym</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

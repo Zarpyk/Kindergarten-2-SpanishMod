@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is a microwave. I could probably use it to heat up some cold food.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Microwave the nuggets.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <ItemToUse>NuggetBox</ItemToUse>
+          <FunctionCall>UseMicrowave</FunctionCall>
+          <Flag>NuggetMicrowaveNuggets</Flag>
+          <BlockFlag>MicrowavedNuggets</BlockFlag>
+          <SetFlag>MicrowavedNuggets</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Microwave the cat.)</OptionText>
+          <DestinationID>2</DestinationID>
+          <ItemToUse>Smoky</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Microwave the cat.)</OptionText>
+          <DestinationID>2</DestinationID>
+          <ItemToUse>Gravy</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Microwave the cat.)</OptionText>
+          <DestinationID>2</DestinationID>
+          <ItemToUse>Tenders</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>This vending machine has some good looking snacks in it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Get cherry soda.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetRedDrink</FunctionCall>
+          <MoneyLock>1.5</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Get blueberry soda.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetBlueDrink</FunctionCall>
+          <MoneyLock>1.5</MoneyLock>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't get anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>I'm sorry...what?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Microwave the cat.)</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Smoky</ItemToUse>
+          <FunctionCall>EnableSmoky</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Microwave the cat.)</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Gravy</ItemToUse>
+          <FunctionCall>EnableGravy</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Microwave the cat.)</OptionText>
+          <DestinationID>3</DestinationID>
+          <ItemToUse>Tenders</ItemToUse>
+          <FunctionCall>EnableTenders</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Nevermind.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>No.~ I'm not doing that. That's mean.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>C'mon.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay, fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>*Sigh*~ Look. If you press that button again, I'll do it. You won't get an achievement. You won't unlock anything. You'll just nuke a cat.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm okay with that.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>You're right. That'd be horrible.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Fine.~ You asked for it, sicko.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>NukeCat</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Yeah...you know what?~ Screw this.~ I'm out. That was messed up.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're leaving?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Yup. See you tomorrow.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye, I guess.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PlayerLeave</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Glad we agree. You can actually have an achievement for that.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Neat.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+          <FunctionCall>SpareTheCat</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>This vase has a yellow flower in it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the flower.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetYellowFlower</FunctionCall>
+          <ResolutionID>11</ResolutionID>
+          <SetFlag>TookYellowFlower</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave the flower.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>This vase is empty.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Put the blue flower in the vase.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>12</ResolutionID>
+          <FunctionCall>PutBlueFlower</FunctionCall>
+          <ItemToUse>BlueFlower</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ignore the vase.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>This vase has a blue flower in it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the flower.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetBlueFlowerLounge</FunctionCall>
+          <ResolutionID>13</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave the flower.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>This vase is empty.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ignore the vase.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>This looks like a good spot to leave the device.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Leave the device.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>LeaveDevice</FunctionCall>
+          <SetFlag>BillyLeftDevice</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>This is a cool jacket.~ I wonder if it comes in my size.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Maybe it does!)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockDannerJacket</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>His head was so big. He must have stored a lot of science in there.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Ewwwwwww! Gross!~ That is not safe for impressionable young minds!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Run away!)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LeaveLoungeKissing</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>It's a plant.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So green.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>I don't think I should leave just yet. I have a mission to do.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go plant the bomb.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

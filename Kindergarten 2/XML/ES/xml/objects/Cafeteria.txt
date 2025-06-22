@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Este es un bote de basura. Huele mal.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Tira la cabeza.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <SetFlag>ThrewAwayHead</SetFlag>
+          <FunctionCall>ThrowAwayHead</FunctionCall>
+          <ItemToUse>BobHead</ItemToUse>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Este es un letrero de advertencia. No puedo leerlo, pero supongo que me está advirtiendo que no me resbale en este charco.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Esta es una caja de nuggets.~ Nugget lo necesita para su nueva cueva por alguna razón.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma los nuggets.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetNuggetBox</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Parece que Ozzy dejó su almuerzo aquí. Su sándwich tiene cebollas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tomaré uno.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetOnion</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Es una estación de condimentos. Esta escuela tiene de todo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Este es el brazo de Stevie. Ha bloqueado a muchos niños que han estado en sus pasillos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma el brazo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetStevieArm</FunctionCall>
+          <SetFlag>FelixCompletedRecess</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja el brazo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Esto no es tanto una Cueva de Nugget como un Túnel de Nugget.~ Parece llevar a algún lugar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Entra en el agujero.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToLoungeHole</FunctionCall>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Quédate aquí.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Billy está en el túnel, así que no puedo pasar en este momento.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que me quedaré aquí entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Esta es una caja de nuggets.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Toma los nuggets.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetNuggetBox</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ve a caminar.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Hay una carta de Monstermon detrás de aquí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Genial!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetTomatoCard</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>*Ejem!*~ ¡Niño!~ ¡Tenemos cosas que hacer aquí antes de que subas!</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>¡Por favor, cálmate niño! Este no es un comportamiento apropiado.</DialogueText>
+      <NPC>LunchLady</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Debo irme.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>63</NodeID>
+      <DialogueText>¿Qué estás haciendo? No puedes irte. Aún no has comido.</DialogueText>
+      <NPC>LunchLady</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Voy a ver a la directora.</OptionText>
+          <ItemToUse>PrincipalPass</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>64</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¡Compré una hamburguesa!</OptionText>
+          <DestinationID>67</DestinationID>
+          <ItemToUse>BurgerMeal</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>64</NodeID>
+      <NPC>LunchLady</NPC>
+      <DialogueText>Ah...~mi hermana desea verte.~ Una simple niña.~ Nunca quiere almorzar con su querida hermana, pero supongo que eso no es tu problema.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que no. ¡Adiós!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendToOffice</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NPC>LunchLady</NPC>
+      <NodeID>67</NodeID>
+      <DialogueText>¡Oh!~ Mi error. Por favor, permíteme marcar tu libreta de pases.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aquí tienes.</OptionText>
+          <DestinationID>68</DestinationID>
+          <ItemToUse>PassBook</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>MarkPassBook</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No tengo uno.</OptionText>
+          <DestinationID>69</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NPC>LunchLady</NPC>
+      <NodeID>68</NodeID>
+      <DialogueText>Ahí tienes. Gracias por comprar el almuerzo hoy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>De nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendToDownstairs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NPC>LunchLady</NPC>
+      <NodeID>69</NodeID>
+      <DialogueText>Entonces debes quedarte aquí. Qué lástima.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Maldita sea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NPC>LunchLady</NPC>
+      <NodeID>70</NodeID>
+      <DialogueText>Disculpa niño, pero es demasiado tarde para que te vayas. La campana sonará pronto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Maldita sea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>Enterré a Nugget en este montón de nuggets.~ Es la forma en que él habría querido irse.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Descansa en paz.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>605</NodeID>
+      <NPC>LunchLady</NPC>
+      <DialogueText>Disculpa niño, pero no se te permite irte aún.~ Nuestra encantadora directora ha solicitado que todos los niños se queden aquí hasta la mitad del almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh. Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>Go away you desolate swamp creature. I'm taking my assessment!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I have no interest in discussing trivial things with you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I have a love letter for you.</OptionText>
+          <DestinationID>5</DestinationID>
+          <ItemToUse>LoveLetter</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>It is of no matter now. I'd have to draw up the paperwork and by then it will be too late.~ Come see me first thing tomorrow and I'll explain.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>3</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Come see me first thing tomorrow. I have a very lucrative proposal for you.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Oh goodness.~ I'm flattered, but I must decl--</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's from Cindy.</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>GiveLoveLetter</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Oh that makes much more sense!~ You had me worried things were about to get awkward.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yeah. Good thing it's not awkward.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Let's see here.~ A partner would make me more appealing to potential investors.~ How awful is Cindy?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>She's not bad.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>She's pretty awful.</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Excellent.~ Then I will accept her request. We will dine together.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Well then she'll make a good business executive. I accept her invitation. We will dine together.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Here's for your trouble messenger boy. Ta ta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...thanks?</OptionText>
+          <DestinationID>40</DestinationID>
+          <FunctionCall>GetNickel</FunctionCall>
+          <SetFlag>DeliveredLoveLetter</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Ah good.~ I was hoping I would see you here. I take it Ozzy knows his part in the plan.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He does.</OptionText>
+          <DestinationID>13</DestinationID>
+          <Flag>FelixCompletedSchoolYard</Flag>
+          <SetFlag>FelixStartedMorningTime</SetFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>He doesn't.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Unbelievable.~ You had one job and you couldn't even do that properly.~ You're fired.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Get fired.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>12001</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12001</NodeID>
+      <DialogueText>You're fired!~ Get away from me.~ You've wasted this golden opportunity.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Stop talking to Felix.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Excellent. I suppose you would like to learn what the plan actually is?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That would be helpful.</OptionText>
+          <DestinationID>1400</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not really. Just tell me what to do.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1400</NodeID>
+      <DialogueText>Before I do that, I need you to sign this contract. It's a basic nondisclosure. You can't tell anyone about any of this. *hl*Especially Teddy.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Sign the contract.)</OptionText>
+          <DestinationID>14</DestinationID>
+          <FunctionCall>SignContract</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>You see...~my father's company is very large and very important. Teddy and I are the heirs to his commercial empire.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You want to be the sole heir.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Exactly. Teddy is far too naive to run a business. He must be...~taken care of.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You want to kill him?</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Heavens no!~ I just need your assistance setting everything up. Ozzy is already doing his part.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's Ozzy's part?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Ozzy's mother has recently begun a startup company that directly competes with our company.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So why not kill Ozzy?</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>That's what Teddy thinks we're doing. He wasn't on board with the plan, but Ozzy is going to drop a few hints that should persuade Teddy to strike now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what do you need me to do?</OptionText>
+          <DestinationID>19</DestinationID>
+          <FunctionCall>FocusOnSpiders</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Do you see that jar of spiders on the top shelf over there?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh huh.</OptionText>
+          <DestinationID>20</DestinationID>
+          <FunctionCall>ClearCameraTarget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>We're going to need them. Bring them to me before the bell rings.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can I ask why?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Um...okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Because Teddy, like most people, hates spiders. We need them. Get them. Now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How?</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>There's a vent that's connected from the girl's bathroom. I had Carla jam it up before class so Bob should have a ladder against it now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What about Bob?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>He's easy enough to distract. *hl*Cause a janitorial emergency.*hle* That should keep him busy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fair enough.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>24</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Hurry up with those spiders.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I get them again?</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have th-</OptionText>
+          <DestinationID>26</DestinationID>
+          <ItemToUse>SpiderJar</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Will do.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Oooooh. Right to the chase are we? I think I might like you. Sign this contract and we're good to go then.</DialogueText>
+      <JumpNode>19</JumpNode>
+      <FunctionCall>FocusOnSpiders</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Oh no no!~ Don't show them to me here!~ If Dr. Danner sees them, he'll take them away. *hl*Wait for the bell to ring and show them to me at lunch.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Will do.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Ah, there you are. It's time to continue our little...endevour.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's next?</OptionText>
+          <DestinationID>31</DestinationID>
+          <UsesAction>true</UsesAction>
+          <SetFlag>FelixStartedMorningTime</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'll be right back.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Well...~I suppose you would like to know what the plan actually is, right?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That would be helpful.</OptionText>
+          <DestinationID>1400</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not really. Just tell me what to do.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Say...~I haven't seen you around here before. Why aren't you in this class?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm working on that.</OptionText>
+          <DestinationID>41</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>A man of ambition!~ I like that.~ Dr. Danner loves his plants. Those *hl*red flowers*hle* really are hard to come by.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do I get them?</OptionText>
+          <DestinationID>42</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>*hl*I'd ask some of the adults.*hle* See if any of them are smitten with a new faculty member now that there's been additions to the administration here.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks for the tip.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

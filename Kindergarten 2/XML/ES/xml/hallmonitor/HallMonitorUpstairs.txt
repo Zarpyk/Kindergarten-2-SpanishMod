@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Mira, amigo, realmente no me importa que estés aquí arriba. Ese pequeño nerd puede caerse por esas escaleras, ¡me importa un comino!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Parece un poco tenso.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Sin broma. Solo para fastidiar al pequeño idiota, ¿por qué no tomas esto? *hl*Es válido hasta la mañana. No puede hacerte mucho mientras lo lleves.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Gracias!</OptionText>
+          <DestinationID>2</DestinationID>
+          <FunctionCall>GetHallPass</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Ahora vamos a sacarte de aquí. Vamos, amigo. No vuelvas a entrar o Stevie se va a volver loco.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendBackOutside</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Oh...~uh, está bien. Bueno, te llevaré de vuelta afuera entonces. No vuelvas a entrar o Stevie se va a volver loco.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendBackOutside</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Oh. Olvídalo.~ Solo dirígete a clase.~ Apúrate.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a clase.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToMorningTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Está bien, amigo.~ Es hora de que vayas a almorzar. Vamos, muévete.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Muévete.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Hey!~ El baño de los chicos está abajo. Él puede bajar, pero tú no.</DialogueText>
+      <JumpNode>21</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Relájate, amigo.~ El manual del estudiante dice que puedo ayudar a un nuevo estudiante a encontrar el baño.</DialogueText>
+      <JumpNode>22</JumpNode>
+      <NPC>Carla</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Oh...~Está bien. No lo sabía.~ Gracias.</DialogueText>
+      <JumpNode>23</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Un placer.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>DisableCarlaMonitorTrigger</FunctionCall>
+      <NPC>Carla</NPC>
+      <ResolutionID>24</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Muéstrale dónde está el baño y luego regresa de inmediato.</DialogueText>
+      <JumpNode>25</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Por supuesto.~ Es por aquí, chico. Baja las escaleras.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Carla</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Wow.~ Ese pequeño hipócrita. Ni siquiera puede mantener a los chicos de su piso bajo control. Vamos, amigo. Regresemos a clase.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pero necesito hablar con Bob.</OptionText>
+          <DestinationID>51</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Lo siento, amigo. Las reglas son reglas... ya sabes, a menos que haya algo a cambio para mí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Como qué?</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>Bueno...~esa pequeña Penny me quitó mi encendedor. No tendrás uno, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hay uno en ese casillero.</OptionText>
+          <DestinationID>53</DestinationID>
+          <UsesAction>true</UsesAction>
+          <Flag>SmuggledInLighter</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>60</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>¿En serio? ¡Vaya!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToLocker</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>54</NodeID>
+      <DialogueText>¿Y mira eso?~ Sí, amigo, estoy feliz. Ve a hacer lo que quieras.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Genial.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>55</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>Me alegra haberte encontrado, chico. No te voy a molestar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Genial.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>Entonces vuelve allá abajo.~ Lo siento, amigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aw, amigo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendBackDownstairs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>Jeje... Apuesto a que usar ese pase realmente molestó al pequeño idiota, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Así es.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>80</NodeID>
+      <DialogueText>Gracias por la ayuda y todo, pero tienes que irte, amigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve avanzando.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>85</NodeID>
+      <DialogueText>Hey, amigo. Solo porque tu maestro se fue no significa que puedas correr por ahí.~ Vuelve a entrar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendBackToFlowers</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>200</NodeID>
+      <DialogueText>Haz lo que tengas que hacer, amigo. Meterte en problemas no vale la pena recibir una golpiza con un trapeador.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buena decisión.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>210</NodeID>
+      <DialogueText>Oh, hey, amigo.~ No estamos haciendo cumplir las reglas de los pases hasta el almuerzo, así que todos los nuevos pueden averiguar a dónde ir.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es conveniente.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>¿Eh?!</DialogueText>
+      <FunctionCall>WalkToPlayerUpstairs</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>301</NodeID>
+      <DialogueText>¡Hey, chico! ¡No puedes estar fuera de clase! ¡Vuelve a entrar!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aw, amigo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReturnToScienceFromMonitor</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>350</NodeID>
+      <DialogueText>Lo siento, amigo.~ Se supone que debes quedarte en el gimnasio. Regresa abajo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quieres este gato?</OptionText>
+          <DestinationID>351</DestinationID>
+          <FunctionCall>GiveSmoky</FunctionCall>
+          <ItemToUse>Smoky</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Aw, amigo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ForceDownstairs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>351</NodeID>
+      <DialogueText>¡Aww, es tan lindo!~ ¡Me encanta!~ Gracias, amigo.~ Puedes quedarte con esta tarjeta de Monstermon.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Gracias!</OptionText>
+          <DestinationID>352</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>352</NodeID>
+      <DialogueText>Pero aún tienes que ir abajo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>350</ResolutionID>
+          <FunctionCall>ForceDownstairs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>400</NodeID>
+      <DialogueText>¿Alguna vez sientes que tu trabajo no es tan importante?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No tengo un trabajo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>401</NodeID>
+      <DialogueText>¡No sé qué pasó aquí afuera, amigo!~ Es solo que... ¡las luces se apagaron y luego estaban muertos!~ ¿Qué pasa con esta nueva escuela, amigo?! ¡Algo no está bien!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sin broma.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

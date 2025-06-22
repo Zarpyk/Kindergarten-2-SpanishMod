@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Hola! ¿Estás disfrutando de la clase para talentosos?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que sí.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No realmente.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Oh, hola de nuevo!~ Lamento mucho haber tenido que confiscar tu contrabando esta mañana. Espero que aún podamos ser amigos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Ve a molestar a otro, chivato!</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Claro que sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Eso es...~ no muy amable. ¡Solo estoy tratando de mantener la escuela segura!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo supiste que lo tenía?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Pero es seguro?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¿Por qué te importa tanto?~ ¡Solo estoy tratando de mantener la escuela segura!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ya lo dijiste.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Por favor, deja de sobrecargarme con estas preguntas! ¡Fin de la conversación! ¡Adiós!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡Sí lo es!~ ¡No hemos tenido un incidente desde que yo--~ no hemos tenido un incidente en un tiempo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué incidente?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>No me quedaría aquí si fuera tú.~ El Dr. Danner podría enviarte a la oficina del director.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estaré bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Yo también! ¿Cuál es tu materia de ciencias favorita?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Química.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Plantas.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Imanes.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Robótica.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡A mí también me gusta la química!~ Mi mami ha estado trabajando en algunas cosas interesantes de química con el Dr. Danner.~ ¡Creo que es algún tipo de goo verde!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué hace?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¡No lo sé, pero estoy seguro de que es interesante!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro...hablamos después.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡Entonces tienes suerte!~ ¡Hoy es el día de las plantas!~ Si vienes a la clase de ciencias, aprenderás todo sobre las plantas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es genial.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¿¡Imanes?!~ ¡Los imanes son lo peor!~ ¡Odio esa materia! ¿Por qué te gustaría los imanes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Son geniales, supongo.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡No, no lo son!~ ¡Son peligrosos! No creo que podamos ser amigos si te gustan los imanes. ¡Mi mami le está diciendo al Dr. Danner que se deshaga de los suyos después de hoy de todos modos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien... relájate.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>¡Oh, yo también!~ ¡La robótica es la mejor materia del mundo!~ Me habla a un nivel más profundo, ¿sabes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Viniste a sentarte conmigo! ¡Eso es tan lindo! ¡Realmente quieres ser mi amigo incluso después de que tomé tus cosas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Dónde está lo que le quitas a los niños?</OptionText>
+          <DestinationID>21</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Regresaré enseguida.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Oh, emm...~ en realidad no lo sé. Simplemente... desaparece.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo puedes no saber?</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Es realmente extraño. A veces simplemente olvido cosas. *hl*Me desmayo o algo así*hle*, pero recuerdo algo sobre mi muñeca.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tu muñeca?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>¡Sí! Mi mami dice que no puedo jugar más con ella. *hl*Está en el cofre de juguetes en la otra clase.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué tiene de especial tu muñeca?</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>No... no recuerdo. Sé que es importante. ¡Deberías traerla por mí! ¡Quizás entonces recordaré dónde puse tus cosas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que podría intentarlo.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¡Yay!~ ¡No puedo esperar a volver a verla!~ ¡Debería estar en el cofre de juguetes! Muchas gracias.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Regresaré con ella.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+          <SetFlag>BuggsDollMission</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>¿La trajiste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aquí tienes.</OptionText>
+          <ItemToUse>Doll</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>27</DestinationID>
+          <FunctionCall>GiveDoll</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No todavía.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>¡Lo lograste!~ ¡La extrañaba tanto! ¡Gracias! ¡Esto significa todo para mí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Feliz de ayudar.</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>Sabes...~ en realidad no le he dicho a nadie que tenías contrabando. No tengo que hacerlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿No tendré hora de estudio?</OptionText>
+          <DestinationID>29</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>Creo que es justo. Realmente me hiciste feliz hoy--~ hey, ¿qué es esto?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué?</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Hay algún tipo de cosa sobresaliendo de su espalda. Parece un viejo disco de computadora.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Raro.</OptionText>
+          <DestinationID>31</DestinationID>
+          <FunctionCall>GetDisc</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Bueno, no lo necesito. Puedes quedártelo si quieres.~ Muchas gracias por ser mi amigo hoy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <SetFlag>BuggsCompletedMorningTime</SetFlag>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>*hl*Voy a esconderla debajo de esta mesa.*hle* Mi mami no querría que jugara con ella.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh. Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>    
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Simplemente amo la clase de ciencias. El Dr. Danner tiene las mejores lecciones de ciencias.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro, Penny.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>Ummmm...oye. ¿Puedo hablar contigo un segundo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué es?</OptionText>
+          <DestinationID>42</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Creo que fui yo quien tomó el engranaje.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tú crees?</OptionText>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>Es un poco confuso. Me desmayé de nuevo o algo así. *hl*Creo que lo metí en el casillero azul*hle*, pero no sé la combinación.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo recuperaré.</OptionText>
+          <DestinationID>44</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>Algo es diferente desde que te conocí. Espero que lo encuentres.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a buscar el engranaje.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BuggsCallScience</FunctionCall>
+          <ResolutionID>440</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>440</NodeID>
+      <DialogueText>Espero que encuentres ese engranaje. Ni siquiera sé por qué lo escondí.~ Es lo más raro.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a buscar el engranaje.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>Algo está mal. ¡Creo que alguien está tratando de entrar en mi casillero!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estamos buscando el engranaje, ¿recuerdas?</OptionText>
+          <DestinationID>46</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>46</NodeID>
+      <DialogueText>¿¡Qué?! ¡No puedes revisar mi casillero! ¡Necesito protegerme--~ quiero decir, mis cosas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué no juegas con tu muñeca?</OptionText>
+          <DestinationID>47</DestinationID>
+          <ItemToUse>Doll</ItemToUse>
+          <FunctionCall>UseDollPennyScience</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>BuggsStopPennyFromKilling</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Por favor, no lo hagas.</OptionText>
+          <DestinationID>48</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>47</NodeID>
+      <DialogueText>¿Mi muñeca?~ Sí. Mi muñeca. Cuando las cosas eran mejores. Cuando los tiempos eran más simples. Sí. Iré a jugar con mi muñeca.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buena idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>51</ResolutionID>
+          <FunctionCall>GoPlayWithDoll</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>48</NodeID>
+      <DialogueText>¡Sal de mi camino!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PennyLeaveScience</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>49</NodeID>
+      <DialogueText>Mi casillero está asegurado. Ahora me siento seguro.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Awww, hombre.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Umm...~ ¿Dr. Danner?~ Yo-- no me siento tan bien. Yo-</DialogueText>
+      <FunctionCall>PennyHeadFlyOff</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Antes las cosas eran así. Antes de que sucediera.~ Oh muñeca...~ Te extrañé.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja que disfrute eso.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>¿No es divertida la química?~ ¡No puedo esperar para mezclar todas esas cosas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quieres esta flor?</OptionText>
+          <DestinationID>61</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveGreenFlower</FunctionCall>
+          <ItemToUse>GreenFlower</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Quieres esta muñeca?</OptionText>
+          <DestinationID>62</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveDoll2</FunctionCall>
+          <ItemToUse>Doll2</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Quieres esta gema?</OptionText>
+          <DestinationID>63</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveFakeDiamond</FunctionCall>
+          <ItemToUse>FakeDiamond</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>¡Oh! ¡Gracias!~ ¡Me encanta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>De nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>62</NodeID>
+      <DialogueText>Oh...~ no creo que...~ pero sí. La quiero. Voy a llevarla. Voy a jugar con esta muñeca.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh... de nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>64</ResolutionID>
+          <FunctionCall>PennyWalkWithDoll</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>63</NodeID>
+      <DialogueText>¡Oh, gracias!~ Estoy detectando que esto es plástico y no una gema real, pero lo que importa es la intención. Lo atesoraré siempre.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>De nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>64</NodeID>
+      <DialogueText>Me recuerda a un mejor momento. Yo-~ No sé qué está mal con este tiempo, sin embargo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ummmm... me alegra que te guste.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>Simplemente amo la robótica. Me siento como en casa con esta materia.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Pon chicle en el cabello de Penny.)</OptionText>
+          <DestinationID>101</DestinationID>
+          <ItemToUse>Gum</ItemToUse>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Apuesto a que sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>¡Asalto detectado!~ ¡Hay chicle en mi cabello!~ ¡Inaceptable!~ ¡Te enviaré a la oficina del director!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No puedes hacer eso.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>¡Las plantas son tan geniales!~ El Dr. Danner es el maestro más inteligente de todos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro que sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>Simplemente me siento...~ en casa con la robótica. ¿Sabes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No realmente.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>115</NodeID>
+      <DialogueText>¡Las plantas son tan geniales!~ El Dr. Danner es el maestro más inteligente de todos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿No te acaban de picar las abejas?</OptionText>
+          <DestinationID>116</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Claro que sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>116</NodeID>
+      <DialogueText>Oh...~ Sí.~ Supongo que lo estaba. No te preocupes. ¡Mi mami me arregló! ¡Como nuevo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Seguro te curas rápido.</OptionText>
+          <DestinationID>117</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>117</NodeID>
+      <DialogueText>¡Claro que sí!~ Todo es porque mi mami cuida tan bien de mí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja de hablar con Penny.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>115</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

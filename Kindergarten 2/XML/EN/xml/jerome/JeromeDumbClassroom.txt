@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>I guess I feel a little better. Guess I didn't know my dad as well as I thought.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Guess not.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <NPC>Player</NPC>
+      <DialogueText>It seems violent tendencies are part of Ms. Applegate's withdrawal symptoms. Poor Jerome just witnessed it first hand.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the stick.)</OptionText>
+          <FunctionCall>GetTeacherStick</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yes he did.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <NPC>Player</NPC>
+      <DialogueText>It seems violent tendencies are part of Ms. Applegate's withdrawal symptoms. Poor Jerome just witnessed it first hand.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes he did.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

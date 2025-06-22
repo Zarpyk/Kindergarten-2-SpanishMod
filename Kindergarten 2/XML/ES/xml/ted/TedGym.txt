@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Oh, hola!~ ¿Quieres jugar a atrapar conmigo y mi hermano?</DialogueText>
+      <JumpNode>1</JumpNode>     
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡No invites a los chicos de la calle a jugar con nosotros, Teddy!</DialogueText>
+      <JumpNode>2</JumpNode>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Vamos, Felix!</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡La respuesta es no!~ ¡Ahora vete, chico de la calle!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Felix</NPC>
+      <ResolutionID>4</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Lo siento, pero Felix dice que no podemos jugar todos juntos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¿Qué hemos aprendido hoy, Teddy?</DialogueText>
+      <NPC>Felix</NPC>
+      <JumpNode>6</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>*Suspiro.* Mis planes son tontos, y los tuyos son inteligentes.</DialogueText>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¿Y qué harás la próxima vez que un chico de la calle se acerque a ti?</DialogueText>
+      <JumpNode>8</JumpNode>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Lo ignoraré...~ eso te incluye a ti, niño. Vete.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>9</ResolutionID>
+          <FunctionCall>SetFailNodeGym</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Se suponía que debías ayudarme con mi plan, pero fallaste. Te estoy ignorando como dijo Felix que debería.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

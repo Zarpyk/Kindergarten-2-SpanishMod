@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Die you horrible creature!~ I will not allow you to harm these children!</DialogueText>
+      <JumpNode>1</JumpNode>   
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I really hope he wins.~ He seems like a nice janitor. I know that's a low bar to clear considering our janitor, but you get what I mean.</DialogueText>
+      <NPC>Lily</NPC>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Okay Penny.~ Scan your eye. Let's go down there and save those kids!</DialogueText>
+      <NPC>Billy</NPC>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Okay...~here goes.</DialogueText>
+      <NPC>Penny</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PennyScanEye</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Well...~here goes everything.~ Let's do this.</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Let's go!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PlayerGetInElevatorLair</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>    
+  </Nodes>
+</Dialoguer>

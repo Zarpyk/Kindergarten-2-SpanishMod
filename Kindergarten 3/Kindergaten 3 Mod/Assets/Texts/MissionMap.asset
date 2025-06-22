@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 749122ca687073649af3faaf57ce2dd5, type: 3}
+  m_Name: MissionMap
+  m_EditorClassIdentifier: 
+  m_languageKeys:
+  - Default
+  m_languageValues: 00000000
+  m_fieldKeys: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000c0000000b0000000d0000000e0000000f00000010000000110000001200000013000000140000001500000016000000
+  m_fieldValues:
+  - m_fieldName: TeacherDescription
+    m_keys: 00000000
+    m_values:
+    - Start the mission by reading the pamphlet on the wall and then talking to the teacher.
+  - m_fieldName: JanitorDescription
+    m_keys: 00000000
+    m_values:
+    - Start the mission by helping the Janitor get some bandaids.
+  - m_fieldName: CarlaDescription
+    m_keys: 00000000
+    m_values:
+    - Start the mission by getting Cindy to help with Emmy's garden and then talking to Carla.
+  - m_fieldName: DaveyDescription
+    m_keys: 00000000
+    m_values:
+    - Start the mission by proving yourself to Davey by getting beat up by the Janitor.
+  - m_fieldName: EmmyDescription
+    m_keys: 00000000
+    m_values:
+    - Start the mission by getting Cindy to help with Emmy's garden and then finding a way inside.
+  - m_fieldName: FelixDescription
+    m_keys: 00000000
+    m_values:
+    - Start the mission by getting a goo core.
+  - m_fieldName: AliceDescription
+    m_keys: 00000000
+    m_values:
+    - Start the mission by returning Alice's diary to her.
+  - m_fieldName: NuggetDescription
+    m_keys: 00000000
+    m_values:
+    - Start the assignment by giving Nugget the white flower.
+  - m_fieldName: LilyDescription
+    m_keys: 00000000
+    m_values:
+    - Start the assignment by opening the cage in the lab.
+  - m_fieldName: TeacherTitle
+    m_keys: 00000000
+    m_values:
+    - The Show Must Go On
+  - m_fieldName: CarlaTitle
+    m_keys: 00000000
+    m_values:
+    - The Grate Escape
+  - m_fieldName: JanitorTitle
+    m_keys: 00000000
+    m_values:
+    - Cold Blooded Killer
+  - m_fieldName: DaveyTitle
+    m_keys: 00000000
+    m_values:
+    - Gator Aid
+  - m_fieldName: EmmyTitle
+    m_keys: 00000000
+    m_values:
+    - Garden of Emmy
+  - m_fieldName: FelixTitle
+    m_keys: 00000000
+    m_values:
+    - Helicopter Parenting
+  - m_fieldName: AliceTitle
+    m_keys: 00000000
+    m_values:
+    - What Happened on Monday?
+  - m_fieldName: NuggetTitle
+    m_keys: 00000000
+    m_values:
+    - Nugget-o and Lily-et
+  - m_fieldName: LilyTitle
+    m_keys: 00000000
+    m_values:
+    - Paging Dr. Goolittle
+  - m_fieldName: Requirement1
+    m_keys: 00000000
+    m_values:
+    - Complete {0} to unlock this assignment.
+  - m_fieldName: Requirement2
+    m_keys: 00000000
+    m_values:
+    - Complete {0} and {1} to unlock this assignment.
+  - m_fieldName: Requirement3
+    m_keys: 00000000
+    m_values:
+    - Complete {0}, {1}, and {2} to unlock this assignment.
+  - m_fieldName: Requirement4
+    m_keys: 00000000
+    m_values:
+    - Complete {0}, {1}, {2}, and {3} to unlock this assignment.
+  m_nextLanguageID: 1
+  m_nextFieldID: 23

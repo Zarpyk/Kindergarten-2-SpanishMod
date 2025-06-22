@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Destructotron era el mejor juguete de la caja de juguetes. Mis amigos y yo solíamos jugar con él todo el tiempo antes de que ustedes, los nuevos niños, llegaran.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Era el mejor juguete?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Eso es muy malo, Ozzy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Sí, pero ahora *hl*está sin batería*hle*...~Sin amigos...sin juguetes. Ustedes, los nuevos niños, son los peores.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Puedes tener esta batería.</OptionText>
+          <ItemToUse>Battery</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveBattery</FunctionCall>
+          <SetFlag>OzzyGaveBattery</SetFlag>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No me importa, Ozzy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¿En serio?~ Gracias. Quizás no eres tan malo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí. Quizás.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Voy a jugar cerca de la caja de juguetes. Nos vemos por ahí, chico.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nos vemos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkBackToToybox</FunctionCall>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Gracias por la batería. Destructotron es él mismo de nuevo.~ Puedes jugar conmigo si quieres.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡Hey!~ ¡No toques mi inhalador! Lo necesito o podría morir de un ataque de asma.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo siento.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Definitivamente valió la pena conseguir el estudio. Le di un par de veces en la cara al niño gordo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bien por ti, Ozzy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡Dios!~ Sería muy malo para la empresa de mi mamá si algo malo me pasara hoy. ~ ¡Espero que no pase nada malo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo estás haciendo genial, Ozzy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

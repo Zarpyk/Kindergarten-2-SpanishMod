@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Hey! Hall rat! You giving my little errand boy trouble?</DialogueText>
+      <JumpNode>1</JumpNode>     
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Rules are rules, Mr. Janitor! If you want him to go upstairs you just have to-</DialogueText>
+      <JumpNode>2</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>I guess I could just beat you like I did the other kid. Then you would have an elevator key.</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Excuse me?</DialogueText>
+      <JumpNode>4</JumpNode>
+      <NPC>Stevie</NPC>
+      <FunctionCall>KillStevie</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>I. SAID. I. COULD. BEAT. YOU. TIL. THEY. GIVE. YOU. AN. ELEVATOR. KEY!!!</DialogueText>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Hey!~ Other hall monitor!</DialogueText>
+      <JumpNode>6</JumpNode>
+      <FunctionCall>CallOtherMonitor</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Yeah man? What's--</DialogueText>
+      <NPC>HallMonitor</NPC>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Woah jeez! You totally wrecked Stevie!</DialogueText>
+      <JumpNode>8</JumpNode>
+      <NPC>HallMonitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>And I'll do the same to you if you even think about stopping this kid from helping me out today. Got it?</DialogueText>
+      <JumpNode>9</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>No problemo. Do whatever you want kid.</DialogueText>
+      <FunctionCall>HallMonitorWalkOff</FunctionCall>
+      <NPC>HallMonitor</NPC>
+      <JumpNode>10</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>There. It's taken care of.~ Go get me that key. I'll be waiting by the elevator.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkToElevator</FunctionCall>
+          <ResolutionID>11</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Well?~ Where's the key to this thing?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Here.</OptionText>
+          <DestinationID>12</DestinationID>
+          <ItemToUse>ElevatorKey</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveElevatorKey</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Still working on that.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Well done kid. Here's a walkie talkie.~ I'll be in touch.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No thanks.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Great.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Hehehe...~ 'no thanks.'~ That's cute. Kid, you're about to be an accessory to murder and war crimes... WAR MURDER! You don't get to say 'no thanks.'</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Great.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>It is great!~ I'll let you know how the mission goes!~ We ride to WAAAAAAR!!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Let him ride to war.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>JanitorEnterElevator</FunctionCall>
+          <SetFlag>JanitorCompletedMorningTime</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>Hey soldier!~ Front and center!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PlayerWalkToJanitor</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>Where's my key?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Here.</OptionText>
+          <DestinationID>12</DestinationID>
+          <ItemToUse>ElevatorKey</ItemToUse>
+          <FunctionCall>GiveElevatorKey</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I couldn't get it.</OptionText>
+          <DestinationID>112</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>Couldn't get it?!~ Well someone's gotta die today!~ And if it ain't Bobbo, then it's gotta be...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Someone else?</OptionText>
+          <DestinationID>113</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>113</NodeID>
+      <DialogueText>Hehehe...~nice try kid. It's gonna be YOU.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerFail1MorningTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>444</NodeID>
+      <DialogueText>Hey soldier!~ Front and center!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PlayerWalkToJanitor</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>I couldn't help but notice that you aren't upstairs helping me with ol' Bobbo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I noticed that too.</OptionText>
+          <DestinationID>446</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>446</NodeID>
+      <DialogueText>I also noticed that you're bleeding.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I am?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerPhase1Lunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>447</NodeID>
+      <DialogueText>You're killing me kid.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToKillPlayerLunchPhase1</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>448</NodeID>
+      <DialogueText>I ask you for a few simple favors.~ Deliver a death threat, steal from a cripple, and GET ME A SHARP THING TO CUT UP BOB WITH!!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why don't you use your mop?</OptionText>
+          <DestinationID>449</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>449</NodeID>
+      <DialogueText>Oh! A funny man!~ You should be a comedian in your next life.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Next life?</OptionText>
+          <DestinationID>450</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>Cause this one's over!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>But I like this life.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerPhase1Lunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

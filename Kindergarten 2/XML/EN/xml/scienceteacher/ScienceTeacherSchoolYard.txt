@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Ah...~one of the new...~specimens. Not that we'll be seeing much of each other.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why not?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I guess not. Bye.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I don't let below average students into my classroom for morning time.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm not below average!</OptionText>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+          <SetFlag>DannerStartedMission</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Is that even allowed?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I wouldn't want to be in your class anyway.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Oh really?~ Then perhaps you'd be willing to prove it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How so?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>It is now!~ With all of the redistribution of children and teachers that went on yesterday, it was the perfect time to pitch my plan for separating the below average students!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm not below average!</OptionText>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+          <SetFlag>DannerStartedMission</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Redistribution?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I think I've heard enough.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>For lack of a proper name...~you'll be attending the stupid class with that walking hangover you call a teacher. Have fun.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Stop talking to the science teacher.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Yes...~why do you think you're here?~ When one school shuts down, people get shuffled around. So now you're here and 3 other kids aren't.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Stop talking to the science teacher.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Here's the deal.~ *hl*If you can bring me 5 different types of flowers for my science class today,*hle* I'll let you into my morning time class tomorrow.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deal.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Why do you want flowers?</OptionText>
+          <DestinationID>111</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>Plants have a wonderful biology to them. So many possibilities for medicine and energy...</DialogueText>
+      <JumpNode>112</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>...and poisons, and neurotoxins, and monster enhancing--</DialogueText>
+      <JumpNode>113</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>113</NodeID>
+      <DialogueText>*Ahem*~ Just get the flowers. Okay?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Excellent. Don't disappoint me. *hl*If you don't complete the collection, it would be better if you don't show up in my science class at all.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Understood.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Why is that?</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Good. Now go get my flowers.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Where can I find them?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Because if you don't get all of those samples, I'll switch today's lesson from plants to something that involves a nasty disection. Got it?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>I knew your skull was too thick for my class. Let's see how thick it is exactly.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>It's pretty thick.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>How's the flower hunt going?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Where can I find these flowers?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>It's fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Ugh...~Your thought process is so simple.~ *hl*Females tend to like flowers.*hle* Maybe start there.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Any other ideas?</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got it. Thanks.</OptionText>
+          <ResolutionID>16</ResolutionID>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>*hl*One specimen grows in the garden by the handicap ramp. Another by the dumpster behind the school.*hle*</DialogueText>
+      <JumpNode>19</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>*hl*There's one in a vase in the teacher's lounge.*hle*</DialogueText>
+      <JumpNode>20</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>And the rarest flower isn't even at this school! *hl*You have to get some lovestruck loser to deliver it!*hle* HAHAHAHA! You'll never be allowed in my class.</DialogueText>
+      <JumpNode>21</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>So what are you waiting for?~ Go. Go on your futile errand and hopefully this is the last we'll see of each other today.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>We'll see about that.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Oh...~a word to the wise. *hl*You may want to have a chat with the hall monitors before the day gets started.*hle* They tend to give people trouble when collecting my flowers.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Where are they?</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>I saw them chatting inside at the top of the staircase.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So you'll let me in to talk to them?</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Of course not. *hl*Only disabled students are allowed into the school early, and even if you snuck in, the lunch lady would stop you.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll figure something out.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>The principal tends to use her for emotional support when students are distressed. *hl*Maybe there's a student in distress that could draw her attention.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's worth a shot.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>16</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

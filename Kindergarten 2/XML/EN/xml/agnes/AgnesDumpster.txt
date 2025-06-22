@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>HEHEHEHEHEHE!!</DialogueText>
+      <JumpNode>1</JumpNode>
+      <FunctionCall>RiseFromDumpster</FunctionCall>     
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Who's banging on my dumpster?!</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Oh!~ Hello child!~ So good to have a visitor! Say...~you wouldn't happen to have any food on you?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Who are you?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have a burger.</OptionText>
+          <DestinationID>30</DestinationID>
+          <ItemToUse>BurgerMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveBurger</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have a vegan meal.</OptionText>
+          <DestinationID>31</DestinationID>
+          <ItemToUse>VeganMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveVegan</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have a box of nuggets.</OptionText>
+          <DestinationID>34</DestinationID>
+          <ItemToUse>NuggetBox</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveNuggets</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't have any.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I've come to battle!</OptionText>
+          <DestinationID>350</DestinationID>
+          <ItemToUse>Deck</ItemToUse>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>My name is Agnes! This is my dumpster! I live here!~ So anyway...~got any food?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are you drinking?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have a burger.</OptionText>
+          <DestinationID>30</DestinationID>
+          <ItemToUse>BurgerMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveBurger</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have a vegan meal.</OptionText>
+          <DestinationID>31</DestinationID>
+          <ItemToUse>VeganMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveVegan</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have a box of nuggets.</OptionText>
+          <DestinationID>34</DestinationID>
+          <ItemToUse>NuggetBox</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveNuggets</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't have any.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Hehehe!~ It's a lovely drink!~ Keeps me young!~ Ms. Margaret dumps loads of the stuff in here! Now come on! Gimme some food.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I have a burger.</OptionText>
+          <DestinationID>30</DestinationID>
+          <ItemToUse>BurgerMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveBurger</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have a vegan meal.</OptionText>
+          <DestinationID>31</DestinationID>
+          <ItemToUse>VeganMeal</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveVegan</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I have a box of nuggets.</OptionText>
+          <DestinationID>34</DestinationID>
+          <ItemToUse>NuggetBox</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveNuggets</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I don't have any.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Bye bye then!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>0</ResolutionID>
+      <FunctionCall>ReturnToDumpster</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Oooooh a burger!~ It's got a smoky flavor to it.~ It reminds me of my cat...Smoky!~ Do you want him?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got anything else?</OptionText>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sure.</OptionText>
+          <DestinationID>40</DestinationID>
+          <FunctionCall>GetSmoky</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Oooooh a vegan meal!~ I haven't had one of these since my hippy dippy days.~ It reminds me of my cat...Gravy!~ Do you want him?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why does that remind you of gravy?</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sure.</OptionText>
+          <DestinationID>41</DestinationID>
+          <FunctionCall>GetGravy</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not looking for a cat right now.</OptionText>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Cause I always put gravy on that hippy dippy stuff. Gave it some flavor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Does anyone actually know what vegan means?</OptionText>
+          <DestinationID>33</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Do you want the cat or not?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure.</OptionText>
+          <DestinationID>41</DestinationID>
+          <FunctionCall>GetGravy</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not looking for a cat right now.</OptionText>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>Oooooh nuggets!~ It looks like a McGlobs 100 count too!~ It reminds me of my cat...Tenders!~ Do you want him?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure.</OptionText>
+          <DestinationID>42</DestinationID>
+          <FunctionCall>GetTenders</FunctionCall>
+          <SetFlag>TradedNuggetsForCat</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm not looking for a cat right now.</OptionText>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Awww you don't want my cat? That's too bad.~ Lemme see if there's something else in here.</DialogueText>
+      <JumpNode>36</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Oh here we go!~ One of them passbooks you kids use. Thanks for the food!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No problem.</OptionText>
+          <DestinationID>20</DestinationID>
+          <FunctionCall>GetPassbook</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Bye bye Smoky!~ Try and find him someone who's also a bit smoky.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...okay.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>Bye bye Gravy!~ He goes well with biscuits.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...okay.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Bye bye Tenders!~ Give him to someone in need of a true friend.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...okay.</OptionText>
+          <DestinationID>20</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Hehehehehe!!~ So the young master did collect 'em all!~ Incredible!~ Simply incredible!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>DissolveAgnes</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>HEHEHEHEHEHE!!</DialogueText>
+      <JumpNode>101</JumpNode>
+      <FunctionCall>RiseFromDumpster</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>Who's banging on my dumpster?!</DialogueText>
+      <JumpNode>102</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>Oh great.~ A dumpster woman. Everything was going so well.</DialogueText>
+      <NPC>Janitor</NPC>
+      <JumpNode>103</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>103</NodeID>
+      <DialogueText>What do you nice people want? Do you want to give me some food?</DialogueText>
+      <JumpNode>104</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>104</NodeID>
+      <DialogueText>We just need to use the dumpster you old hag.</DialogueText>
+      <JumpNode>105</JumpNode>
+      <NPC>Janitor</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>105</NodeID>
+      <DialogueText>Well there will be a price to pay! I need something! Something more special than food!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do you need?</OptionText>
+          <DestinationID>106</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>106</NodeID>
+      <DialogueText>I'm running out of this delicious green drink! You wouldn't happen to have any green goo on you? *hl*That Penny girl normally has some.*hle*</DialogueText>
+      <JumpNode>107</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>107</NodeID>
+      <DialogueText>Why would we have any of that? That's gross!</DialogueText>
+      <NPC>Janitor</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>I actually have some.</OptionText>
+          <ItemToUse>GreenGoo</ItemToUse>
+          <FunctionCall>TakeGoo</FunctionCall>
+          <DestinationID>108</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Yeah that's pretty gross.</OptionText>
+          <DestinationID>120</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>108</NodeID>
+      <DialogueText>Oh delightful!</DialogueText>
+      <FunctionCall>OpenDumpster</FunctionCall>
+      <JumpNode>109</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>109</NodeID>
+      <DialogueText>Go right ahead and dump whatever suspicious items you need to.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks dumpster hag.</OptionText>
+          <DestinationID>110</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>My pleasure! You boys have a nice day!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ReturnToDumpsterJanitor</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>120</NodeID>
+      <DialogueText>Well until you come back with some green goo, this dumpster stays locked! Ta ta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Curse you dumpster hag!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReturnToDumpsterJanitorNoGoo</FunctionCall>
+          <ResolutionID>121</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>121</NodeID>
+      <DialogueText>Oh!~ Are you back with my green goo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <ItemToUse>GreenGoo</ItemToUse>
+          <FunctionCall>TakeGoo</FunctionCall>
+          <DestinationID>108</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>120</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>350</NodeID>
+      <DialogueText>OOOOOH!~ You play with the talismans?!~ Be careful deary.~ Some bad things can happen if you get all 50.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Like what?</OptionText>
+          <DestinationID>351</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>351</NodeID>
+      <DialogueText>Perhaps it's better that I don't tell you.~ Why don't we get to it then? It's been ages since my dark deck has seen any action!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartMonstermonBattle</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>Hehehe!~ I still got it!~ Maybe you'll win next time!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Maybe.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+          <FunctionCall>ReturnToDumpster</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>You won!~ Good job!~ I'll give you a card, but remember, having all 50 might not be such a good idea!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yeah yeah.</OptionText>
+          <DestinationID>451</DestinationID>
+          <FunctionCall>UnlockThwarter</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>451</NodeID>
+      <DialogueText>Ta ta then!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye, dumpster lady.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+          <FunctionCall>ReturnToDumpster</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

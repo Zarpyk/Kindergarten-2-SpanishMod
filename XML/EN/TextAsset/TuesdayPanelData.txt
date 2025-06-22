@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TuesdayPanelData>
-  <TuesdayText>Tuesday</TuesdayText>
-  <AgainText>again</AgainText>
-</TuesdayPanelData>

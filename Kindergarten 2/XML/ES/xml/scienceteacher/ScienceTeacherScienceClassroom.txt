@@ -1,0 +1,1124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Bienvenido a la clase avanzada.~ Si estás aquí, has demostrado ser más inteligente que los otros babosos que llamas compañeros.</DialogueText>
+      <JumpNode>1</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Por favor, intenta utilizar este tiempo de manera constructiva. Einstein estaba construyendo pistolas de rayos en el jardín de infancia. Así que tú también deberías.</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>*hl*Recuerda llenar tu evaluación diaria en la computadora.*hle*</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Además, si lo haces, obtienes un premio mandado por la escuela, porque ya no podemos tener aprendizaje sin incentivos. Vaya mundo.</DialogueText>
+      <FunctionCall>StartDailyAssessments</FunctionCall>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>4</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Ve a hacer tu evaluación.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ya lo hice.</OptionText>
+          <Flag>TookAssessment</Flag>
+          <DestinationID>5</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Oh. En ese caso, ¿qué premio te gustaría?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Decidiré más tarde.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¿A dónde crees que vas? Aún no has completado tu evaluación.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Necesito ir al baño.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>*hl*No se te permite irte hasta que hayas hecho tu evaluación.*hle* ¡Regresa y hazte la evaluación!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ClearCameraTarget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Si debes irte, sería bueno que pidieras permiso primero.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. ¿Puedo irme?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Puedo irme?</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ResetStoredConversation</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>No sE. ¿PueDes tú?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>*Suspiro* ¿PUEDO irme?</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ResetStoredConversation</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Sí, está bastante bien. Solo asegúrate de regresar antes de que suene la campana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Puedo hacerlo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+          <SetFlag>LeftScienceOnce</SetFlag>
+          <FunctionCall>ChangeToUpstairs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¿Y a dónde creen que van ustedes dos?</DialogueText>
+      <JumpNode>16</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>El baño.</DialogueText>
+      <JumpNode>17</JumpNode>
+      <NPC>Carla</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¿Juntos?</DialogueText>
+      <JumpNode>18</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>...~No.</DialogueText>
+      <JumpNode>19</JumpNode>
+      <NPC>Carla</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Está bien.~ Solo no causen ningún problema.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ChangeToUpstairs</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Oye, ¿qué pasa? ¡Esto es solo una caja de suministros de limpieza! Pensé que íbamos a recibir premios.</DialogueText>
+      <JumpNode>21</JumpNode>
+      <NPC>Jerome</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>La escuela manda que entregue premios. No manda que tengan que ser buenos premios, así que solo agarré algo del armario del conserje.</DialogueText>
+      <JumpNode>22</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Qué estafa total.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>SendJeromeBack</FunctionCall>
+      <ResolutionID>4</ResolutionID>
+      <NPC>Jerome</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Gracias por hacer tu evaluación. Por favor, elige de los suministros de limpieza--~ Quiero decir... premios.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tomaré el papel higiénico.</OptionText>
+          <DestinationID>26</DestinationID>
+          <FunctionCall>GetToiletPaper</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tomaré la botella de spray.</OptionText>
+          <DestinationID>26</DestinationID>
+          <FunctionCall>GetSprayBottle</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Ahí tienes.~ Disfruta de tu...~ premio. Ahora ve a hacer cosas inteligentes de niño.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Gracias por hacer tu evaluación. Eres libre de irte siempre y cuando no causes ningún problema.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Espero que todos hayan aprendido algo hoy. Por favor, vayan a almorzar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Espero que todos hayan aprendido algo hoy. Por favor, vayan--</DialogueText>
+      <JumpNode>32</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>¿Cómo te subiste--!?...~ ¿Sabes qué? Olvídalo. Baja y sal de mi clase.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>¿Qué estás haciendo aquí?!~ ¡No tienes ningún talento!~ ¡Sal! ¡Fuera, digo!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>KickOutOfScience</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>¿Por qué te niegas a escucharme? ¿Estás muerto del cerebro?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>¡Bueno, tú estás a punto de estarlo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerReenterScience</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>¿Qué estás haciendo aquí?!~ ¡No tienes ningún talento!~ ¡Sal--!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>RingBellDuringKickOut</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>54</NodeID>
+      <DialogueText>Ugh.~ Esa es la campana. Esta vez te salvaste, pero no te atrevas a interrumpir mi clase otra vez.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToLunch</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>76</NodeID>
+      <DialogueText>No podrás entrar y salir cuando te plazca.~ Ya has salido una vez hoy.~ Te quedarás aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>¿Qué demonios--?!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToPlayerScienceLunch</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>¿Cómo te metiste en mi aula de ciencias?! ¡Explícate!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entramos a escondidas por el conducto de ventilación.</OptionText>
+          <DestinationID>102</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>Oh.~ Eso es bastante ingenioso.~ No lo suficientemente ingenioso como para evitar la sala de estudio, pero aún así...~ ingenioso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vaya.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToStudyHall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>103</NodeID>
+      <DialogueText>¿Qué demonios--?!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToPlayerScienceRecess</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>104</NodeID>
+      <DialogueText>¿Cómo te metiste en mi aula de ciencias?! ¡Explícate!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entré a escondidas por el conducto de ventilación.</OptionText>
+          <DestinationID>105</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>105</NodeID>
+      <DialogueText>Oh.~ Eso es bastante ingenioso.~ No lo suficientemente ingenioso como para evitar recibir un disparo en la cara, pero aún así...~ ingenioso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerCaughtInScience</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>200</NodeID>
+      <DialogueText>Bienvenidos a la clase de ciencias. La lección de hoy será sobre...~ plantas. Por favor, observen la planta común frente a ustedes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Observa la planta.)</OptionText>
+          <DestinationID>201</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>201</NodeID>
+      <DialogueText>Noten cómo no es carnívora ni venenosa...~ porque la PTA es un grupo de cobardes.</DialogueText>
+      <JumpNode>202</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>202</NodeID>
+      <DialogueText>Siéntanse libres de tomar una muestra y mirarla bajo uno de los microscopios. Este no hará mucho, pero podría hacerlo si la mamá de Ozzy no fuera tan cobarde.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>300</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>210</NodeID>
+      <DialogueText>¡Dale un poco de espacio! Maldita sea, Ozzy.~ Ya hemos hablado de esto. ¿Dónde está tu inhalador?</DialogueText>
+      <JumpNode>211</JumpNode>
+      <FunctionCall>MovePlayerAwayFromOzzy</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>211</NodeID>
+      <DialogueText>*Jadeo* En mi--~ *tos* casillero. Por favor~ apúrate.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>GoGetInhaler</FunctionCall>
+      <NPC>Ozzy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>220</NodeID>
+      <DialogueText>Bueno, Ozzy...~ tengo malas noticias.~ No está allí.</DialogueText>
+      <JumpNode>221</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>221</NodeID>
+      <DialogueText>Parece que vas a morir aquí, pero no te preocupes. No será en vano.</DialogueText>
+      <JumpNode>222</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>222</NodeID>
+      <DialogueText>Si firmas en la línea punteada aquí, ¡tengo permiso semi-legal para usar tu cuerpo para la ciencia!</DialogueText>
+      <JumpNode>223</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>223</NodeID>
+      <DialogueText>*Gck*--</DialogueText>
+      <JumpNode>224</JumpNode>
+      <FunctionCall>StopOzzySquirming</FunctionCall>
+      <NPC>Ozzy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>224</NodeID>
+      <DialogueText>Solo lo falsificaré por él. Es lo que él habría querido.</DialogueText>
+      <JumpNode>225</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>225</NodeID>
+      <DialogueText>¡Buenas noticias, todos!~ ¡De repente he entrado en posesión de un cadáver!~ ¡La lección de mañana será sobre anatomía!</DialogueText>
+      <JumpNode>226</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>226</NodeID>
+      <DialogueText>Acabo de notar que el número de cuerpos en la clase de hoy ha sido ligeramente más alto de lo normal. Quizás podríamos terminar el día un poco antes.</DialogueText>
+      <JumpNode>227</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>227</NodeID>
+      <DialogueText>Todos vayan a casa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a casa.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>230</NodeID>
+      <DialogueText>Aquí.~ Toma un respiro. No dejes que esto vuelva a pasar.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>OzzyGetUp</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>250</NodeID>
+      <DialogueText>¡Hey!~ *hl*Te veo allí.*hle* No te vayas cuando hay ciencia que hacer.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Voy a buscar el engranaje.</OptionText>
+          <DestinationID>251</DestinationID>
+          <Flag>ChangeToMagnets</Flag>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetUpstairsPass</FunctionCall>
+          <SetFlag>AllowedOutOfScience</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>251</NodeID>
+      <DialogueText>Oh. Buena idea. Podría estar en algún lugar del pasillo.~ Aquí tienes un pase de salida, pero no quiero que vayas abajo. ¿Entiendes?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo tienes.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToUpstairs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>295</NodeID>
+      <DialogueText>¡Oh, mira quién ha vuelto! Lamento mucho que las plantas en la oscuridad no fueran lo suficientemente interesantes para ti.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Te perdono.</OptionText>
+          <DestinationID>296</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>296</NodeID>
+      <DialogueText>Por favor...~ recibe este disparo láser en la cara como un símbolo de mi arrepentimiento.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerCaughtInDark</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>Ve a hacer algo de ciencia. Esa planta no se va a observar sola.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>301</NodeID>
+      <DialogueText>Ustedes, los nuevos niños, son más tontos que los monos de cuyos cerebros removí.</DialogueText>
+      <JumpNode>302</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>302</NodeID>
+      <DialogueText>Está bien.~ Nadie se mueva. *hl*Estoy seguro de que la electricidad volverá pronto.*hle*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>303</ResolutionID>
+      <FunctionCall>AddLightsOnEvent</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>303</NodeID>
+      <DialogueText>La electricidad volverá pronto.~ Todos solo quédense quietos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>310</NodeID>
+      <DialogueText>Ah, ahí vamos. ¡Todos a volver a hacer ciencia!</DialogueText>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>315</NodeID>
+      <DialogueText>Por supuesto, la electricidad vuelve justo cuando la clase termina. Bueno, al menos mañana nadie debería ser tan tonto como para meter un tenedor en el enchufe eléctrico.</DialogueText>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>400</NodeID>
+      <DialogueText>¡Bueno, bueno, bueno!~ ¡Mira quién decidió reincorporarse a la clase! ¿Disfrutaste tu pequeña aventura en la oscuridad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>401</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>401</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>401</NodeID>
+      <DialogueText>¡No me importa!~ Me has dado muchas razones para agregarte a mis experimentos. Desafortunadamente para ti, no necesito que tu cerebro esté intacto.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pero me gusta mi cerebro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ShootPlayerAfterBlackout</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>Ah.~ Otro día de aprendizaje concluido. Por favor, no rompan nada al salir.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Sal sin romper nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>Bienvenidos a la clase de ciencias. La lección de hoy será sobre...~ plantas. Por favor, observen la planta común frente a ustedes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Observa la planta.)</OptionText>
+          <DestinationID>501</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>501</NodeID>
+      <DialogueText>Noten cómo no es carnívora ni venenosa...~ porque la PTA es un grupo de cobardes.</DialogueText>
+      <JumpNode>502</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>502</NodeID>
+      <DialogueText>Siéntanse libres de tomar una muestra y mirarla bajo uno de los microscopios. Este no hará mucho, pero podría hacerlo si la mamá de Ozzy no fuera tan cobarde.</DialogueText>
+      <JumpNode>503</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>503</NodeID>
+      <DialogueText>¡Ah!~ Casi lo olvido.~ Uno de ustedes se suponía que debía conseguirme algunas muestras de flores hoy.~ ¿Lograron conseguirlas todas?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>506</DestinationID>
+          <Flag>DannerCollectedAllFlowers</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>504</DestinationID>
+          <BlockFlag>DannerCollectedAllFlowers</BlockFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>504</NodeID>
+      <DialogueText>*Suspiro*~ Sabía que no podrían manejarlo.~ Ustedes, los nuevos niños, son tan...~ inadecuados.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo siento.</OptionText>
+          <DestinationID>505</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>505</NodeID>
+      <DialogueText>Yo también.~ Yo también.</DialogueText>
+      <FunctionCall>ShootPlayerFailedFlowers</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>506</NodeID>
+      <DialogueText>¿De verdad?!~ Bueno, eso es muy impresionante.~ No pensé que un estudiante tan humilde como tú pudiera lograrlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Así que obtengo una A?</OptionText>
+          <DestinationID>507</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>507</NodeID>
+      <DialogueText>Veremos.~ ¡Estaré de regreso pronto!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>GoGetPlantMonster</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>520</NodeID>
+      <DialogueText>¿Qué demonios es eso?!</DialogueText>
+      <JumpNode>521</JumpNode>
+      <NPC>Cindy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>521</NodeID>
+      <DialogueText>¡La PTA dijo que no puedes hacer cosas como esta más!</DialogueText>
+      <JumpNode>522</JumpNode>
+      <NPC>Ozzy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>522</NodeID>
+      <DialogueText>¡Oh, todos cállense!~ ¡Este nuevo estudiante ha logrado conseguir todos los especímenes necesarios para permitir que Diana crezca y no hay forma de que la PTA me detenga! ¿Entendido, Ozzy?</DialogueText>
+      <JumpNode>523</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>523</NodeID>
+      <DialogueText>Entendido...</DialogueText>
+      <NPC>Ozzy</NPC>
+      <JumpNode>524</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>524</NodeID>
+      <DialogueText>Ahora vamos a alimentar a Diana con las flores en un orden muy particular... um... ¿dónde dejé esas notas?</DialogueText>
+      <JumpNode>525</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>525</NodeID>
+      <DialogueText>Maldita sea.~ Las dejé abajo. Regresaré en un momento. Siéntanse libres de observar la planta aburrida mientras salgo a buscarlas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo descubriste el orden?</OptionText>
+          <DestinationID>526</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Observa la planta aburrida.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LeaveToGetNotes</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>526</NodeID>
+      <DialogueText>¿Qué?~ Oh. Se me ocurrió *hl*mientras miraba alrededor de la habitación.*hle* Regresaré con eso en breve. No toquen nada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(No toques nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LeaveToGetNotes</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>530</NodeID>
+      <DialogueText>He encontrado mis notas.~ Ahora podemos comenzar--</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>RingBellFailedPlant</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>531</NodeID>
+      <DialogueText>¡Gah!~ Qué mal momento.~ *hl*Parece que no tendrás la oportunidad de demostrarte después de todo.*hle*~ Mejor suerte mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vaya.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>540</NodeID>
+      <DialogueText>He encontrado mis notas.~ Ahora podemos comenzar--</DialogueText>
+      <JumpNode>541</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>541</NodeID>
+      <DialogueText>¡Vaya!~ ¡Ella es absolutamente radiante!~ ¿Tú...~ ¿realmente le diste las flores en el orden correcto?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que sí.</OptionText>
+          <DestinationID>542</DestinationID>
+        </DialogueOption>
+      </Options>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>542</NodeID>
+      <DialogueText>Estoy atónito.~ Nunca habría esperado tal habilidad de un simple como tú.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias... creo.</OptionText>
+          <DestinationID>543</DestinationID>
+          <FunctionCall>GetAPlus</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>543</NodeID>
+      <DialogueText>Supongo que has ganado una A+ por hoy. Eres bienvenido a unirte a mi clase avanzada mañana por la mañana. También puedes quedarte con esta tarjeta tonta de ese juego que juegas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estoy conmovido.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>RingBellFlowerPass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>544</NodeID>
+      <DialogueText>Bueno, ahí está la campana.~ Nos veremos mañana por la mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToEndDay</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>600</NodeID>
+      <DialogueText>Bienvenidos a la clase de ciencias. La lección de hoy será sobre...~ imanes. Eso es raro. Pensé que era sobre plantas.</DialogueText>
+      <JumpNode>601</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>601</NodeID>
+      <DialogueText>De todos modos, los imanes tienen muchos usos en la ciencia, como quitar balas de los muebles o sacar aviones del cielo.</DialogueText>
+      <JumpNode>602</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>602</NodeID>
+      <DialogueText>¡Ahora observen el poder de los imanes!</DialogueText>
+      <JumpNode>603</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>603</NodeID>
+      <DialogueText>Eso es extraño. *hl*¡El imán no parece estar funcionando!*hle* ¡Parece que alguien ha saboteado mi imán! *hl*¡Falta uno de los engranajes!*hle*</DialogueText>
+      <JumpNode>604</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>604</NodeID>
+      <DialogueText>¡No permitiré que algún niño rata arruine la buena ciencia! Niños, ¡es hora de una búsqueda del tesoro!</DialogueText>
+      <JumpNode>605</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>605</NodeID>
+      <DialogueText>¡Quien encuentre ese engranaje recibe un premio o algo así! ¡Empiecen a buscar!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>6060</ResolutionID>
+          <FunctionCall>PennyWalkToPlayerScience</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6060</NodeID>
+      <DialogueText>No me hables a menos que tengas ese engranaje.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pero tengo ese engranaje.</OptionText>
+          <ItemToUse>Gear</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>606</DestinationID>
+          <FunctionCall>UseGear</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>606</NodeID>
+      <DialogueText>¿Lo tienes?~ ¡Bueno, eso es una noticia espléndida!~ ¡Reúnanse, niños, y observen el poder de los imanes!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartUpMagnet</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>610</NodeID>
+      <DialogueText>Oh no...~ Estoy tan despedido.</DialogueText>
+      <JumpNode>611</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>611</NodeID>
+      <DialogueText>¿Lo piensas, genio?</DialogueText>
+      <JumpNode>612</JumpNode>
+      <NPC>Ozzy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>612</NodeID>
+      <DialogueText>Cállate, Ozzy. A nadie le gustas.</DialogueText>
+      <JumpNode>613</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>613</NodeID>
+      <DialogueText>Bueno, niños, parece que este es el final de mi tiempo aquí. Quédense en la escuela. No tomen drogas a menos que yo se las haya dado.</DialogueText>
+      <JumpNode>614</JumpNode>
+      <FunctionCall>PutOnJetPack</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>614</NodeID>
+      <DialogueText>Adiós entonces.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>LeaveOnJetPack</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>690</NodeID>
+      <DialogueText>Bienvenidos a la clase de ciencias. La lección de hoy será sobre...~ química. Eso es raro. Pensé que era sobre plantas.</DialogueText>
+      <JumpNode>691</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>691</NodeID>
+      <DialogueText>De todos modos...~ la química es un tema extremadamente peligroso, que es precisamente por qué lo harán hoy en lugar de mí.</DialogueText>
+      <JumpNode>692</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>693</NodeID>
+      <DialogueText>*hl*Todos tomen un turno en el kit de química.*hle* No son demasiados hoy, así que adelante.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>SetChemistryOrder</FunctionCall>
+      <ResolutionID>705</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>700</NodeID>
+      <DialogueText>Bienvenidos a la clase de ciencias. La lección de hoy será sobre...~ química. Eso es raro. Pensé que era sobre plantas.</DialogueText>
+      <JumpNode>701</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>701</NodeID>
+      <DialogueText>De todos modos...~ la química es un tema extremadamente peligroso, que es precisamente por qué lo harán hoy en lugar de mí.</DialogueText>
+      <JumpNode>702</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>702</NodeID>
+      <DialogueText>*hl*Todos tomen un turno en el kit de química.*hle* ¿Por qué no vas tú primero, chico de la silla de ruedas?</DialogueText>
+      <JumpNode>703</JumpNode>
+      <FunctionCall>MontyGoToChemistrySet</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>703</NodeID>
+      <DialogueText>¡Me llamo Monty!~ Vaya...~ todos son unos idiotas con los que son diferentes aquí. Estoy realmente cansado de eso.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>705</ResolutionID>
+      <NPC>Monty</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1700</NodeID>
+      <DialogueText>Bienvenidos a la clase de ciencias. La lección de hoy será sobre...~ química. Eso es raro. Pensé que era sobre plantas.</DialogueText>
+      <JumpNode>1701</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1701</NodeID>
+      <DialogueText>De todos modos...~ la química es un tema extremadamente peligroso, que es precisamente por qué lo harán hoy en lugar de mí.</DialogueText>
+      <JumpNode>1702</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1702</NodeID>
+      <DialogueText>Todos tomen un turno en el kit de química. Traten de no volar nada en pedazos.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>MontyDidntGoToChemistrySet</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>705</NodeID>
+      <DialogueText>Tendrás tu turno en el kit de química. Solo ten paciencia.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué puedes decirme sobre esto?</OptionText>
+          <ItemToUse>Chemical</ItemToUse>
+          <Flag>MontyAskedChemistryHelp</Flag>
+          <DestinationID>706</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>706</NodeID>
+      <DialogueText>Ah...~ veo que te has hecho buen amigo de Felix.~ Este químico realmente es una maravilla.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico verde?</OptionText>
+          <DestinationID>708</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico rojo?</OptionText>
+          <DestinationID>707</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico púrpura?</OptionText>
+          <DestinationID>709</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>710</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>707</NodeID>
+      <DialogueText>Creará una especie de...~analgésico.~ Altamente adictivo. También tiene usos para ayudar a los erm...~ clínicamente torpes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico verde?</OptionText>
+          <DestinationID>708</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico púrpura?</OptionText>
+          <DestinationID>709</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bueno saberlo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>710</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>708</NodeID>
+      <DialogueText>No sé si tengo permiso legal para decírselo...~ digamos que mezclar los dos puede llevar a resultados explosivos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico rojo?</OptionText>
+          <DestinationID>707</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico púrpura?</OptionText>
+          <DestinationID>709</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bueno saberlo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>710</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>709</NodeID>
+      <DialogueText>Lo mismo que sucede con el verde.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico verde?</OptionText>
+          <DestinationID>708</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico rojo?</OptionText>
+          <DestinationID>707</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Bueno saberlo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>710</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>710</NodeID>
+      <DialogueText>¿Hay algo más que quieras saber sobre ese químico?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico rojo?</OptionText>
+          <DestinationID>707</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico verde?</OptionText>
+          <DestinationID>708</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico púrpura?</OptionText>
+          <DestinationID>709</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>710</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>711</NodeID>
+      <DialogueText>Muerte.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh.</OptionText>
+          <DestinationID>712</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>712</NodeID>
+      <DialogueText>¿Hay algo más que quieras saber sobre ese químico?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico rojo?</OptionText>
+          <DestinationID>707</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Qué pasa si lo mezclo con el químico verde?</OptionText>
+          <DestinationID>708</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>710</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>800</NodeID>
+      <DialogueText>Bienvenidos a la clase de ciencias. La lección de hoy será sobre...~ robótica. Eso es raro. Pensé que era sobre plantas.</DialogueText>
+      <JumpNode>801</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>801</NodeID>
+      <DialogueText>De todos modos...~ los robots son una manera maravillosa de aterrorizar el área de los tres estados. Frente a ustedes está uno de mis tipos favoritos de robot, la prensa hidráulica.</DialogueText>
+      <JumpNode>802</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>802</NodeID>
+      <DialogueText>¿Tenemos algún voluntario para meter su cabeza debajo? ¿Alguien?</DialogueText>
+      <JumpNode>803</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>803</NodeID>
+      <DialogueText>...</DialogueText>
+      <JumpNode>804</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>804</NodeID>
+      <DialogueText>Ustedes, niños, no son divertidos.~ Solo vayan a juntar esas piezas de repuesto hasta que algo se encienda.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>810</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>810</NodeID>
+      <DialogueText>Vayan a jugar con piezas de robots hasta que suene la campana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo desactivo esto?</OptionText>
+          <ItemToUse>JeromeBomb</ItemToUse>
+          <Flag>CarlaDeactivateBomb</Flag>
+          <SetFlag>CarlaTeacherGaveBombHint</SetFlag>
+          <DestinationID>811</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>811</NodeID>
+      <DialogueText>Hmmmm... interesante. Parece ser un dispositivo de escucha conectado a un explosivo de baja potencia. Fascinante. De hecho, desarrollé algo similar para--</DialogueText>
+      <JumpNode>812</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>812</NodeID>
+      <DialogueText>Para el uhhh...~ olvídalo.~ De todos modos, pasar una corriente eléctrica a través de él debería hacer el truco, pero la única fuente de energía es ese enchufe allá.</DialogueText>
+      <JumpNode>813</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>813</NodeID>
+      <DialogueText>Tendrías que ser bastante estúpido para meter un trozo de metal como este en un enchufe, sin embargo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias por la ayuda.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>810</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>900</NodeID>
+      <DialogueText>Ah, ahí estás.</DialogueText>
+      <JumpNode>901</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>901</NodeID>
+      <DialogueText>Estaba preocupado de haber perdido un espécimen perfectamente bueno. ¿Qué estás haciendo vagando por ahí?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uhhh... nada.</OptionText>
+          <DestinationID>902</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>902</NodeID>
+      <DialogueText>Nada....~ Me encanta esa respuesta...~ Estás a punto de ser nada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerOutOfStudyHall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

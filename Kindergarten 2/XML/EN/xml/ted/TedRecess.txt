@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This tie is pretty stifling in this heat, but Felix says a professional always looks his best.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's up with this rockwall?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Whatever you say Ted.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Did you hear that?~ He has another inhaler!~ Darn it!~ Well he definitely seems stressed.~ I take it you made it to his stall on time?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>It's pretty neat, right?~ *hl*Just don't climb on any grey rocks.*hle* They're unstable.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gotcha.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Did you hear what Ozzy said?~ He has ANOTHER inhaler!~ What are we gonna do?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>We can steal that too.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Ozzy doesn't seem too upset. Did you manage to get to his stall before him?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I couldn't make it.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Well that's just great!~ How are we supposed to stress him out when he's completely regular?!~ Couple that with the fact that he has another inhaler...~</DialogueText>
+      <JumpNode>12</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>I'm calling off the hit.~ It's too risky now. Felix was right about me. Leave me alone kid.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sorry, Ted.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Good. We continue with the plan then! We just need to adapt a little.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How so?</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>We've got some things to do. *hl*One is to find a green flower. Ozzy is highly allergic.*hle* Just seeing one should be enough to freak him out.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Where can I get one?</OptionText>
+          <DestinationID>27</DestinationID>
+          <BlockFlag>GotGreenFlower</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I already got one.</OptionText>
+          <DestinationID>29</DestinationID>
+          <ItemToUse>GreenFlower</ItemToUse>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>There's a few around the school. I know one grows back by the dumpster.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll be back with it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>270</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>270</NodeID>
+      <DialogueText>Did you get that flower?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>29</DestinationID>
+          <ItemToUse>GreenFlower</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>Okay. Lead the way.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Lead the way.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StartFollowingPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>Wow!~ You are good!~ So now we just have to get into that locker and steal the back-up inhaler.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do we do that?</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>There's only one person that could get us into that locker...~and I put gum in her hair this morning.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh no.</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Well...~let's see if we can smooth things over with her. Maybe she'll forgive me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I hope so.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>TedAskCarlaToOpenLocker</SetFlag>
+          <FunctionCall>StartFollowingPlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Uhhh...~I guess we have to do this.~ We have to further disable a cripple. I feel sick.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're trying to kill another kid.</OptionText>
+          <DestinationID>51</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Let's just get it over with.</OptionText>
+          <DestinationID>520</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>That's different!~ I know Felix has a good reason for--~ Nevermind.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Let's just get it over with.</OptionText>
+          <DestinationID>520</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>520</NodeID>
+      <DialogueText>Right.~ Before we do, *hl*if you want to buy or sell stuff, you should probably do it now.*hle* I doubt he'll be in the mood after we ruin his day.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do you mean?</OptionText>
+          <DestinationID>521</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Good idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>521</NodeID>
+      <DialogueText>For the last part of my plan, you have to go to science instead of gym.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh. I'll be right back.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>522</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm ready now.</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>522</NodeID>
+      <DialogueText>Are you ready to unscrew this chair?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm ready now.</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>Okay.~ I'll go pretend to buy or sell something. Just try to make sure he doesn't get hurt too bad okay?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll do my best.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StartMontyDistraction</FunctionCall>
+          <ResolutionID>53</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>Wow...there's so much stuff that I uh...~want to buy. Yes. I want to buy something.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're doing great, Ted.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>Oh my.~ I uh...~just realized that I forgot my wallet. Maybe I'll get something some other time.</DialogueText>
+      <JumpNode>56</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText>What?!~ A rich kid like you forgot his money?!~ Quit wasting my time! Get outta my sight!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>60</ResolutionID>
+      <NPC>Monty</NPC>
+      <FunctionCall>TedWalkTowardCarla</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>You didn't do it!~ C'mon kid!~ You said you would.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I ran out of time.</OptionText>
+          <DestinationID>61</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>Felix was right. I can't do anything. Go away kid.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>62</NodeID>
+      <DialogueText>Well done.~ Okay.~ A deal's a deal. I'll see to it that Ozzy's locker is open by the time you get to it.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can you grab the inhaler for us?</OptionText>
+          <DestinationID>63</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>65</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>63</NodeID>
+      <DialogueText>That's not part of our deal. You only said the locker. You're gonna have to grab whatever you want out of it by yourself.</DialogueText>
+      <NPC>Carla</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>65</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>65</NodeID>
+      <DialogueText>I feel pretty bad about that, but it was necessary.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure it was.</OptionText>
+          <DestinationID>67</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>67</NodeID>
+      <DialogueText>It's almost time to do the actual job now. Are you ready for your big moment?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do I have to do?</OptionText>
+          <DestinationID>68</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>68</NodeID>
+      <DialogueText>When the bell rings, pay the lab fee and go to science. That's where Ozzy goes after recess.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Then what?</OptionText>
+          <DestinationID>69</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>69</NodeID>
+      <DialogueText>Once you're there, cause a distraction and sneak out. Grab the inhaler out of his locker. Once you have it, show Ozzy the flower. He should fall apart and...~die.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds like a plan.</OptionText>
+          <DestinationID>70</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>Felix and I will meet you after school. If all goes well, you'll be handsomely rewarded.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>See you then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>TedCompletedRecess</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>75</NodeID>
+      <DialogueText>This has been a long time coming.~ Dump the spiders.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>80</NodeID>
+      <DialogueText>This seems like a good spot to dig a hole. I'm so glad I get to help.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>81</NodeID>
+      <DialogueText>Soon Felix...~soon.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

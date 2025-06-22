@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>*b*¡NUGGET ESTÁ AQUÍ!!*be*</DialogueText>
+      <JumpNode>1</JumpNode>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>*b*¡NUGGET SALVARÁ A LA HERMOSA LILY!!*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>NuggetDropThrough</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¿Nugget lo hizo bien, verdad?~ ¿El monstruo no era amigo de nadie?</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Hiciste un gran trabajo, Nugget.~ Gracias por salvarnos.</DialogueText>
+      <JumpNode>4</JumpNode>
+      <NPC>Lily</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Nugget está feliz de tener la gratitud de la hermosa Lily.~ Quizás esto haría una buena Cueva de Nugget.</DialogueText>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Es todo tuyo, Nugget.~ Solo quiero ir a casa.~ Aún estoy triste por...</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>KidsPopUp</FunctionCall>
+      <NPC>Lily</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Puaj!~ ¡Esta cosa es tan asquerosa!</DialogueText>
+      <NPC>Alice</NPC>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Es tan baboso!~ ¡Salgamos de aquí!</DialogueText>
+      <NPC>Madison</NPC>
+      <JumpNode>12</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Prefiero estar baboso que ser un monstruo cualquier día.</DialogueText>
+      <NPC>Ron</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>KidsLeavePool</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

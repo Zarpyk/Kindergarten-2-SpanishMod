@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Oh! Eres tú...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Soy yo.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Sabes, Penny me mencionó que hizo un nuevo amigo.~ Que TÚ...~eres su nuevo amigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí. Ella es agradable.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Y ahora estás merodeando con ese chico grande y hay un disco de computadora en mi oficina que yo no puse allí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Oh?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Todo es un poco demasiado...~sospechoso. Creo que deberíamos tener una pequeña charla. ¡En mi oficina!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vaya.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Justo a tiempo. Te veré mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué está pasando?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PlayerShotByPennyPrincipal</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>*Psssst!*~ Hey!~ Hey kid!~ Back here!</DialogueText>
+      <JumpNode>-1</JumpNode>     
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Up here kid!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What are you doing up there?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Don't worry about that. Lily is upstairs making some friends. We're gonna need you to do the same.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Who should I talk to?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>*hl*Anyone who would hold a grudge against Applegate. She's made a lot of kids angry at our old school.*hle* I'm sure you'll find someone.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do they need to do?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Applegate doesn't look too good. I'd guess that she's about to puke. *hl*We should find a girl to take up one of the stalls in the girls' bathroom.*hle* That'll make it easy to get her.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What else?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>We need someone to erm...~do the deed. *hl*Probably someone with some...~stabbing experience.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll ask around.</OptionText>
+          <DestinationID>6</DestinationID>
+          <FunctionCall>DropRemote</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Good. Take this. Maybe you can use robot girl to gain these kids' trust. I'll see you at lunch.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do the buttons do?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>See you then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BillyRise</FunctionCall>
+          <SetFlag>BillyStartedMorningTime</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Oh yeah!~ The green summons her. The blue drops her contraband. The yellow disables her laser and the red fires it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BillyRise</FunctionCall>
+          <SetFlag>BillyStartedMorningTime</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

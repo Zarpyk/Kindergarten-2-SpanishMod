@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Simplemente me encanta hacer nuevos amigos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No parecen muy emocionados de conocerte.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Es por aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿A dónde vamos?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Te llevo a la oficina del director.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vaya.</OptionText>
+          <DestinationID>12</DestinationID>
+          <FunctionCall>PennyKillLightsOut</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¡Oh querido!~ ¡Las luces se han apagado!~ Espero que nada malo suce-</DialogueText>
+      <FunctionCall>PlayerShotByPennyTreeContraband</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>200</NodeID>
+      <DialogueText>¡Oh mira quién es!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToPlayerCafeteria</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>201</NodeID>
+      <DialogueText>¡No se supone que debas estar fuera del salón de estudios!~ ¿Qué haces aquí?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buscando el baño.</OptionText>
+          <DestinationID>202</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Buscando al conserje.</OptionText>
+          <DestinationID>203</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Buscando al maestro.</OptionText>
+          <DestinationID>208</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>202</NodeID>
+      <DialogueText>Oh...~ bueno, te lo perdiste, tonto. Aquí. Te acompañaré yo mismo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh... gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EscortToBathroom</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>203</NodeID>
+      <DialogueText>¿Oh, de verdad?~ En realidad, lo estaba buscando yo mismo.~ No sabrías dónde está, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Él está arriba.</OptionText>
+          <DestinationID>204</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Él está en el armario del conserje.</OptionText>
+          <DestinationID>205</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>204</NodeID>
+      <DialogueText>Gracias por decírmelo.~ Ahora regresa al salón de estudios. No quisiera que te metieras en problemas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LeaveCafeteria</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>205</NodeID>
+      <DialogueText>Ajá.~ Claro.~ Oye... ¿sabes qué me molesta más que nada?~ Los mentirosos. No me estarías mintiendo, ¿verdad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Te dije la verdad.</OptionText>
+          <DestinationID>206</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Él está en realidad arriba.</OptionText>
+          <DestinationID>204</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>206</NodeID>
+      <DialogueText>*Suspiro*...~ Si así es como quieres que sea...~ Me temo que tendré que llevarte a la oficina del director.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vaya.</OptionText>
+          <DestinationID>207</DestinationID>
+          <FunctionCall>PennyKillLightsOut</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>207</NodeID>
+      <DialogueText>¡Oh querido!~ ¡Las luces se han apagado!~ Espero que nada malo suce-</DialogueText>
+      <FunctionCall>PlayerShotByPenny</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>208</NodeID>
+      <DialogueText>¿El maestro?~ ¿Cuál?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>El de ciencias.</OptionText>
+          <DestinationID>209</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>El que tiene resaca.</OptionText>
+          <DestinationID>212</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>209</NodeID>
+      <DialogueText>Espera...~ ¿no te está vigilando en el salón de estudios?~ ¡Ese inútil, engreído, pomposo nerd! ¿Qué posible razón podría tener para dejarte solo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tenía que orinar.</OptionText>
+          <DestinationID>210</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Algo sobre un niño con capucha.</OptionText>
+          <DestinationID>211</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>210</NodeID>
+      <DialogueText>Oh.~ Bueno, entonces solo tendrás que esperarlo en el baño.~ Te llevaré allí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vaya... gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EscortToBathroom</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>211</NodeID>
+      <DialogueText>*¡Gasp!*~ Eso hace que mi viaje al baño sea mucho más importante.~ Debo apresurarme.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí... un placer hablar contigo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LeaveCafeteria</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>212</NodeID>
+      <DialogueText>Sabes que ella está en el patio de recreo. Está prohibido que los niños en el salón de estudios asistan al recreo. Tendré que llevarte a la oficina del director por intentar escaparte.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vaya.</OptionText>
+          <DestinationID>207</DestinationID>
+          <FunctionCall>PennyKillLightsOut</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>250</NodeID>
+      <DialogueText>¡Pensé que tenías--~ ¿¡Esa es la cabeza de Bob que tienes ahí!?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ummm... no.</OptionText>
+          <DestinationID>251</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>252</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>251</NodeID>
+      <DialogueText>¡Eres un mentiroso! ¡Sí lo es! ¿¡Qué le hiciste!? ¿¡Cómo pudiste!?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No lo hice.</OptionText>
+          <DestinationID>252</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>252</NodeID>
+      <DialogueText>¡Eres tan horrible como pensé que serías!~ ¡No puedes quedarte en mi escuela! ¡Te estoy enviando a la oficina del director!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No tienes la autoridad--</OptionText>
+          <DestinationID>207</DestinationID>
+          <FunctionCall>PennyKillLightsOut</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>Oh...~ ¿no vas a pelear con comida? Anotado.~ Estoy llevando un registro de quién está lanzando comida para que mi mami pueda castigarlos adecuadamente.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien, delator.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>501</NodeID>
+      <DialogueText>Tomé notas de todos los que lanzaron comida.~ El salón de estudios estará bastante lleno hoy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien, delator.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

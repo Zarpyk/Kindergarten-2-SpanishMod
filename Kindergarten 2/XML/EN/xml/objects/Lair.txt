@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>
+      <!--Red claw on left-->
+      <NodeID>0</NodeID>
+      <DialogueText>This switch controls the red claw. What should I make it do?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Move it right.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the button.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't do anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>      <!--Red claw in middle-->
+      <NodeID>1</NodeID>
+      <DialogueText>This switch controls the red claw. What should I make it do?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Move it left.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Move it right.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the button.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't do anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <!--Red claw on right-->
+      <NodeID>2</NodeID>
+      <DialogueText>This switch controls the red claw. What should I make it do?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Move it left.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the button.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't do anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <!--Green claw on left-->
+      <NodeID>3</NodeID>
+      <DialogueText>This switch controls the green claw. What should I make it do?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Move it right.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the button.)</OptionText>
+          <DestinationID>-1</DestinationID>          
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't do anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <!--Green claw in middle-->
+      <NodeID>4</NodeID>
+      <DialogueText>This switch controls the green claw. What should I make it do?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Move it left.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>3</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Move it right.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>5</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the button.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't do anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <!--Green claw on right-->
+      <NodeID>5</NodeID>
+      <DialogueText>This switch controls the green claw. What should I make it do?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Move it left.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the button.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't do anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <!--Blue claw on left-->
+      <NodeID>6</NodeID>
+      <DialogueText>This switch controls the blue claw. What should I make it do?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Move it right.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>7</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the button.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't do anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <!--Blue claw in middle-->
+      <NodeID>7</NodeID>
+      <DialogueText>This switch controls the blue claw. What should I make it do?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Move it left.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>6</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Move it right.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>8</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the button.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't do anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <!--Blue claw on right-->
+      <NodeID>8</NodeID>
+      <DialogueText>This switch controls the blue claw. What should I make it do?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Move it left.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>7</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the button.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't do anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Use-- use me to- to save- her...~</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Press the red button.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <FunctionCall>ShootCreature2</FunctionCall>
+          <SetFlag>Creature2Dead</SetFlag>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>11</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't do anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Thank you for-~ for giving my death meaning.</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're welcome.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>I think I should leave that claw there.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Try a different claw.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>This thing is apparently capable of turning kids into monsters.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What a world.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockCreatureOutfit</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <NPC>Billy</NPC>
+      <DialogueText>I'm fine, kid!~ He can't get me up here, but that creature in the middle is eyeing you.~ I'd get rid of it quick!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <NPC>Billy</NPC>
+      <DialogueText>I'm fine, kid!~ Save Lily!~ I'm not sure how much longer she can last!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <NPC>Billy</NPC>
+      <DialogueText>I'm starting to lose my balance!~ Hurry up and take care of this thing!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Will do.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <NPC>Lily</NPC>
+      <DialogueText>It's trying to eat me!~ Do something!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go do something.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>I-~ I don't want...~to do it anymore...~mommy...~please...I don't wanna. I don't wanna.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Do you want this?</OptionText>
+          <DestinationID>1</DestinationID>
+          <ItemToUse>Doll</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveDoll</FunctionCall>
+          <Flag>BillySavedBob</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Let her cry.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>My dolly...~I used to play with her...~back before...~before my mommy...~my mommy turned me into this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Are you okay?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>No.~ No I haven't been okay in a long time, but I think it's time I made things right.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Good.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>The elevator underneath the school has an eye scanner that grants access to the...deeper levels.~ I'll take you there to confront my mommy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds good to me.</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <NPC>Billy</NPC>
+      <DialogueText>Good. Let's go now then.~ I'm not sure how much longer Bob can hold off that creature.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Let's go.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveAllToElevator</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <NPC>Billy</NPC>
+      <DialogueText>Let's focus on dealing with the monster right now. We can deal with her later.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

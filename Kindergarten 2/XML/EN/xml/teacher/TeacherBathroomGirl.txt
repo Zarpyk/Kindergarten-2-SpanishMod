@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>*Ugh*...~ Occ-~*retch*...~ Occupied!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(I'm not gonna bother her.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Goodness.~ I'm going to have to check into rehab at thi--</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>TeacherPause</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Nope.~ Nope nope nopety nope.</DialogueText>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Goodness.~ I'm going to have to check into rehab at this--</DialogueText>
+      <JumpNode>11</JumpNode>
+      <FunctionCall>TeacherPause</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Both stalls!~ Both stalls are taken!~ Unbelievable!~ I would really prefer to throw up in private.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gross.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>I've wanted to do this for a looooooong time boy!~ A long long long time!</DialogueText>
+      <JumpNode>21</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Well what are you waiting for?!~ Do it already!~ I'm not afraid of you!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Buggs</NPC>
+      <FunctionCall>ClearCameraTarget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>*b*AAAAAGH!*be*</DialogueText>
+      <JumpNode>27</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>You-~ little bastard.~ I'll get- *ungh* you if it's the...~the last thing I-</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>TeacherDie</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>HEY!~ I see you there!~ Looks like I'm outnumbered, but I'm not out gunned!~ I will not be bested by stupid children!</DialogueText>
+      <JumpNode>31</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>I'm sending you all to the principal's office!</DialogueText>
+      <JumpNode>32</JumpNode>
+      <FunctionCall>TurnOffLights</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>HAHAHA!! Do your worst Penny!~ Do your worst!!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ShootPlayerAndLily</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

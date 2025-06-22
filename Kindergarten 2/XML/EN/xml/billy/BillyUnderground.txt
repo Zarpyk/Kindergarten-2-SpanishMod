@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>That's the signal!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>RevealBilly</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>It's safe to come out!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>RevealLily</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Finally!~ I feel like we've been waiting in there for hours!</DialogueText>
+      <NPC>Lily</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Who are you guys?</OptionText>
+          <DestinationID>3</DestinationID>
+          <FunctionCall>PullBackHoods</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Oh yeah! We should probably tell you that.</DialogueText>
+      <JumpNode>4</JumpNode>
+      <FunctionCall>FullReveal</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>It's us!~ Lily and Billy!~ We've been spying on this new school and we've discovered a lot! Do you want to hear about it?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You need this right?</OptionText>
+          <DestinationID>107</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetJackHammer</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Jerome is after Lily.</OptionText>
+          <DestinationID>30</DestinationID>
+          <Flag>CarlaCompletedSchoolyard</Flag>
+          <SetFlag>LilyInBathroom</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm actually just here for a hair sample.</OptionText>
+          <DestinationID>20</DestinationID>
+          <Flag>TeacherTalkedToMonty</Flag>
+          <FunctionCall>SetAngry</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sure.</OptionText>
+          <DestinationID>100</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Good work finding these hiding spots, Lily.~ We'll be able to conduct our operation here.</DialogueText>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Lily?</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>FadeToDumpster</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>A hair sample?~ From me?~ But...~I was being tested on yesterday!~ There's no way I can give you my hair!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I need it.</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Well too bad!~ Get out of here!~ I thought we could trust you since you had the secret plush, but I guess we were wrong. We'll fix this school all by ourselves.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Me?...~Oh.~ I guess he blames me for what happened to his dad.</DialogueText>
+      <NPC>Lily</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>*Sigh*...We should have seen this coming, Billy.</DialogueText>
+      <NPC>Lily</NPC>
+      <JumpNode>32</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>What's the big deal?~ He can't get to us. He doesn't even know we're here.</DialogueText>
+      <JumpNode>33</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>We can't risk it.~ I have to confront him.~ He has to know the truth about his father.</DialogueText>
+      <JumpNode>34</JumpNode>
+      <NPC>Lily</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>*hl*Head back upstairs and tell Jerome to meet me in the girls' bathroom.*hle* Knock on the first stall twice.</DialogueText>
+      <NPC>Lily</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>35</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>You should get back to class before the bell rings.~ You don't want to get study hall.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>You better get going kid. We can't have anyone come looking for you and have our cover blown.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Get going.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>Well it turns out that the 3 kids who were 'rezoned' to another school, weren't actually rezoned!~ They're here!</DialogueText>
+      <JumpNode>101</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>They're deep under the school!~ That elevator has a secret eye scanner that gives you access to go way underground!</DialogueText>
+      <JumpNode>102</JumpNode>
+      <NPC>Lily</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>I think they're using them for experiments like they did with me! We have to help them!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do you need?</OptionText>
+          <DestinationID>103</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>103</NodeID>
+      <DialogueText>Our original plan was to tunnel down there with digging equipment, but that might take too long. Our other option is to get past that eye scanner.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How do we do that?</OptionText>
+          <DestinationID>104</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>104</NodeID>
+      <DialogueText>By getting Penny down here!~ She's a robot which means she can be controlled.~ The teachers get these little remotes that control her.</DialogueText>
+      <JumpNode>105</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>105</NodeID>
+      <DialogueText>Which is also is why the lights go out when kids get sent to the principal's office!~ It's voice activated and calls Penny to take out the kid who was misbehaving.</DialogueText>
+      <JumpNode>106</JumpNode>
+      <NPC>Lily</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>106</NodeID>
+      <DialogueText>Right. So we need that remote. Can you get it for us?~ If not we'll just have to start digging.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I have it.</OptionText>
+          <DestinationID>107</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetJackHammer</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Jerome is after Lily.</OptionText>
+          <DestinationID>30</DestinationID>
+          <Flag>CarlaCompletedSchoolyard</Flag>
+          <SetFlag>LilyInBathroom</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm actually just here for a hair sample.</OptionText>
+          <DestinationID>20</DestinationID>
+          <Flag>TeacherTalkedToMonty</Flag>
+        </DialogueOption>
+        <!--<DialogueOption>
+          <OptionText>I'll try.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>-->
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>107</NodeID>
+      <DialogueText>This is incredible!~ How did you--~it doesn't matter.~ With this we can save those kids! We don't need this digging stuff anymore.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what now?</OptionText>
+          <DestinationID>108</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>108</NodeID>
+      <DialogueText>We need to take out anyone else who has one of these remotes. If they find out we're using this one, they could use Penny to kill us!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Who else has the remotes?</OptionText>
+          <DestinationID>109</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>109</NodeID>
+      <DialogueText>Both teachers and the principal. We'll have to take them all out simultaneously. Once that's done, we scan Penny's eye in the elevator, go down, and free those kids!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>We're gonna kill the teachers?</OptionText>
+          <DestinationID>113</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>So what should I do?</OptionText>
+          <DestinationID>110</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>*hl*During morning time, start recruiting kids who can help us take out the teacher. We'll also need access to the principal during lunch, so try and do that before the bell rings.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>111</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>We'll start talking to kids in the smart class and see if we can get any of them on board.</DialogueText>
+      <NPC>Lily</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds like a plan.</OptionText>
+          <DestinationID>112</DestinationID>
+          <SetFlag>BillyStartedMission</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>Hurry up and get out of here!~ If you stick around you'll blow our cover!</DialogueText>
+      <NPC>Lily</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Get out of here.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReturnToSchoolYard</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>113</NodeID>
+      <DialogueText>I know it sounds harsh, but they're in on this. They know what's going on here and they're allowing it to continue. They're just as guilty as the principal is.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what should I do?</OptionText>
+          <DestinationID>110</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

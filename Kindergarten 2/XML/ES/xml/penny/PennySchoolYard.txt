@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Hola! ¡Me llamo Penny! ¡Mi mami es la directora! Debes ser uno de los nuevos niños. Es un placer conocerte.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Usa el control remoto.)</OptionText>
+          <DestinationID>50</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Puedes leer?</OptionText>
+          <DestinationID>30</DestinationID>
+          <Flag>OzzyReadingMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Tienes flores?</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>DannerStartedMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Quieres ser amigos?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No te molestes en conocer a Penny.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>1</NodeID>
+      <DialogueText>¡Me encantaría ser amigos!~ ¡Aquí! Puedes tener esta pulsera de la amistad.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh, gracias.</OptionText>
+          <DestinationID>1001</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetFriendshipBracelet</FunctionCall>
+          <SetFlag>PennyBefriended</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>1002</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1001</NodeID>
+      <DialogueText>¡Te queda tan bien!~ ¡Estoy feliz de que seamos amigos!~ ¡Te veré por ahí!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí. Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1002</NodeID>
+      <DialogueText>Oh.~ Eso es una pena.~ Avísame si cambias de opinión.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1003</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1003</NodeID>
+      <DialogueText>¿Cambiastes de opinión?~ ¿Quieres mi pulsera de la amistad?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>1001</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetFriendshipBracelet</FunctionCall>
+          <SetFlag>PennyBefriended</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Hmmmmm...¿flores? Lo siento, no tengo ninguna.~ *hl*Tal vez otra chica tenga una.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias de todos modos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Hola!~ ¡Me llamo--!</DialogueText>
+      <FunctionCall>PlayBeep</FunctionCall>
+      <JumpNode>41</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Lo siento. No pude evitar notar que tienes algo de contrabando contigo. Me temo que tendré que confiscártelo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Contrabando?</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cómo supiste eso?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Tienes permiso para confiscarlo?</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Sí. Ese objeto en tu bolsillo no está permitido en esta escuela. Lo siento. Tendrás que ir a la sala de estudio después del almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo supiste eso?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Tienes permiso para confiscarlo?</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>¿Qué?~ Yo solo... no sé cómo. Hazme esto fácil, por favor, y entrégamelo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tienes permiso para confiscarlo?</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Por supuesto.~ Mi mami es la directora. Ella quiere mantener la escuela segura.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>25</DestinationID>
+          <FunctionCall>TakeContraband</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Lo siento, pero hoy tendrás sala de estudio. ~ Realmente espero que aún podamos ser amigos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo dudo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>26</ResolutionID>
+          <SetFlag>PennyTookContraband</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Realmente espero que aún podamos ser amigos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Creo que podemos.</OptionText>
+          <DestinationID>27</DestinationID>
+          <Flag>BuggsReconPenny</Flag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lo dudo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>¿De verdad?! Vaya. Eso sería genial. No quiero meter a la gente en problemas... simplemente sucede.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>28</DestinationID>
+          <FunctionCall>GetFriendshipBracelet</FunctionCall>
+          <SetFlag>PennyBefriended</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>Gracias. Puedes tener esta pulsera de la amistad. Será agradable tener compañía en la clase de los inteligentes. Normalmente tengo que sentarme sola.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Te veré allí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¡Oh, me encanta leer!~ ¡Libros, manuales, esquemas, cualquier cosa!</DialogueText>
+      <JumpNode>31</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Oye...~ eh... ~no te preocupes por eso, Penny. Puedo leerlo muy bien.</DialogueText>
+      <NPC>Ozzy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Veamos aquí.~ Escaneando el documento...~ analizando. ¡Oh, Dios mío! ¡Hay algunos matices nefastos en esta carta!</DialogueText>
+      <JumpNode>31</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>Lo siento. No pude evitar notar que tienes algo de contrabando contigo. Me temo que tendré que confiscártelo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Contrabando?</OptionText>
+          <DestinationID>42</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cómo supiste eso?</OptionText>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Tienes permiso para confiscarlo?</OptionText>
+          <DestinationID>44</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Sí. Ese objeto en tu bolsillo no está permitido en esta escuela. Lo siento. Tendrás que ir a la sala de estudio después del almuerzo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo supiste eso?</OptionText>
+          <DestinationID>43</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Tienes permiso para confiscarlo?</OptionText>
+          <DestinationID>44</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>¿Qué?~ Yo solo... no sé cómo. Hazme esto fácil, por favor, y entrégamelo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Tienes permiso para confiscarlo?</OptionText>
+          <DestinationID>44</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>Por supuesto.~ Mi mami es la directora. Ella quiere mantener la escuela segura.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>25</DestinationID>
+          <FunctionCall>TakeContraband</FunctionCall>
+          <SetFlag>ForceToStudyHall</SetFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>CALIBRANDO...~*hl*PODER INSUFICIENTE DE LA FUENTE PARA ESTABLECER ENLACE.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Poner la batería en el control remoto.)</OptionText>
+          <DestinationID>51</DestinationID>
+          <ItemToUse>Battery</ItemToUse>
+          <FunctionCall>UseBattery</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>PennyFreedNugget</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Alejarse de Penny.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Comando recibido.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PennyFreeNugget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>¡Oh! Penny, por favor no hagas-</DialogueText>
+      <NPC>Principal</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ShootLaserNugget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>*b*¡PENNY!*be*</DialogueText>
+      <NPC>Principal</NPC>
+      <JumpNode>54</JumpNode>
+      <FunctionCall>SetCameraTarget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>54</NodeID>
+      <DialogueText>Lo siento...~ Yo-~ No sé qué me pasó.</DialogueText>
+      <JumpNode>55</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>Creo que alguien está...~ metiéndose debajo de tu piel.~ ¡Sigue buscando ese dispositivo especial!</DialogueText>
+      <JumpNode>57</JumpNode>
+      <NPC>Principal</NPC>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>57</NodeID>
+      <DialogueText>Sí-~ sí, mami. Estoy casi lista para encontrarlo.</DialogueText>
+      <JumpNode>58</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>58</NodeID>
+      <DialogueText>Ummm...~ ¿todavía estoy bajando de las pastillas o esa niña acaba de disparar láseres por los ojos?</DialogueText>
+      <JumpNode>59</JumpNode>
+      <NPC>Teacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>59</NodeID>
+      <DialogueText>Probablemente ambos.</DialogueText>
+      <JumpNode>60</JumpNode>
+      <NPC>Cindy</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>Mi hija está trabajando en algunas cosas en este momento.~ Te aseguro que no causará más problemas hoy.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>61</ResolutionID>
+      <NPC>Principal</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>Lo siento. No sé qué me pasa hoy. Estoy seguro de que aún podemos ser amigos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Aquí está la esperanza.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>¡Lo encontré!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToPlayerRemote</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>71</NodeID>
+      <DialogueText>¡Este niño lo tiene!</DialogueText>
+      <JumpNode>72</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>72</NodeID>
+      <DialogueText>¡Excelente trabajo, Penny!~ Por favor, llévalo adentro. Margaret lo vigilará hasta que suene la campana.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Principal</NPC>
+      <FunctionCall>ForceDownstairs</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>75</NodeID>
+      <DialogueText>Mami...~ Creo que la Sra. Applegate dejó caer el dispositivo especial por un desagüe o algo así.</DialogueText>
+      <JumpNode>76</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>76</NodeID>
+      <DialogueText>Está bien entonces.~ No es nada de qué preocuparse.~ Mientras nadie más lo tenga, todo es maravilloso.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Principal</NPC>
+      <ResolutionID>77</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>77</NodeID>
+      <DialogueText>Es una buena cosa que nadie va a encontrar ese control remoto. Alguien podría haber tenido problemas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí. Buena cosa.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Muere, horrible criatura!~ ¡No permitiré que les hagas daño a estos niños!</DialogueText>
+      <JumpNode>1</JumpNode>   
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Realmente espero que gane.~ Parece un buen conserje. Sé que esa es una barra baja considerando a nuestro conserje, pero entiendes lo que quiero decir.</DialogueText>
+      <NPC>Lily</NPC>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Está bien, Penny!~ Escanea tu ojo. ¡Vamos a bajar y a salvar a esos niños!</DialogueText>
+      <NPC>Billy</NPC>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Está bien...~ aquí vamos.</DialogueText>
+      <NPC>Penny</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PennyScanEye</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Bueno...~ aquí va todo.~ Vamos a hacer esto.</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Vamos!</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PlayerGetInElevatorLair</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>    
+  </Nodes>
+</Dialoguer>

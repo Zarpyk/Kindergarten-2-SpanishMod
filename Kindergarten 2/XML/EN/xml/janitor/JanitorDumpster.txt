@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Finally!~ You had me worried kid. No way I'd be able to move all these poor corpses by myself!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yeah. This is great.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>You did bring the body right?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <ItemToUse>StevieBody</ItemToUse>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Oh...I forgot.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Good. Now we just need to toss them into the dumpster and this is all over!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good.</OptionText>
+          <FunctionCall>WalkToDumpster</FunctionCall>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>You forgot?!~ You amateur!~ Looks like I'm going to forget not to kill flaky little kids who don't know how to finish a job!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Please don't forget.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>*hl*Then go back to the closet and get me that body!*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>12</ResolutionID>
+          <FunctionCall>SendBackToPlayground</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>You got that body now, right?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <ItemToUse>StevieBody</ItemToUse>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nope.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>What the--?~ It's locked! Who locks a dumpster?! We gotta get it open somehow! We need--</DialogueText>
+      <JumpNode>16</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Hehehehehehe!!</DialogueText>
+      <NPC>Agnes</NPC>
+      <JumpNode>17</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Hey kid.~ Did you hear that or are the voices in my head getting a little too vocal again?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I heard it.</OptionText>
+          <DestinationID>18</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Huh...~I think someone is in there.~ We got to get 'em to come out. Any ideas?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll think of something.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>19</ResolutionID>
+          <FunctionCall>MoveBackFromDumpster</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>I think someone is in there.~ We got to get 'em to come out.~ Any ideas?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll think of something.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Well shoot.~ We didn't get this cleaned up. Looks like I'm going back to prison.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What about me?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Yeah...~a kid like you would never survive in the pen.~ I best make this quick.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Make what quick?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerDumpster</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>She's got us beat kid.~ Without that goo, I'm going back to prison.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Why don't you just kill her too?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Would that be so bad?</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'm gonna find some goo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Spoken like a dumb kid who's never tangled with a dumpster woman before. That's a mistake you only make once.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm gonna find some goo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>For me? Yes.~ For children? No.~ For you? Also yes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm gonna find some goo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Hehe...~well done kid! Looks like we're gonna get away with this!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm thrilled.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>RingBellDumpster</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>There's the bell! Looks like it's time for you to go home my little apprentice. Go ahead and leave the body here.~ I'll do the rest.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Leave the body.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>StevieBody</ItemToUse>
+          <FunctionCall>FadeToEnd</FunctionCall>
+          <SetFlag>CompletedJanitor</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>Hey kid!~ Come in kid!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What now?</OptionText>
+          <DestinationID>501</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>501</NodeID>
+      <DialogueText>We're almost home free!~ I just need a little help with some of the erm...~heavy lifting.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You want me to carry out Bob's body?</OptionText>
+          <DestinationID>502</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>502</NodeID>
+      <DialogueText>Oh no!~ He's much too heavy for a small worthless child like you. I need you to carry out that power hungry hall monitor I tenderized this morning.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's not really my specialty.</OptionText>
+          <DestinationID>503</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>503</NodeID>
+      <DialogueText>So you want to carry Bob instead? Fine by me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't want to carry anyone.</OptionText>
+          <DestinationID>504</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No. I'll take Stevie.</OptionText>
+          <DestinationID>505</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>504</NodeID>
+      <DialogueText>This generation...~so entitled. Ask them to move one body and they act like it's the end of the world.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine. I'll take Stevie.</OptionText>
+          <DestinationID>505</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>505</NodeID>
+      <DialogueText>Good!~ *hl*I left him in the weapons closet. Meet me out by the dumpster behind the playground*hle* and we'll toss 'em in together!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>If I must...</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>600</NodeID>
+      <DialogueText>Hehehe...~do you really want to bother me right now?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No I do not.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

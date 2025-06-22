@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is a statue of a giant nugget. There's room in the front for some kind of offering.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Leave a flower.)</OptionText>
+          <ItemToUse>GreenFlower</ItemToUse>
+          <FunctionCall>LeaveGreenFlower</FunctionCall>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave a flower.)</OptionText>
+          <ItemToUse>YellowFlower</ItemToUse>
+          <FunctionCall>LeaveYellowFlower</FunctionCall>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>This is a skeleton of...~something. It doesn't look human, but it does have a wallet.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take some money.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetNuggetCaveMoney</FunctionCall>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Weird.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>This is a severed leg of some sort. Nugget doesn't seem to want it in the cave.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the leg.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>TakeLeg</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave the leg.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>This is the pile of nuggets that broke my fall. Some theorize that it should be larger, but apparently it's fine.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Leave the nuggets.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>This is a skeleton of...~something. It doesn't look human.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Weird.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>Nugget's friend remembers that Nugget likes flowers. Nugget is thankful.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>You're welcome.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockAltarAchievement</FunctionCall>
+          <ResolutionID>7</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>666</NodeID>
+      <DialogueText>Woah there, kid!~ Didn't you hear what I said?~ There's a big scary monster in there. *hl*We have to find someone who can fight it.*hle*</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh yeah.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>667</NodeID>
+      <NPC>Lily</NPC>
+      <DialogueText>Before we go in there, we need to snap Penny out of whatever she's going through.~ *hl*Was there something that she mentioned that might bring her back?*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll think of something.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

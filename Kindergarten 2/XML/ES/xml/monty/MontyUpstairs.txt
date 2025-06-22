@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Hola, chiquillo! ¿Qué demonios te pasa?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué estás haciendo aquí arriba?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Tú te llevaste mi llave del ascensor!~ ¡No puedo bajar a almorzar sin ella! ¿Dónde está?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>El conserje todavía la tiene.</OptionText>
+          <DestinationID>2</DestinationID>
+          <FunctionCall>OpenCannon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Está bien! ¡Eso es todo! ¡He tenido suficiente de ti y de él trabajando juntos! ¡Esto se acaba ahora!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿De verdad?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FireCannon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

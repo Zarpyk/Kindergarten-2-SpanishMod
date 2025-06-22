@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 749122ca687073649af3faaf57ce2dd5, type: 3}
+  m_Name: MonstermonLocations
+  m_EditorClassIdentifier: 
+  m_languageKeys:
+  - Default
+  m_languageValues: 01000000
+  m_fieldKeys: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b000000300000002d0000002e0000002f00000032000000310000002c000000
+  m_fieldValues:
+  - m_fieldName: Slurpolotl
+    m_keys: 00000000
+    m_values:
+    - Hiding under your bed.
+  - m_fieldName: Bung Deetle
+    m_keys: 00000000
+    m_values:
+    - Hiding in the back of Booboo's crate.
+  - m_fieldName: Stoic Seagull
+    m_keys: 00000000
+    m_values:
+    - Get dropped by the bird at recess.
+  - m_fieldName: Bloaty
+    m_keys: 00000000
+    m_values:
+    - Given for starting Carla's mission while in possession of her vent map.
+  - m_fieldName: Disappointed Snake
+    m_keys: 00000000
+    m_values:
+    - Obtained when completing Helicopter Parenting without tell Monty about his
+      impending betrayal.
+  - m_fieldName: Petty Piranha
+    m_keys: 00000000
+    m_values:
+    - Attempt to flush Guppy.
+  - m_fieldName: Carnivorous Nimbus
+    m_keys: 00000000
+    m_values:
+    - Hidden on the scaffolding near the helicopter pad.
+  - m_fieldName: Dumb Fish
+    m_keys: 00000000
+    m_values:
+    - Try to put Guppy back in his bowl.
+  - m_fieldName: Hard Boogar
+    m_keys: 00000000
+    m_values:
+    - Hiding under a desk in Mr. Scippio's classroom.
+  - m_fieldName: Ultralodon
+    m_keys: 00000000
+    m_values:
+    - Get eaten by Linda.
+  - m_fieldName: Birb
+    m_keys: 00000000
+    m_values:
+    - On the ledge overlooking the front of the school.
+  - m_fieldName: Suspicious Lion
+    m_keys: 00000000
+    m_values:
+    - Obtained when completing Carla's mission.
+  - m_fieldName: Balloon Boar
+    m_keys: 00000000
+    m_values:
+    - Found on the Nurse's body after she's been attacked by Nugget.
+  - m_fieldName: Bullzerker
+    m_keys: 00000000
+    m_values:
+    - Get sliced in half by Kevin.
+  - m_fieldName: Man On Fire
+    m_keys: 00000000
+    m_values:
+    - Get burned to death by Ms. Lovelett.
+  - m_fieldName: Cigaretmon
+    m_keys: 00000000
+    m_values:
+    - Hidden behind the no smoking sign in the nurse's office.
+  - m_fieldName: Cyclops Duckling
+    m_keys: 00000000
+    m_values:
+    - Revealed when solving the duck puzzle in the cafeteria.
+  - m_fieldName: Hearty Heart
+    m_keys: 00000000
+    m_values:
+    - Interrupt Ms. Applegate's phone call with Bob three times.
+  - m_fieldName: Jawless Dog
+    m_keys: 00000000
+    m_values:
+    - Get bitten by Booboo.
+  - m_fieldName: Chair of Spikes
+    m_keys: 00000000
+    m_values:
+    - Fall down a trap door.
+  - m_fieldName: Frowny Frog
+    m_keys: 00000000
+    m_values:
+    - Obtained when completing Janitor's mission
+  - m_fieldName: Mean Green Penguin
+    m_keys: 00000000
+    m_values:
+    - Behind the tables in the reversion chamber room.
+  - m_fieldName: Tree Froggy
+    m_keys: 00000000
+    m_values:
+    - Get kicked into a wall by Monty for pushing him at recess.
+  - m_fieldName: Thikorita
+    m_keys: 00000000
+    m_values:
+    - Complete the RC car puzzle in the janitor's closet.
+  - m_fieldName: Shrewd Goblin
+    m_keys: 00000000
+    m_values:
+    - Revealed after telling Monty he is going to be betrayed by Felix.
+  - m_fieldName: Literally Grass
+    m_keys: 00000000
+    m_values:
+    - Run yourself over with the lawnmower.
+  - m_fieldName: Ohfaka Tornado
+    m_keys: 00000000
+    m_values:
+    - Obtained when completing teacher's mission
+  - m_fieldName: Monstrous Flytrap
+    m_keys: 00000000
+    m_values:
+    - Obtained when completing emmy's mission
+  - m_fieldName: Chill Stump
+    m_keys: 00000000
+    m_values:
+    - Hidden in the tree on the playground.
+  - m_fieldName: Mystical Tomato
+    m_keys: 00000000
+    m_values:
+    - Give Mr. Scippio some ketchup to drink during lunch.
+  - m_fieldName: Meatball
+    m_keys: 00000000
+    m_values:
+    - Complete Nugget-o and Lily-et.
+  - m_fieldName: Tricerabottom
+    m_keys: 00000000
+    m_values:
+    - Get hit by a meteor by hanging out on the roof too long after being dropped
+      off by Birdy.
+  - m_fieldName: Brain Dragon
+    m_keys: 00000000
+    m_values:
+    - Get a perfect score while tutoring Cindy's daughter.
+  - m_fieldName: Sword Pig
+    m_keys: 00000000
+    m_values:
+    - Obtained when completing janitor's mission
+  - m_fieldName: Tough Bunny
+    m_keys: 00000000
+    m_values:
+    - Get attacked by a bunny.
+  - m_fieldName: Wonder Bird
+    m_keys: 00000000
+    m_values:
+    - Feed Linda her gator nugget instead of the duck at the end of Nugget-o and
+      Lily-et.
+  - m_fieldName: Golden Dewdrop
+    m_keys: 00000000
+    m_values:
+    - Return the trophy to the trophy case in the hallway.
+  - m_fieldName: Forbidden Book
+    m_keys: 00000000
+    m_values:
+    - Hidden in the dark bookcase in the library.
+  - m_fieldName: Pot of Grease
+    m_keys: 00000000
+    m_values:
+    - Give Ms. Applegate a pill during lunch.
+  - m_fieldName: Mr. Nice Guy
+    m_keys: 00000000
+    m_values:
+    - Obtained when completing alice's mission
+  - m_fieldName: Egg Head
+    m_keys: 00000000
+    m_values:
+    - Given by the real Principal for saying you like 'OOG.'
+  - m_fieldName: Snuggly Bear
+    m_keys: 00000000
+    m_values:
+    - Give Nugget a nugget after he breaks his legs.
+  - m_fieldName: Froyo Ghost
+    m_keys: 00000000
+    m_values:
+    - Revealed when entering the code from the purple page on the roof.
+  - m_fieldName: Dank Magician
+    m_keys: 00000000
+    m_values:
+    - Summoned by the Wizard when trying to recruit her for a play.
+  - m_fieldName: Sock Spirit
+    m_keys: 00000000
+    m_values:
+    - Use the key on the roof to open the lost and found.
+  - m_fieldName: Caterpillar Dog
+    m_keys: 00000000
+    m_values:
+    - Found on Booboo after he goes down the slide.
+  - m_fieldName: Mysterious Package
+    m_keys: 00000000
+    m_values:
+    - Check the box the janitor delivers during Felix's mission.
+  - m_fieldName: Killer Eye
+    m_keys: 00000000
+    m_values:
+    - Inspect the defeated robot in the classroom.
+  - m_fieldName: Mole Mole
+    m_keys: 00000000
+    m_values:
+    - Shoot the mole off Regis's face during final mission.
+  - m_fieldName: Evil Thwarter
+    m_keys: 00000000
+    m_values:
+    - Beat the game.
+  m_nextLanguageID: 2
+  m_nextFieldID: 51

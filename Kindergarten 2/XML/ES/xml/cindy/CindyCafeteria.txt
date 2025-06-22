@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡No puedo creer que ninguno de los chicos nuevos quiera sentarse conmigo!~ ¡Todavía estoy atrapada con estos dos perdedores!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Deberías comprar una hamburguesa.</OptionText>
+          <DestinationID>2</DestinationID>
+          <Flag>NuggetBurgerMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Buena suerte con eso, Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Tienes mucho descaro viniendo a hablarme. Ese chico no tenía idea de quién era yo. Fue tan embarazoso. Puedes olvidarte de conseguir mi flor.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ups.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡De ninguna manera!~ ¡Estoy bastante segura de que las hamburguesas no son veganas!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Vamos, Félix!~ ¡Dijiste que podías conseguirme cualquier cosa que quisiera!~ ¿Dónde está mi comida?!</DialogueText>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Estoy en eso!~ ¡Paciencia!~ ¡Recibirás tu tontería vegana cuando yo diga que la tendrás!</DialogueText>
+      <JumpNode>12</JumpNode>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Los chicos son tan estúpidos.~ ¿Qué se necesita para conseguir algo vegano por aquí?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>*(Se aleja.)*</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡Finalmente!~ Vaya, Félix...~ ni siquiera lo estás intentando.</DialogueText>
+      <JumpNode>14</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¿Qué demonios?!~ ¡Se suponía que me lo ibas a dar para que se lo diera a ella!~ ¿Qué te pasa?</DialogueText>
+      <JumpNode>15</JumpNode>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡Al menos él me está alimentando!~ Aquí, chaval.~ Puedes tener una carta de monstermon por ser tan útil, a diferencia de este mantenido adinerado.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa con la flor?</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Eso está reservado especialmente para mi novio.~ Tal vez podríamos intentarlo de nuevo mañana o algo así.~ Ahora, si me disculpan, chicos, tengo que comer esta cosa horrible.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós, Cindy.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>¡Tomen esto, chicos estúpidos!~ ¡Cómo se atreven a arruinarme el cabello!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>*(Se aleja.)*</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>501</NodeID>
+      <DialogueText>¡Oficialmente odio esta nueva escuela! ¡Todo es horrible aquí! ¡Solo mira mi cara!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es bastante horrible.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

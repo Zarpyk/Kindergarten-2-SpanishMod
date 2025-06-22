@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This is the door to the science classroom. It's locked.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Unlock the door.)</OptionText>
+          <ItemToUse>ScienceKey</ItemToUse>
+          <FunctionCall>UnlockScience</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>This is the door to the principal's office. It's locked.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>This locker is locked.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>This orange locker is unlocked. There is an inhaler inside. It must be Ozzy's.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the inhaler.)</OptionText>
+          <FunctionCall>GetSecondInhaler</FunctionCall>
+          <SetFlag>TookSecondInhaler</SetFlag>
+          <ResolutionID>12</ResolutionID>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>This locker is unlocked, but there is nothing useful inside.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>I really don't want to risk falling down the stairs in the dark.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Hey man, your pass is for upstairs only!~ No wandering about the school, okay?</DialogueText>
+      <NPC>HallMonitor</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>This vending machine is filled with school supplies. Only the scissors look useful.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Use coupon on pass book.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <ItemToUse>VendingMachineCoupon</ItemToUse>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>CouponPassbook</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Buy pass book.)</OptionText>
+          <MoneyLock>6</MoneyLock>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetPassbook</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Use coupon on scissors.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <ItemToUse>VendingMachineCoupon</ItemToUse>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>CouponScissors</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Buy scissors.)</OptionText>
+          <MoneyLock>1</MoneyLock>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GetScissors</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Don't buy anything.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>What are you doing?!~ Now is not the time to buy school supplies!</DialogueText>
+      <NPC>Lily</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh yeah.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>What are you doing?!~ Now is not the time to buy school supplies!</DialogueText>
+      <NPC>Jerome</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh yeah.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>It seems that the upstairs elevator is only active between classes. I can't use it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How annoying.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

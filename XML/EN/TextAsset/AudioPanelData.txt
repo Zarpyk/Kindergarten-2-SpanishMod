@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<VideoPanelData>
-  <VideoTitle>Video</VideoTitle>
-  <ResolutionText>Resolution</ResolutionText>
-  <FullscreenText>Fullscreen</FullscreenText>
-  <ApplyText>Apply</ApplyText>
-  <BackText>Back</BackText>
-</VideoPanelData>

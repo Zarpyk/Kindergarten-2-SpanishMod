@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Nugget se está...~sintiendo bastante mareado.~ Nugget extraña su brazo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Necesitamos que caves un agujero.</OptionText>
+          <DestinationID>50</DestinationID>
+          <Flag>FelixStartedLunch</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No quiero hablar más con Nugget.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Hola, extraña señora del almuerzo.</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Hola, extraño niño.</DialogueText>
+      <JumpNode>3</JumpNode>
+      <NPC>LunchLady</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Nugget gustaría 100 nuggets, por favor.</DialogueText>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Hoy no es el día de los nuggets.</DialogueText>
+      <JumpNode>5</JumpNode>
+      <NPC>LunchLady</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Cada día es el día de los nuggets.</DialogueText>
+      <JumpNode>6</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>No, niño. Hoy es el día de la hamburguesa. Puedes tener una hamburguesa.</DialogueText>
+      <JumpNode>7</JumpNode>
+      <NPC>LunchLady</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Pero...~pero...~ ¡El nombre de Nugget no es Hamburguesa! ¡Es Nugget! *hl* ¡Nugget ve una caja llena de nuggets en la estantería detrás de ti!*hle*</DialogueText>
+      <JumpNode>8</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Tendrás una hamburguesa, o te morirás de hambre. Haz tu elección, extraño niño.</DialogueText>
+      <JumpNode>9</JumpNode>
+      <NPC>LunchLady</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Nugget hará--!!~ Nugget acaba de tener una idea...~ Nugget TENDRÁ una hamburguesa.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>NuggetGetBurger</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Nugget envía sus agradecimientos a la señora del almuerzo.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToTable</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Ah!~ ¡El amigo de Nugget está aquí! ¡Nugget necesita ayuda para conseguir nuggets para la nueva Cueva de Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo puedo ayudar?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Volveré enseguida.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>¡Hay una caja de nuggets detrás del mostrador de la señora del almuerzo! ¡Ella debe ser removida!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo hacemos eso?</OptionText>
+          <DestinationID>22</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Nugget notó que solo quedan dos hamburguesas asquerosas. *hl* ¡Una vez que las hamburguesas se acaben, la señora del almuerzo se irá a conseguir más! ¡Entonces el amigo de Nugget podrá robar la caja de nuggets!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Entonces necesito comprar esas hamburguesas?</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>*hl* El amigo de Nugget puede hacerlo o algunos de los otros compañeros de clase de Nugget.*hle* Nugget no es exigente.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>NuggetBurgerMission</SetFlag>
+          <ResolutionID>24</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Nugget necesita que las asquerosas hamburguesas desaparezcan. Entonces el amigo de Nugget podrá robar los sabrosos nuggets detrás del mostrador.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Entendido.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Nugget ve que una hamburguesa asquerosa ha sido removida. ¡Solo queda una hamburguesa más y la extraña señora del almuerzo se irá!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>¡La extraña señora del almuerzo se ha ido!~ ¡Rápido! ¡Trae los nuggets a Nugget!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué no los consigues tú?</OptionText>
+          <DestinationID>27</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Uhhhhhhhhhhhhhh...~</DialogueText>
+      <JumpNode>28</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>Nugget no puede pensar en una razón.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>De todos modos, los conseguiré.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>Está bien. Si Nugget quiere que algo se haga bien, Nugget lo hará él mismo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ese es el espíritu.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>NuggetGetNuggetsFromCounter</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¿El amigo de Nugget le trajo los nuggets a Nugget para la nueva cueva de nuggets?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <ItemToUse>NuggetBox</ItemToUse>
+          <DestinationID>32</DestinationID>
+          <FunctionCall>UseNuggetBox</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>¡Nugget desea que te apures! ¡La extraña señora del almuerzo podría regresar en cualquier momento!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>30</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>¡Excelente! ¡Nugget está muy complacido!~ La nueva cueva de nuggets será--</DialogueText>
+      <JumpNode>33</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>*¡SUSPIRO!*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa?</OptionText>
+          <DestinationID>34</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>34</NodeID>
+      <DialogueText>¡Los nuggets de Nugget son...~son...~¡FRÍOS!~ ¡Los nuggets de Nugget no pueden estar fríos!~ ¡Los nuggets de Nugget deberían estar al menos un poco tibios!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Podemos--</OptionText>
+          <DestinationID>35</DestinationID>
+          <FunctionCall>RunToWall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>¡NOOOOOOOOO!!!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>36</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Nuggets. Fríos. Nuggets. Fríos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nugget.</OptionText>
+          <DestinationID>37</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>37</NodeID>
+      <DialogueText>Fríos. Fríos como el pequeño corazón muerto de Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Um... Nugget?</OptionText>
+          <DestinationID>38</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>38</NodeID>
+      <DialogueText>Nuggets fríos. Nugget no puede pensar en nada peor. Fríos. Nuggets.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡NUGGET!</OptionText>
+          <DestinationID>39</DestinationID>
+          <FunctionCall>StopHeadBang</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>39</NodeID>
+      <DialogueText>*b*¿¡QUÉ?!*be*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vamos a encontrar un microondas.</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Un micro--~ Sí, por supuesto. Nugget no había pensado en eso. Lleva los nuggets fríos. Tráelos de vuelta calientes. Nugget estará aquí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Haciendo qué?</OptionText>
+          <DestinationID>41</DestinationID>
+          <FunctionCall>GetNuggetBoxBack</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>Dándose golpes contra la pared.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>42</ResolutionID>
+          <FunctionCall>ResumeHeadBanging</FunctionCall>
+          <SetFlag>NuggetMicrowaveNuggets</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>Fríos.~ Nuggets.~ Fríos.~ Nuggets.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He calentado los nuggets en el microondas.</OptionText>
+          <DestinationID>43</DestinationID>
+          <UsesAction>true</UsesAction>
+          <ItemToUse>NuggetBox</ItemToUse>
+          <Flag>MicrowavedNuggets</Flag>
+          <SetFlag>NuggetCompletedLunchTime</SetFlag>
+          <FunctionCall>GiveWarmNuggets</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja a Nugget solo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>Estos nuggets...~estos nuggets están tibios. Nugget está en paz ahora.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es bueno.</OptionText>
+          <DestinationID>44</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>¡Con estos nuggets tibios, Nugget está listo para completar su nueva cueva de nuggets!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¡Hurra!</OptionText>
+          <DestinationID>45</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>¡Ven a ver a Nugget en el recreo! ¡Nugget te mostrará las maravillas de la Cueva de Nuggets!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No puedo esperar.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Nugget gustaría cavar un agujero, *hl* pero Nugget está perdiendo su pala... y su brazo.*hle*</DialogueText>
+      <JumpNode>51</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Si pudiéramos proporcionarte esas...~cosas, ¿cavarías un agujero para nosotros?</DialogueText>
+      <JumpNode>52</JumpNode>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>¿Qué hay para Nugget?</DialogueText>
+      <JumpNode>53</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>Dices "Nugget" mucho.~ Ummm...~ ¿qué pasaría si te llevara a la... errr... fábrica de nuggets de mi familia?</DialogueText>
+      <JumpNode>54</JumpNode>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>54</NodeID>
+      <DialogueText>Nu-~ nug-~ nugget--</DialogueText>
+      <JumpNode>55</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>55</NodeID>
+      <DialogueText>*b*¿¡FÁBRICA DE NUGGETS?!?!*be*</DialogueText>
+      <JumpNode>56</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>56</NodeID>
+      <DialogueText>Oh, querido...</DialogueText>
+      <JumpNode>57</JumpNode>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>57</NodeID>
+      <DialogueText>¡Nugget cavará felizmente un agujero por un viaje a la fábrica de nuggets! *hl* ¡Trae a Nugget una pala y un brazo!*hle* ¡Nugget cavará un agujero tan rápido como un rayo y tan profundo como el infierno!</DialogueText>
+      <JumpNode>58</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>58</NodeID>
+      <DialogueText>Bien...~*hl* bueno, podemos conseguir una pala en el armario de limpieza.*hle*~ No estoy seguro de qué podemos hacer con tu brazo, pero tal vez podamos resolver eso en el recreo.</DialogueText>
+      <NPC>Felix</NPC>
+      <JumpNode>59</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>59</NodeID>
+      <DialogueText>Nugget espera ansiosamente tu regreso.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>FelixWalkToPrivateConversation</FunctionCall>
+      <ResolutionID>60</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>Nugget espera ansiosamente tu regreso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Correcto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>Este es un buen lugar para que Nugget muera. Sin Nugget y sangrando, espero al gran Nugget en el cielo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He calentado los nuggets en el microondas.</OptionText>
+          <DestinationID>71</DestinationID>
+          <ItemToUse>NuggetBox</ItemToUse>
+          <Flag>MicrowavedNuggets</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja a Nugget morir.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>71</NodeID>
+      <DialogueText>Entierra a Nugget en ellos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>72</DestinationID>
+          <FunctionCall>BuryNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>72</NodeID>
+      <DialogueText>Gracias. Si Nugget debe morir, es agradable morir con nuggets.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fue un placer conocer a Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>80</NodeID>
+      <DialogueText>*Suspiro.*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa, Nugget?</OptionText>
+          <DestinationID>81</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Aléjate de Nugget.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>81</NodeID>
+      <DialogueText>Nugget esperaba cavar una nueva Cueva de Nuggets, pero Nugget no tiene manera de cavar una.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿¡Esto ayudará!?</OptionText>
+          <DestinationID>82</DestinationID>
+          <ItemToUse>JackHammer</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <SetFlag>BillyGaveNuggetDiggingEquipment</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Eso es duro, amigo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>82</NodeID>
+      <DialogueText>¿Esto ayudará?~ ¿¡Esto ayudará?!~ Nugget puede cavar un millón de Cuevas de Nuggets con esto.~ ¡Nugget puede cavar directamente a través del centro de la tierra!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Por favor, no hagas eso.</OptionText>
+          <DestinationID>83</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>83</NodeID>
+      <DialogueText>El amigo de Nugget tiene razón.~ Sin tierra, no hay nuggets.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me alegra que estemos de acuerdo en eso.</OptionText>
+          <DestinationID>84</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>84</NodeID>
+      <DialogueText>Nugget debe apresurarse. Hay mucho por hacer.~ Por favor, ven a visitar a Nugget en su nueva Cueva de Nuggets en el recreo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo haré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>100</ResolutionID>
+          <FunctionCall>DigHoleInCafeteria</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>Los nuggets de Nugget están tibios y suaves.~ Perfectos para una nueva Cueva de Nuggets.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja de hablar con Nugget.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>¡Nugget ganará la pelea de comida!~ ¡Nugget es una fuerza a tener en cuenta!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es genial, Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>501</NodeID>
+      <DialogueText>Nugget siente que ganó la pelea de comida.~ Nugget es victorioso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es genial, Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

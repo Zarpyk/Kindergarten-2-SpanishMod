@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>*Suspiro*~ Mi vida está arruinada...~ En realidad, no puede empeorar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Entonces qué estamos haciendo aquí?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Intentando no parecerme a mí en 30 años. Ve a correr vueltas o rebota esa pelota naranja o algo así.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que podemos hacer eso.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Voy a ir a pararme allá y tratar de evitar que la habitación gire.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No esperaría menos.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>20</ResolutionID>
+          <BlockFlag>NuggetCompletedRecess</BlockFlag>
+          <FunctionCall>WalkToBleachers</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No esperaría menos.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>NuggetCompletedRecess</Flag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Supongo que podría serlo si Nugget fuera mi hijo en lugar de solo mi estudiante.</DialogueText>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>¡Nugget está ofendido por los comentarios de la maestra vestida de manera escasa!</DialogueText>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¿Sí?~ ¡A la maestra no le importa!</DialogueText>
+      <JumpNode>6</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>¡Hola, niños!~ ¡Cualquiera que le pegue a Nugget con una pelota de goma recibe una estrella dorada!</DialogueText>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>¡Nugget quiere ver a los otros niños intentarlo!~ ¡Nugget no será superado!</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartDodgeball</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Bueno, esto debería ser interesante.~ ¡Uno de ustedes apúrese y golpéelo! Voy a mirar desde las gradas.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToBleachers</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Maestra! ¡Maestra! ¡Nugget quiere jugar a la pelota de goma!</DialogueText>
+      <JumpNode>11</JumpNode>
+      <NPC>Nugget</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Claro. Lo que sea que te haga feliz, Nugget.~ Solo espero que alguien pueda sacarte un poco de sentido.</DialogueText>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Ve a correr vueltas o lanza una pelota o algo así.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¡Hey, pequeño comadreja! ¡Estás obligado por ley a jugar!~ ¡Ahora ve a jugar!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pero tengo que ir al baño.</OptionText>
+          <DestinationID>31</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>¡Entonces orina en la fuente de agua! ¡No estás saliendo de este gimnasio!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Asqueroso.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>20</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>¡OOF!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToJeromeAndCarla</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>¡Okay, ¿quién lo hizo?! ¿Quién lanzó esa pelota?!</DialogueText>
+      <JumpNode>42</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>¡Fue este chico Jerome!~ ¡Intentó quitarme la pelota y cuando traté de recuperarla, simplemente la lanzó en tu dirección!</DialogueText>
+      <NPC>Carla</NPC>
+      <JumpNode>43</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>¡¿Qué?!~ ¡Eso es una mentira! ¡Este niño vino y la ayudó a quitármela de las manos! ¡Salió volando cuando me hicieron soltarla!</DialogueText>
+      <NPC>Jerome</NPC>
+      <JumpNode>44</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>¡Ambos cállense!~ ¿Qué fue lo que realmente pasó?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Carla está diciendo la verdad.</OptionText>
+          <DestinationID>45</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>Eso es lo que pensé. Jerome...~ ¿sabes lo mal que me duele la cabeza en este momento?</DialogueText>
+      <JumpNode>46</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>46</NodeID>
+      <DialogueText>No más que la cinturilla de esos pantalones cortos, supongo.</DialogueText>
+      <NPC>Jerome</NPC>
+      <JumpNode>47</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>47</NodeID>
+      <DialogueText>¡Okay, ahora estoy enojado!</DialogueText>
+      <JumpNode>48</JumpNode>
+      <FunctionCall>GoHitJerome</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>48</NodeID>
+      <DialogueText>¡Ay! ¡Hey! ¡Para!</DialogueText>
+      <JumpNode>49</JumpNode>
+      <NPC>Jerome</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>49</NodeID>
+      <DialogueText>¡A la mierda con esto! ¡Me voy!</DialogueText>
+      <JumpNode>50</JumpNode>
+      <FunctionCall>JeromeLeave</FunctionCall>
+      <NPC>Jerome</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>¡Vuelve aquí!~ ¡Esto me está haciendo sentir mejor!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>TeacherLeaveGym</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>¡Oh, gracias a Dios! El día finalmente ha terminado. ¡Fuera de mi vista! ¡Todos ustedes! ¡AHORA!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a casa.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToEndTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>*Jadeo* Jadeo* *Jadeo*</DialogueText>
+      <JumpNode>102</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>*b*¡TODOS A CASA! *be*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a casa.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToEndTime</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>150</NodeID>
+      <DialogueText>Tú--~ se suponía que debías estar arriba con Monty haciéndome pastillas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No pude pagar la cuota del laboratorio.</OptionText>
+          <DestinationID>151</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>151</NodeID>
+      <DialogueText>¡Esa no es excusa! ¡Las necesito!~ Solo--~ *suspiro.* Olvídalo. Solo ve a lanzar una pelota o algo así.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkToBleachers</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>155</NodeID>
+      <DialogueText>¡Bueno, ¿quién lo diría?!</DialogueText>
+      <NPC>Monty</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quién es?</OptionText>
+          <DestinationID>156</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>156</NodeID>
+      <DialogueText>¡Tú, idiota! ¡Se suponía que debías devolverme mi llave para que pudiéramos ir a clase de ciencias y hacer esas pastillas!</DialogueText>
+      <NPC>Monty</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh, sí.</OptionText>
+          <DestinationID>157</DestinationID>
+          <FunctionCall>OpenCannonGym</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>157</NodeID>
+      <DialogueText>"Oh, sí." ¿Sabes qué, niño? Estoy cansado de ti. Has desperdiciado suficiente de mi tiempo y dinero hoy.</DialogueText>
+      <NPC>Monty</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mi culpa.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FireCannon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

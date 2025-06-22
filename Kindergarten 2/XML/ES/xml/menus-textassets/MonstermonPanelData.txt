@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MonstermonPanelData>
+  <MonstermonTitle>Monstermon</MonstermonTitle>
+  <DeckText>Mi mazo</DeckText>
+  <BackText>Atrás</BackText>
+  <NewText>¡NUEVO!</NewText>
+  <DescriptionList>
+    <Description>
+      <Index>0</Index>
+      <Text>Viaja de galaxia en galaxia muy lentamente. Aún no ha salido de la que nació.</Text>
+      <Location>Después de desatornillar la silla de ruedas de Monty, regresa al patio de recreo durante la clase de gimnasia.</Location>
+    </Description>
+    <Description>
+      <Index>1</Index>
+      <Text>Hay una extraña satisfacción que viene con su eliminación.</Text>
+      <Location>Ubicado en el lado del edificio junto a la rampa para discapacitados.</Location>
+
+    </Description>
+    <Description>
+      <Index>2</Index>
+      <Text>Se convierte en un cubo normal cuando se cae.</Text>
+      <Location>En el carrito de limpieza del conserje en el armario del conserje.</Location>
+
+    </Description>
+    <Description>
+      <Index>3</Index>
+      <Text>Un gran pez blanco para aquellos que tienen problemas para atrapar ballenas.</Text>
+      <Location>Dado por Nugget por dar Tenders. Tenders es dado por Agnes por darle sus nuggets.</Location>
+
+    </Description>
+    <Description>
+      <Index>4</Index>
+      <Text>En la cima de la cima de la cadena alimentaria. Solo come megalodones.</Text>
+      <Location>Dado por el Dr. Danner en la clase de ciencias al mostrarle la pierna de la Cueva Nugget.</Location>
+
+    </Description>
+    <Description>
+      <Index>5</Index>
+      <Text>Se sabe que come aves y aeronaves. Se encuentran comúnmente sobre el Triángulo de las Bermudas.</Text>
+      <Location>Dado por Buggs por darle un refresco en el gimnasio.</Location>
+
+    </Description>
+    <Description>
+      <Index>6</Index>
+      <Text>Esta imagen fue tomada con una magnificación de 1000x.</Text>
+      <Location>Dado por el Dr. Danner al tomar una muestra de su pecera y examinarla bajo un microscopio.</Location>
+
+    </Description>
+    <Description>
+      <Index>7</Index>
+      <Text>No es una mano, pero se sabe que agarra a las personas, lo cual es raro porque el coral no se supone que haga eso.</Text>
+      <Location>Dado por Carla por vencerla en una batalla de Monstermon.</Location>
+
+    </Description>
+    <Description>
+      <Index>8</Index>
+      <Text>Fue criado por cangrejos y ha adoptado su estilo de vida.</Text>
+      <Location>Ubicado en el cubículo durante la hora de la mañana en el aula de la Sra. Applegate.</Location>
+
+    </Description>
+    <Description>
+      <Index>9</Index>
+      <Text>Construido en la playa durante la marea baja, se negó a morir cuando llegó el agua.</Text>
+      <Location>Ubicado en la cima de la pared de escalar durante el recreo.</Location>
+
+    </Description>
+    <Description>
+      <Index>10</Index>
+      <Text>¿Alguien quiere ayudarlo?</Text>
+      <Location>Dado por Monty por ayudarlo a hacer pastillas.</Location>
+
+    </Description>
+    <Description>
+      <Index>11</Index>
+      <Text>Sigue siendo más cómodo que la mayoría de las sillas en las escuelas.</Text>
+      <Location>Ubicado en el sofá del baño de chicas.</Location>
+
+    </Description>
+    <Description>
+      <Index>12</Index>
+      <Text>Hace daño al darle cáncer de pulmón a sus oponentes.</Text>
+      <Location>Dado por el monitor de pasillo por darle un encendedor durante el encierro.</Location>
+
+    </Description>
+    <Description>
+      <Index>13</Index>
+      <Text>Come grandes cantidades de tierra, como ese niño raro que todos conocemos.</Text>
+      <Location>Dado por Nugget por ayudarlo a ganar un juego de dodgeball.</Location>
+
+    </Description>
+    <Description>
+      <Index>14</Index>
+      <Text>Trabaja 60 horas a la semana y tiene un compañero de cuarto desordenado.</Text>
+      <Location>Dado por Ted por matar a Ozzy.</Location>
+
+    </Description>
+    <Description>
+      <Index>15</Index>
+      <Text>No es una raza especial de patito. Solo le picoteó el ojo un patito más grande.</Text>
+      <Location>Revelado después de resolver el rompecabezas del columpio.</Location>
+
+    </Description>
+    <Description>
+      <Index>16</Index>
+      <Text>No encaja con los zombis ni con los mutantes.</Text>
+      <Location>Dado por Nugget por vencerlo en una batalla de Monstermon.</Location>
+
+    </Description>
+    <Description>
+      <Index>17</Index>
+      <Text>Solía estar menos solo, pero su esposa se llevó a los niños cuando se fue.</Text>
+      <Location>Dado por el monitor de pasillo por darle a Smoky. Smoky es dado por Agnes por darle una hamburguesa.</Location>
+
+    </Description>
+    <Description>
+      <Index>18</Index>
+      <Text>Puede que en realidad no haya un millón de cabezas. Probablemente esté más cerca de una docena.</Text>
+      <Location>Dado por Ozzy por vencerlo en una batalla de Monstermon.</Location>
+
+    </Description>
+    <Description>
+      <Index>19</Index>
+      <Text>Un Monstermon totalmente genial. Capaz de hacer temblar a los oponentes.</Text>
+      <Location>Dado por Jerome por ayudarlo a conseguir la pelota de Carla.</Location>
+
+    </Description>
+    <Description>
+      <Index>20</Index>
+      <Text>La única especie de planta conocida que realmente caza a su presa.</Text>
+      <Location>Dado por el Dr. Danner por alimentar correctamente a su planta.</Location>
+
+    </Description>
+    <Description>
+      <Index>21</Index>
+      <Text>Si subes hasta la cima, puedes ver tu casa sin importar dónde esté.</Text>
+      <Location>Ubicado en la colmena después de ser sacudida.</Location>
+
+    </Description>
+    <Description>
+      <Index>22</Index>
+      <Text>Es un tipo tan genial que lo invitan a todas las fiestas. Lástima que no puede ir porque está atrapado en el suelo.</Text>
+      <Location>Dado por el Dr. Danner por realmente interesarse en las plantas.</Location>
+
+    </Description>
+    <Description>
+      <Index>23</Index>
+      <Text>Una adición cursi a cualquier equipo.</Text>
+      <Location>Revelado en el salón de profesores después de reemplazar la flor amarilla por una azul.</Location>
+
+    </Description>
+    <Description>
+      <Index>24</Index>
+      <Text>Cualquiera que lo vea se siente obligado a decir su nombre.</Text>
+      <Location>Dado por Carla por ayudarla a construir una bomba.</Location>
+
+    </Description>
+    <Description>
+      <Index>25</Index>
+      <Text>Es solo hierba. Móntala regularmente.</Text>
+      <Location>Dado por Monty por negociar bien al vender las... cosas de Felix.</Location>
+
+    </Description>
+    <Description>
+      <Index>26</Index>
+      <Text>Agradece que estas cartas no sean de rascar y oler.</Text>
+      <Location>Dado por Ozzy por darle papel higiénico en el baño.</Location>
+
+    </Description>
+    <Description>
+      <Index>27</Index>
+      <Text>El ingrediente clave en el ketchup místico.</Text>
+      <Location>Ubicado detrás del mostrador de almuerzo en la esquina de atrás.</Location>
+
+    </Description>
+    <Description>
+      <Index>28</Index>
+      <Text>No es tan malo una vez que superas el silbido... y las patadas... y su horrible personalidad.</Text>
+      <Location>Dado por Monty por vencerlo en una batalla de Monstermon.</Location>
+
+    </Description>
+    <Description>
+      <Index>29</Index>
+      <Text>Hace daño extra cuando es empuñado por alguien que nunca ha sido lastimado en toda su vida.</Text>
+      <Location>Revelado después de resolver el rompecabezas del bosque junto a la rampa para discapacitados.</Location>
+
+    </Description>
+    <Description>
+      <Index>30</Index>
+      <Text>No fue traído por ningún tipo de ducha.</Text>
+      <Location>Dado por Jerome por vencerlo en una batalla de Monstermon.</Location>
+
+    </Description>
+    <Description>
+      <Index>31</Index>
+      <Text>Capaz de hacer yoga mejor que cualquier otro ser en existencia.</Text>
+      <Location>Dado por Nugget por darle un spinner durante la hora de la mañana.</Location>
+
+    </Description>
+    <Description>
+      <Index>32</Index>
+      <Text>Contiene las respuestas a cualquier examen que puedas tomar, a cambio de tu alma.</Text>      
+      <Location>Ubicado en el libro rojo en la oficina del director.</Location>
+
+    </Description>
+    <Description>
+      <Index>33</Index>
+      <Text>Blando y delicioso y con conciencia. Comerlo podría ser un poco poco ético.</Text>
+      <Location>Dado por Cindy por vencerla en una batalla de Monstermon.</Location>
+
+    </Description>
+    <Description>
+      <Index>34</Index>
+      <Text>Te permite absorber dos ataques al corazón en tu cuerpo.</Text>
+      <Location>Dado por Cindy por darle Gravy. Gravy es dado por Agnes por darle una comida vegana.</Location>
+
+    </Description>
+    <Description>
+      <Index>35</Index>
+      <Text>Este es un cordero que vale la pena silenciar.</Text>
+      <Location>Dado por el conserje por ayudarlo a encubrir algunos asesinatos.</Location>
+
+    </Description>
+    <Description>
+      <Index>36</Index>
+      <Text>Nadie sabe qué hay dentro, pero es lo suficientemente pesado como para hacer daño si se lanza a la cabeza de un oponente.</Text>
+      <Location>Dado por Felix por completar "Cain's Not Able".</Location>
+
+    </Description>
+    <Description>
+      <Index>37</Index>
+      <Text>Es un buen tipo capaz de conquistar a m'lady.</Text>
+      <Location>Dado por Bob por contarle sobre el plan del conserje durante la hora de la mañana.</Location>
+
+    </Description>
+    <Description>
+      <Index>38</Index>
+      <Text>¡SLURP SLURPITY SLURP SLUUUUUUUUURP!</Text>
+      <Location>Ubicado en la esquina de atrás del laboratorio secreto del director.</Location>
+
+    </Description>
+    <Description>
+      <Index>39</Index>
+      <Text>Si se hubiera dejado en la parrilla un poco más, habría sido una joya término medio.</Text>
+      <Location>Dado por Felix por vencerlo en una batalla de Monstermon.</Location>
+
+    </Description>
+    <Description>
+      <Index>40</Index>
+      <Text>Te hará llorar... dándote una paliza.</Text>
+      <Location>Ubicado en la bolsa de almuerzo de Ozzy.</Location>
+
+    </Description>
+    <Description>
+      <Index>41</Index>
+      <Text>Ve todo, sabe todo, pero no puede contar todo porque no tiene boca.</Text>
+      <Location>Dado por Buggs por recuperar su cuchillo.</Location>
+
+    </Description>
+    <Description>
+      <Index>42</Index>
+      <Text>Una muñeca espeluznante que es imprescindible para cualquier mazo o película de terror mala.</Text>
+      <Location>Ubicado en el baúl de juguetes durante la clase de gimnasia.</Location>
+
+    </Description>
+    <Description>
+      <Index>43</Index>
+      <Text>Nadie sabe exactamente qué es un Flim Flam, pero aparentemente este es uno espinoso.</Text>
+      <Location>Dado por Buggs por vencerlo en una batalla de Monstermon.</Location>
+
+    </Description>
+    <Description>
+      <Index>44</Index>
+      <Text>Para cuando un monstruo o fantasma escondido debajo de tu cama no es suficiente...</Text>
+      <Location>Dado por Monty por darle el módulo láser de Penny durante la hora de la mañana.</Location>
+
+    </Description>
+    <Description>
+      <Index>45</Index>
+      <Text>Era bueno, pero luego sucedió algo cliché y ahora no lo es.</Text>
+      <Location>Dado por Ted después de mostrarle el contrato de Felix durante la hora de la mañana.</Location>
+
+    </Description>
+    <Description>
+      <Index>46</Index>
+      <Text>No frustra el mal, es un frustrador que ES el mal.</Text>
+      <Location>Dado por Agnes por vencerla en una batalla de Monstermon.</Location>
+
+    </Description>
+    <Description>
+      <Index>47</Index>
+      <Text>Probablemente sabrías qué había dentro si no lo hubieras robado del porche de alguien.</Text>
+      <Location>Ubicado en la caja en la que se escondía Billy.</Location>
+
+    </Description>
+    <Description>
+      <Index>48</Index>
+      <Text>Aún no sabemos qué significa Oglebop, pero aparentemente contiene una subespecie de ogros.</Text>
+      <Location>Dado por el conserje después de desatascar el inodoro mientras obtiene la custodia de la muñeca de Cindy en Opuestos Atraen.</Location>
+
+    </Description>
+    <Description>
+      <Index>49</Index>
+      <Text>El mago definitivo en términos de drogas y memes.</Text>
+      <Location>Dado por Lily por salvar la escuela.</Location>
+    </Description>
+  </DescriptionList>
+</MonstermonPanelData>

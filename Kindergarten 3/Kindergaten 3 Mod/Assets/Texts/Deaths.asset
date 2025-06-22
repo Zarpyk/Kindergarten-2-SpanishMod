@@ -1,0 +1,354 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9839ff07fc3994aa17c3c6b5ecfd28, type: 3}
+  m_Name: Deaths
+  m_EditorClassIdentifier: 
+  m_languageKeys:
+  - Default
+  m_languageValues: 00000000
+  m_fieldKeys: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f00000030000000310000003200000033000000340000003a00000035000000360000003700000038000000390000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f00000050000000510000005200000053000000
+  m_fieldValues:
+  - m_fieldName: Anvil
+    m_keys: 00000000
+    m_values:
+    - That was the wrong janitorial maneuver.
+  - m_fieldName: BearTrap
+    m_keys: 00000000
+    m_values:
+    - The trap works on bunnies AND children.
+  - m_fieldName: Bird
+    m_keys: 00000000
+    m_values:
+    - Caw caw caw-runch!
+  - m_fieldName: Gator
+    m_keys: 00000000
+    m_values:
+    - Did you really just 'boop' the gator?
+  - m_fieldName: GooPoison
+    m_keys: 00000000
+    m_values:
+    - You should really go see the nurse before the bell rings.
+  - m_fieldName: TrapDoor
+    m_keys: 00000000
+    m_values:
+    - Perhaps Mr. Scippio was trying to warn you about something in secret.
+  - m_fieldName: OfficePit
+    m_keys: 00000000
+    m_values:
+    - Who even puts a giant pit in a principal's office?
+  - m_fieldName: Rabbit
+    m_keys: 00000000
+    m_values:
+    - It's like that one rabbit from that movie!
+  - m_fieldName: WrongBook
+    m_keys: 00000000
+    m_values:
+    - That was the wrong book.
+  - m_fieldName: Flowers
+    m_keys: 00000000
+    m_values:
+    - The blue flowers sure do smell funny.
+  - m_fieldName: NuggetMonster
+    m_keys: 00000000
+    m_values:
+    - Nugget sure is different after he ate goo and broke his legs.
+  - m_fieldName: Beanstalk
+    m_keys: 00000000
+    m_values:
+    - It sure would be nice if there was a beanstalk there.
+  - m_fieldName: VendingMachine
+    m_keys: 00000000
+    m_values:
+    - Vending machines are really heavy.
+  - m_fieldName: Kevin
+    m_keys: 00000000
+    m_values:
+    - That bell sure is loud!
+  - m_fieldName: GooDog
+    m_keys: 00000000
+    m_values:
+    - Bad puppy!
+  - m_fieldName: Fire
+    m_keys: 00000000
+    m_values:
+    - Touching fire is bad.
+  - m_fieldName: FireLeaveBathroom
+    m_keys: 00000000
+    m_values:
+    - You were just gonna leave her burning like that?
+  - m_fieldName: FireUseApple
+    m_keys: 00000000
+    m_values:
+    - You might want to handle the burning teacher with a little more urgency.
+  - m_fieldName: Helicopter
+    m_keys: 00000000
+    m_values:
+    - Those missiles really work!
+  - m_fieldName: Electrocution
+    m_keys: 00000000
+    m_values:
+    - Those lab security measures really hurt.
+  - m_fieldName: LabExplode
+    m_keys: 00000000
+    m_values:
+    - You should get out of the lab BEFORE it explodes. Not after.
+  - m_fieldName: Creature
+    m_keys: 00000000
+    m_values:
+    - I liked Alice better before she changed into a murderous creature.
+  - m_fieldName: LawnMower
+    m_keys: 00000000
+    m_values:
+    - Who could have possibly seen that coming?
+  - m_fieldName: Bird2
+    m_keys: 00000000
+    m_values:
+    - Did you forget about Birdy's promise?
+  - m_fieldName: BirdNuggetDead
+    m_keys: 00000000
+    m_values:
+    - Nugget could probably convince the bird to not do that to you if he wasn't
+      dead.
+  - m_fieldName: BirdNuggetStudyHall
+    m_keys: 00000000
+    m_values:
+    - Nugget could probably convince the bird to not do that to you if he wasn't
+      in study hall.
+  - m_fieldName: Dive
+    m_keys: 00000000
+    m_values:
+    - What did you think would happen?
+  - m_fieldName: Meteor
+    m_keys: 00000000
+    m_values:
+    - Try not to be on the roof when the day ends.
+  - m_fieldName: Kevin2
+    m_keys: 00000000
+    m_values:
+    - You should give Kevin something that signifies friendship. A tasty nugget perhaps?
+  - m_fieldName: BeepBoop
+    m_keys: 00000000
+    m_values:
+    - Beep. Beep. Beeeeeeeeeeeeeeeep.
+  - m_fieldName: KevinHay
+    m_keys: 00000000
+    m_values:
+    - Stepping on the hay is a great way to wake Kevin.
+  - m_fieldName: NoRecruits
+    m_keys: 00000000
+    m_values:
+    - The teacher really wants those signatures.
+  - m_fieldName: WrongFlowers
+    m_keys: 00000000
+    m_values:
+    - Those flowers are a little dangerous.
+  - m_fieldName: HaveGun
+    m_keys: 00000000
+    m_values:
+    - I would use the gun on something...or someone before the robot gets there.
+  - m_fieldName: BeepBoopAustin
+    m_keys: 00000000
+    m_values:
+    - If only there was someone who could throw something at the robot...if only.
+  - m_fieldName: BeepBoopDavey
+    m_keys: 00000000
+    m_values:
+    - If only there was something sharp and heavy you could smash the robot into
+      pieces with...
+  - m_fieldName: CannonBackInside
+    m_keys: 00000000
+    m_values:
+    - He's not just gonna let you go back inside.
+  - m_fieldName: CannonHelpNugget
+    m_keys: 00000000
+    m_values:
+    - He's not just gonna let you help Nugget.
+  - m_fieldName: CannonWaitAround
+    m_keys: 00000000
+    m_values:
+    - You kinda deserve a cannon to the face if you're just gonna wait around like
+      that.
+  - m_fieldName: BoobooShouldKnow
+    m_keys: 00000000
+    m_values:
+    - I feel like you should know what happens when you get too close to Booboo by
+      now.
+  - m_fieldName: BoobooSniff
+    m_keys: 00000000
+    m_values:
+    - He can really sniff you out anywhere.
+  - m_fieldName: BoobooSaveNugget
+    m_keys: 00000000
+    m_values:
+    - You should find a way to subdue Booboo before Nugget's arm gives out.
+  - m_fieldName: BeepboopFinalBooboo
+    m_keys: 00000000
+    m_values:
+    - Booboo does not have a good way to stop Beepboop.
+  - m_fieldName: BeepboopFinalBunny
+    m_keys: 00000000
+    m_values:
+    - Bunny does not have a good way to stop Beepboop.
+  - m_fieldName: BeepboopFinalGuppy
+    m_keys: 00000000
+    m_values:
+    - Guppy isn't as effective as a rock when it comes to stopping Beepboop.
+  - m_fieldName: RegisBunny
+    m_keys: 00000000
+    m_values:
+    - Regis knows how to deal with Bunny.
+  - m_fieldName: RegisGuppy
+    m_keys: 00000000
+    m_values:
+    - Guppy isn't enough to stop Regis from shooting you in the face.
+  - m_fieldName: GuppyMissile
+    m_keys: 00000000
+    m_values:
+    - Guppy is NOT able to stop the missile.
+  - m_fieldName: DaveyDeath
+    m_keys: 00000000
+    m_values:
+    - You can't save Kevin without Davey.
+  - m_fieldName: DaveyDied
+    m_keys: 00000000
+    m_values:
+    - Davey died.
+  - m_fieldName: YouDied
+    m_keys: 00000000
+    m_values:
+    - You died.
+  - m_fieldName: LindaDied
+    m_keys: 00000000
+    m_values:
+    - Linda died.
+  - m_fieldName: NoGuppy
+    m_keys: 00000000
+    m_values:
+    - That would have been a good time to send Guppy.
+  - m_fieldName: HideLaser
+    m_keys: 00000000
+    m_values:
+    - You should probably hide from that laser.
+  - m_fieldName: DontShootLindaLab3
+    m_keys: 00000000
+    m_values:
+    - Maybe don't shoot the giant lizard that's trying to help you?
+  - m_fieldName: DontDoubleShootLab3
+    m_keys: 00000000
+    m_values:
+    - Maybe aim for a different target next time?
+  - m_fieldName: WrongSpot
+    m_keys: 00000000
+    m_values:
+    - That was the wrong hiding spot.
+  - m_fieldName: AntiGoo1EarlyLab3
+    m_keys: 00000000
+    m_values:
+    - Regis wasn't close enough to the anti-goo tank.
+  - m_fieldName: OrbShotLab3
+    m_keys: 00000000
+    m_values:
+    - It might be wise to deal with the orb a little later.
+  - m_fieldName: GetBandagesDeath
+    m_keys: 00000000
+    m_values:
+    - He really really wants those bandages.
+  - m_fieldName: GoInsideDeath
+    m_keys: 00000000
+    m_values:
+    - You should probably go inside to get those bandages.
+  - m_fieldName: NoArmDeath
+    m_keys: 00000000
+    m_values:
+    - No arm. No life.
+  - m_fieldName: NoCarrotDeath
+    m_keys: 00000000
+    m_values:
+    - Carrots are great bunny bait.
+  - m_fieldName: NoBoopDeath
+    m_keys: 00000000
+    m_values:
+    - You should boop and run.
+  - m_fieldName: NoBaitDeath
+    m_keys: 00000000
+    m_values:
+    - I would put the bait on the X next time.
+  - m_fieldName: ShowUpDeath
+    m_keys: 00000000
+    m_values:
+    - You knew he was gonna kill something today.
+  - m_fieldName: Kicked
+    m_keys: 00000000
+    m_values:
+    - His legs are REALLY strong now.
+  - m_fieldName: GooCore
+    m_keys: 00000000
+    m_values:
+    - Find a place to put that goo thing or it'll explode.
+  - m_fieldName: EarlyLab
+    m_keys: 00000000
+    m_values:
+    - You should probably wait until Regis isn't there to go down the slide.
+  - m_fieldName: InvalidCode
+    m_keys: 00000000
+    m_values:
+    - That was not a valid code.
+  - m_fieldName: BoobooHallway
+    m_keys: 00000000
+    m_values:
+    - Something bad happened.
+  - m_fieldName: BeepBoopEmmy
+    m_keys: 00000000
+    m_values:
+    - Maybe someone could cause some electrical problems for the robot?
+  - m_fieldName: VendingMachineDuck
+    m_keys: 00000000
+    m_values:
+    - That was not a valid quacking code.
+  - m_fieldName: BoobooTree
+    m_keys: 00000000
+    m_values:
+    - I think Booboo is a little territorial about that tree right now.
+  - m_fieldName: BoobooFort
+    m_keys: 00000000
+    m_values:
+    - I would stay away from Booboo while he's trying to get on the fort.
+  - m_fieldName: BoobooRock
+    m_keys: 00000000
+    m_values:
+    - Even if he's distracted, you should still stay away from Booboo.
+  - m_fieldName: BoobooTreeHide
+    m_keys: 00000000
+    m_values:
+    - You can't hide from him in the tree either.
+  - m_fieldName: AlcoveRabbit
+    m_keys: 00000000
+    m_values:
+    - You should fear the bunny.
+  - m_fieldName: ReturnPass
+    m_keys: 00000000
+    m_values:
+    - You should return the hall pass before the bell rings.
+  - m_fieldName: DeadFelix
+    m_keys: 00000000
+    m_values:
+    - You should get the nurse to fix Felix's face.
+  - m_fieldName: Death.Anvil
+    m_keys: 00000000
+    m_values:
+    - That was the wrong janitor manuever.
+  - m_fieldName: WrongCarCode
+    m_keys: 00000000
+    m_values:
+    - That was the wrong order for the cars.
+  m_nextLanguageID: 3
+  m_nextFieldID: 84

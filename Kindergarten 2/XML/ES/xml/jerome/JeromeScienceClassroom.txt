@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¿Cuál es el sentido de la ciencia? No puede traer de vuelta a mi papá.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estará bien, Jerome.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¿Descubriste algo sobre Lily?~ ¿Sabes dónde está?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ella estará en el baño durante el almuerzo.</OptionText>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+          <Flag>LilyInBathroom</Flag>
+          <SetFlag>CarlaCompletedMorningTime</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nope.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Así que está aquí!~ ¡Lo sabía!~ Voy a buscarla por lo que hizo.~ Gracias, chico.</DialogueText>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Tengo un plan para llevarte allí. Hablaremos durante el almuerzo.</DialogueText>
+      <NPC>Carla</NPC>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Voy a hacer mi evaluación para mantener mis calificaciones. Es lo que mi papá habría querido.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es agradable, Jerome.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>*hl*Carla mencionó cambiar el plan de lecciones a robótica o algo así.*hle* Tal vez podríamos ir a hacer eso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

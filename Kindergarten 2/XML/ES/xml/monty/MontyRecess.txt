@@ -1,0 +1,537 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¿¡Qué?!~ ¡Solo porque no puedo caminar no significa que no pueda jugar!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Solo quería comprar algo.</OptionText>
+          <DestinationID>50</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Solo quería vender algo.</OptionText>
+          <DestinationID>79</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Solo quería pelear.</OptionText>
+          <ItemToUse>Deck</ItemToUse>
+          <DestinationID>150</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien. Lo siento.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Oh, ahí estás. Terminé de leer ese documento que me diste. ¡Es un verdadero desafío!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué decía?</OptionText>
+          <DestinationID>2</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Dímelo después.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Bueno... Penny es una especie de androide.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Sí. Es bastante loco. La tecnología es asombrosa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cómo sucedió eso?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Quién la está controlando?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Dónde está lo que confiscó?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Los esquemas indican que tiene un compartimento de almacenamiento en alguna parte de su estómago. No sé si hay una forma ética de sacarlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Alguna idea?</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Bueno...~ si tuviera que derribar un robot, *hl*probablemente intentaría magnetizarla.*hle* Hay un imán gigante dentro de la clase de ciencias, pero no puedes usarlo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Por qué no?</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Porque hoy estamos aprendiendo sobre plantas en la clase de ciencias. *hl* A menos que el plan de lección cambie, no vas a poder acercarte a esa cosa.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo descubriré.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>BuggsListened</FunctionCall>
+          <ResolutionID>16</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Parece que fue atacada por un oso o algo así. Cosas realmente brutales. Le reemplazaron muchas partes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Quién la está controlando?</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Dónde está lo que confiscó?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Parece que hay 3 controles remotos que tienen acceso total. Esos van para los profesores y el director. Hay oyentes por toda la escuela que solo responden a un comando de voz.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y eso cuál es?</OptionText>
+          <DestinationID>9</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>"Te estoy enviando a la oficina del director."</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Dónde está lo que confiscó?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cómo sucedió eso?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Hay más sobre los controles remotos?</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¿Ya terminaste con mi llave del ascensor?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>11</DestinationID>
+          <FunctionCall>GiveElevatorKey</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ItemToUse>ElevatorKey</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No todavía.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Bien!~ Trae esas muestras de cabello a la clase de ciencias y veremos si podemos hacer que este asunto funcione.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Suena bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>12</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Trae esas muestras de cabello a la clase de ciencias y veremos si podemos hacer que este negocio funcione.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Suena bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Sí. Los controles remotos tienen 4 botones. El verde la llama. El azul libera contrabando. El amarillo desactiva las defensas. El rojo dispara su láser.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vaya.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Lo recordaría si fuera tú. Podría salvarte la vida si llegas a tener uno de esos controles remotos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Dónde está lo que confiscó?</OptionText>
+          <DestinationID>4</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cómo sucedió esto?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Espera un minuto, chico.~ Este "pantalones de dinero" aquí está haciendo un pedido de algo grande.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Buena suerte con este asunto de los robots.~ Estás en un terreno peligroso.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo descubriré.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Lárgate, chico.~ No hago negocios con personas poco confiables.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Vete.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Sí... desearía poder venderte algo. Todas mis cosas están en mi casillero de arriba. No puedo llevarlas a todas partes conmigo. Ser discapacitado apesta. Aunque sigo aceptando pedidos de cosas caras.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>79</NodeID>
+      <DialogueText>Oh...~jeje. Lo siento. Puedo ser un poco defensivo sobre todo esto de...~no poder caminar. ¿Qué querías vender?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Este inhalador.</OptionText>
+          <ItemToUse>Inhaler</ItemToUse>
+          <DestinationID>81</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Estas... cosas.</OptionText>
+          <ItemToUse>BagOfWeed</ItemToUse>
+          <DestinationID>82</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No quiero vender nada.</OptionText>
+          <DestinationID>100</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>80</NodeID>
+      <DialogueText>¿Qué querías vender?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Este inhalador.</OptionText>
+          <ItemToUse>Inhaler</ItemToUse>
+          <DestinationID>81</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Estas... cosas.</OptionText>
+          <ItemToUse>BagOfWeed</ItemToUse>
+          <DestinationID>82</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No importa.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>100</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>81</NodeID>
+      <DialogueText>Sí, puedo aceptar eso.~ Te daré $2.00 por ello.~ ¿Trato?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato.</OptionText>
+          <DestinationID>90</DestinationID>
+          <FunctionCall>SellInhaler</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sin trato.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>100</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>82</NodeID>
+      <DialogueText>Jejeje...~¿de dónde sacaste ESO?! ¡Jajajaja!~ Oh, Dios, chico!~ Lo que sea que estés haciendo, estás en un lío enorme.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Lo quieres o no?</OptionText>
+          <DestinationID>83</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>83</NodeID>
+      <DialogueText>Sí, sí. Claro.~ ¿Qué tal suena $5.00?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato.</OptionText>
+          <DestinationID>90</DestinationID>
+          <FunctionCall>SellWeed</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Vale más que eso.</OptionText>
+          <DestinationID>84</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>84</NodeID>
+      <DialogueText>Lo sé.~ Solo que no sabía que tú sabías eso.~ Está bien...~ Te añadiré una carta de Monstermon además de los $5.00. ¿Trato?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Trato.</OptionText>
+          <DestinationID>90</DestinationID>
+          <FunctionCall>SellWeedMonstermon</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sin trato.</OptionText>
+          <DestinationID>85</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>85</NodeID>
+      <DialogueText>Como quieras.~ Buena suerte encontrando otros usos para eso, aunque.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Adiós, Monty.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>100</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>90</NodeID>
+      <DialogueText>Un placer hacer negocios contigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quiero comprar algo.</OptionText>
+          <DestinationID>50</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero vender algo.</OptionText>
+          <DestinationID>80</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No necesito nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>¿Qué puedo hacer por ti?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quiero comprar algo.</OptionText>
+          <DestinationID>50</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero vender algo.</OptionText>
+          <DestinationID>80</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No necesito nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>150</NodeID>
+      <DialogueText>Ahora estás en problemas, chico. Mi mazo verde es bastante formidable.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartMonstermonBattle</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>200</NodeID>
+      <DialogueText>¡Hey! ¡Whoa,Whoa,Whoa!~ ¿Estabas tratando de desarmar mi silla de ruedas mientras todavía estoy en ella?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quizás.</OptionText>
+          <DestinationID>201</DestinationID>
+          <FunctionCall>OpenCannon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>201</NodeID>
+      <DialogueText>Entonces voy a desarmar tu cabeza.~ Así de simple.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Por favor, no lo hagas.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FireCannon</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>205</NodeID>
+      <DialogueText>¡OOOF!!~ Oh...no. No, no, no, no, NO, NO, NO!</DialogueText>
+      <JumpNode>206</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>206</NodeID>
+      <DialogueText>¿¡Qué pasó con mi silla?!~ ¡Esto apesta!~ ¿¡Por qué me está pasando esto?!</DialogueText>
+      <JumpNode>220</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>207</NodeID>
+      <DialogueText>¿¡Qué?!~ ¡Puedo levantarme solo! ¡Déjame en paz!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien, Monty.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>220</NodeID>
+      <DialogueText>Oh, vaya.~ Yo...~ Te dejaré recomponerte. Hablaremos más tarde cuando estés, ummm...~ no en el suelo.</DialogueText>
+      <JumpNode>221</JumpNode>
+      <NPC>Ted</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>221</NodeID>
+      <DialogueText>¡Solo sal de aquí!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>TedWalkTowardCarla</FunctionCall>
+      <ResolutionID>207</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>300</NodeID>
+      <DialogueText>Oh...~ hey, chico. Supongo que todos se olvidaron de mí después de que sonó el timbre.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lamento escuchar eso.</OptionText>
+          <DestinationID>301</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>301</NodeID>
+      <DialogueText>*Suspiro*~ Sí. Está bien. Al menos hace buen tiempo.~ Gracias por venir a hacerme compañía.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No hay problema.</OptionText>
+          <DestinationID>302</DestinationID>
+          <FunctionCall>GetSlug</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>302</NodeID>
+      <DialogueText>¿Por qué no te quedas con esta carta de Monstermon?~ Es tan lenta como yo ahora.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh... claro.</OptionText>
+          <DestinationID>303</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>303</NodeID>
+      <DialogueText>Puedes irte entonces.~ No necesito tu ayuda.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien, Monty.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>Sabía que no podías hacerlo. Tus cartas son tan malas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>Hmmmm...~interesante estrategia. Supongo que podría darte una carta por vencerme.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gracias.</OptionText>
+          <DestinationID>451</DestinationID>
+          <FunctionCall>UnlockFauna</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>451</NodeID>
+      <DialogueText>Ahora volvamos a los negocios. ¿Quieres algo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quiero comprar algo.</OptionText>
+          <DestinationID>50</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Quiero vender algo.</OptionText>
+          <DestinationID>79</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>
+      
+      <NodeID>0</NodeID>
+      <DialogueText>Este interruptor controla la pinza roja. ¿Qué debería hacer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Muévelo a la derecha.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Pulsa el botón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No hagas nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>1</NodeID>
+      <DialogueText>Este interruptor controla la pinza roja. ¿Qué debería hacer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Muévelo a la izquierda.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Muévelo a la derecha.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Pulsa el botón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No hagas nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      
+      <NodeID>2</NodeID>
+      <DialogueText>Este interruptor controla la pinza roja. ¿Qué debería hacer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Muévelo a la izquierda.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Pulsa el botón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No hagas nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      
+      <NodeID>3</NodeID>
+      <DialogueText>Este interruptor controla la pinza verde. ¿Qué debería hacer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Muévelo a la derecha.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Pulsa el botón.)</OptionText>
+          <DestinationID>-1</DestinationID>          
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No hagas nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      
+      <NodeID>4</NodeID>
+      <DialogueText>Este interruptor controla la pinza verde. ¿Qué debería hacer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Muévelo a la izquierda.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>3</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Muévelo a la derecha.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>5</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Pulsa el botón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No hagas nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      
+      <NodeID>5</NodeID>
+      <DialogueText>Este interruptor controla la pinza verde. ¿Qué debería hacer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Muévelo a la izquierda.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Pulsa el botón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No hagas nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      
+      <NodeID>6</NodeID>
+      <DialogueText>Este interruptor controla la pinza azul. ¿Qué debería hacer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Muévelo a la derecha.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>7</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Pulsa el botón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No hagas nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      
+      <NodeID>7</NodeID>
+      <DialogueText>Este interruptor controla la pinza azul. ¿Qué debería hacer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Muévelo a la izquierda.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>6</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Muévelo a la derecha.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawRight</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>8</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Pulsa el botón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No hagas nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      
+      <NodeID>8</NodeID>
+      <DialogueText>Este interruptor controla la pinza azul. ¿Qué debería hacer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Muévelo a la izquierda.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveClawLeft</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>7</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Pulsa el botón.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PressClawButton</FunctionCall>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No hagas nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Úsame-- úsame para- para salvar- a ella...~</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Pulsa el botón rojo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <FunctionCall>ShootCreature2</FunctionCall>
+          <SetFlag>Creature2Dead</SetFlag>
+          <UsesAction>true</UsesAction>
+          <ResolutionID>11</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(No hagas nada.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Gracias por-~ por darle sentido a mi muerte.</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>De nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Creo que debería dejar esa pinza ahí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Intenta con una pinza diferente.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Esta cosa es aparentemente capaz de convertir a los niños en monstruos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Qué mundo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockCreatureOutfit</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <NPC>Billy</NPC>
+      <DialogueText>¡Estoy bien, niño!~ No puede alcanzarme aquí arriba, pero esa criatura en el medio te está mirando.~ ¡Deshazte de ella rápido!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buena idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <NPC>Billy</NPC>
+      <DialogueText>¡Estoy bien, niño!~ ¡Salva a Lily!~ No estoy seguro de cuánto más puede aguantar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buena idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <NPC>Billy</NPC>
+      <DialogueText>¡Estoy empezando a perder el equilibrio!~ ¡Apúrate y encárgate de esta cosa!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hecho.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <NPC>Lily</NPC>
+      <DialogueText>¡Está tratando de comerme!~ ¡Haz algo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve a hacer algo.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

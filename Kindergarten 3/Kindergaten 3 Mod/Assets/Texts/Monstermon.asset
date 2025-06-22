@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 749122ca687073649af3faaf57ce2dd5, type: 3}
+  m_Name: Monstermon
+  m_EditorClassIdentifier: 
+  m_languageKeys:
+  - Default
+  m_languageValues: 00000000
+  m_fieldKeys: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b000000300000002d0000002e0000002f00000032000000310000002c000000
+  m_fieldValues:
+  - m_fieldName: Slurpolotl
+    m_keys: 00000000
+    m_values:
+    - One of the Slurper's many disciples.
+  - m_fieldName: Bung Deetle
+    m_keys: 00000000
+    m_values:
+    - Hangs out in diles of pung.
+  - m_fieldName: Stoic Seagull
+    m_keys: 00000000
+    m_values:
+    - Completely expressionless while he tries to steal your sandwich.
+  - m_fieldName: Bloaty
+    m_keys: 00000000
+    m_values:
+    - That's not an eye, it's his belly button.
+  - m_fieldName: Disappointed Snake
+    m_keys: 00000000
+    m_values:
+    - Just like your father...
+  - m_fieldName: Petty Piranha
+    m_keys: 00000000
+    m_values:
+    - He's just a little upset you got more flesh at the last feeding frenzy.
+  - m_fieldName: Carnivorous Nimbus
+    m_keys: 00000000
+    m_values:
+    - It's known to eat birds and aircraft. They are commonly found over the Bermuda Triangle.
+  - m_fieldName: Dumb Fish
+    m_keys: 00000000
+    m_values:
+    - Even dumber than your average gold fish.
+  - m_fieldName: Hard Boogar
+    m_keys: 00000000
+    m_values:
+    - There's an odd satisfaction that comes with its removal.
+  - m_fieldName: Ultralodon
+    m_keys: 00000000
+    m_values:
+    - At the top of the top of the food chain. It only eats megalodons.
+  - m_fieldName: Birb
+    m_keys: 00000000
+    m_values:
+    - He's just a good old-fashioned Birb.
+  - m_fieldName: Suspicious Lion
+    m_keys: 00000000
+    m_values:
+    - He's looking at you like he knows what you did...or like he's gonna eat you.
+  - m_fieldName: Balloon Boar
+    m_keys: 00000000
+    m_values:
+    - That's just a zit. The kids at his school came up with his name.
+  - m_fieldName: Bullzerker
+    m_keys: 00000000
+    m_values:
+    - He gets really angry at the color red. Don't show him a mirror.
+  - m_fieldName: Man On Fire
+    m_keys: 00000000
+    m_values:
+    - Does anyone want to help him?
+  - m_fieldName: Cigaretmon
+    m_keys: 00000000
+    m_values:
+    - Does damage by giving his opponents lung cancer.
+  - m_fieldName: Cyclops Duckling
+    m_keys: 00000000
+    m_values:
+    - It's not a special breed of duckling. It just had its eye pecked out by a bigger duckling.
+  - m_fieldName: Hearty Heart
+    m_keys: 00000000
+    m_values:
+    - He's just happy to see others happy.
+  - m_fieldName: Jawless Dog
+    m_keys: 00000000
+    m_values:
+    - Soft food only.
+  - m_fieldName: Chair of Spikes
+    m_keys: 00000000
+    m_values:
+    - It's still more comfortable than most chairs in schools.
+  - m_fieldName: Frowny Frog
+    m_keys: 00000000
+    m_values:
+    - Someone ate his legs. :(
+  - m_fieldName: Mean Green Penguin
+    m_keys: 00000000
+    m_values:
+    - Which is unusual because green penguins are normally very amicable.
+  - m_fieldName: Tree Froggy
+    m_keys: 00000000
+    m_values:
+    - You already know that this thing is just a frog made out of a tree.
+  - m_fieldName: Thikorita
+    m_keys: 00000000
+    m_values:
+    - It uses the leaf on its head to cut..nothing. It's a leaf.
+  - m_fieldName: Shrewd Goblin
+    m_keys: 00000000
+    m_values:
+    - Capable of selling anything to anyone unless they don't want to buy it.
+  - m_fieldName: Literally Grass
+    m_keys: 00000000
+    m_values:
+    - It just sorta grows there.
+  - m_fieldName: Ohfaka Tornado
+    m_keys: 00000000
+    m_values:
+    - It's said that those who see it are compelled to say its name.
+  - m_fieldName: Monstrous Flytrap
+    m_keys: 00000000
+    m_values:
+    - The only species of plant known to hunt down its prey.
+  - m_fieldName: Chill Stump
+    m_keys: 00000000
+    m_values:
+    - He's such a cool guy, he gets invited to all the parties. Too bad he can't go cause he's stuck in the ground.
+  - m_fieldName: Mystical Tomato
+    m_keys: 00000000
+    m_values:
+    - The key ingredient in mystical ketchup.
+  - m_fieldName: Meatball
+    m_keys: 00000000
+    m_values:
+    - Hurls himself at opponents leaving a red residue that may be blood or tomato sauce.
+  - m_fieldName: Tricerabottom
+    m_keys: 00000000
+    m_values:
+    - That's not a third leg... it's an arm.
+  - m_fieldName: Brain Dragon
+    m_keys: 00000000
+    m_values:
+    - Capable of solving cold fusion and eating you alive.
+  - m_fieldName: Sword Pig
+    m_keys: 00000000
+    m_values:
+    - It is said that he who pulls the sword from the pig will be king of Baconland.
+  - m_fieldName: Tough Bunny
+    m_keys: 00000000
+    m_values:
+    - He's probably not even the worst bunny you've met today.
+  - m_fieldName: Wonder Bird
+    m_keys: 00000000
+    m_values:
+    - It is said that those who can hear its chirps are not deaf.
+  - m_fieldName: Golden Dewdrop
+    m_keys: 00000000
+    m_values:
+    - He was not brought about by any sort of shower.
+  - m_fieldName: Forbidden Book
+    m_keys: 00000000
+    m_values:
+    - It contains the answers to any test you might take at the cost of your soul.
+  - m_fieldName: Pot of Grease
+    m_keys: 00000000
+    m_values:
+    - Allows you to draw two heart attacks into your body.
+  - m_fieldName: Mr. Nice Guy
+    m_keys: 00000000
+    m_values:
+    - He's a nice guy capable of wooing m'lady.
+  - m_fieldName: Egg Head
+    m_keys: 00000000
+    m_values:
+    - Is his head just stuck in there or what?
+  - m_fieldName: Snuggly Bear
+    m_keys: 00000000
+    m_values:
+    - Go on. Give him a hug... someone has to.
+  - m_fieldName: Froyo Ghost
+    m_keys: 00000000
+    m_values:
+    - That chill in the air is just this tasty spirit.
+  - m_fieldName: Dank Magician
+    m_keys: 00000000
+    m_values:
+    - The ultimate wizard in terms of drugs and memes.
+  - m_fieldName: Sock Spirit
+    m_keys: 00000000
+    m_values:
+    - It's a spirit that haunts all unmatched socks.
+  - m_fieldName: Caterpillar Dog
+    m_keys: 00000000
+    m_values:
+    - It transforms into... Butterfly Cat?
+  - m_fieldName: Mysterious Package
+    m_keys: 00000000
+    m_values:
+    - You'd probably know what was in it if you didn't steal it off someone's porch.
+  - m_fieldName: Killer Eye
+    m_keys: 00000000
+    m_values:
+    - It sees all, knows all, but cannot tell all for it does not have a mouth.
+  - m_fieldName: Mole Mole
+    m_keys: 00000000
+    m_values:
+    - It's a mole that lives in moles. Gross.
+  - m_fieldName: Evil Thwarter
+    m_keys: 00000000
+    m_values:
+    - He doesn't thwart evil, he's a thwarter who IS evil.
+  m_nextLanguageID: 1
+  m_nextFieldID: 51

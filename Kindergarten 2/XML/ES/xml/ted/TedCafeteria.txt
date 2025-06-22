@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Felix dice que no se me permite hablar con nadie a menos que sea sobre negocios. Lo siento.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>No puedo creer que Felix ya tenga novia. No sé cómo lo hace.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Oh, ahí estás!~</DialogueText>
+      <JumpNode>1001</JumpNode>
+      <FunctionCall>WalkToPlayer</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1001</NodeID>
+      <DialogueText>Es hora de avanzar con la siguiente etapa del plan.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué pasa?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FelixWalkOver</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¿De qué demonios le estás hablando?~ ¿Qué están haciendo ustedes dos?</DialogueText>
+      <JumpNode>12</JumpNode>
+      <NPC>Felix</NPC>
+      <FunctionCall>FaceLeft</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Oh...~uh...~nada, Felix. Solo voy a mostrarle al nuevo dónde están los tenedores.</DialogueText>
+      <JumpNode>13</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>¡Sígueme, nuevo!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToCondiments</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Está bien...~Felix no puede saber que estamos haciendo esto. Quiero hacerlo solo entre nosotros dos para que sepa que puedo encargarme de las cosas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>En unos minutos, Ozzy va a salir y usar el baño. Necesitas tomar el cubículo de la izquierda.~ Ese es el cubículo que le gusta.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y qué?</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¡Eso lo estresará!~ ¡Ese es el nombre del juego aquí! Solo tenemos que seguir presionándolo hasta que se quiebre. ¡Ahora ve a ese cubículo y espéralo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. Vaya.</OptionText>
+          <DestinationID>25</DestinationID>
+          <FunctionCall>GetFork</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Ve a esperar en el cubículo del lado izquierdo del baño. Eso estresará a Ozzy.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Vi a Ozzy regresar antes de lo habitual. ¿Eso significa que lo hiciste?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí. No está feliz.</OptionText>
+          <DestinationID>21</DestinationID>
+          <SetFlag>TedCompletedLunch</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Excelente.~ ¡Te veré en el recreo! Conseguiremos lo que necesitamos para hacerlo estallar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Hasta luego.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Ummmm...~¿por qué no fuiste al baño?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No tengo que irme.</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>Está bien, pero no se trata de ti. Se trataba de Ozzy y estresarlo...~*suspiro* nunca mind. Felix tenía razón.~ No puedo hacer nada.~ Déjame en paz.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ups.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkBackToCafeteriaStart</FunctionCall>
+          <ResolutionID>24</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Vete, chico.~ Ozzy no está estresado. No tendrá un ataque de asma.~ Me decepcionaste.~ Déjame en paz.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Deja a Ted en paz.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¡Oh!~ ¡Felix está mirando!~ Aquí tienes un tenedor para que no parezcamos sospechosos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...gracias.</OptionText>
+          <DestinationID>260</DestinationID>
+          <ResolutionID>18</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>260</NodeID>
+      <DialogueText>Además, ¿hablaste con Carla?~ ¿Me perdonará?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ella quiere tijeras.</OptionText>
+          <DestinationID>261</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>261</NodeID>
+      <DialogueText>¡Por supuesto!~ *hl*Bueno, probablemente deberías hacer eso mientras estás fuera también.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buena idea.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkBackToFelix</FunctionCall>
+          <SetFlag>TedStartedLunch</SetFlag>
+          <ResolutionID>18</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>Este plan es tanoooo bueno.~ No puedo esperar a verlo llevarse a cabo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo también, Ted.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Los planes de Felix son tan buenos.~ No puedo esperar a verlos llevarse a cabo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yo también, Ted.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>Um...hola, Sra. Margaret.</DialogueText>
+      <JumpNode>101</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>Hola, niño rico inseguro.</DialogueText>
+      <JumpNode>103</JumpNode>
+      <NPC>LunchLady</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>103</NodeID>
+      <DialogueText>Una hamburguesa, por favor.</DialogueText>
+      <JumpNode>104</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>104</NodeID>
+      <DialogueText>Eso será $1.00. Sírvete, niño.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>LunchLady</NPC>
+      <FunctionCall>TedGetBurger</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>Aquí tienes. Una hamburguesa. Justo como pediste.</DialogueText>
+      <JumpNode>111</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>Gracias, Teddy. Eso será todo.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>Aquí tienes. Una hamburguesa. Justo como pediste.</DialogueText>
+      <JumpNode>113</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>113</NodeID>
+      <DialogueText>Gracias, Teddy. Eso será todo.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ActivateLunchLadyGetBurgers</FunctionCall>
+      <NPC>Felix</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>500</NodeID>
+      <DialogueText>Estoy manteniendo a Felix a salvo de la comida. Padre estaría muy molesto si algo le pasara.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es realmente triste.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>501</NodeID>
+      <DialogueText>Mantuve a Felix a salvo de la comida. Padre estaría muy molesto si algo le pasara.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es realmente triste.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

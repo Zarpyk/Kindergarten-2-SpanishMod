@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Buen trabajo, chaval!~ ¡Ahora encuentra la manera de quitarle esa cosa a Lily! ¡Ahora!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Exacto.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Sí!~ ¡De eso estoy hablando!~ *hl*¡Ahora vamos a por ese director tan desagradable!*hle*</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Esto es inaceptable!~ ¡No toleraré la insubordinación en mi escuela!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>OpenAcidPit</FunctionCall>
+      <NPC>Principal</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>¡Activa el cañón de goo!</DialogueText>
+      <JumpNode>4</JumpNode>
+      <NPC>Principal</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¡Tenemos que hacer que cancele ese cañón o vamos a terminar vistiendo lo que sea que sea esa cosa!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pensaré en algo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ClearCameraTarget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Whoa!~ ¡Ooooof!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>GetUp</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Oh no!~ ¡Creo que sabe que estoy-!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>CreatureKillBilly</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¡¡Todos agárrense de algo!!~ ¡¡Ella va a intentar--!!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>GetSuckedIn</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Oh, cielos!~ ¡Casi nos succiona a todos!~ *hl*Si no encontramos la manera de cerrar su boca, definitivamente estaremos en problemas.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pensaré en algo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>21</ResolutionID>
+          <FunctionCall>ClearCameraTarget</FunctionCall>
+          <SetFlag>LairPhase2</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>¡Tenemos que encontrar una manera de cerrar su boca! ¡Rápido!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Pensaré en algo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¡Increíble!~ ¡No podrá hacernos daño ahora! ¡Se ve aterrorizada!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Así que salgamos de aquí.</OptionText>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>No tan rápido, chaval.~ ¡Mira!</DialogueText>
+      <FunctionCall>FocusOnRubble</FunctionCall>
+      <JumpNode>27</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>¡Parece que el techo está a punto de colapsar o algo así!~ *hl*Quizás si logramos que mire hacia arriba*hle*, ¡se caerá justo sobre ese ojo grande y feo!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que vale la pena intentarlo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>     
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

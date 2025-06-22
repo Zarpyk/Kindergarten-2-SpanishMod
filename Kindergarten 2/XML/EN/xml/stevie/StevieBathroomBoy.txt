@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>So...~like this?</DialogueText>
+      <JumpNode>1</JumpNode>   
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Yeah man!~ You look way cooler now! *hl*It's just a shame we don't have a lighter for these.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>HallMonitor</NPC>
+      <ResolutionID>2</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>No point in me following the rules anymore. Look where that got us.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good point.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Hola, pequeño! ¡Soy tu amigable conserje de la escuela!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuál es tu nombre?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Amigable?</OptionText>
+          <DestinationID>1</DestinationID>
+          <SetFlag>TalkToBob</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Puedo pasar por aquí?</OptionText>
+          <DestinationID>40</DestinationID>
+          <SetFlag>TalkToBob</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nugget está atrapado en la rejilla de allá.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+        </DialogueOption>
+        
+        <DialogueOption>
+          <OptionText>(Deja de hablar con el amable conserje.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>¡Sí, me gusta pensarlo! Solo avísame si necesitas ayuda para adaptarte aquí. Siempre estoy feliz de ayudar.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Puedo pasar por aquí?</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cuál es tu nombre?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja de hablar con el amable conserje.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>¡Hola de nuevo, pequeño amigo! ~ ¿Qué pasa?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nugget está atrapado en la rejilla de allá.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Puedo pasar por aquí?</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cuál es tu nombre?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>El otro conserje quería que te diera esto.</OptionText>
+          <ItemToUse>Contract</ItemToUse>
+          <FunctionCall>UseContract</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>JanitorGaveContractToBob</SetFlag>
+          <DestinationID>60</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja de hablar con el amable conserje.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>¡Oh! ~ Qué grosero de mi parte. *hl* ¡Soy Bob! *hle* La mayoría de los chicos por aquí simplemente me llaman el conserje de todos modos. También puedes llamarme así si quieres.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Puedo pasar por aquí?</OptionText>
+          <DestinationID>40</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Deja de hablar con Bob.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Oh no! ¡Eso es terrible! *hl* ¡Si tan solo tuviera mi confiable cinturón de herramientas, podría sacarlo de ahí! *hle* ¡Ve a decírselo a la directora! ¡Ella sabrá qué hacer!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tengo tu cinturón de herramientas.</OptionText>
+          <DestinationID>11</DestinationID>
+          <ItemToUse>ToolBelt</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UseToolBelt</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cuál es tu nombre?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>El otro conserje quería que te diera esto.</OptionText>
+          <ItemToUse>Contract</ItemToUse>
+          <FunctionCall>UseContract</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <SetFlag>JanitorGaveContractToBob</SetFlag>
+          <DestinationID>60</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¿¡Lo encontraste!? ~ ¡Eso es maravilloso!</DialogueText>
+      <JumpNode>12</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¡Espera, extraño niño! ~ ¡Bob viene a salvarte!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToNugget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Es una nueva política para tu pequeño amigo en la silla de ruedas allá. @Solo puedo permitirle a él y a ese extraño niño Nugget pasar por aquí.^</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien, Bob.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Lo siento, pequeño amigo. ~ *hl* Solo los niños con discapacidades pueden usar la rampa para discapacitados en el lado de la escuela. *hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Cuál es tu nombre?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <SetFlag>TalkAboutHandicap</SetFlag>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Tu amigo con habilidades diferentes me dijo que lo estás ayudando. Adelante, ayúdalo a subir por la rampa.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nugget está atrapado en la rejilla de allá.</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>TalkToNuggetInGrate</Flag>
+          <BlockFlag>NuggetRescuedFromGrate</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Cuál es tu nombre?</OptionText>
+          <DestinationID>5</DestinationID>
+          <Flag>JanitorAskBobsName</Flag>
+          <SetFlag>JanitorKnowBobsName</SetFlag>
+          <BlockFlag>JanitorKnowBobsName</BlockFlag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Lo haré, Bob.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>¡Oh, gracias! Lo leeré cuando entre. *hl* Adelante, dile que lo entregaste. *hle* Estoy realmente emocionado de trabajar con él.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Lo dudo.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>2</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>Me gusta hablar con Carla. Es muy astuta. Me recuerda a mí mismo cuando tenía su edad.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es bonito, Bob.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>¡Te voy a sacar de ahí! ¡Solo aguanta! ¡Recuerda respirar!</DialogueText>
+      <JumpNode>101</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>¡Nugget sabe cómo respirar! ~ ¡Nugget no sabe cuánto tiempo más puede quedarse aquí abajo! ~ ¡Saca a Nugget!</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>102</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>102</NodeID>
+      <DialogueText>Esto solo tomará un segundo.</DialogueText>
+      <JumpNode>103</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>103</NodeID>
+      <DialogueText>¡Lo tengo!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>FreeNugget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>¡Ahí estás, pequeño amigo! ~ No vuelvas a arrastrarte por debajo de la tierra, ¿de acuerdo?</DialogueText>
+      <JumpNode>111</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>Nugget tiene la plena intención de arrastrarse por debajo de la tierra nuevamente. Nugget necesita una nueva Cueva de Nugget.</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>112</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>Bueno... eh... solo ten cuidado con eso.</DialogueText>
+      <JumpNode>113</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>113</NodeID>
+      <DialogueText>Aquí. Toma esto, gran hombre conserje. Es un nugget de amistad.</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>114</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>114</NodeID>
+      <DialogueText>Aww, gracias. ~ Te veré por ahí, pequeño amigo.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ReturnToGaurd</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>120</NodeID>
+      <DialogueText>Eso fue algo muy bonito que hicimos ahora. *hl* Estoy seguro de que tu pequeño amigo querría agradecerte por tu ayuda. *hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quizás sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>121</NodeID>
+      <DialogueText>¡Oh, ahí estás! ~ ¡Saqué a tu pequeño amigo! *hl* Estoy seguro de que le gustaría agradecerte. *hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Quizás sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>150</NodeID>
+      <DialogueText>¡Hola de nuevo, gran amigo amigable de Nugget!</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>151</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>151</NodeID>
+      <DialogueText>¡Oh, hey, amigo! ~ Me alegra que ya no estés atrapado detrás de esa rejilla, ¿verdad?</DialogueText>
+      <JumpNode>152</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>152</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>Sí. Nugget aprecia la libertad. Y los nuggets. ¿Podría el gran hombre conserje dejar pasar a Nugget otra vez? ~ Nugget necesita una flor.</DialogueText>
+      <JumpNode>153</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>153</NodeID>
+      <DialogueText>Oh, claro, pero, ummmm... ~ ¿qué pasa con tu amigo aquí? ~ No está discapacitado.</DialogueText>
+      <JumpNode>154</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>154</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>Tampoco lo está Nugget.</DialogueText>
+      <JumpNode>155</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>155</NodeID>
+      <DialogueText>Sabes qué, voy a dejar de cavar este hoyo. Adelante. ~ Solo no te quedes atrapado en más hoyos, ¿de acuerdo?</DialogueText>
+      <JumpNode>156</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>156</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>Nugget no desea repetir el incidente de antes. Nugget estará bien.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>MoveBob</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>160</NodeID>
+      <DialogueText>Tú y tu pequeño amigo tengan cuidado de no caer en más hoyos, ¿de acuerdo?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Tendremos cuidado.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>170</NodeID>
+      <DialogueText>Lo siento, amigo. ~ No se permite el paso hasta que encontremos ese dispositivo especial.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Qué mal.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MissionMapData>
+  <Title>Mapa de Misiones</Title>
+  <JanitorName>La Historia de Dos Conserjes</JanitorName>
+  <JanitorDescription>Comienza la misión hablando con el conserje.</JanitorDescription>
+  <ScienceTeacherName>Flores para Diana</ScienceTeacherName>
+  <ScienceTeacherDescription>Comienza la misión hablando con el Dr. Danner.</ScienceTeacherDescription>
+  <TedName>El Sicario Guardián del Baño</TedName>
+  <TedDescription>Comienza la misión hablando primero con Félix y luego con Ted.</TedDescription>
+  <BuggsName>Los Opuestos se Atraen</BuggsName>
+  <BuggsDescription>Comienza la misión confiscar algún contrabando y luego habla con Buggs.</BuggsDescription>
+  <NuggetName>Si Puedes Esquivar un Nugget</NuggetName>
+  <NuggetDescription>Comienza la misión hablando con Nugget y luego entrega el cinturón de herramientas a Bob.</NuggetDescription>
+  <FelixName>Caín no es Able</FelixName>
+  <FelixDescription>Comienza la misión mostrando el pin prestigioso a Félix.</FelixDescription>
+  <CarlaName>Las Cosas que Explotan</CarlaName>
+  <CarlaDescription>Comienza la misión entregando el módulo láser a Carla.</CarlaDescription>
+  <BillyName>La Característica de la Criatura</BillyName>
+  <BillyDescription>Comienza la misión comprando una batería y luego usando el control remoto en Penny.</BillyDescription>
+  <TeacherName>Rompiendo la Tristeza</TeacherName>
+  <TeacherDescription>Comienza la misión molestando a la Sra. Applegate; una vez con Cindy y otra vez por tu cuenta.</TeacherDescription>
+</MissionMapData>

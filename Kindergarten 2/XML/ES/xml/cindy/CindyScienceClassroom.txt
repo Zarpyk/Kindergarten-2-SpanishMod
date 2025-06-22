@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>No puedo creer que no tengamos la oportunidad de hacer "muestra y cuenta" en esta nueva escuela. ¡Qué bajón!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Ve y mete esto en la toma de corriente.</OptionText>
+          <DestinationID>50</DestinationID>
+          <ItemToUse>JeromeBomb</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <Flag>CarlaTeacherGaveBombHint</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No pensé que te gustaría la ciencia.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Así es.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Yo no, pero no me verían muerta con esos horribles uniformes de gimnasia. ~ ¡Eso déjaselo a los chicos feos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien, Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>No puedo creer que no tengamos la oportunidad de hacer "muestra y cuenta"... ¡Oye, ¿qué es eso?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Esa hermosa flor que tienes! ~ ¿Puedo quedármela?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Solo si me ayudas.</OptionText>
+          <DestinationID>12</DestinationID>
+          <Flag>TedCompletedRecess</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>De ninguna manera.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¿Ayudarte? ~ Supongo que podría. ¿Qué necesitas?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Necesito una distracción.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>No lo sé. El Dr. Danner parece más inteligente que la Sra. Applegate. Probablemente no caerá en ninguna distracción vieja. Vas a necesitar algo grande.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Como la toma de corriente.</OptionText>
+          <DestinationID>14</DestinationID>
+          <Flag>SawOutlet</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Como qué?</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¿La toma de corriente? ¿Cómo va a crear una distracción?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Mete esto en ella.</OptionText>
+          <DestinationID>15</DestinationID>
+          <ItemToUse>Fork</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>¿Y eso qué va a hacer?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Haz una distracción.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Si insistes, pero quiero esa flor antes de hacer cualquier cosa. Podría meterme en problemas, pero valdrá la pena por algo tan bonito.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. Aquí tienes.</OptionText>
+          <DestinationID>18</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveFlowerAndFork</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tal vez encuentre algo más entonces.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>17</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>¿Estás lista para entregar esa flor ya? Yo meteré el estúpido tenedor en la toma de corriente por ti.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien. Aquí tienes.</OptionText>
+          <DestinationID>18</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveFlowerAndFork</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Tal vez encuentre algo más.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>¡Oh, qué emoción! ~ ¡Prepárate para correr! ¡Aquí viene una distracción!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Estoy lista.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>WalkToOutlet</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¿Y bien? ~ ¿Cuál es tu gran idea de distracción?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vamos a usar la toma de corriente.</OptionText>
+          <DestinationID>14</DestinationID>
+          <Flag>SawOutlet</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sigo buscando.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>¡Dios! ¡Los chicos son estúpidos! ~ ¡Solo mira este lugar! *hl* Estoy segura de que hay algo que puedes usar. Tal vez cerca de las computadoras o algo así. *hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Veré qué puedo hacer.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>CindyOutletDistraction</SetFlag>
+          <ResolutionID>20</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¡Hey, Dr. Danner! ~ ¡Mira lo que estoy haciendo!</DialogueText>
+      <JumpNode>31</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>¿Qué? ¡Espera, ¿qué estás haciendo?! ¡Esa no es una buena id--!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ElectrocuteSelf</FunctionCall>
+      <NPC>ScienceTeacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>35</NodeID>
+      <DialogueText>Ustedes, niños nuevos, son más tontos que los monos a los que les quité el cerebro.</DialogueText>
+      <JumpNode>36</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>36</NodeID>
+      <DialogueText>Está bien. ~ Nadie se mueva. *hl* Estoy segura de que la electricidad volverá pronto. *hle*</DialogueText>
+      <JumpNode>36</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>40</NodeID>
+      <DialogueText>Supongo que la química podría ser algo divertida. Tal vez podría hacer algún tipo de perfume o algo así.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Podrías usar esto.</OptionText>
+          <DestinationID>41</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveGreenFlowerChemistry</FunctionCall>
+          <ItemToUse>GreenFlower</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Quieres una muñeca?</OptionText>
+          <DestinationID>42</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveDoll2</FunctionCall>
+          <ItemToUse>Doll2</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>¿Quieres una gema?</OptionText>
+          <DestinationID>43</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GiveFakeDiamond</FunctionCall>
+          <ItemToUse>FakeDiamond</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Está bien, Cindy.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>41</NodeID>
+      <DialogueText>¡Oh, sí! ¡Supongo que podría! Gracias, ex.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>De nada.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>42</NodeID>
+      <DialogueText>*Ppffft* ~ No estoy buscando adoptar a tu hijo. Tengo el mío propio que cuidar, y Dios sabe que estás atrasado con la manutención.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Olvídalo.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>43</NodeID>
+      <DialogueText>Ay, ay, ay... ~ eso se ve tan glamoroso y caro. ¿Y solo me lo vas a dar?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí.</OptionText>
+          <DestinationID>44</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>44</NodeID>
+      <DialogueText>¡Bueno, gracias, tonto! ~ ¡Me largo de esta estúpida escuela!</DialogueText>
+      <FunctionCall>LeaveWithGem</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>45</NodeID>
+      <DialogueText>Cindy... ~ ¿a dónde crees que vas?</DialogueText>
+      <NPC>ScienceTeacher</NPC>
+      <JumpNode>46</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>46</NodeID>
+      <DialogueText>Jaja... ~ no me hables, plebeyo. Ahora soy rica. No tengo que aguantar a ninguno de ustedes.</DialogueText>
+      <JumpNode>47</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>47</NodeID>
+      <DialogueText>Si te refieres a ese mineral que tienes, dudo mucho que valga lo que tú--</DialogueText>
+      <JumpNode>48</JumpNode>
+      <NPC>ScienceTeacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>48</NodeID>
+      <DialogueText>La la la la la. ~ ¡No te oigo! ¡Eres demasiado pobre!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>CindyLeaveScience</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Whoa,Whoa,Whoa, niño. No solo meto cosas en las tomas de corriente. Tienes que hacer algo por mí primero.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Como qué?</OptionText>
+          <DestinationID>51</DestinationID>
+          <FunctionCall>GetGum</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Aquí tienes un chicle. Sabes lo que tienes que hacer.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>52</ResolutionID>
+          <SetFlag>CindyGaveGum</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>¡Vamos, niño! ~ ¡Sabes qué hacer con ese chicle! ¡Vamos!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

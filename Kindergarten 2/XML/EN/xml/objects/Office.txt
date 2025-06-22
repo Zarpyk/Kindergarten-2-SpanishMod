@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This door seems to lead outside. It's locked, but I can unlock it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Unlock the door.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <SetFlag>UnlockedOfficeDoor</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave the door locked.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>This is the principal's computer. I can't read so there isn't much I can do on it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Insert the disk.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>PennyDisk</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>StartPrinter</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ignore the computer.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>This document printed out when I put the disk in the computer. I wonder what it says.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Take the document.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetPennyDocuments</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave the document.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>There are a lot of books on this bookshelf. I don't think any would interest me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Leave the books.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>There are a lot of books on this bookshelf. There's a bright red book that seems to stick out here.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Pull the book.)</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>UnlockBook</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave the books.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>A secret passage didn't open up. I'm a little disappointed. There is a Monstermon Card in the book though.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good enough.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>3</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>The door is locked. This lockdown is pretty serious.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bummer.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>That box just has some changes of clothes. Just in case I get any...stuff on these.</DialogueText>
+      <NPC>Principal</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sure.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockPrinicpalOutfit</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>It looks like this box just has some of the principal's clothes in it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Weird.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockPrinicpalOutfit</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>It's just a calendar. Oh how the seasons change.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That they do.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockSeasonalOutfit</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>It seems she locked the door on her way down.~ I hope she comes back to let me out.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That would be nice..</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>It's a pink plant. I get the feeling that the science teacher had something to do with its creation.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Probably.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

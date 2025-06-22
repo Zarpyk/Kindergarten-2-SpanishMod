@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¡Contemplad!~ ¡La nueva Cueva Nugget de Nugget! Hay mucho que ver y mucho que--</DialogueText>
+      <JumpNode>1</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Nugget se da cuenta de que hay una...~pierna. Nugget esperaba que esta Cueva Nugget no tuviera tal asquerosidad.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Puedo deshacerme de él.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Hay esqueletos por todas partes.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Nugget lo apreciaría mucho. El amigo de Nugget realmente es el amigo de Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh, gracias.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Sí, pero los esqueletos de Nugget no parecen ser personas. La pierna parece pertenecer a personas.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Puedo deshacerme de él.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>¿Está disfrutando el amigo de Nugget de su estancia en la Cueva Nugget?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí, pero estoy listo para irme.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>LeaveNuggetCave</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Sí. Voy a mirar un poco más.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Gracias por quitar la pierna asquerosa.~ *hl*Nugget está satisfecho con su amigo. Por favor, únete a Nugget en el gimnasio cuando suene la campana.*hle* Nugget necesita un amigo para jugar a la pelota de goma.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Claro, Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>¡Nugget escucha la campana!~ Nugget está en quiebra, así que no puede pagar la tarifa del laboratorio. Por favor, ven al gimnasio con el pobre Nugget.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Iré al gimnasio contigo.</OptionText>
+          <DestinationID>11</DestinationID>          
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Preferiría ir a ciencias.</OptionText>
+          <DestinationID>12</DestinationID>
+          <MoneyLock>3</MoneyLock>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>¡Esto complace a Nugget!~ ¡Nugget puede finalmente tener una oportunidad de ganar un juego de pelota de goma!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Ve al gimnasio.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToGym</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>¿¡Abandonarías al pobre Nugget?!~ ¡Nugget será masacrado por las pelotas de goma! ¡Tú no eres amigo de Nugget en absoluto!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Supongo que no.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>GoToScience</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>¡Contemplad!~ ¡La nueva Cueva Nugget de Nugget! Hay mucho que ver y mucho que--</DialogueText>
+      <JumpNode>21</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>¡Qué agradable sorpresa!~ ¡Los amigos de Nugget, Lily y Billy, están aquí!~ Nugget está bastante impresionado por la astucia de Lily y Billy.</DialogueText>
+      <JumpNode>22</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Tenemos un problema.</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bueno verte también.</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>¡Hay un gran y aterrador monstruo cerca de donde nos estábamos escondiendo esta mañana!</DialogueText>
+      <NPC>Lily</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso no es bueno.</OptionText>
+          <DestinationID>24</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>No, no lo es.~ Necesitamos alguna forma de pasar junto a él. *hl*¡Tiene que haber alguien grande, fuerte y lo suficientemente valiente como para luchar contra él o algo así!*hle*~ Busca a ver si puedes encontrar a alguien.</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <NPC>Billy</NPC>
+      <DialogueText>No tengas miedo de usar ese control remoto para volver a la escuela. Quizás haya alguien dentro que aún esté dispuesto a ayudarnos.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Voy a mirar alrededor.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>4</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

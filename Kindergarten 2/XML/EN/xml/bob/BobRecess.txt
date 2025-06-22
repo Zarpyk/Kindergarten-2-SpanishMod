@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Ummmm...~ Ms. Applegate?</DialogueText>
+      <JumpNode>1</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Huh?~ Oh it's you. The 'new' janitor. What do you want?</DialogueText>
+      <JumpNode>2</JumpNode>
+      <NPC>Teacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>These...*gulp*~ these are for you...</DialogueText>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>You got me flowers?~ Why...~that's the sweetest thing anyone's ever done for me that didn't involve pills.</DialogueText>
+      <JumpNode>5</JumpNode>
+      <NPC>Teacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Come with me!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Teacher</NPC>
+      <FunctionCall>TeacherGoToLounge</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>But what about the flowers?</DialogueText>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Leave them!</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>DropFlowers</FunctionCall>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

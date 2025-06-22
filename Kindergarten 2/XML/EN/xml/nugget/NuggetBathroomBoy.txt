@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Nugget is pleased with the progress we are making.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what's next?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Come see Nugget at lunch.~ Nugget will explain what comes next then. Give Nugget the shovel.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fair enough.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>RingBellBathroomNugget</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>The bell has rung!~ Give Nugget the shovel. Nugget and his friend must return to the classroom of learning before teacher notices we're missing!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Return to the classroom of learning.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReturnToDumbClass</FunctionCall>          
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

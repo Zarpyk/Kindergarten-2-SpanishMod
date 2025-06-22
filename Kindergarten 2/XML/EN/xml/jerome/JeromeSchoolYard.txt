@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Go away kid. I don't want to talk about it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can you read?</OptionText>
+          <DestinationID>30</DestinationID>
+          <Flag>OzzyReadingMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>You look like you could use this.</OptionText>
+          <ItemToUse>Tissue</ItemToUse>
+          <DestinationID>50</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UseTissue</FunctionCall>
+          <SetFlag>JeromeGaveTissue</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>If you insist.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>CarlaTalkedToJerome</SetFlag>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>I'm not going to tell y--~ You know what? What's the difference?~ Do you know why we're at this school instead of our old one?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>No.</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>You do?! How did you find out? I only know because I found the body...~parts.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm the one who did it.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Ummm...it was on the news.</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>You--~ YOU WHAT?!?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I did it.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>GetBomb</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>You know what?! Here! Take this!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Is that one of your dad's--.</OptionText>
+          <DestinationID>5</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>I know where Billy is.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh no.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>See you in hell.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess you will.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ExplodePlayer</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Something bad happened.~ They found my dad in some weird lab under his office. His head was...~missing.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How awful.</OptionText>
+          <DestinationID>8</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>So now you know what I have to do then, right?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Find a foster family?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Oh. Yeah, I guess that makes sense. So you know what I have to do then right?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Find a foster family?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>I have a mom! Jeez.~ I have to take revenge on who did this to my family!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Who do you think did this?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Lily obviously!~ She was obsessed with my dad! It had to be her.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>She's not even here.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>That's what you think! I know she's here. I can feel it.~ Can you help me find her? Please. I need justice.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I guess I can help you.</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>Thank you! Now we just need a lead of some sort. *hl*Talk to Nugget.*hle* He was close to Billy and has a crush on Lily. Maybe he knows.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>15</ResolutionID>
+          <SetFlag>JeromeLookingForLily</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>What did he say?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He's stuck behind a grate.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I haven't talked to him yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Darn it!~ Why does he always have to be such a nutcase?~ *hl*We need to get him out of there. It's our only lead.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll figure something out.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>Yeah...~I mean I could...~if I could *sniff*~ get these tears out of my eyes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>This should help.</OptionText>
+          <ItemToUse>Tissue</ItemToUse>
+          <FunctionCall>UseTissue</FunctionCall>
+          <UsesAction>true</UsesAction>
+          <DestinationID>31</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Nevermind then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>31</NodeID>
+      <DialogueText>Oh yeah...~thanks man. Lemme see what you have there.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>32</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>32</NodeID>
+      <DialogueText>Okay. It says, "Act extremely vulnerable. Mention frequently how if something bad happens to you, it would ruin your Mom's company."</DialogueText>
+      <JumpNode>33</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>33</NodeID>
+      <DialogueText>Okay. I guess I can do that. Don't know why he wants me to, but I'm happy to take his money.</DialogueText>
+      <NPC>Ozzy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good to hear.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>FelixCompletedSchoolYard</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>*Sniff* Thanks man. I can't believe they made me come to school today.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So can you read this for me?</OptionText>
+          <DestinationID>51</DestinationID>
+          <ItemToUse>OzzyOrders</ItemToUse>
+          <FunctionCall>GiveOzzyOrders</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Why? What's wrong?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Oh right. Yeah. Gimme a second.</DialogueText>
+      <JumpNode>32</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>Ha! I win! Get rekt.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Darn.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>Aw man.~ I suck!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

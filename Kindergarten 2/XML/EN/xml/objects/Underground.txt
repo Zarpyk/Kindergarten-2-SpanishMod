@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This box looks interesting. I think I can hear something inside.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Squeak the plushie.)</OptionText>
+          <ItemToUse>MonstermonPlushie</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UsePlushie</FunctionCall>
+          <SetFlag>BillyRevealed</SetFlag>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>1</ResolutionID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Leave the box.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>This was the box Billy was hiding in. There's a Monstermon card in here!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Neat.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>3</ResolutionID>
+          <FunctionCall>GetBillyBoxCard</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>I can use this elevator to go up if I have the key for it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go up.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>ElevatorKey</ItemToUse>
+          <FunctionCall>GoTo1stFloorFromUnderground</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Stay here.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>This was the box Billy was hiding in. It's empty.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Neat.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>I should get out of here. I'll get in trouble if I stick around.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Get out of here.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToRecess</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>This is Billy's head. It appears to have been removed from his body without his consent.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Clip off a few hairs.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetBillyHair</FunctionCall>
+          <ItemToUse>Scissors</ItemToUse>
+          <ResolutionID>18</ResolutionID>
+          <SetFlag>BillyCutHair</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Gross.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>This is Billy's body. The head has been removed. His hoodie is still mostly intact.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Nice.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>UnlockBillyHoodie</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>This is Billy's body. The head has been removed.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Leave the body.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>This is Billy's head. It appears to have been removed from his head without his consent.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Gross.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Should I use the elevator?</DialogueText>
+      <Options>
+        <!--<DialogueOption>
+          <OptionText>2nd Floor.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>ElevatorKey</ItemToUse>
+          <FunctionCall>Elevator2ndFloor</FunctionCall>
+        </DialogueOption>-->
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>ElevatorKey</ItemToUse>
+          <FunctionCall>GoTo1stFloorFromUnderground</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I'll just stay here.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>This elevator requires a key to operate.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Use the elevator key.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <DestinationID>-1</DestinationID>
+          <ItemToUse>ElevatorKey</ItemToUse>
+          <FunctionCall>GoTo1stFloorFromUnderground</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Ignore the elevator.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>This isn't a normal elevator button. It seems to be an eye scanner of some sort.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Interesting.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

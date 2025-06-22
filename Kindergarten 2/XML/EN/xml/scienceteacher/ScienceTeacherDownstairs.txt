@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>900</NodeID>
+      <DialogueText>Ah...~much better.</DialogueText>
+      <JumpNode>901</JumpNode>    
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>901</NodeID>
+      <DialogueText>Hey!~ What are you doing out of study hall?!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uhhh...nothing.</OptionText>
+          <DestinationID>902</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>902</NodeID>
+      <DialogueText>Nothing....~I love that answer...~You're about to be nothing.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh oh.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>KillPlayerOutOfStudyHall</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

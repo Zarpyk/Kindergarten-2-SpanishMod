@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9839ff07fc3994aa17c3c6b5ecfd28, type: 3}
+  m_Name: UnlockedItems
+  m_EditorClassIdentifier: 
+  m_languageKeys:
+  - Default
+  - Sp
+  - Fr
+  m_languageValues: 000000000100000002000000
+  m_fieldKeys: 090000000a0000000b0000000c0000000d0000000e0000000f00000010000000
+  m_fieldValues:
+  - m_fieldName: Playbook
+    m_keys: 00000000
+    m_values:
+    - '<size=60>The Teacher''s Playbook</size><br>A book that contains various plays that the teacher might want to put on. It can also be shown to Agnes as a sign of courage.'
+  - m_fieldName: VentMap
+    m_keys: 00000000
+    m_values:
+    - '<size=60>Carla''s Vent Map</size><br>A map of the vent system drawn by Carla. Bringing this to school unlocks all the vents.'
+  - m_fieldName: Mop
+    m_keys: 00000000
+    m_values:
+    - '<size=60>The Janitor''s Mop</size><br>A mop with a brutal and bloody history. It scares children and fits conveniently into golf holes.'
+  - m_fieldName: GatorNugget
+    m_keys: 00000000
+    m_values:
+    - '<size=60>Linda''s Nugget</size><br>A special Nugget of Friendship<sup>TM</sup> that shows you are a friend of Linda. Show it to her and she''ll take you to her secret lair.'
+  - m_fieldName: WhiteFlower
+    m_keys: 00000000
+    m_values:
+    - '<size=60>The White Flower</size><br>A rare flower grown in Emmy''s garden. It briefly counteracts the effects of goo. Rabbits also hate it.'
+  - m_fieldName: SuperCure
+    m_keys: 00000000
+    m_values:
+    - '<size=60>The Special Cure</size><br>A secret substance produced by Applesoft. It can counteract goo mutations if you have the right equipment.'
+  - m_fieldName: Decoder
+    m_keys: 00000000
+    m_values:
+    - '<size=60>Alice''s Decoder</size><br>A purple decoder glass. It can read the secret codes in the lab. '
+  - m_fieldName: CarRemote
+    m_keys: 00000000
+    m_values:
+    - '<size=60>The RC Car Remote</size><br>A controller for all of the RC cars in the school.'
+  m_nextLanguageID: 3
+  m_nextFieldID: 17

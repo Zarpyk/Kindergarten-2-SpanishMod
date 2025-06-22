@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Ah!~ Help!~ It's got my leg!~ Get it off me!</DialogueText>
+      <JumpNode>1</JumpNode>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Hang on Lily!~ Kid!~ You gotta help her!~ *hl*Take out the one that's eyeing you and then save Lily!*hle*~ Hurry!</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>What about you?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>I'll be fine!~ Just save Lily!</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>*b*AAAAAAHHHHHH!!</DialogueText>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Lily!~ NOOOOOOOO!!!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Billy</NPC>
+      <FunctionCall>CallDeathLily</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Thanks for the help!~ Any longer and I feel like he would have swallowed me whole.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No problem.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Let's find a way to help Billy.~ I'm not sure how much longer that box will hold!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm on it.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Thanks for the help!~ Any longer and I feel like he would have--</DialogueText>
+      <JumpNode>13</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>*b*LOOK OUT!!*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>We...~we failed.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do you mean?</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>We set out to save these kids from that awful woman...~but...~look around.~ They're all dead.</DialogueText>
+      <JumpNode>17</JumpNode>
+      <FunctionCall>GetOffBox</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <NPC>Billy</NPC>
+      <DialogueText>C'mon Lily.~ We did our best.~ We should get out of here.~ There're other schools we can-</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>BeastRoar</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>What...~was that?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't wanna know.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>RaiseBeast</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>What even is that thing?!~ How do we fight something like that?!~ What are we gonna do?!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>21</ResolutionID>
+      <FunctionCall>CreatureInhale1</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Be careful! If that thing tries to eat us again, I don't think we can stop it!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll figure something out.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>Nugget no!!~ What have you done?! Now she's gonna eat us al-</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>GetSuckedIn</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>*b*NUGGET!!*be*</DialogueText>
+      <JumpNode>51</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Is...~is he alive?</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Billy</NPC>
+      <FunctionCall>NuggetStepOut</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>*b*NUGGET IS ALIIIIIIIIVE!!*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>Nugget</NPC>
+      <FunctionCall>NuggetJumpOut</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>You're all alive!~ This wasn't all for nothing! I'm...~so happy.</DialogueText>
+      <JumpNode>61</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>We did good today, Lily.~ Especially you kid.</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks.</OptionText>
+          <DestinationID>62</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>62</NodeID>
+      <DialogueText>Come on.~ Let's all go home.</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go home.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>EndLair</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>75</NodeID>
+      <DialogueText>Hit one of those buttons before she fires that cannon! We have to stop her from ordering it to fire!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'm on it.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

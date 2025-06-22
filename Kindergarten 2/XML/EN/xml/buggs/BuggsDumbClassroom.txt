@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>What do you want?~ I'm busy trying to figure out how to get my knife back.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Can you cause a distraction?</OptionText>
+          <DestinationID>10</DestinationID>
+          <Flag>TryToDistractTeacher</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I might have a way.</OptionText>
+          <DestinationID>1</DestinationID>
+          <ItemToUse>PennyController</ItemToUse>
+          <Flag>BillyStartedMorningTime</Flag>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(It's probably better he doesn't have it.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>What's that thing supposed to do?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Press the green button.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SummonPennyDumbClass</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the blue button.)</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the red button.)</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the yellow button.)</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Nothing happened.~ Quit wasting my time you stupid jerk.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Stop wasting his time.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Ugh...~what do you want laser girl?~ I didn't call you.</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>I-~ I don't know. I'm just supposed to be here.</DialogueText>
+      <NPC>Penny</NPC>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Whatever...make yourself at home. Not like I can stop you.</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PennyWalkToBuggsDumbClass</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>I think I'm supposed to talk to you. Why am I supposed to talk to you?</DialogueText>
+      <NPC>Penny</NPC>
+      <JumpNode>7</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Yeah you're supposed to talk to me!~ Gimme my knife ba-</DialogueText>
+      <JumpNode>8</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <DialogueText>Not you...~him.~ You're supposed to do something now...</DialogueText>
+      <NPC>Penny</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Press the green button.)</OptionText>
+          <DestinationID>9</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the blue button.)</OptionText>
+          <DestinationID>900</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetAllContraband</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the red button.)</OptionText>
+          <DestinationID>20</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the yellow button.)</OptionText>
+          <DestinationID>910</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <NPC>Penny</NPC>
+      <DialogueText>ERROR. Not that one...~I'm already here.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Press the blue button.)</OptionText>
+          <DestinationID>900</DestinationID>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>GetAllContraband</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the red button.)</OptionText>
+          <DestinationID>20</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Press the yellow button.)</OptionText>
+          <DestinationID>910</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NPC>Penny</NPC>
+      <NodeID>900</NodeID>
+      <DialogueText>Here's the contraband I collected today. I'm gonna go back to class now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye Penny.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PennyLeaveDumbclass</FunctionCall>
+          <SetFlag>PennyGaveUpContraband</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NPC>Teacher</NPC>
+      <NodeID>905</NodeID>
+      <DialogueText></DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye Penny.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PennyLeaveDumbclass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NPC>Penny</NPC>
+      <NodeID>910</NodeID>
+      <DialogueText>I'm just gonna go back to class now.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye Penny.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PennyLeaveDumbclass</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>915</NodeID>
+      <DialogueText>That was super freakin' weird.~ How is it possible that this school is weirder than our old one?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Do you want your knife back?</OptionText>
+          <DestinationID>916</DestinationID>
+          <ItemToUse>Knife</ItemToUse>
+          <FunctionCall>GiveKnife</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>916</NodeID>
+      <DialogueText>Oh! Yeah.~ Thanks man. I owe you one.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I need you to kill the teacher.</OptionText>
+          <DestinationID>917</DestinationID>
+          <SetFlag>BillyRecruitedBuggs</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>917</NodeID>
+      <DialogueText>Hehehe...~well that's something I'd be willing to accommodate.~ I'm in. Just let me know what to do.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Will do.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>918</NodeID>
+      <DialogueText>That--~ that was so weird. I think you did something wrong. </DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I think I did.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>10</NodeID>
+      <DialogueText>We've been at this school for five minutes and you're already causing trouble. Sometimes I wonder why people think that I'm the bad kid.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Will you do it or not?</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Cause you bring knives to school?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>11</NodeID>
+      <DialogueText>Relax kid. I'll do it...~for a price.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How much?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>12</NodeID>
+      <DialogueText>Fifty bucks.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's a lot.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>13</NodeID>
+      <DialogueText>Yeah well I see that you're cozying up to Mr. Moneybags over there. I'm sure he can get the money.</DialogueText>
+      <JumpNode>14</JumpNode>
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>14</NodeID>
+      <NPC>Ted</NPC>
+      <DialogueText>I suppose I could. Felix keeps a hefty sum in his locker upstairs. I could always try and get some from there.</DialogueText>
+      <JumpNode>15</JumpNode>
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>15</NodeID>
+      <DialogueText>Perfect.~ Pay me by the end of the day or you'll be paying a doctor instead. Got it?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <UsesAction>true</UsesAction>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Don't got it.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options> 
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>16</NodeID>
+      <DialogueText>Excellent.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <UsesAction>true</UsesAction>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Don't got it.</OptionText>
+          <DestinationID>17</DestinationID>
+        </DialogueOption>
+      </Options> 
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Hey kid? I think you pressed the wrong-</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>ShootBuggs</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Hey kid. I heard the whole thing.~ Meet me upstairs in the science classroom. *hl*Cut through the principal's office.*hle* We're going to bust this girl's head wide open.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>MoveUpstairs</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>51</NodeID>
+      <DialogueText>Well that didn't go so well. She's guarding the study hall room now so don't come down here.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What should I do?</OptionText>
+          <DestinationID>52</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>52</NodeID>
+      <DialogueText>The plan hasn't changed. I'm sure there's a way into the science classroom. You just gotta get in there and change the lesson plan to magnets. Got it?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>53</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>53</NodeID>
+      <DialogueText>Once you do that, *hl*get back outside and wait for the bell to ring so you can pay the lab fee.*hle* I'm gonna need you to start in the science class.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Will do.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>Woah kid. What are you doing down here? You're supposed to be making friends with our snitchy friend.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I need Cindy's doll.</OptionText>
+          <DestinationID>61</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Right.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>Oh great.~ That girl doesn't give up her toys easy. She'll probably make you play house for it.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What can we do?</OptionText>
+          <DestinationID>62</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>62</NodeID>
+      <DialogueText>The way I see it, you have to play along.~ We don't have time to set her up and get her in trouble.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll do my best.</OptionText>
+          <DestinationID>63</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>63</NodeID>
+      <DialogueText>I wouldn't go into this thing empty handed. What do you have on you?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Some toilet paper.</OptionText>
+          <ItemToUse>ToiletPaper</ItemToUse>
+          <DestinationID>64</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>This spray bottle.</OptionText>
+          <ItemToUse>SprayBottle</ItemToUse>
+          <DestinationID>66</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Don't worry about it.</OptionText>
+          <DestinationID>67</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>64</NodeID>
+      <DialogueText>You know...I saw her talking to the janitor earlier today.~ Wouldn't surprise me if she's convinced him to be some hired muscle.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So?</OptionText>
+          <DestinationID>65</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>65</NodeID>
+      <DialogueText>So I'd recommend *hl*using that toilet paper to draw his attention.*hle* Maybe keep him occupied so he ignores her when she calls.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good idea.</OptionText>
+          <DestinationID>67</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>66</NodeID>
+      <DialogueText>Oh perfect!~ This looks like it could blind her.~ You can just take the stupid doll from her by force.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good idea.</OptionText>
+          <DestinationID>67</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>67</NodeID>
+      <DialogueText>Okay. *hl*Once you have that doll, bring it to the snitch.*hle*~ See if she'll spill any info.~ *hl*After that we should be good.*hle*~ I'll see you in lunch.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>See you then.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>68</NodeID>
+      <DialogueText>Screw off, kid.~ You were supposed to do recon in that smart classroom. I'll get my knife back by myself.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oops.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>69</NodeID>
+      <DialogueText>Solid food fight.~ Some of my best work.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good job, Buggs.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>70</NodeID>
+      <DialogueText>Stupid study hall...first they take my knife, then they take my freedom.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Do you want to battle?</OptionText>
+          <DestinationID>71</DestinationID>
+          <ItemToUse>Deck</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That sucks, Buggs.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>71</NodeID>
+      <DialogueText>I guess that would be a good way to pass the time. My gross deck is gonna wipe the floor with you!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StartMonstermonBattle</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>75</NodeID>
+      <DialogueText>What are you doing here?~ You were supposed to have Monty read that stuff!~ Get out of here dude!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Oh yeah.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>315</NodeID>
+      <DialogueText>You're back again?~ What is with you? I thought this school had better technology than this.</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>316</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>316</NodeID>
+      <DialogueText>I don't know what's wrong with me!</DialogueText>
+      <NPC>Penny</NPC>
+      <JumpNode>317</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>317</NodeID>
+      <DialogueText>There's lots wrong with you.~ Just stay whatever course you're on, *hl*but I'm telling your mother about this.*hle*</DialogueText>
+      <NPC>Teacher</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PennyWalkToBuggsDumbClass</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>445</NodeID>
+      <DialogueText>I can beat you, but I can't beat the system. Stupid study hall.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay, Buggs.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>70</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>450</NodeID>
+      <DialogueText>This school blows!~ What else can they take from me?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>A Monstermon Card?</OptionText>
+          <DestinationID>451</DestinationID>
+          <FunctionCall>UnlockFlimFlam</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>451</NodeID>
+      <DialogueText>I guess so!~ Here! Take it!~ I don't care!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Thanks!</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

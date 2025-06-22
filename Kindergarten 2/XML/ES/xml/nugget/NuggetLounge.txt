@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>¿Qué parte de 'no se te permite estar aquí' es tan difícil de entender para ti?</DialogueText>
+      <NPC>ScienceTeacher</NPC>
+      <JumpNode>1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Nugget entiende las órdenes del hombre de la gran cabeza.~ A Nugget simplemente no le importa.~ Los nuggets de Nugget son mucho más importantes.</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Tienes suerte de que el director nos prohibiera hacerte daño.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <NPC>ScienceTeacher</NPC>
+      <ResolutionID>7</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Ahí está.~ Tu almuerzo ya terminó de calentar en el microondas. Ahora sal de aquí.</DialogueText>
+      <JumpNode>4</JumpNode>
+      <NPC>ScienceTeacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Nugget aprecia poder usar el microondas. Los nuggets fríos son nuggets malos. No son adecuados para un Nug-</DialogueText>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>*b*¡SAL DE AQUÍ!*be*</DialogueText>
+      <JumpNode>6</JumpNode>
+      <NPC>ScienceTeacher</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Muy bien...~ Nugget se va.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>NuggetLeaveLounge</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>Nugget está emocionado por tener sus Nuggets calientes.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Eso es bonito, Nugget.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>
+      <NodeID>0</NodeID>
+      <DialogueText>¡Oh! Eres tú...</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Soy yo.</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Sabes, Penny me mencionó que hizo un nuevo amigo.~ Que TÚ...~eres su nuevo amigo.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sí. Ella es agradable.</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Y ahora estás merodeando con este chico grande y hay un disco de computadora en mi oficina que yo no puse allí.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Oh?</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>¡Hey!~ ¡Estoy aquí!</DialogueText>
+      <NPC>Buggs</NPC>
+      <JumpNode>3</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Todo es un poco demasiado...~sospechoso. Creo que deberíamos tener una pequeña charla. ¡En mi oficina!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Vaya.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>TurnOffLights</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>Justo a tiempo. Te veré mañana.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Qué está pasando?</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>PlayerShotByPennyPrincipal</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>      
+      <NodeID>10</NodeID>
+      <DialogueText>¡Atención estudiantes!~ Debido a preocupaciones de seguridad, la escuela ha sido cerrada por hoy.~ Por favor, salgan de manera ordenada.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Salgan de manera ordenada.)</OptionText>
+          <FunctionCall>SendToEndDay</FunctionCall>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Anulación del cierre escolar activada. Todos los estudiantes deben salir inmediatamente.</DialogueText>
+      <NPC>Penny</NPC>
+      <JumpNode>12</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Está bien. Está bien. Nos vamos.~ Parece que ellos ganan esta vez, chico. No podemos salvar a nadie si todos nos disparan.</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Buen punto.</OptionText>
+          <FunctionCall>SendToEndDayForReal</FunctionCall>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>¡Maldita sea!~ ¡Eso significa que Penny se va a ir! No podremos usarla para entrar en el ascensor.</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>¿Y ahora qué?</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Supongo que nos reagruparamos mañana.~ Necesitaremos algo de tiempo para formular un nuevo plan.</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Está bien entonces.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Solo esperemos que tengamos mejor suerte mañana.</DialogueText>
+      <NPC>Billy</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Espero que sí.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendToEndDayForReal</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

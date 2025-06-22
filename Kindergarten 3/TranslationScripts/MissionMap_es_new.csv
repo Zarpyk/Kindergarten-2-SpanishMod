@@ -1,0 +1,23 @@
+﻿Field,Default,Traducción [es]
+TeacherDescription,Start the mission by reading the pamphlet on the wall and then talking to the teacher.,Comienza la misión leyendo el folleto en la pared y luego hablando con el maestro.
+JanitorDescription,Start the mission by helping the Janitor get some bandaids.,Comienza la misión ayudando al conserje a conseguir algunas curitas.
+CarlaDescription,Start the mission by getting Cindy to help with Emmy's garden and then talking to Carla.,Comienza la misión haciendo que Cindy ayude con el jardín de Emmy y luego hablando con Carla.
+DaveyDescription,Start the mission by proving yourself to Davey by getting beat up by the Janitor.,Comienza la misión probándole a Davey que eres capaz dejando que el conserje te golpee.
+EmmyDescription,Start the mission by getting Cindy to help with Emmy's garden and then finding a way inside.,Comienza la misión haciendo que Cindy ayude con el jardín de Emmy y luego encontrando una forma de entrar.
+FelixDescription,Start the mission by getting a goo core.,Comienza la misión consiguiendo un núcleo de goo.
+AliceDescription,Start the mission by returning Alice's diary to her.,Comienza la misión devolviendo el diario de Alice.
+NuggetDescription,Start the assignment by giving Nugget the white flower.,Comienza la tarea dándole la flor blanca a Nugget.
+LilyDescription,Start the assignment by opening the cage in the lab.,Comienza la tarea abriendo la jaula en el laboratorio.
+TeacherTitle,The Show Must Go On,El espectáculo debe continuar
+CarlaTitle,The Grate Escape,La gran escapada
+JanitorTitle,Cold Blooded Killer,Asesino a sangre fría
+DaveyTitle,Gator Aid,Ayuda de caimán
+EmmyTitle,Garden of Emmy,El jardín de Emmy
+FelixTitle,Helicopter Parenting,Padres helicóptero
+AliceTitle,What Happened on Monday?,¿Qué pasó el lunes?
+NuggetTitle,Nugget-o and Lily-et,Nugget-o y Lily-et
+LilyTitle,Paging Dr. Goolittle,Llamando al Dr. Goolittle
+Requirement1,Complete {0} to unlock this assignment.,Completa {0} para desbloquear esta tarea.
+Requirement2,Complete {0} and {1} to unlock this assignment.,Completa {0} y {1} para desbloquear esta tarea.
+Requirement3,"Complete {0}, {1}, and {2} to unlock this assignment.","Completa {0}, {1} y {2} para desbloquear esta tarea."
+Requirement4,"Complete {0}, {1}, {2}, and {3} to unlock this assignment.","Completa {0}, {1}, {2} y {3} para desbloquear esta tarea."

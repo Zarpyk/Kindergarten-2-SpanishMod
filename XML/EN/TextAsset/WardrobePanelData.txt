@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<WardrobePanelData>
-  <TitleText>What am I wearing today?</TitleText>
-  <ApplyText>Apply</ApplyText>
-</WardrobePanelData>

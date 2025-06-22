@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>This whole day has been so crazy.~ I'm glad we were able to save everyone and stop that awful principal.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what now?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Well...~I know I want to go home, but I'm not really sure where home is...</DialogueText>
+      <NPC>Alice</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>What do you mean?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>I don't even go to this school.~ I was brought here...~all I remember is going down the slide at my school and then I woke up in that lab.</DialogueText>
+      <NPC>Alice</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>That's weird.</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Yeah.~ I'm gonna try and get home now.~ I'll see you guys around...~maybe.</DialogueText>
+      <NPC>Alice</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye, Alice.</OptionText>
+          <DestinationID>4</DestinationID>
+          <FunctionCall>AliceLeave</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>I'm gonna get going too. My mom is probably worried about me.~ Thanks for saving my life and stuff today.</DialogueText>
+      <NPC>Ron</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>No problem, Ron.</OptionText>
+          <DestinationID>5</DestinationID>
+          <FunctionCall>RonLeave</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>Nugget must also leave.~ Nugget has...~business to attend to.</DialogueText>
+      <NPC>Nugget</NPC>
+      <Options>
+        <DialogueOption>
+          <OptionText>I don't even want to know what that means.</OptionText>
+          <DestinationID>6</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Ummm...~Nugget...~before you go.~ I just wanted to say thank you for saving us today.~ You were really brave.</DialogueText>
+      <FunctionCall>KissNugget</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>The-~ the pretty Lily...~has kissed Nugget's cheek. Nugget...~ Nugget...~</DialogueText>
+      <JumpNode>81</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>81</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>*b*NUGGET IS SO HAPPY!!*be*</DialogueText>
+      <JumpNode>82</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>82</NodeID>
+      <NPC>Nugget</NPC>
+      <DialogueText>*b*NUGGET MUST TELL THE WORLD!!*be*</DialogueText>
+      <FunctionCall>NuggetLeave</FunctionCall>
+      <JumpNode>-1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>8</NodeID>
+      <NPC>Billy</NPC>
+      <DialogueText>The three of us make a pretty good team.</DialogueText>
+      <JumpNode>9</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>9</NodeID>
+      <DialogueText>Yeah we do.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>So what now?</OptionText>
+          <DestinationID>10</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>I don't know.~ I just know I'm ready to go home.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Sounds fair.</OptionText>
+          <DestinationID>11</DestinationID>
+          <FunctionCall>GetDank</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Before we go though. We want you to have this Monstermon Card. It's pretty rare. There's only two in existence.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Interesting.</OptionText>
+          <DestinationID>12</DestinationID>
+          <FunctionCall>GetGuide</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NPC>Billy</NPC>
+      <NodeID>12</NodeID>
+      <DialogueText>You can also have this.~ It's a guide we made of all the Monstermon Cards and outfits we found hidden around the school.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Neat.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>That's it then.~ Let's go home. Goodbye.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Bye.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>FinishGame</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

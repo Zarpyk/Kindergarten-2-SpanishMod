@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>I can't believe it. It's not fair.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's not fair?</OptionText>
+          <DestinationID>1</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What's your name?</OptionText>
+          <DestinationID>3</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>What do you like to do?</OptionText>
+          <DestinationID>6</DestinationID>
+          <Flag>TedStartedMission</Flag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Felix wants you to read this.</OptionText>
+          <DestinationID>20</DestinationID>
+          <ItemToUse>OzzyOrders</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not interested.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>The rezoning of my friends! All of them but me, moved to a new school to make room for you jerks!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How many were moved?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Three. We got a bad deal if you ask me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Well it's been nice talking to you.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>I'm Ozzy and you're one of those awful new kids. I can't believe my friends got moved to new schools for this.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>How many were moved?</OptionText>
+          <DestinationID>2</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>I like to play with my favorite toy, Destructotron! He's so cool!~ Or...he used to be. *hl*His battery ran out.*hle* Not that a new kid like you cares.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>There aren't any other batteries?</OptionText>
+          <DestinationID>7</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>7</NodeID>
+      <DialogueText>*hl*Not unless one of you new kids is selling them.*hle* Until then, my favorite toy is just a dumb paperweight.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Stop talking to Ozzy.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>What?! That new girl is interested in me!?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yup. She's into gingers.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>She just wants someone new.</OptionText>
+          <DestinationID>11</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Yowza!~ Even my current girlfriend isn't into my fiery locks.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Your current girlfriend?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>She got rezoned to make room for all of you new kids so it definitely won't work out.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Well as long as you're good with it.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>Ugh...~now you're making me feel guilty. I should at least break it off with Amanda before I go out with someone else.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Well as long as you're good with it.</OptionText>
+          <DestinationID>13</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Woah woah woah.~ Slow your roll there new kid.~ I'm not taking anything from you. *hl*Your hands are filthy.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Use hand sanitizer.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UseHandSanitizer</FunctionCall>
+          <DestinationID>23</DestinationID>
+          <ItemToUse>HandSanitizer</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>So you won't take it?</OptionText>
+          <DestinationID>21</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>*hl*Not until your hands are clean.*hle* Get out of here you filthy animal.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>22</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>I'm not taking anything from you until your hands are clean.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Use hand sanitizer.)</OptionText>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UseHandSanitizer</FunctionCall>
+          <DestinationID>23</DestinationID>
+          <ItemToUse>HandSanitizer</ItemToUse>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>That's better.~ Lemme see that thing...~</DialogueText>
+      <JumpNode>24</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Ugh...~typical Felix.~ He knows I can't read. C'mon kid.~ *hl*Let's find someone who can read this for me.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>StartFollowingPlayer</FunctionCall>
+          <SetFlag>OzzyReadingMission</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>I'll do whatever the rich kid wants me to do. Now leave me alone.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay then.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

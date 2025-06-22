@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Ms. Applegate please...~</DialogueText>
+      <NPC>Stevie</NPC>
+      <JumpNode>1</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Open this door immediately! There are pills out there! Don't you understand?!</DialogueText>
+      <JumpNode>2</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>2</NodeID>
+      <DialogueText>Not really...~but you are a teacher so I guess I have to do what you say.</DialogueText>
+      <NPC>Stevie</NPC>
+      <JumpNode>3</JumpNode>
+      <FunctionCall>StevieOpenDoor</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>3</NodeID>
+      <DialogueText>Good.~ Now come out here and help me!</DialogueText>
+      <FunctionCall>WalkOutside</FunctionCall>
+      <JumpNode>4</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>4</NodeID>
+      <DialogueText>But I have to monitor the halls!</DialogueText>
+      <NPC>Stevie</NPC>
+      <JumpNode>5</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>5</NodeID>
+      <DialogueText>NOW!!</DialogueText>
+      <JumpNode>6</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>6</NodeID>
+      <DialogueText>Okay. Okay. I'm coming. I'll just lock the door behind me so no one else gets out.</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>StevieGoHelpFindPills</FunctionCall>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>It's *sniff*...~not fair. I need them so bad.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What's wrong?</OptionText>
+          <DestinationID>11</DestinationID>
+          <UsesAction>true</UsesAction>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Let her cry.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>The pills!~ I haven't had any since yesterday!~ There aren't any anywhere!~ I'm losing my mind without them!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>No one has any?</OptionText>
+          <DestinationID>12</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>No!~ The supply chain completely broke down after the principal died. Even Monty said he--</DialogueText>
+      <JumpNode>13</JumpNode>
+      <FunctionCall>ClearFace</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>*b*THAT'S IT!!*be*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>What?</OptionText>
+          <DestinationID>14</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>We'll have Monty make more pills!~ That little dweeb is so smart, I'm sure he could do it! And it would be good for his little 'side business.'</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>15</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>Okay is right!~ Get going! Go up to that fancy classroom and ask what he needs to make mama her pills!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>16</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>Stevie!</DialogueText>
+      <FunctionCall>FaceStevie</FunctionCall>
+      <JumpNode>17</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Yeah yeah. I heard you.</DialogueText>
+      <JumpNode>18</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>Good. Let that other deadbeat monitor know as well. Anyone who gets in this kid's way today is going to be straight up murdered! Do you hear me?!</DialogueText>
+      <JumpNode>19</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>19</NodeID>
+      <DialogueText>Okay okay!~ Don't even know why we need hall monitors at this point. All you do is tell your kids to ignore me.</DialogueText>
+      <JumpNode>20</JumpNode>
+      <NPC>Stevie</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>*hl*Let me know what Monty needs. I'll head back to the classroom and wait for you there.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I'll take care of it.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ReturnToDumbClass</FunctionCall>
+          <SetFlag>TeacherGoTalkToMonty</SetFlag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>

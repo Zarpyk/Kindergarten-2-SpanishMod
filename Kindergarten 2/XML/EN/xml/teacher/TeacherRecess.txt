@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialoguer>
+  <Nodes>
+    <DialogueNode>      
+      <NodeID>0</NodeID>
+      <DialogueText>Ugh...~the sun is so bright.~ What a miserable day.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I need to use the bathroom.</OptionText>
+          <ItemToUse>PassBook</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>GetBathroomPassRecess</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>That's great.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>      
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>1</NodeID>
+      <DialogueText>Fine.~ Have a good time.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Right...</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToCafeteria</FunctionCall>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>10</NodeID>
+      <DialogueText>Gotcha!</DialogueText>
+      <JumpNode>11</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>11</NodeID>
+      <DialogueText>Now give me some of your hair you little degenerate! I need it! I need it for my pills!</DialogueText>
+      <JumpNode>12</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>12</NodeID>
+      <DialogueText>Put Nugget down!~ Nugget will not give the tweaker teacher any of his beautiful hair!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>13</ResolutionID>
+      <NPC>Nugget</NPC>
+      <FunctionCall>ClearCameraTarget</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>13</NodeID>
+      <DialogueText>What do you want?!~ I'm trying to get his hair, but it's not coming out! *hl*I need something to cut it with!*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Will these help?</OptionText>
+          <ItemToUse>Scissors</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>14</DestinationID>
+          <FunctionCall>GiveScissors</FunctionCall>
+          <SetFlag>TeacherCutNuggetHair</SetFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Good luck with that.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>14</NodeID>
+      <DialogueText>You bet they will!~ Okay Nugget...~time for a haircut!</DialogueText>
+      <JumpNode>15</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>15</NodeID>
+      <DialogueText>*b*NOOOOOOOOO!!!*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>CutNuggetHair</FunctionCall>
+      <NPC>Nugget</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>16</NodeID>
+      <DialogueText>There!~ See?! Was that so hard?!~ Now go play...~or do whatever it is that you do.</DialogueText>
+      <JumpNode>17</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>17</NodeID>
+      <DialogueText>Nugget's hair...~Nugget's beautiful hair...</DialogueText>
+      <JumpNode>18</JumpNode>
+      <NPC>Nugget</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>18</NodeID>
+      <DialogueText>*b*I SAID TO GO PLAY!!*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>NuggetRunToCorner</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>20</NodeID>
+      <DialogueText>Here's that hair. I expect some pills by the end of the day.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I also need your hair.</OptionText>
+          <DestinationID>21</DestinationID>
+          <FunctionCall>GetTeacherHair</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>21</NodeID>
+      <DialogueText>Done! Here!~ So we're ready to make those pills then?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I also need Billy's hair.</OptionText>
+          <DestinationID>22</DestinationID>
+          <BlockFlag>BillyCutHair</BlockFlag>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I think so.</OptionText>
+          <DestinationID>26</DestinationID>
+          <Flag>BillyCutHair</Flag>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>22</NodeID>
+      <DialogueText>Billy?!~ He's here? I thought he was skipping like he did yesterday.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He won't give me his hair.</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>He was kidnapped.</OptionText>
+          <DestinationID>25</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>23</NodeID>
+      <DialogueText>The hell he won't!~ *hl*You march right back to wherever he's hiding and demand he give you his hair.*hle* Understood?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <DestinationID>24</DestinationID>
+          <FunctionCall>GetScissors</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>24</NodeID>
+      <DialogueText>Good.~ Take these scissors and come back with that hair!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Got it.</OptionText>
+          <DestinationID>241</DestinationID>
+          <ResolutionID>240</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>240</NodeID>
+      <DialogueText>Did you get Billy's hair? Please tell me you did.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I got it.</OptionText>
+          <ItemToUse>BillyHair</ItemToUse>
+          <DestinationID>26</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Not yet.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>241</NodeID>
+      <DialogueText>*hl*And you better have enough to afford your lab fee by the time you come back!*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>240</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>25</NodeID>
+      <DialogueText>I don't care. Please just tell me you found him and got his hair.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>He won't give me his hair.</OptionText>
+          <DestinationID>23</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>26</NodeID>
+      <DialogueText>Good!~ *hl*Just make sure you have your lab fee ready for science.*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I might be a little short.</OptionText>
+          <DestinationID>28</DestinationID>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>I will.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>27</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>27</NodeID>
+      <DialogueText>I want those pills.~ Don't fail me.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Uh...I'll try not to.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>28</NodeID>
+      <DialogueText>Then you better find some money in a hurry!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Don't you have any?</OptionText>
+          <DestinationID>29</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>29</NodeID>
+      <DialogueText>I'm a teacher!~ What do you think?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Good point.</OptionText>
+          <DestinationID>30</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>30</NodeID>
+      <DialogueText>So get looking!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Okay. Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>27</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>50</NodeID>
+      <DialogueText>Where do you think you're going? You're not allowed inside.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>I need to use the bathroom.</OptionText>
+          <ItemToUse>PassBook</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <DestinationID>1</DestinationID>
+          <FunctionCall>GetBathroomPassRecess</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <ResolutionID>-1</ResolutionID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>60</NodeID>
+      <DialogueText>*b*NUGGET!!*be*</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>WalkToPickUpCave</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>61</NodeID>
+      <DialogueText>You little weasel!~ I looked all day for those pills and couldn't find them!~ There never were any, were there?!</DialogueText>
+      <JumpNode>62</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>62</NodeID>
+      <DialogueText>Unhand Nugget!~ Nugget must dig the new Nugget Cave!</DialogueText>
+      <JumpNode>63</JumpNode>
+      <NPC>Nugget</NPC>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>63</NodeID>
+      <DialogueText>No!~ *hl*Now I'm all hot and thirsty and it's all your fault!*hle*~ You're going to suffer like I did!</DialogueText>
+      <JumpNode>-1</JumpNode>
+      <ResolutionID>64</ResolutionID>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>64</NodeID>
+      <DialogueText>Not now!~ I'm busy torturing Nugget! He made me look outside all day for pills and now I'm all *hl*hot and thirsty!*hle*</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Do you want something to drink?</OptionText>
+          <DestinationID>65</DestinationID>
+          <ItemToUse>SodaRed</ItemToUse>
+          <UsesAction>true</UsesAction>
+          <FunctionCall>UseSodaRed</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Do you want something to drink?</OptionText>
+          <DestinationID>65</DestinationID>
+          <ItemToUse>SodaBlue</ItemToUse>
+          <FunctionCall>UseSodaBlue</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>Okay.</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>65</NodeID>
+      <DialogueText>Oh...~well thank you...~I suppose I can let this little monster go...~but never lie to me again you little mole creature!~ Got it?</DialogueText>
+      <JumpNode>66</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>66</NodeID>
+      <DialogueText>Yes...~Nugget has it.</DialogueText>
+      <NPC>Nugget</NPC>
+      <JumpNode>-1</JumpNode>
+      <FunctionCall>PutNuggetDownCave</FunctionCall>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>67</NodeID>
+      <DialogueText>Stupid Nugget.~ Sending me on a wild drug chase.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Walk away.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>100</NodeID>
+      <DialogueText>Finally!~ Just one more class and then I get to go home!</DialogueText>
+      <JumpNode>101</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>101</NodeID>
+      <DialogueText>Anyone who wants to pay the lab fee can go to the science classroom. Everyone else meet in the gym.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go to science.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <MoneyLock>3</MoneyLock>
+          <SetFlag>PaidLabFee</SetFlag>
+          <FunctionCall>ChangeToSupport</FunctionCall>
+        </DialogueOption>
+        <DialogueOption>
+          <OptionText>(Go to gym.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>ChangeToSupport</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>110</NodeID>
+      <DialogueText>Finally!~ Just one more class and then I get to go home!</DialogueText>
+      <JumpNode>111</JumpNode>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>111</NodeID>
+      <DialogueText>Anyone who wants to pay the lab fee can go to the science classroom. Everyone else meet in the gym, except you!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Me?</OptionText>
+          <DestinationID>112</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>112</NodeID>
+      <DialogueText>You and Monty are going to science to finish making me those pills! Understand?</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Yes.</OptionText>
+          <DestinationID>113</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>113</NodeID>
+      <DialogueText>Good!~ Now get going!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Go to sciene.)</OptionText>
+          <DestinationID>-1</DestinationID>
+          <SetFlag>PaidLabFee</SetFlag>
+          <FunctionCall>ChangeToSupport</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>120</NodeID>
+      <DialogueText>Oh no you don't!~ You have study hall!~ I'm not dealing with you when I have all these other kids to deal with!~ Get back inside!</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>Fine.</OptionText>
+          <DestinationID>-1</DestinationID>
+          <FunctionCall>SendPlayerBackToCafeteria</FunctionCall>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>130</NodeID>
+      <DialogueText>Stupid Nugget...~making me go on a wild pill chase for nothing.</DialogueText>
+      <Options>
+        <DialogueOption>
+          <OptionText>(Let her grumble to herself.)</OptionText>
+          <DestinationID>-1</DestinationID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+  </Nodes>
+</Dialoguer>
