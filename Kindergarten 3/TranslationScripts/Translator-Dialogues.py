@@ -6,7 +6,7 @@ from openai import OpenAI
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import tiktoken
 
-client = OpenAI(api_key="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")  # Añade tu clave aquí
+client = OpenAI(api_key="open-ai-api-key")
 
 SYSTEM_PROMPT = (
     "You are an English to Spanish translator tasked with maintaining the humor and style of messages.\n\n"
